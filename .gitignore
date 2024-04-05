@@ -165,6 +165,9 @@ cython_debug/
 *.jpeg
 *.txt
 *.xml
+*.mp4
+cv/Train_yolo_data*
+cv/runs
 
 # Model
 *.pt
