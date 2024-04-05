@@ -1,8 +1,9 @@
-from ultralytics import YOLO
+from ultralytics import YOLO, RTDETR
 import cv2
 import random
 import os
 import pyshine as ps
+import yaml
 
 
 def plot_one_box(x, img, color=None, label=None, line_thickness=3):
@@ -34,13 +35,26 @@ def plot_one_box_b(x, img, color=None, label=None, line_thickness=3):
         cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl / 3, [225, 255, 255], thickness=tf, lineType=cv2.LINE_AA)
 
 
-# Load a model
-model = YOLO("best3.pt")
+# Load Master Data
+with open('master.yaml', 'r') as f:
+	master_data = yaml.load(f, Loader=yaml.SafeLoader)
+
+master_list = master_data['YHB23D2BP0600000']
+print(master_data['YHB23D2BP0600000'])
+print(type(master_data['YHB23D2BP0600000']))
+
+## Load model
+# YOLOv8m
+model = YOLO("runs/detect/yolov8m/best3.pt")
+# RT-DETR-L
+# model = RTDETR("runs/detect/rtdetrl/weights/best.pt")
+# YOLOv9-C
+# model = YOLO('runs/detect/yolov9c/weights/best.pt')
 
 class_names = model.names
 print('Class Names: ', class_names)
 colors = [[random.randint(0, 255) for _ in range(3)] for _ in class_names]
-save = True
+save = False
 
 cap = cv2.VideoCapture('Data/01_20240328105915367_1.mp4')
 # cap = cv2.VideoCapture('rtsp://admin:eternal@12@192.168.1.13:554/cam/realmonitor?channel=1')
@@ -48,11 +62,11 @@ original_video_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 original_video_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 fps = cap.get(cv2.CAP_PROP_FPS)
 if save:
-    out_vid = cv2.VideoWriter(f"POC/output{len(os.listdir('POC'))}.mp4", 
+    os.makedirs('Output', exist_ok=True)
+    out_vid = cv2.VideoWriter(f"Output/{len(os.listdir('Output'))}.mp4", 
                          cv2.VideoWriter_fourcc(*'mp4v'),
                          fps, (original_video_width, original_video_height))
 
-master_list = [1, 2, 9, 11, 12, 16, 17, 21]
 
 # Setup Window
 # cv2.namedWindow('img', cv2.WINDOW_NORMAL)
