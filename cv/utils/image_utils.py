@@ -1,0 +1,88 @@
+import random
+import cv2
+
+def plot_one_box(x, img, color=None, label=None, line_thickness=3):
+    # Plots one bounding box on image img
+    tl = line_thickness or round(0.002 * (img.shape[0] + img.shape[1]) / 2) + 1  # line/font thickness
+    color = color or [random.randint(0, 255) for _ in range(3)]
+    c1, c2 = (int(x[0]), int(x[1])), (int(x[2]), int(x[3]))
+    cv2.rectangle(img, c1, c2, color, thickness=tl, lineType=cv2.LINE_AA)
+    if label:
+        tf = max(tl - 1, 1)  # font thickness
+        t_size = cv2.getTextSize(label, 0, fontScale=tl / 3, thickness=tf)[0]
+        c2 = c1[0] + t_size[0], c1[1] - t_size[1] - 3
+        cv2.rectangle(img, c1, c2, color, -1, cv2.LINE_AA)  # filled
+        cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl / 3, [0,0,0], thickness=tf, lineType=cv2.LINE_AA)
+
+
+def draw_stats(img, stats, stats_height=220, global_font_scale=1):
+    height, width = img.shape[0], img.shape[1]
+    column_offset = 30
+
+    # Write stats onto the layout in columns
+    for col, col_stats in enumerate(stats):
+        stats_x_offset = column_offset + (col * (width // len(stats)))
+        stats_y_offset = height - stats_height + 20 # top padding
+
+        for stat in col_stats:
+            stat_type = stat.get("type")
+            font_scale_factor = stat.get("fontScale", 1) * global_font_scale
+            text_thickness_override = stat.get('textThickness')
+            pad_top = stat.get("pad_top", 0)
+            if stat_type == "heading":
+                font = cv2.FONT_HERSHEY_SIMPLEX
+                font_scale = 1.75 * font_scale_factor
+                text_thickness = text_thickness_override or 3
+                text = stat['title'].upper()
+                text_color = stat.get('color', (0, 0, 0))
+                next_y_offset = 60
+            elif stat_type == "message":
+                font = cv2.FONT_HERSHEY_COMPLEX_SMALL
+                font_scale = 2 * font_scale_factor
+                text_thickness = text_thickness_override or 2
+                text = stat['title']
+                text_color = stat.get('color', (0, 0, 0))
+                next_y_offset = 40
+            else:
+                font = cv2.FONT_HERSHEY_COMPLEX_SMALL
+                font_scale = 2 * font_scale_factor
+                text_thickness = text_thickness_override or 2
+                text = f"{stat['title']}: {stat['value']}"
+                text_color = stat.get('color', (0, 0, 0))
+                next_y_offset = 40
+            cv2.putText(img, text, (stats_x_offset, stats_y_offset + pad_top), font, font_scale, text_color, text_thickness)
+            stats_y_offset += next_y_offset + pad_top
+
+
+def draw_confirmation_prompt(img, message, accept_button="Enter", reject_button="Escape"):
+    # Calculate relative dimensions for centering the text and the box
+    img_height, img_width = img.shape[:2]
+    box_width, box_height = int(img_width * 0.5), int(img_height * 0.2)  # Box width and height as a fraction of image size
+    top_left = ((img_width - box_width) // 2, (img_height - box_height) // 2)
+    bottom_right = (top_left[0] + box_width, top_left[1] + box_height)
+
+    # Draw a rectangle for the dialog box with a border
+    cv2.rectangle(img, top_left, bottom_right, (200, 200, 200), -1)  # Dialog box
+    cv2.rectangle(img, top_left, bottom_right, (0, 0, 0), 2)  # Border
+
+    # Positioning and drawing the main message
+    text_scale = 1
+    textsize = cv2.getTextSize(message, cv2.FONT_HERSHEY_SIMPLEX, text_scale, 2)[0]
+    text_x = top_left[0] + (box_width - textsize[0]) // 2
+    text_y = top_left[1] + round(box_height // 2 - (0.2 * box_height))
+    cv2.putText(img, message, (text_x, text_y), cv2.FONT_HERSHEY_SIMPLEX, text_scale, (0, 0, 0), 2)
+
+    # Positioning and drawing the instruction text
+    instruction_text = f"{accept_button} - ACCEPT"
+    instruction_color = (0, 100, 0)
+    instruction_size = cv2.getTextSize(instruction_text, cv2.FONT_HERSHEY_SIMPLEX, text_scale - 0.2, 1)[0]
+    instruction_x = top_left[0] + (box_width - instruction_size[0]) // 2
+    instruction_y = text_y + round(0.2 * box_height)
+    cv2.putText(img, instruction_text, (instruction_x, instruction_y), cv2.FONT_HERSHEY_SIMPLEX, text_scale - 0.2, instruction_color, 2)
+
+    instruction_text = f"{reject_button} - REJECT"
+    instruction_color = (0, 0, 100)
+    instruction_size = cv2.getTextSize(instruction_text, cv2.FONT_HERSHEY_SIMPLEX, text_scale - 0.2, 1)[0]
+    instruction_x = top_left[0] + (box_width - instruction_size[0]) // 2
+    instruction_y = instruction_y + round(0.2 * box_height)
+    cv2.putText(img, instruction_text, (instruction_x, instruction_y), cv2.FONT_HERSHEY_SIMPLEX, text_scale - 0.2, instruction_color, 2)

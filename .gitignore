@@ -172,3 +172,6 @@ cv/runs
 # Model
 *.pt
 *.pth
+
+# Priv
+priv
