@@ -5,4 +5,4 @@ class Data:
 
     def __init__(self):
         self.state = State()
-        self.artifact = Artifact()
+        self.artifact = None
