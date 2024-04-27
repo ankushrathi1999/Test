@@ -33,4 +33,5 @@ class Artifact:
 
 
     def save(self):
+        print("Saving data. TODO")
         pass

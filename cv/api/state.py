@@ -6,7 +6,7 @@ SYSTEM_STATES = SimpleNamespace(
     INSPECTION_HALT = "INSPECTION_HALT", # PLC unhealthy
     INSPECTION_START = "INSPECTION_START", # Part data recd
     INSPECTION_RUNNING = "INSPECTION_RUNNING", # Evaluation
-    INSPECTION_END = "INSPECTION_END", # Sace results and reset cycle
+    INSPECTION_END = "INSPECTION_END", # Save results and reset cycle
 )
 
 PLC_STATES = SimpleNamespace(
@@ -17,14 +17,11 @@ PLC_STATES = SimpleNamespace(
 
 def get_state_name(state):
     return {
-        SYSTEM_STATES.INSPECTION_START: "Initializing",
+        SYSTEM_STATES.INSPECTION_START_PRE: "Initializing",
         SYSTEM_STATES.INSPECTION_HALT: "Halted",
-        SYSTEM_STATES.DATA_HANDSHAKE_PRE: "Ready for Inspection",
-        SYSTEM_STATES.DATA_HANDSHAKE: "Awaiting Data",
-        SYSTEM_STATES.DATA_HANDSHAKE_POST: "Data Received",
+        SYSTEM_STATES.INSPECTION_START: "Awaiting Data",
         SYSTEM_STATES.INSPECTION_RUNNING: "Running",
-        SYSTEM_STATES.RESULT_HANDSHAKE: "Saving Results",
-        SYSTEM_STATES.RESULT_HANDSHAKE_POST: "Confirming Save",
+        SYSTEM_STATES.INSPECTION_END: "Saving Results",
     }[state]
 
 def get_plc_state_name(state):

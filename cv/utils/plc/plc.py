@@ -5,21 +5,32 @@ from config.config import config
 
 plc_config = config['PLC']
 ip_address = plc_config.get('ip_address')
-port = plc_config.get('port')
+port = plc_config.getint('port')
 
 plc_data = None
 plc_data_updates = []
 
-def get_int(data, start_byte):
-    return int(data[start_byte])
+def get_str(data, pos, size):
+    chars = []
+    for i, word in enumerate(data):
+        if pos > i*2+1:
+            continue
+        part2 = chr(word >> 8)
+        part1 = chr(word & 0xFF)
+        if i*2 >= pos:
+            chars.append(part1)
+        if len(chars) >= size:
+            break
+        chars.append(part2)
+        if len(chars) >= size:
+            break
+    return "".join(chars)
 
-def set_int(data, start_byte, value):
-    # todo: data[start_byte] = byte(value)
-    pass
+def get_int(data, pos):
+    return data[pos]
 
-def get_str(data, start_byte, size):
-    # todo: str(data[start_byte: start_byte+size])
-    return ""
+def get_bool(data, pos):
+    return chr(data[pos]) == "1"
 
 def flush_plc_data():
     global plc_data
@@ -30,7 +41,8 @@ def flush_plc_data():
     pymc3e.connect(ip_address, port)
 
     # Get data
-    plc_data = pymc3e.batchread_wordunits(headdevice="D100", readsize=50)
+    plc_data = pymc3e.batchread_wordunits(headdevice="D16001", readsize=20) # parameterize
+    print(plc_data)
 
     # Updates
     # if len(plc_data_updates) == 0:
@@ -57,11 +69,13 @@ def get_signal(signal_name):
     
     signal = PLC_SIGNAL_LOOKUP[signal_name]
     signal_type = signal["type"]
-    start_byte = signal["startByte"]
-    size = signal["size"]
+    pos = signal["pos"]
+    size = signal.get("size")
 
     if signal_type == "int":
-        return get_int(plc_data, start_byte)
+        return get_int(plc_data, pos)
+    elif signal_type == "bool":
+        return get_bool(plc_data, pos)
     elif signal_type == "str":
-        return get_str(plc_data, start_byte, size)
+        return get_str(plc_data, pos, size)
     return None

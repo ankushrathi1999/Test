@@ -172,6 +172,8 @@ cv/runs
 # Model
 *.pt
 *.pth
+*.onnx
+*.engine
 
 # Priv
 priv

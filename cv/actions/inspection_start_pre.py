@@ -1,8 +1,8 @@
-from processes.heartbeat_get import is_heartbeat_healthy
+# from processes.heartbeat_get import is_heartbeat_healthy
 from api.state import SYSTEM_STATES, PLC_STATES
 
 def inspection_start_pre_actions(data):
-    hearbeat_ok = is_heartbeat_healthy()
+    # hearbeat_ok = is_heartbeat_healthy()
     hearbeat_ok = True # temp
     if hearbeat_ok:
         data.state.plc_state = PLC_STATES.HEALTHY

@@ -8,7 +8,7 @@ from api.artifact import Artifact
 def inspection_start_actions(data):
     print("Fetching Part data from PLC")
     ack = get_signal(SIG_RECV_START_TRIGGER)
-    if ack != 1: # Handshake signal not received
+    if ack is not True: # Handshake signal not received
         time.sleep(1)
         next_state = SYSTEM_STATES.INSPECTION_START
         data.state.update_state(next_state, force=True)

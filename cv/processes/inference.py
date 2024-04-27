@@ -55,11 +55,11 @@ def _inference_loop(thread):
     data = thread.data
     try:
         # Load models
-        model_top_cam = YOLO(top_cam_model_path)
-        model_bottom_cam = YOLO(bottom_cam_model_path)
+        # model_top_cam = YOLO(top_cam_model_path, task="detect")
+        # model_bottom_cam = YOLO(bottom_cam_model_path, task="detect")
 
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
-        cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+        # cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
         assert use_video_mode
         frame_iterator = read_video_frames([video_path_top, video_path_bottom])
@@ -69,21 +69,21 @@ def _inference_loop(thread):
             if thread.is_terminated:
                 break
 
-            # Top cam detections
-            if frame_top is not None:
-                results_top = model_top_cam.predict(frame_top, conf=0.05, verbose=False, imgsz=ModelConfig.top_cam.imgsz)
-                results_top = _process_result(results_top[0], ModelConfig.top_cam, 'top')
-            else:
-                results_top = []
+            # # Top cam detections
+            # if frame_top is not None:
+            #     results_top = model_top_cam.predict(frame_top, conf=0.05, verbose=False)
+            #     results_top = _process_result(results_top[0], ModelConfig.top_cam, 'top')
+            # else:
+            #     results_top = []
 
-            # Bottom cam detections
-            if frame_bottom is not None:
-                results_bottom = model_bottom_cam.predict(frame_bottom, conf=0.05, verbose=False, imgsz=ModelConfig.bottom_cam.imgsz)
-                results_bottom = _process_result(results_bottom[0], ModelConfig.bottom_cam, 'bottom')
-            else:
-                results_bottom = []
+            # # Bottom cam detections
+            # if frame_bottom is not None:
+            #     results_bottom = model_bottom_cam.predict(frame_bottom, conf=0.05, verbose=False)
+            #     results_bottom = _process_result(results_bottom[0], ModelConfig.bottom_cam, 'bottom')
+            # else:
+            #     results_bottom = []
 
-            all_results = [*results_top, *results_bottom]
+            all_results = []#[*results_top, *results_bottom]
             for result in all_results:
                 class_bbox = result['bbox']
                 class_name = result['name']
