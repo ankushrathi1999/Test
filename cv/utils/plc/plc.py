@@ -42,7 +42,7 @@ def flush_plc_data():
 
     # Get data
     plc_data = pymc3e.batchread_wordunits(headdevice="D16001", readsize=20) # parameterize
-    print(plc_data)
+    # print(plc_data)
 
     # Updates
     # if len(plc_data_updates) == 0:

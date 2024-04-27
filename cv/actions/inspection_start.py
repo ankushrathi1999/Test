@@ -20,7 +20,7 @@ def inspection_start_actions(data):
     print("Fetched part data:", psn, chassis, vehicle_model)
 
     # Initialize engine
-    data.artifact = Artifact(psn, chassis, vehicle_model)
+    data.artifact = Artifact(psn, chassis, vehicle_model, data)
 
     next_state = SYSTEM_STATES.INSPECTION_RUNNING
     data.state.update_state(next_state)

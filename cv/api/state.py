@@ -57,7 +57,7 @@ class State:
             from_check = from_states is None or old_state in from_states
             to_check = to_states is None or new_state in to_states
             if from_check and to_check:
-                print("Running action:", action_fn.__name__)
+                # print("Running action:", action_fn.__name__)
                 try:
                     action_fn(data)
                     self._state_history.pop(0)

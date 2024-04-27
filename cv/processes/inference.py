@@ -16,6 +16,7 @@ window_name = process_config.get('window_name')
 use_video_mode = process_config.getboolean('use_video_mode')
 video_path_top = process_config.get('video_path_top')
 video_path_bottom = process_config.get('video_path_bottom')
+video_path_up = process_config.get('video_path_up')
 
 CONFIRM_MODE_QUIT = "quit"
 CONFIRM_MODE_RESET = "reset"
@@ -55,35 +56,39 @@ def _inference_loop(thread):
     data = thread.data
     try:
         # Load models
-        # model_top_cam = YOLO(top_cam_model_path, task="detect")
-        # model_bottom_cam = YOLO(bottom_cam_model_path, task="detect")
+        model_top_cam = YOLO(top_cam_model_path, task="detect")
+        model_bottom_cam = YOLO(bottom_cam_model_path, task="detect")
 
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
         # cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
         assert use_video_mode
-        frame_iterator = read_video_frames([video_path_top, video_path_bottom])
+        frame_iterator = read_video_frames([video_path_top, video_path_bottom, video_path_up])
 
         confirm_mode = None
-        for [frame_top, frame_bottom] in frame_iterator:
+        for [frame_top, frame_bottom, frame_up] in frame_iterator:
             if thread.is_terminated:
                 break
 
-            # # Top cam detections
-            # if frame_top is not None:
-            #     results_top = model_top_cam.predict(frame_top, conf=0.05, verbose=False)
-            #     results_top = _process_result(results_top[0], ModelConfig.top_cam, 'top')
-            # else:
-            #     results_top = []
+            frame_top_orig = frame_top.copy()
+            frame_bottom_orig = frame_bottom.copy()
+            frame_up_orig = frame_up.copy()
 
-            # # Bottom cam detections
-            # if frame_bottom is not None:
-            #     results_bottom = model_bottom_cam.predict(frame_bottom, conf=0.05, verbose=False)
-            #     results_bottom = _process_result(results_bottom[0], ModelConfig.bottom_cam, 'bottom')
-            # else:
-            #     results_bottom = []
+            # Top cam detections
+            if frame_top is not None:
+                results_top = model_top_cam.predict(frame_top, conf=0.05, verbose=False)
+                results_top = _process_result(results_top[0], ModelConfig.top_cam, 'top')
+            else:
+                results_top = []
 
-            all_results = []#[*results_top, *results_bottom]
+            # Bottom cam detections
+            if frame_bottom is not None:
+                results_bottom = model_bottom_cam.predict(frame_bottom, conf=0.05, verbose=False)
+                results_bottom = _process_result(results_bottom[0], ModelConfig.bottom_cam, 'bottom')
+            else:
+                results_bottom = []
+
+            all_results = [*results_top, *results_bottom]
             for result in all_results:
                 class_bbox = result['bbox']
                 class_name = result['name']
@@ -106,7 +111,7 @@ def _inference_loop(thread):
                 )
 
             if data.artifact is not None:
-                data.artifact.update(all_results, frame_top, frame_bottom)
+                data.artifact.update(all_results, frame_top_orig, frame_bottom_orig, frame_up_orig)
 
             # Generate display layout and stats
             display_image =  prepare_live_display(frame_top, frame_bottom, data)
