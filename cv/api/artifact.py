@@ -6,16 +6,21 @@ import cv2
 
 from config.db_config import db_params
 from config.models import ModelConfig
+from config.config import config
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
+from utils.shift import get_current_shift
 
-part_success_threshold = 2
-snapshot_interval_secs = 5
-snapshots_dir = r"D:\ipcluster_images"
+api_config = config['api_artifact']
+part_success_threshold = api_config.getint('part_success_threshold')
+snapshot_interval_secs = api_config.getfloat('snapshot_interval_secs')
+snapshots_dir = api_config.get('snapshots_dir')
 
 class Artifact:
 
     def __init__(self, psn, chassis, vehicle_model, data):
         self.data = data
+        self.inspection_flag = int(f'vehicle_model_{vehicle_model}' in self.data.entity_lookup)
+        self.shift = get_current_shift()
 
         self.psn = psn
         self.chassis = chassis
@@ -57,25 +62,29 @@ class Artifact:
             self._n_snapshots_saved += 1
 
     def save(self):
-        inspection_flag = int(f'VEHICLE_MODEL_{self.vehicle_model}' in self.data.entity_lookup)
         result_ok_flag = int(self.part_ok_count >= len(self.part_list))
 
         data_filters = [
-            f'VEHICLE_MODEL_{self.vehicle_model}',
-            'SHIFT_shiftA',
+            f'shift_{self.shift}',
         ]
 
         string_metrics = [
-            ('VEHICLE_METADATA_psn', self.psn),
-            ('VEHICLE_METADATA_chassis', self.chassis),
+            ('vehicle_metadata_psn', self.psn),
+            ('vehicle_metadata_chassis', self.chassis),
         ]
 
+        if self.inspection_flag == 1:
+            data_filters.append(f'vehicle_model_{self.vehicle_model}')
+        else:
+            string_metrics.append(['vehicle_metadata_vehicle_model', self.vehicle_model])
+
         integer_metrics = []
-        for part_number in self.part_list:
-            integer_metrics.append([
-                f'PART_{part_number}',
-                int(self.part_counts[part_number] >= part_success_threshold)
-            ])
+        if self.inspection_flag == 1:
+            for part_number in self.part_list:
+                integer_metrics.append([
+                    f'part_{part_number}',
+                    int(self.part_counts[part_number] >= part_success_threshold)
+                ])
 
         connection  = None
         try:
@@ -93,24 +102,23 @@ class Artifact:
                 cursor.execute(insert_record_query, (1, self.start_time))
                 record_id = cursor.lastrowid
 
-                insert_integer_metric(cursor, record_id, self.data.entity_lookup['RESULT_METADATA_inspectionFlag'], inspection_flag)
-                print("Inspection Flag", inspection_flag)
-
-                if inspection_flag == 1:
-                    insert_integer_metric(cursor, record_id, self.data.entity_lookup['RESULT_METADATA_resultOKFlag'], result_ok_flag)
+                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionFlag'], self.inspection_flag)
+                print("Inspection Flag", self.inspection_flag)
+                if self.inspection_flag == 1:
+                    insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_resultOKFlag'], result_ok_flag)
                     print("Result OK Flag", result_ok_flag)
-                    for entity_key in data_filters:
-                        entity_id = self.data.entity_lookup[entity_key]
-                        insert_datafilter(cursor, record_id, entity_id)
-                        print("Filter:", record_id, entity_id)
-                    for entity_key, value in integer_metrics:
-                        entity_id = self.data.entity_lookup[entity_key]
-                        insert_integer_metric(cursor, record_id, entity_id, value)
-                        print("Integer Metric:", record_id, entity_id, value)
-                    for entity_key, value in string_metrics:
-                        entity_id = self.data.entity_lookup[entity_key]
-                        insert_string_metric(cursor, record_id, entity_id, value)
-                        print("String Metric:", record_id, entity_id, value)
+                for entity_key in data_filters:
+                    entity_id = self.data.entity_lookup[entity_key]
+                    insert_datafilter(cursor, record_id, entity_id)
+                    print("Filter:", record_id, entity_id)
+                for entity_key, value in integer_metrics:
+                    entity_id = self.data.entity_lookup[entity_key]
+                    insert_integer_metric(cursor, record_id, entity_id, value)
+                    print("Integer Metric:", record_id, entity_id, value)
+                for entity_key, value in string_metrics:
+                    entity_id = self.data.entity_lookup[entity_key]
+                    insert_string_metric(cursor, record_id, entity_id, value)
+                    print("String Metric:", record_id, entity_id, value)
                 connection.commit()
         except Exception as ex:
             print("Failed to save artifact.", ex)

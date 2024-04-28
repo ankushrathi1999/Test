@@ -177,3 +177,4 @@ cv/runs
 
 # Priv
 priv
+app.priv.config

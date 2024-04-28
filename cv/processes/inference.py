@@ -13,7 +13,6 @@ process_config = config['process_inference']
 top_cam_model_path = process_config.get('top_cam_model_path')
 bottom_cam_model_path = process_config.get('bottom_cam_model_path')
 window_name = process_config.get('window_name')
-use_video_mode = process_config.getboolean('use_video_mode')
 video_path_top = process_config.get('video_path_top')
 video_path_bottom = process_config.get('video_path_bottom')
 video_path_up = process_config.get('video_path_up')
@@ -62,7 +61,6 @@ def _inference_loop(thread):
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
         # cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
-        assert use_video_mode
         frame_iterator = read_video_frames([video_path_top, video_path_bottom, video_path_up])
 
         confirm_mode = None
