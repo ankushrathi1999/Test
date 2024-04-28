@@ -8,7 +8,7 @@ from config.db_config import db_params
 from config.models import ModelConfig
 from config.config import config
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
-from utils.shift import get_current_shift
+from utils.shift_utils import get_current_shift
 
 api_config = config['api_artifact']
 part_success_threshold = api_config.getint('part_success_threshold')

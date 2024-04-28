@@ -59,7 +59,7 @@ def _inference_loop(thread):
         model_bottom_cam = YOLO(bottom_cam_model_path, task="detect")
 
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
-        # cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+        cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
         frame_iterator = read_video_frames([video_path_top, video_path_bottom, video_path_up])
 
