@@ -1,2 +1,2 @@
-cd C:\Users\rohit\Desktop\projects\MSIL-IPCluster\cv
-python main.py
+cd C:\Users\Administrator\Documents\MSIL-IPCluster-pipeline_Dep\MSIL-IPCluster\MSIL-IPCluster\cv
+C:\Users\Administrator\Documents\ipcluster_setup\engine\Scripts\python.exe main.py
