@@ -15,12 +15,12 @@ PLC_SIGNALS = [
     {
 		"key": SIG_RECV_START_TRIGGER,
 		"type": "bool",
-		"pos": 18,
+		"pos": 20,
 	},
     {
 		"key": SIG_RECV_END_TRIGGER,
 		"type": "bool",
-		"pos": 19,
+		"pos": 21,
 	},
 	{
 		"key": SIG_RECV_PSN,
@@ -31,7 +31,7 @@ PLC_SIGNALS = [
 		"key": SIG_RECV_MODEL,
 		"type": "str",
 		"pos": 24,
-		"size": 12,
+		"size": 16,
 	},
     {
 		"key": SIG_RECV_CHASSIS,

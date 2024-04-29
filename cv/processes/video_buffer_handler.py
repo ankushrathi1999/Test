@@ -11,9 +11,11 @@ def _clear_video_buffer(thread):
                 for i, cap in enumerate(vr.caps):
                     with vr.caps_lock[i]:
                         try:
+                            print("Grab")
                             cap.grab()
                         except:
                             pass
+                time.sleep(0.01)
         except Exception as ex:
             print("Error in video_helper thread:", ex)
             traceback.print_exc()

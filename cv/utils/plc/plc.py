@@ -41,8 +41,8 @@ def flush_plc_data():
     pymc3e.connect(ip_address, port)
 
     # Get data
-    plc_data = pymc3e.batchread_wordunits(headdevice="D16001", readsize=20) # parameterize
-    # print(plc_data)
+    plc_data = pymc3e.batchread_wordunits(headdevice="D16001", readsize=22) # parameterize
+    print(plc_data)
 
     # Updates
     # if len(plc_data_updates) == 0:

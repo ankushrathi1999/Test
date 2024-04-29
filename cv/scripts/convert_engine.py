@@ -1,6 +1,6 @@
 from ultralytics import YOLO
 
-model = YOLO(r"best_bottom_2104.onnx")
+model = YOLO(r"scripts\models\best_bottom_2104.pt")
 
 model.export(format='engine', half=True, dynamic=True, simplify=True)
 

@@ -8,3 +8,5 @@ class Data:
         self.entity_lookup = get_entity_lookup()
         self.state = State()
         self.artifact = None
+        self.frames = {}
+        self.video_paths = []

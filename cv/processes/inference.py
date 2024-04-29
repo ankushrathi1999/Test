@@ -54,21 +54,28 @@ def _process_result(result, model_config, result_type):
 
 def _inference_loop(thread):
     data = thread.data
+    data.video_paths = [video_path_top, video_path_bottom, video_path_up]
     try:
         # Load models
         model_top_cam = YOLO(top_cam_model_path, task="detect")
         model_bottom_cam = YOLO(bottom_cam_model_path, task="detect")
 
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
-        # cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
+        cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
-        assert use_video_mode
-        frame_iterator = read_video_frames([video_path_top, video_path_bottom, video_path_up])
+        # assert use_video_mode
+        # frame_iterator = read_video_frames([video_path_top, video_path_bottom, video_path_up])
 
         confirm_mode = None
-        for [frame_top, frame_bottom, frame_up] in frame_iterator:
+        while True:
             if thread.is_terminated:
                 break
+
+            frame_top = data.frames.get(0)
+            frame_bottom = data.frames.get(1)
+            frame_up = data.frames.get(2)
+            if frame_top is None or frame_bottom is None or frame_up is None:
+                continue
 
             frame_top_orig = frame_top.copy()
             frame_bottom_orig = frame_bottom.copy()
