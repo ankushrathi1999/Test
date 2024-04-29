@@ -3,6 +3,10 @@ import threading
 import traceback
 
 import utils.video_reader as vr
+from config.config import config
+
+process_config = config['process_inference']
+use_video_mode = process_config.getboolean('use_video_mode')
 
 def _clear_video_buffer(thread):
     while not thread.is_terminated:
@@ -30,10 +34,12 @@ class VideoBufferHandler:
 
     def start(self):
         self.runner = threading.Thread(target=_clear_video_buffer, args=(self,))
-        self.runner.start()
+        if not use_video_mode:
+            self.runner.start()
 
     def stop(self):
         self.is_terminated = True
 
     def wait(self):
-        self.runner.join()
+        if not use_video_mode:
+            self.runner.join()
