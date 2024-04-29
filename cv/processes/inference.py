@@ -43,6 +43,7 @@ def _process_result(result, model_config, result_type):
             continue
         processed.append({
             'name': cl_name,
+            'desc': model_config.class_desc[cl_name],
             'class_id': cl,
             'color': model_config.class_colors[cl_name],
             'confidence': cn,
@@ -95,6 +96,7 @@ def _inference_loop(thread):
             for result in all_results:
                 class_bbox = result['bbox']
                 class_name = result['name']
+                class_desc = result['desc']
                 class_color = result['color']
                 detect_confidence = round(result['confidence'], 2)
                 result_type = result['result_type']
@@ -109,7 +111,7 @@ def _inference_loop(thread):
                     class_bbox,
                     target_frame,
                     class_color,
-                    f'{class_name}_{detect_confidence}',
+                    f'{class_desc}_{detect_confidence}',
                     3
                 )
 

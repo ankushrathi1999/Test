@@ -39,9 +39,10 @@ def prepare_dashboard_stats(dashboard):
                 })
             else:
                 cur_part = dashboard.part_list[cur_part_idx]
+                cur_part_desc = dashboard.part_desc[cur_part_idx]
                 cur_col.append({
                     "type": "message",
-                    "title": cur_part,
+                    "title": cur_part_desc,
                     "color": color_green if dashboard.part_counts[cur_part] >= part_success_threshold else color_red,
                     "fontScale": 0.8,
                     "textThickness": 1,

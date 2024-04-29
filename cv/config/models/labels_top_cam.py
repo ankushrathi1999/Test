@@ -40,6 +40,27 @@ class_names = [
     CLASS_w_speedometer,
 ]
 
+class_desc = {
+    CLASS_orn_drv_yhbhc: 'orn_drv_yhbhc',
+    CLASS_orn_yhbhc: 'orn_yhbhc',
+    CLASS_coil_sas_blue: 'coil_sas_blue',
+    CLASS_cov_steer: 'cov_steer',
+    CLASS_pnl_instr_up_brn: 'pnl_instr_up_brn',
+    CLASS_sw_fuel: 'sw_fuel',
+    CLASS_sw_option_hole: 'sw_option_hole',
+    CLASS_sw_esp_idstp_cam: 'sw_esp_idstp_cam',
+    CLASS_sw_head_lamp_lvlng: 'sw_head_lamp_lvlng',
+    CLASS_w_speedometer: 'w_speedometer',
+    CLASS_outside_rhd: 'outside_rhd',
+    CLASS_inside_rhd: 'inside_rhd',
+    CLASS_ac_asst_rhd: 'ac_asst_rhd',
+    CLASS_hazard_warning: 'hazard_warning',
+    CLASS_tuner_assy: 'tuner_assy',
+    CLASS_sw_lgt_trn_auto: 'sw_lgt_trn_auto',
+    CLASS_sw_wpr_wsh: 'sw_wpr_wsh',
+    CLASS_dashboard: 'dashboard',
+}
+
 class_confidence = {
     CLASS_orn_drv_yhbhc: 0.25,
     CLASS_orn_yhbhc: 0.25,

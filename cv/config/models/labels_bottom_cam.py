@@ -18,6 +18,15 @@ class_names = [
     CLASS_socket,
 ]
 
+class_desc = {
+    CLASS_bez_ip_sw: 'bez_ip_sw',
+    CLASS_lockset: 'lockset',
+    CLASS_pnl_hvac_yhbhc: 'pnl_hvac_yhbhc',
+    CLASS_pnl_instr_low: 'pnl_instr_low',
+    CLASS_skt_usb_yhbhcxal1: 'skt_usb_yhbhcxal1',
+    CLASS_socket: 'socket',
+    CLASS_dashboard: 'dashboard',
+}
 
 class_confidence = {
     CLASS_bez_ip_sw: 0.25,
@@ -30,7 +39,7 @@ class_confidence = {
 }
 
 class_colors = {
-    CLASS_bez_ip_sw: color_white,
+    CLASS_bez_ip_sw: color_green,
     CLASS_lockset: color_green,
     CLASS_pnl_hvac_yhbhc: color_green,
     CLASS_pnl_instr_low: color_green,
