@@ -24,7 +24,7 @@ def prepare_dashboard_stats(dashboard):
         {
             "title": "Model",
             "value": dashboard.vehicle_model,
-            "color": color_green if dashboard.inspection_flag == 1 else color_red
+            "color": color_green if dashboard.inspection_enabled else color_red
         },
     ]
 
