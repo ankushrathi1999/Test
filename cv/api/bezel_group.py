@@ -32,7 +32,7 @@ class BezelGroup:
             self.switch_part_ids = [s['id'] for s in switches_top]
             self.switch_part_names = [s['name'] for s in switches_top]
             self.switch_part_types = [s['type'] for s in switches_top]
-            if self.n_rows > 1:
+            if part_details['n_rows'] > 1:
                 switches_bottom = part_details['switches_bottom']
                 self.switch_part_ids.extend([s['id'] for s in switches_bottom])
                 self.switch_part_names.extend([s['name'] for s in switches_bottom])
