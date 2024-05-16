@@ -22,6 +22,7 @@ class BezelGroup:
         self.switch_part_ids = [] # List of part numbers
         self.switch_part_names = [] # List of part names
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
+        self.n_rows = 1
 
         if self.inspection_enabled:
             part_details = vehicle_parts_lookup[vehicle_model]['bezel']
@@ -31,7 +32,12 @@ class BezelGroup:
             self.switch_part_ids = [s['id'] for s in switches_top]
             self.switch_part_names = [s['name'] for s in switches_top]
             self.switch_part_types = [s['type'] for s in switches_top]
-            # todo: handle second row for yxa
+            if self.n_rows > 1:
+                switches_bottom = part_details['switches_bottom']
+                self.switch_part_ids.extend([s['id'] for s in switches_bottom])
+                self.switch_part_names.extend([s['name'] for s in switches_bottom])
+                self.switch_part_types.extend([s['type'] for s in switches_bottom])
+                self.n_rows = 2
 
         # Predictions
         self.bezel_results_count = defaultdict(int)
@@ -65,12 +71,9 @@ class BezelGroup:
                 self.bezel_result = result
         
         # Switches
-        for detection in switch_detections:
-            print('s', detection.classification_details.class_id, box_contains(bezel_detection.bbox, detection.bbox), detection.bbox)
         switch_detections = [detection for detection in switch_detections if box_contains(bezel_detection.bbox, detection.bbox) >= BEZEL_SWITCH_IOU_THRESHOLD]
-        switch_detections = sorted(switch_detections, key=lambda detection: detection.bbox[0]) # sort by x1
-        print('sorted', [s.classification_details.class_id for s in switch_detections], self.switch_part_types)
         if len(switch_detections) == len(self.switch_part_types):
+            switch_detections = sort_switches(switch_detections, self.n_rows)
             preds = []
             results = []
             for detection, part_type in zip(switch_detections, self.switch_part_types):
@@ -101,6 +104,20 @@ class BezelGroup:
                 results, result_count = sorted(self.switch_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
                 if result_count >= RESULT_COUNT_THRESHOLD:
                     self.switch_results = results
+
+def sort_switches(switch_detections, n_rows):
+    if n_rows > 1:
+        y_mean = sum([detection.bbox[1] for detection in switch_detections]) / len(switch_detections)
+        rows = [[], []]
+        for detection in switch_detections:
+            if detection.bbox[1] < y_mean:
+                rows[0].append(detection)
+            else:
+                rows[1].append(detection)
+    else:
+        rows = [switch_detections]
+    rows = [sorted(row, key=lambda detection: detection.bbox[0]) for row in rows]
+    return [detection for row in rows for detection in row]
 
 def box_contains(box1, box2): #parent, child
     x1, y1, x2, y2 = box1
