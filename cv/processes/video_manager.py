@@ -3,7 +3,11 @@ import threading
 import traceback
 import cv2
 
-skip_frames = 1
+video_mode = False
+if video_mode:
+    skip_frames = 0
+else:
+    skip_frames = 1
 
 def _read_frames(thread):
     while len(thread.data.video_paths) == 0:
@@ -14,7 +18,7 @@ def _read_frames(thread):
     while not thread.is_terminated:
         count += 1
         try:
-            if count % skip_frames > 0:
+            if skip_frames > 0  and count % skip_frames > 0:
                 cap.grab()
                 continue
             success, frame = cap.read()
@@ -23,6 +27,8 @@ def _read_frames(thread):
                 cap = cv2.VideoCapture(video_path)
             else:
                 thread.data.frames[thread.video_index] = frame
+                if video_mode:
+                    time.sleep(0.1)
         except Exception as ex:
             print("Error in video_helper thread:", ex)
             traceback.print_exc()

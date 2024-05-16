@@ -1,17 +1,19 @@
 from ultralytics import YOLO
 import cv2
+import os
 import threading
 import traceback
+from collections import defaultdict
 
-from config.models import ModelConfig
+from config.models import classification_models, detection_models
 from utils.image_utils import plot_one_box, draw_confirmation_prompt
-from utils.video_reader import read_video_frames
 from utils.live_display import prepare_live_display
 from config.config import config
+from config.colors import color_red
+from api.detection import DetectionDetails, ClassificationDetails, FinalDetails, DetectionResult
 
 process_config = config['process_inference']
-top_cam_model_path = process_config.get('top_cam_model_path')
-bottom_cam_model_path = process_config.get('bottom_cam_model_path')
+models_base_path = process_config.get('models_base_path')
 window_name = process_config.get('window_name')
 video_path_top = process_config.get('video_path_top')
 video_path_bottom = process_config.get('video_path_bottom')
@@ -21,45 +23,13 @@ CONFIRM_MODE_QUIT = "quit"
 CONFIRM_MODE_RESET = "reset"
 CONFIRM_MODE_SUBMIT = "submit"
 
-def _process_result(result, model_config, result_type):
-    try:
-        bboxs = result.boxes.xyxy.cpu()
-        conf = result.boxes.conf.cpu()
-        cls = result.boxes.cls.cpu().tolist()
-    except Exception as ex:
-        #print("No detections")
-        bboxs = []
-        conf = []
-        cls = []
-    processed = []
-    for bx, cn, cl in zip(bboxs, conf, cls):
-        cl = int(cl)
-        cl_name = model_config.class_names[cl] if cl < len(model_config.class_names) else None
-        if cl_name is None:
-            continue
-        bx = [int(x) for x in bx]
-        cn = float(cn)
-        if cn < model_config.class_confidence[cl_name]:
-            continue
-        processed.append({
-            'name': cl_name,
-            'desc': model_config.class_desc[cl_name],
-            'class_id': cl,
-            'color': model_config.class_colors[cl_name],
-            'confidence': cn,
-            'bbox': bx,
-            'result_type': result_type,
-        })
-    return processed
-
 def _inference_loop(thread):
     data = thread.data
     data.video_paths = [video_path_top, video_path_bottom, video_path_up]
     try:
-        # Load models
-        model_top_cam = YOLO(top_cam_model_path, task="detect")
-        model_bottom_cam = YOLO(bottom_cam_model_path, task="detect")
-
+        models_detect = [YOLO(os.path.join(models_base_path, f'{m.name}.pt'), task="detect") for m in detection_models]
+        models_cls = [YOLO(os.path.join(models_base_path, f'{m.name}.pt')) for m in classification_models]
+        
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
         cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
 
@@ -78,45 +48,100 @@ def _inference_loop(thread):
             frame_bottom_orig = frame_bottom.copy()
             frame_up_orig = frame_up.copy()
 
-            # Top cam detections
-            if frame_top is not None:
-                results_top = model_top_cam.predict(frame_top, conf=0.05, verbose=False)
-                results_top = _process_result(results_top[0], ModelConfig.top_cam, 'top')
-            else:
-                results_top = []
+            # Detections
+            detections = []
+            for frame_cam, cam_type in [
+                (frame_top, 'top'),
+                (frame_bottom, 'bottom'),
+                (frame_up, 'up'),
+            ]:
+                if frame_cam is None:
+                    continue
+                for model, model_config in zip(models_detect, detection_models):
+                    if cam_type not in model_config.target_cams:
+                        continue
+                    results = model.predict(frame_cam, conf=0.25, verbose=False)
+                    result = results[0]
+                    try:
+                        bboxs = result.boxes.xyxy.cpu()
+                        conf = result.boxes.conf.cpu()
+                        cls = result.boxes.cls.cpu().tolist()
+                    except Exception as ex:
+                        #print("No detections")
+                        bboxs = []
+                        conf = []
+                        cls = []
+                    processed = []
+                    for bbox, confidence, class_idx in zip(bboxs, conf, cls):
+                        class_idx = int(class_idx)
+                        class_id = model_config.ordered_class_list[class_idx]
+                        if class_id is None: # skipped class
+                            continue
+                        confidence = float(confidence)
+                        if confidence < model_config.class_confidence[class_id]: # confidence filter
+                            continue
+                        class_name = model_config.class_names[class_id]
+                        bbox = [int(x) for x in bbox]
+                        class_color = model_config.class_colors[class_id]
+                        processed.append(DetectionDetails(class_id, class_name,  model_config.name, confidence, class_color, bbox, cam_type))
+                    detections.extend(processed)
 
-            # Bottom cam detections
-            if frame_bottom is not None:
-                results_bottom = model_bottom_cam.predict(frame_bottom, conf=0.05, verbose=False)
-                results_bottom = _process_result(results_bottom[0], ModelConfig.bottom_cam, 'bottom')
-            else:
-                results_bottom = []
+            # Group detections by class
+            detection_groups = defaultdict(list)
+            for detection in detections:
+                detection_groups[detection.class_id].append(detection)
 
-            all_results = [*results_top, *results_bottom]
-            for result in all_results:
-                class_bbox = result['bbox']
-                class_name = result['name']
-                class_desc = result['desc']
-                class_color = result['color']
-                detect_confidence = round(result['confidence'], 2)
-                result_type = result['result_type']
+            # Classifications
+            for model, model_config in zip(models_cls, classification_models):
+                targets = []
+                for class_id in model_config.target_detections:
+                    targets.extend(detection_groups.get(class_id, []))
+                if len(targets) == 0:
+                    continue
+                for detection in targets:
+                    frame_cam = {
+                        'top': frame_top_orig,  
+                        'bottom': frame_bottom_orig,  
+                        'up': frame_up_orig,  
+                    }[detection.cam_type]
+                    class_bbox = detection.bbox
+                    img_crop = frame_cam[class_bbox[1]:class_bbox[3],class_bbox[0]:class_bbox[2]]
+                    results = model.predict(img_crop, conf=0.25, verbose=False)
+                    result = results[0]
+                    pred_class_idx = result.probs.top1
+                    class_id = model_config.ordered_class_list[pred_class_idx] # todo: class_id None and confidence filters
+                    class_name = model_config.class_names[class_id]
+                    confidence = round(float(result.probs.data.max()), 2)
+                    class_color = model_config.class_colors[class_id]
+                    print("DEEBUG:", class_id)
+                    detection.classification_details = ClassificationDetails(class_id, class_name, model_config.name, confidence, class_color)
+                    detection.final_details = FinalDetails(class_name, color_red, DetectionResult.NOT_EVALUATED)
+            
+            # Update data
+            if data.artifact is not None:
+                data.artifact.update(detection_groups, frame_top_orig, frame_bottom_orig, frame_up_orig)
 
-                target_frame = None
-                if result_type == "top":
-                    target_frame = frame_top
-                elif result_type == "bottom":
-                    target_frame = frame_bottom
+            # Plot
+            for detection in detections:
+                class_bbox = detection.bbox
+                label = detection.final_details.label
+                color = detection.final_details.color
+                confidence_detect = round(detection.confidence, 2)
+                confidence_cls = round(detection.classification_details.confidence, 2) if detection.classification_details is not None else 0
+
+                frame_cam = {
+                    'top': frame_top,  
+                    'bottom': frame_bottom,  
+                    'up': frame_up,  
+                }[detection.cam_type]
 
                 plot_one_box(
                     class_bbox,
-                    target_frame,
-                    class_color,
-                    f'{class_desc}_{detect_confidence}',
+                    frame_cam,
+                    color,
+                    f'{label}',#_{confidence_detect}_{confidence_cls}',
                     3
                 )
-
-            if data.artifact is not None:
-                data.artifact.update(all_results, frame_top_orig, frame_bottom_orig, frame_up_orig)
 
             # Generate display layout and stats
             display_image =  prepare_live_display(frame_top, frame_bottom, data)

@@ -4,6 +4,7 @@ from api.artifact import part_success_threshold
 from api.state import PLC_STATES, get_state_name, get_plc_state_name
 from .image_utils import draw_stats
 from config.colors import color_red, color_green
+from api.detection import DetectionResult
 
 
 def prepare_dashboard_stats(dashboard):
@@ -27,29 +28,31 @@ def prepare_dashboard_stats(dashboard):
         },
     ]
 
+    parts, overall_ok = dashboard.get_part_results()
+
     part_cols = []
     for i in range(5):
         cur_col = []
         for j in range(5):
             cur_part_idx = (i*5) + j
-            if cur_part_idx >= len(dashboard.part_list):
+            if cur_part_idx >= len(parts):
                 cur_col.append({
                     "type": "message",
                     "title": "",
                 })
             else:
-                cur_part = dashboard.part_list[cur_part_idx]
-                cur_part_desc = dashboard.part_desc[cur_part_idx]
+                cur_part = parts[cur_part_idx]
+                cur_part_desc = cur_part['part_name']
+                cur_part_ok = cur_part['result'] == DetectionResult.OK
                 cur_col.append({
                     "type": "message",
                     "title": cur_part_desc,
-                    "color": color_green if dashboard.part_counts[cur_part] >= part_success_threshold else color_red,
+                    "color": color_green if cur_part_ok else color_red,
                     "fontScale": 0.8,
                     "textThickness": 1,
                 })
         part_cols.append(cur_col)
 
-    overall_ok = dashboard.part_ok_count >= len(dashboard.part_list)
     part_cols[-1][-1] = {
         "title": "RESULT",
         "value": "OK" if overall_ok else "NG",

@@ -1,0 +1,18 @@
+YHC5ET2EP7400000:
+  bezel:
+    id: 73833M73R10-5PK
+    name: BEZEL,I/P SW
+    n_rows: 1
+    switches_top:
+      - id: 37780M66R00
+        name: SWITCH ASSY,ID STOP OFF
+        type: autostart
+      - id: 37700M66R00
+        name: SWITCH ASSY,CAMERA
+        type: camera 
+      - id: 37585M66R00
+        name: SWITCH ASSY,ESP OFF
+        type: traction 
+      - id: 35180M66R00
+        name: SWITCH ASSY,HEAD LAMP LEVELING
+        type: headlamp

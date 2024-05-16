@@ -1,26 +1,12 @@
-from . import labels_top_cam
-from . import labels_bottom_cam
+from .bezel_group_detection import BezelGroupDetectionModel
+from .bezel_classification import BezelClassificationModel
+from .bezel_switch_classification import BezelSwitchClassificationModel
 
-class _Config:
-    def __init__(self, class_names, class_desc, class_confidence=None, class_colors=None, imgsz=640):
-        self.class_names = class_names
-        self.class_desc = class_desc
-        self.class_confidence = class_confidence
-        self.class_colors = class_colors
-        self.imgsz = imgsz
+detection_models = [
+    BezelGroupDetectionModel
+]
 
-class ModelConfig:
-    top_cam = _Config(
-        labels_top_cam.class_names,
-        labels_top_cam.class_desc,
-        class_colors=labels_top_cam.class_colors,
-        class_confidence=labels_top_cam.class_confidence,
-        imgsz=640
-    )
-    bottom_cam = _Config(
-        labels_bottom_cam.class_names,
-        labels_bottom_cam.class_desc,
-        class_colors=labels_bottom_cam.class_colors,
-        class_confidence=labels_bottom_cam.class_confidence,
-        imgsz=640
-    )
+classification_models = [
+    BezelClassificationModel,
+    BezelSwitchClassificationModel,
+]
