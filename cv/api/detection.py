@@ -4,7 +4,7 @@ class DetectionResult:
     MISSING = 2
     FLIP = 3
     INCORRECT_POSITION = 4
-    NOT_EVALUATED = 4
+    NOT_EVALUATED = 5
 
 
 class ClassificationDetails:

@@ -139,6 +139,7 @@ class Artifact:
                 record_id = cursor.lastrowid
 
                 insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionFlag'], self.inspection_flag)
+                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionImage'], self._n_snapshots_saved)
                 print("Inspection Flag", self.inspection_flag)
                 if self.inspection_flag == 1:
                     insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_resultOKFlag'], result_ok_flag)
