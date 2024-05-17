@@ -94,7 +94,9 @@ class BezelGroup:
                 if set(preds) == set(self.switch_part_types):
                     results = [DetectionResult.INCORRECT_POSITION if result == DetectionResult.INCORRECT_PART else result for result in results]
 
-            for detection, result in zip(switch_detections, results):
+            for detection, result, part_name in zip(switch_detections, results, self.switch_part_names):
+                if result in {DetectionResult.OK, DetectionResult.FLIP}:
+                    detection.final_details.label = part_name
                 detection.final_details.color = color_green if result == DetectionResult.OK else color_red
                 detection.final_details.result = result
             
