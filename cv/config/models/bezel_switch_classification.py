@@ -13,6 +13,8 @@ class BezelSwitchClassificationModel:
     CLASS_DUMMY = 'dummy'
     CLASS_FOG = 'fog'
     CLASS_FOG_FLIP = 'fog_flip'
+    CLASS_FUEL = 'fuel'
+    CLASS_FUEL_FLIP = 'fuel_flip'
     CLASS_HEAD_LAMP = 'head_lamp'
     CLASS_HEAD_LAMP_FLIP = 'head_lamp_flip'
     CLASS_MISSING = 'missing'
@@ -29,6 +31,8 @@ class BezelSwitchClassificationModel:
         CLASS_DUMMY,
         CLASS_FOG,
         CLASS_FOG_FLIP,
+        CLASS_FUEL,
+        CLASS_FUEL_FLIP,
         CLASS_HEAD_LAMP,
         CLASS_HEAD_LAMP_FLIP,
         CLASS_MISSING,
@@ -46,6 +50,8 @@ class BezelSwitchClassificationModel:
         CLASS_DUMMY: 'CAP HOLE, SW',
         CLASS_FOG: 'FRONT FOG, SW',
         CLASS_FOG_FLIP: 'FRONT FOG, SW',
+        CLASS_FUEL: 'FUEL, SW',
+        CLASS_FUEL_FLIP: 'FUEL, SW',
         CLASS_HEAD_LAMP: 'HEAD LAMP, SW',
         CLASS_HEAD_LAMP_FLIP: 'HEAD LAMP, SW',
         CLASS_MISSING: 'MISSING, SW',
@@ -63,6 +69,8 @@ class BezelSwitchClassificationModel:
         CLASS_DUMMY: color_green,
         CLASS_FOG: color_green,
         CLASS_FOG_FLIP: color_green,
+        CLASS_FUEL: color_green,
+        CLASS_FUEL_FLIP: color_green,
         CLASS_HEAD_LAMP: color_green,
         CLASS_HEAD_LAMP_FLIP: color_green,
         CLASS_MISSING: color_green,
