@@ -113,7 +113,6 @@ def _inference_loop(thread):
                     class_name = model_config.class_names[class_id]
                     confidence = round(float(result.probs.data.max()), 2)
                     class_color = model_config.class_colors[class_id]
-                    print("DEEBUG:", class_id)
                     detection.classification_details = ClassificationDetails(class_id, class_name, model_config.name, confidence, class_color)
                     detection.final_details = FinalDetails(class_name, color_red, DetectionResult.NOT_EVALUATED)
             

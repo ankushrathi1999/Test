@@ -130,7 +130,7 @@ class Artifact:
                                         database=db_params['database'])
             with connection.cursor() as cursor:
                 insert_record_query = '''
-                insert into record
+                insert into Record
                 (record_type_id, created_on)
                 values
                 (%s, %s)

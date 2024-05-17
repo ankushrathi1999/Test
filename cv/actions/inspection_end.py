@@ -2,7 +2,7 @@ from api.state import SYSTEM_STATES
 
 def inspection_end_actions(data):
     # Save engine
-    #data.artifact.save() temporarily commented
+    data.artifact.save()
 
     # Reset Cycle
     data.artifact = None

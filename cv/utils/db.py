@@ -5,7 +5,7 @@ from config.db_config import db_params
 
 def get_entity_lookup():
     query = """
-        select m.code as type, e.code as code, e.id as id from entity e join entitytypemaster m on e.entity_type_id = m.id;
+        select m.code as type, e.code as code, e.id as id from Entity e join EntityTypeMaster m on e.entity_type_id = m.id;
     """
     connection  = None
     lookup = {}
@@ -31,7 +31,7 @@ def get_entity_lookup():
 
 def insert_datafilter(cursor, record_id, entity_id):
     insert_data_query = '''
-    insert into datafilter
+    insert into DataFilter
     (record_id, entity_id)
     values
     (%s, %s)
@@ -40,7 +40,7 @@ def insert_datafilter(cursor, record_id, entity_id):
 
 def insert_string_metric(cursor, record_id, entity_id, value):
     insert_data_query = '''
-    insert into datastringmetric
+    insert into DataStringMetric
     (record_id, entity_id, value)
     values
     (%s, %s, %s)
@@ -49,7 +49,7 @@ def insert_string_metric(cursor, record_id, entity_id, value):
 
 def insert_integer_metric(cursor, record_id, entity_id, value):
     insert_data_query = '''
-    insert into dataintegermetric
+    insert into DataIntegerMetric
     (record_id, entity_id, value)
     values
     (%s, %s, %s)
