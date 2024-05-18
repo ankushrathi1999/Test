@@ -48,16 +48,17 @@ class BezelGroup:
         self.switch_results = [DetectionResult.NOT_EVALUATED for _ in self.switch_part_types] # all types of errors
 
     def update(self, bezel_detections, switch_detections):
-        print('inspection_enabled:', self.inspection_enabled, len(bezel_detections))
         if not self.inspection_enabled:
             return
-        if len(bezel_detections) == 0:
-            return
-        bezel_detection = max(bezel_detections, key=lambda detection: detection.confidence)
-        print('bezel', bezel_detection.to_dict())
-        for detection in bezel_detections:
-            if detection is not bezel_detection:
+        
+        bezel_detection = max(bezel_detections, key=lambda detection: detection.confidence) if len(bezel_detections) > 0 else None
+        switch_detections = [detection for detection in switch_detections if box_contains(bezel_detection.bbox, detection.bbox) >= BEZEL_SWITCH_IOU_THRESHOLD] if bezel_detection is not None else switch_detections
+
+        # Inspection only happens whena contianer with the right number of switches is identified
+        if bezel_detection is None or (len(switch_detections) != len(self.switch_part_types)):
+            for detection in [*bezel_detections, *switch_detections]:
                 detection.final_details.ignore = True
+            return
         
         # Bezel
         pred_bezel_part = bezel_detection.classification_details.class_id
@@ -71,41 +72,39 @@ class BezelGroup:
                 self.bezel_result = result
         
         # Switches
-        switch_detections = [detection for detection in switch_detections if box_contains(bezel_detection.bbox, detection.bbox) >= BEZEL_SWITCH_IOU_THRESHOLD]
-        if len(switch_detections) == len(self.switch_part_types):
-            switch_detections = sort_switches(switch_detections, self.n_rows)
-            preds = []
-            results = []
-            for detection, part_type in zip(switch_detections, self.switch_part_types):
-                pred_switch_part = detection.classification_details.class_id
-                if pred_switch_part == part_type:
-                    result = DetectionResult.OK
-                elif pred_switch_part == part_type + '_flip':
-                    result = DetectionResult.FLIP
-                elif pred_switch_part == BezelSwitchClassificationModel.CLASS_MISSING:
-                    result = DetectionResult.MISSING
-                else:
-                    result = DetectionResult.INCORRECT_PART
-                preds.append(pred_switch_part)
-                results.append(result)
+        switch_detections = sort_switches(switch_detections, self.n_rows)
+        preds = []
+        results = []
+        for detection, part_type in zip(switch_detections, self.switch_part_types):
+            pred_switch_part = detection.classification_details.class_id
+            if pred_switch_part == part_type:
+                result = DetectionResult.OK
+            elif pred_switch_part == part_type + '_flip':
+                result = DetectionResult.FLIP
+            elif pred_switch_part == BezelSwitchClassificationModel.CLASS_MISSING:
+                result = DetectionResult.MISSING
+            else:
+                result = DetectionResult.INCORRECT_PART
+            preds.append(pred_switch_part)
+            results.append(result)
 
-            # Incorrect Position case: All parts match but order is incorrect
-            if results != [DetectionResult.OK for _ in self.switch_part_types]:
-                if set(preds) == set(self.switch_part_types):
-                    results = [DetectionResult.INCORRECT_POSITION if result == DetectionResult.INCORRECT_PART else result for result in results]
+        # Incorrect Position case: All parts match but order is incorrect
+        if results != [DetectionResult.OK for _ in self.switch_part_types]:
+            if set(preds) == set(self.switch_part_types):
+                results = [DetectionResult.INCORRECT_POSITION if result == DetectionResult.INCORRECT_PART else result for result in results]
 
-            for detection, result, part_name in zip(switch_detections, results, self.switch_part_names):
-                if result in {DetectionResult.OK, DetectionResult.FLIP}:
-                    detection.final_details.label = part_name
-                detection.final_details.color = color_green if result == DetectionResult.OK else color_red
-                detection.final_details.result = result
-            
-            self.switch_results_counts[tuple(results)] += 1
+        for detection, result, part_name in zip(switch_detections, results, self.switch_part_names):
+            if result in {DetectionResult.OK, DetectionResult.FLIP}:
+                detection.final_details.label = part_name
+            detection.final_details.color = color_green if result == DetectionResult.OK else color_red
+            detection.final_details.result = result
+        
+        self.switch_results_counts[tuple(results)] += 1
 
-            if len(self.switch_results_counts) > 0:
-                results, result_count = sorted(self.switch_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
-                if result_count >= RESULT_COUNT_THRESHOLD:
-                    self.switch_results = results
+        if len(self.switch_results_counts) > 0:
+            results, result_count = sorted(self.switch_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
+            if result_count >= RESULT_COUNT_THRESHOLD:
+                self.switch_results = results
 
 def sort_switches(switch_detections, n_rows):
     if n_rows > 1:
