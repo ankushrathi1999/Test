@@ -79,3 +79,49 @@ class BezelSwitchClassificationModel:
         CLASS_TRACTION: color_green,
         CLASS_TRACTION_FLIP: color_green,
     }
+
+    yhbc_class_part_map = {
+        CLASS_AUTOSTART: '37780M66R00',
+        CLASS_CAMERA: '37700M66R00',
+        CLASS_DUMMY: '37285M75J00',
+        CLASS_FUEL: '37960M66R00',
+        CLASS_HEAD_LAMP: '35180M66R00',
+        CLASS_PARK: '37775M66R00',
+        CLASS_TRACTION: '37585M66R00',
+    }
+
+    yl1_class_part_map = {
+        CLASS_AUTOSTART: '37780M68P00',
+        CLASS_DUMMY: '37285M75J00',
+        CLASS_FOG: '37270M68P00',
+        CLASS_HEAD_LAMP: '35180M66R00',
+        CLASS_PARK: '37775M68P00',
+        CLASS_TRACTION: '37585M68P10',
+    }
+
+    yxa_class_part_map = {
+        CLASS_AUTOSTART: '37780M81R00',
+        CLASS_CAMERA: '37700M81R00',
+        CLASS_DUMMY: '37285M75J00',
+        CLASS_HEAD_LAMP: '35180M69R00',
+        CLASS_TRACTION: '37585M81R00',
+    }
+
+    @staticmethod
+    def get_part_number(class_name, vehicle_model):
+        vehicle_category = vehicle_model[:3].lower() if vehicle_model else None
+        is_flip = class_name.endswith('_flip')
+        if is_flip:
+            class_name = class_name.replace('_flip', '')
+
+        part_number = None
+        if class_name == BezelSwitchClassificationModel.CLASS_MISSING:
+            part_number = BezelSwitchClassificationModel.CLASS_MISSING
+        elif vehicle_category in {'yhb', 'yhc'}:
+            part_number = BezelSwitchClassificationModel.yhbc_class_part_map.get(class_name)
+        elif vehicle_category in {'yl1'}:
+            part_number = BezelSwitchClassificationModel.yl1_class_part_map.get(class_name)
+        elif vehicle_category in {'yxa'}:
+            part_number = BezelSwitchClassificationModel.yxa_class_part_map.get(class_name)
+
+        return part_number, is_flip

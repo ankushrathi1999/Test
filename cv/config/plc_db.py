@@ -1,4 +1,5 @@
 SIG_SEND_HEART_BIT = "PCHeartBit"
+SIG_SEND_RESULT = "PCResult"
 SIG_RECV_HEART_BIT = "PLCHeartBit"
 SIG_RECV_PSN = "PLCPSNData"
 SIG_RECV_MODEL = "PLCVehicleModelData"
@@ -41,8 +42,13 @@ PLC_SIGNALS = [
 	},
     {
 		"key": SIG_SEND_HEART_BIT,
-		"type": "int",
-		"pos": None,
+		"type": "array",
+		"headdevice": "D16000",
+	},
+    {
+		"key": SIG_SEND_RESULT,
+		"type": "array",
+		"headdevice": "D16XXX", # todo: configure
 	},
 ]
 

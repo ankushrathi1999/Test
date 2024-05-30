@@ -45,20 +45,17 @@ def flush_plc_data():
     # print(plc_data)
 
     # Updates
-    # if len(plc_data_updates) == 0:
-    #     return
-    # while len(plc_data_updates) > 0:
-    #     signal_name, value = plc_data_updates.pop(0)
-    #     signal = PLC_SIGNAL_LOOKUP[signal_name]
-    #     signal_type = signal["type"]
-    #     start_byte = signal["startByte"]
-    #     size = signal["size"]
-    #     if signal_type == "int":
-    #         set_int(plc_data, start_byte, value)
-    #     else:
-    #         raise Exception(f"Unsupported data type for write: {signal_type}")
-    # pymc3e.batchwrite_wordunits(headdevice="D100", values=plc_data)
-
+    if len(plc_data_updates) == 0:
+        return
+    while len(plc_data_updates) > 0:
+        signal_name, value = plc_data_updates.pop(0)
+        signal = PLC_SIGNAL_LOOKUP[signal_name]
+        signal_type = signal["type"]
+        headdevice = signal["headdevice"]
+        if signal_type == "array":
+            pymc3e.batchread_wordunits(headdevice=headdevice, values=value)
+        else:
+            raise Exception(f"Unsupported data type for write: {signal_type}")
 
 def send_signal(signal_name, value):
     plc_data_updates.append([signal_name, value])

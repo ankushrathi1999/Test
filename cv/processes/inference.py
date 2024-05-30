@@ -5,7 +5,7 @@ import threading
 import traceback
 from collections import defaultdict
 
-from config.models import classification_models, detection_models
+from config.models import classification_models, detection_models, BezelSwitchClassificationModel
 from utils.image_utils import plot_one_box, draw_confirmation_prompt
 from utils.live_display import prepare_live_display
 from config.config import config
@@ -113,7 +113,16 @@ def _inference_loop(thread):
                     class_name = model_config.class_names[class_id]
                     confidence = round(float(result.probs.data.max()), 2)
                     class_color = model_config.class_colors[class_id]
-                    detection.classification_details = ClassificationDetails(class_id, class_name, model_config.name, confidence, class_color)
+
+                    # Part number
+                    is_flip = False
+                    if data.artifact and model_config is BezelSwitchClassificationModel:
+                        part_number, is_flip = BezelSwitchClassificationModel.get_part_number(class_id, data.artifact.vehicle_model)
+                    else:
+                        part_number = class_id
+
+                    detection.classification_details = ClassificationDetails(
+                        class_id, class_name, part_number, is_flip, model_config.name, confidence, class_color)
                     detection.final_details = FinalDetails(class_name, color_red, DetectionResult.NOT_EVALUATED)
             
             # Update data

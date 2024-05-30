@@ -6,16 +6,21 @@ YHB23D2BP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHB23D2BP6800000:
   bezel:
     id: na
@@ -24,16 +29,21 @@ YHB23D2BP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D2BP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -42,16 +52,21 @@ YHB23D2BP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D2CP0600000:
   bezel:
     id: 73833M73R00-5PK
@@ -60,16 +75,21 @@ YHB23D2CP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHB23D2CP6800000:
   bezel:
     id: na
@@ -78,16 +98,21 @@ YHB23D2CP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D2CP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -96,16 +121,21 @@ YHB23D2CP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D2DP6800000:
   bezel:
     id: na
@@ -114,16 +144,21 @@ YHB23D2DP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D2DP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -132,16 +167,21 @@ YHB23D2DP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7CP0600000:
   bezel:
     id: 73833M73R00-5PK
@@ -150,16 +190,21 @@ YHB23D7CP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHB23D7CP0700000:
   bezel:
     id: na
@@ -168,16 +213,21 @@ YHB23D7CP0700000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7CP4300000:
   bezel:
     id: 73833M73R50-5PK
@@ -186,16 +236,21 @@ YHB23D7CP4300000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7CP6800000:
   bezel:
     id: na
@@ -204,16 +259,21 @@ YHB23D7CP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7CP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -222,16 +282,21 @@ YHB23D7CP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7DP0700000:
   bezel:
     id: na
@@ -240,16 +305,21 @@ YHB23D7DP0700000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7DP4300000:
   bezel:
     id: 73833M73R50-5PK
@@ -258,16 +328,21 @@ YHB23D7DP4300000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7DP6800000:
   bezel:
     id: na
@@ -276,16 +351,21 @@ YHB23D7DP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB23D7DP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -294,16 +374,21 @@ YHB23D7DP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHB4ED23P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -312,16 +397,21 @@ YHB4ED23P7400000:
     switches_top:
     - id: 37960M66R00
       name: FUEL, SW YHBC
+      position: 4
       type: fuel
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB4ED24P7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -330,16 +420,21 @@ YHB4ED24P7400000:
     switches_top:
     - id: 37960M66R00
       name: FUEL, SW YHBC
+      position: 4
       type: fuel
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB4ED2AP7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -348,16 +443,21 @@ YHB4ED2AP7400000:
     switches_top:
     - id: 37960M66R00
       name: FUEL, SW YHBC
+      position: 4
       type: fuel
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5ED22P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -366,16 +466,21 @@ YHB5ED22P7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5ED23P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -384,16 +489,21 @@ YHB5ED23P7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5ED24P7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -402,16 +512,21 @@ YHB5ED24P7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5ED2AP7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -420,16 +535,21 @@ YHB5ED2AP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5ED2EP7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -438,16 +558,21 @@ YHB5ED2EP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5EDXCP7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -456,16 +581,21 @@ YHB5EDXCP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5EDXDP7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -474,16 +604,21 @@ YHB5EDXDP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHB5EDXEP7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -492,16 +627,21 @@ YHB5EDXEP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBB3D2BP0600000:
   bezel:
     id: 73833M73R00-5PK
@@ -510,16 +650,21 @@ YHBB3D2BP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHBB3D2BP6800000:
   bezel:
     id: na
@@ -528,16 +673,21 @@ YHBB3D2BP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBB3D2BP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -546,16 +696,21 @@ YHBB3D2BP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBB3D2CP0600000:
   bezel:
     id: 73833M73R00-5PK
@@ -564,16 +719,21 @@ YHBB3D2CP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHBB3D2CP6800000:
   bezel:
     id: na
@@ -582,16 +742,21 @@ YHBB3D2CP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBB3D2CP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -600,16 +765,21 @@ YHBB3D2CP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBB3D2DP0600000:
   bezel:
     id: 73833M73R10-5PK
@@ -618,16 +788,21 @@ YHBB3D2DP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHBB3D2DP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -636,16 +811,21 @@ YHBB3D2DP7900000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YHBB3D7CP0600000:
   bezel:
     id: 73833M73R00-5PK
@@ -654,16 +834,21 @@ YHBB3D7CP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHBB3D7CP6800000:
   bezel:
     id: na
@@ -672,16 +857,21 @@ YHBB3D7CP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBB3D7CP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -690,16 +880,21 @@ YHBB3D7CP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBB3D7DP0600000:
   bezel:
     id: 73833M73R10-5PK
@@ -708,16 +903,21 @@ YHBB3D7DP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YHBB3D7DP4600000:
   bezel:
     id: 73833M73R50-5PK
@@ -726,16 +926,21 @@ YHBB3D7DP4600000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YHBB3D7DP6800000:
   bezel:
     id: na
@@ -744,16 +949,21 @@ YHBB3D7DP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBB3D7DP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -762,16 +972,21 @@ YHBB3D7DP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YHBC3D23P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -780,16 +995,21 @@ YHBC3D23P7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YHBCED23P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -798,16 +1018,21 @@ YHBCED23P7400000:
     switches_top:
     - id: 37960M66R00
       name: FUEL, SW YHBC
+      position: 4
       type: fuel
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBDED22P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -816,16 +1041,21 @@ YHBDED22P7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBDED23P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -834,16 +1064,21 @@ YHBDED23P7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBDED24P7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -852,16 +1087,21 @@ YHBDED24P7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBDED2EP7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -870,16 +1110,21 @@ YHBDED2EP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBDEDXCP7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -888,16 +1133,21 @@ YHBDEDXCP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBDEDXDP7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -906,16 +1156,21 @@ YHBDEDXDP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHBDEDXEP7400000:
   bezel:
     id: 73833M73R10-V6N
@@ -924,16 +1179,21 @@ YHBDEDXEP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHC23T2DP0600000:
   bezel:
     id: 73833M73R10-5PK
@@ -942,16 +1202,21 @@ YHC23T2DP0600000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YHC23T2EP0600000:
   bezel:
     id: 73833M73R10-5PK
@@ -960,16 +1225,21 @@ YHC23T2EP0600000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YHC23T7DP0600000:
   bezel:
     id: 73833M73R10-5PK
@@ -978,16 +1248,21 @@ YHC23T7DP0600000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YHC23T7EP0600000:
   bezel:
     id: 73833M73R10-5PK
@@ -996,16 +1271,21 @@ YHC23T7EP0600000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YHC4ET2DP7400000:
   bezel:
     id: 73833M73R10-5PK
@@ -1014,16 +1294,21 @@ YHC4ET2DP7400000:
     switches_top:
     - id: 37960M66R00
       name: FUEL, SW YHBC
+      position: 4
       type: fuel
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHC5ET2DP7400000:
   bezel:
     id: 73833M73R10-5PK
@@ -1032,16 +1317,21 @@ YHC5ET2DP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHC5ET2EP7400000:
   bezel:
     id: 73833M73R10-5PK
@@ -1050,16 +1340,21 @@ YHC5ET2EP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
+      position: 3
       type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHC5ET2FP7400000:
   bezel:
     id: 73833M73R10-5PK
@@ -1068,16 +1363,21 @@ YHC5ET2FP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
+      position: 3
       type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHC5ETXDP7400000:
   bezel:
     id: 73833M73R10-5PK
@@ -1086,16 +1386,21 @@ YHC5ETXDP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHC5ETXEP7400000:
   bezel:
     id: 73833M73R10-5PK
@@ -1104,16 +1409,21 @@ YHC5ETXEP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
+      position: 3
       type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YHC5ETXFP7400000:
   bezel:
     id: 73833M73R10-5PK
@@ -1122,16 +1432,21 @@ YHC5ETXFP7400000:
     switches_top:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
+      position: 4
       type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
+      position: 3
       type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
+      position: 2
       type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL188C2CP0600000:
   bezel:
     id: 73831M79M00-5PK
@@ -1140,16 +1455,21 @@ YL188C2CP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL188C2CP6810309:
   bezel:
     id: na
@@ -1158,16 +1478,21 @@ YL188C2CP6810309:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C2CP7910309:
   bezel:
     id: 73831M79M10-5PK
@@ -1176,16 +1501,21 @@ YL188C2CP7910309:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C2EP0613606:
   bezel:
     id: na
@@ -1194,16 +1524,21 @@ YL188C2EP0613606:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YL188C2EP6813606:
   bezel:
     id: na
@@ -1212,16 +1547,21 @@ YL188C2EP6813606:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C2EP7913606:
   bezel:
     id: 73831M79M10-5PK
@@ -1230,16 +1570,21 @@ YL188C2EP7913606:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C7CP0600000:
   bezel:
     id: 73831M79M00-5PK
@@ -1248,16 +1593,21 @@ YL188C7CP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL188C7CP0710108:
   bezel:
     id: 73831M79M10-V6N
@@ -1266,16 +1616,21 @@ YL188C7CP0710108:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7CP0713146:
   bezel:
     id: na
@@ -1284,16 +1639,21 @@ YL188C7CP0713146:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7CP0713147:
   bezel:
     id: 73831M79M10-V6N
@@ -1302,16 +1662,21 @@ YL188C7CP0713147:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7CP0713149:
   bezel:
     id: 73831M79M10-V6N
@@ -1320,16 +1685,21 @@ YL188C7CP0713149:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7CP6810309:
   bezel:
     id: na
@@ -1338,16 +1708,21 @@ YL188C7CP6810309:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C7CP7910309:
   bezel:
     id: 73831M79M10-5PK
@@ -1356,16 +1731,21 @@ YL188C7CP7910309:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C7DP0710108:
   bezel:
     id: na
@@ -1374,16 +1754,21 @@ YL188C7DP0710108:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7DP0713146:
   bezel:
     id: na
@@ -1392,16 +1777,21 @@ YL188C7DP0713146:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7DP0713149:
   bezel:
     id: na
@@ -1410,16 +1800,21 @@ YL188C7DP0713149:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7EP0613606:
   bezel:
     id: 73831M79M20-5PK
@@ -1428,16 +1823,21 @@ YL188C7EP0613606:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YL188C7EP0706087:
   bezel:
     id: 73831M79M10-V6N
@@ -1446,16 +1846,21 @@ YL188C7EP0706087:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7EP0710309:
   bezel:
     id: 73831M79M10-V6N
@@ -1464,16 +1869,21 @@ YL188C7EP0710309:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
+    vehicle_type: LHD
 YL188C7EP6810309:
   bezel:
     id: na
@@ -1482,16 +1892,21 @@ YL188C7EP6810309:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C7EP6813606:
   bezel:
     id: na
@@ -1500,16 +1915,21 @@ YL188C7EP6813606:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C7EP7910309:
   bezel:
     id: 73831M79M10-5PK
@@ -1518,16 +1938,21 @@ YL188C7EP7910309:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL188C7EP7913606:
   bezel:
     id: 73831M79M10-5PK
@@ -1536,16 +1961,21 @@ YL188C7EP7913606:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL199C2CP7400000:
   bezel:
     id: 73831M79M00-V6N
@@ -1554,16 +1984,21 @@ YL199C2CP7400000:
     switches_top:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
+      position: 3
       type: autostart
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL199C2DP7400000:
   bezel:
     id: 73831M79M00-V6N
@@ -1572,16 +2007,21 @@ YL199C2DP7400000:
     switches_top:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
+      position: 3
       type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL199C2EP7400000:
   bezel:
     id: 73831M79M20-V6N
@@ -1590,16 +2030,21 @@ YL199C2EP7400000:
     switches_top:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
+      position: 3
       type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL199C2FP7400000:
   bezel:
     id: 73831M79M20-V6N
@@ -1608,16 +2053,21 @@ YL199C2FP7400000:
     switches_top:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
+      position: 3
       type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL199C7DP7400000:
   bezel:
     id: 73831M79M00-V6N
@@ -1626,16 +2076,21 @@ YL199C7DP7400000:
     switches_top:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
+      position: 3
       type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL199C7EP7400000:
   bezel:
     id: 73831M79M20-V6N
@@ -1644,16 +2099,21 @@ YL199C7EP7400000:
     switches_top:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
+      position: 3
       type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL199C7FP7400000:
   bezel:
     id: 73831M79M20-V6N
@@ -1662,16 +2122,21 @@ YL199C7FP7400000:
     switches_top:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
+      position: 4
       type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
+      position: 3
       type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL1T8C2CP6800000:
   bezel:
     id: na
@@ -1680,16 +2145,21 @@ YL1T8C2CP6800000:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C2CP7900000:
   bezel:
     id: 73831M79M10-5PK
@@ -1698,16 +2168,21 @@ YL1T8C2CP7900000:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C2EP6800000:
   bezel:
     id: na
@@ -1716,16 +2191,21 @@ YL1T8C2EP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C2EP7900000:
   bezel:
     id: 73831M79M10-5PK
@@ -1734,16 +2214,21 @@ YL1T8C2EP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C7CP0600000:
   bezel:
     id: 73831M79M00-5PK
@@ -1752,16 +2237,21 @@ YL1T8C7CP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YL1T8C7CP6800000:
   bezel:
     id: na
@@ -1770,16 +2260,21 @@ YL1T8C7CP6800000:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C7CP7900000:
   bezel:
     id: 73831M79M10-5PK
@@ -1788,16 +2283,21 @@ YL1T8C7CP7900000:
     switches_top:
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
+      position: 1
       type: head_lamp
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 3
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C7EP0600000:
   bezel:
     id: 73831M79M20-5PK
@@ -1806,16 +2306,21 @@ YL1T8C7EP0600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
+    vehicle_type: RHD
 YL1T8C7EP4600000:
   bezel:
     id: 73831M79M10-5PK
@@ -1824,16 +2329,21 @@ YL1T8C7EP4600000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C7EP6800000:
   bezel:
     id: na
@@ -1842,16 +2352,21 @@ YL1T8C7EP6800000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YL1T8C7EP7900000:
   bezel:
     id: 73831M79M10-5PK
@@ -1860,16 +2375,21 @@ YL1T8C7EP7900000:
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 1
       type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
+      position: 2
       type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
+      position: 3
       type: park
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
+    vehicle_type: LHD
 YXA13CXBP7400000:
   bezel:
     id: 73826M66T00-5PK
@@ -1878,16 +2398,21 @@ YXA13CXBP7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YXA13CXCP7400000:
   bezel:
     id: 73826M66T10-5PK
@@ -1896,16 +2421,21 @@ YXA13CXCP7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YXA13CXDP7400000:
   bezel:
     id: 73826M66T20-5PK
@@ -1914,112 +2444,191 @@ YXA13CXDP7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
+YXA14C2DP7400000:
+  bezel:
+    id: 73826M66T20-5PK
+    n_rows: 1
+    name: 11 HOLES, BEZEL YXA
+    switches_top:
+    - id: na
+      name: N/A
+      position: 1
+      type: na
+    - id: na
+      name: N/A
+      position: 2
+      type: na
+    - id: na
+      name: N/A
+      position: 3
+      type: na
+    - id: na
+      name: N/A
+      position: 4
+      type: na
+    vehicle_type: unknown
 YXA14C2EP7400000:
   bezel:
-    id: na
+    id: 73826M66T10-5PK
     n_rows: 2
-    name: na
+    name: 10 HOLES, BEZE YXA
     switches_bottom:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 6
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 7
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 8
       type: dummy
     - id: 37780M81R00
       name: ID STOP, SW YXA
+      position: 9
       type: autostart
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 5
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
+      position: 3
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YXA14CXBP7400000:
   bezel:
-    id: na
+    id: 73826M66T00-5PK
     n_rows: 2
-    name: na
+    name: 7 HOLES, BEZEL YXA
     switches_bottom:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 5
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 6
       type: dummy
     - id: 37780M81R00
       name: ID STOP, SW YXA
+      position: 7
       type: autostart
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
+      position: 3
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YXA14CXCP7400000:
   bezel:
-    id: na
+    id: 73826M66T10-5PK
     n_rows: 2
-    name: na
+    name: 10 HOLES, BEZE YXA
     switches_bottom:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 6
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 7
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 8
       type: dummy
     - id: 37780M81R00
       name: ID STOP, SW YXA
+      position: 9
       type: autostart
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 5
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
+      position: 3
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
+YXA14CXDP7400000:
+  bezel:
+    id: 73826M66T20-5PK
+    n_rows: 1
+    name: 11 HOLES, BEZEL YXA
+    switches_top:
+    - id: na
+      name: N/A
+      position: 1
+      type: na
+    - id: na
+      name: N/A
+      position: 2
+      type: na
+    - id: na
+      name: N/A
+      position: 3
+      type: na
+    - id: na
+      name: N/A
+      position: 4
+      type: na
+    vehicle_type: unknown
 YXA23C2DP7400000:
   bezel:
     id: 73826M66T20-5PK
@@ -2028,16 +2637,21 @@ YXA23C2DP7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YXA23C2EP7400000:
   bezel:
     id: 73826M66T10-5PK
@@ -2046,16 +2660,21 @@ YXA23C2EP7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YXA23C2FP7400000:
   bezel:
     id: 73826M66T00-5PK
@@ -2064,16 +2683,21 @@ YXA23C2FP7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YXA23C2GP7400000:
   bezel:
     id: 73826M66T00-5PK
@@ -2082,137 +2706,178 @@ YXA23C2GP7400000:
     switches_top:
     - id: na
       name: N/A
+      position: 1
       type: na
     - id: na
       name: N/A
+      position: 2
       type: na
     - id: na
       name: N/A
+      position: 3
       type: na
     - id: na
       name: N/A
+      position: 4
       type: na
+    vehicle_type: unknown
 YXA24C2DP7400000:
   bezel:
-    id: na
+    id: 73826M66T20-5PK
     n_rows: 2
-    name: na
+    name: 11 HOLES, BEZEL YXA
     switches_bottom:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 6
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 7
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 8
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 9
       type: dummy
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 5
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
+      position: 3
       type: traction
     - id: 37700M81R00
       name: CAMERA, SW YXA
+      position: 2
       type: camera
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YXA24C2EP7400000:
   bezel:
-    id: na
+    id: 73826M66T10-5PK
     n_rows: 2
-    name: na
+    name: 10 HOLES, BEZE YXA
     switches_bottom:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 6
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 7
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 8
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 9
       type: dummy
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 5
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
+      position: 3
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YXA24C2FP7400000:
   bezel:
-    id: na
+    id: 73826M66T00-5PK
     n_rows: 2
-    name: na
+    name: 7 HOLES, BEZEL YXA
     switches_bottom:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 5
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 6
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 7
       type: dummy
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
+      position: 3
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
+      position: 1
       type: head_lamp
+    vehicle_type: RHD
 YXA24C2GP7400000:
   bezel:
-    id: na
+    id: 73826M66T00-5PK
     n_rows: 2
-    name: na
+    name: 7 HOLES, BEZEL YXA
     switches_bottom:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 5
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 6
       type: dummy
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 7
       type: dummy
     switches_top:
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 4
       type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
+      position: 3
       type: traction
     - id: 37285M75J00
       name: CAP HOLE, SW YHBC
+      position: 2
       type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
+      position: 1
       type: head_lamp
+    vehicle_type: RHD

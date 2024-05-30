@@ -31,6 +31,7 @@ class Artifact:
     def __init__(self, psn, chassis, vehicle_model, data):
         self.data = data
         self.inspection_flag = int(f'vehicle_model_{vehicle_model}' in self.data.entity_lookup)
+        print('debug:', self.inspection_flag, vehicle_model, self.data.entity_lookup)
         self.shift = get_current_shift()
 
         self.psn = psn
@@ -45,10 +46,17 @@ class Artifact:
         self._last_snapshot_time = time.time()
         self._n_snapshots_saved = 0
 
-        # Time
+        # Results
         self.start_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.end_time = None
+        self.is_ended = False
+        self.part_results = []
+        self.overall_result = None
 
     def update(self, detection_groups, frame_top, frame_bottom, frame_up):
+        if self.is_ended:
+            return
+
         bezel_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_CONTAINER, [])
         bezel_switch_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_SWITCH, [])
         for cam_type in ('top', 'bottom'):
@@ -79,48 +87,74 @@ class Artifact:
             with open(metadata_path_debug, 'w') as f:
                 json.dump(detections, f, indent=2)
 
+    def end_inspection(self):
+        if self.is_ended:
+            return
+        self.is_ended = True
+        self.end_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        self.part_results, self.overall_result = self.get_part_results()
+
     def get_part_results(self):
-        parts = []
-        if self.bezel_group.inspection_enabled:
-            parts.append({
-                'part_id': self.bezel_group.bezel_part_id,
-                'part_name': self.bezel_group.bezel_part_name,
-                'result': self.bezel_group.bezel_result,
-            })
-            for part_id, part_name, result in zip(self.bezel_group.switch_part_ids, self.bezel_group.switch_part_names, self.bezel_group.switch_results):
-                parts.append({
-                    'part_id': part_id,
-                    'part_name': part_name,
-                    'result': result,
-                })
+        parts = self.bezel_group.get_part_results()
         overall_ok = self.inspection_enabled and all([part['result'] == DetectionResult.OK for part in parts])
         return parts, overall_ok
+    
+    def get_part_results_plc(self):
+        assert self.is_ended
+        parts, overall_ok = self.part_results, self.overall_result
+        ordered_results = self.bezel_group.get_ordered_part_results(parts)
+        plc_array = []
+        for part_result in ordered_results:
+            if part_result is None:
+                plc_array.append(-1)
+            else:
+                plc_array.append(int(part_result['result'] == DetectionResult.OK))
+        plc_array.append(int(overall_ok))
+        return plc_array
 
     def save(self):
-        parts, overall_ok = self.get_part_results()
+        assert self.is_ended
+        parts, overall_ok = self.part_results, self.overall_result
         result_ok_flag = int(overall_ok)
 
         data_filters = [
-            f'shift_{self.shift}',
+            (f'shift_{self.shift}', 1),
         ]
 
         string_metrics = [
-            ('vehicle_metadata_psn', self.psn),
-            ('vehicle_metadata_chassis', self.chassis),
+            ('vehicle_metadata_psn', self.psn, 1),
+            ('vehicle_metadata_chassis', self.chassis, 1),
         ]
 
         if self.inspection_flag == 1:
-            data_filters.append(f'vehicle_model_{self.vehicle_model}')
+            data_filters.append((f'vehicle_model_{self.vehicle_model}', 1))
         else:
-            string_metrics.append(['vehicle_metadata_vehicle_model', self.vehicle_model])
+            string_metrics.append(['vehicle_metadata_vehicle_model', self.vehicle_model, 1])
 
         integer_metrics = []
         if self.inspection_flag == 1:
             for part in parts:
+                # Add Part Result
                 integer_metrics.append([
                     f'part_{part["part_id"]}',
-                    part['result']
+                    part['result'],
+                    1
                 ])
+                # Add Predicted Part
+                if part['result'] not in {DetectionResult.MISSING, DetectionResult.NOT_EVALUATED}:
+                    string_metrics.append([
+                        f'part_{part["part_id"]}',
+                        part.get("part_pred", ""),
+                        2
+                    ])
+                # Add Part Position
+                if part.get('position', 0) > 0:
+                    integer_metrics.append([
+                        f'part_{part["part_id"]}',
+                        part["position"],
+                        3
+                    ])
+
 
         connection  = None
         try:
@@ -138,23 +172,23 @@ class Artifact:
                 cursor.execute(insert_record_query, (1, self.start_time))
                 record_id = cursor.lastrowid
 
-                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionFlag'], self.inspection_flag)
-                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionImage'], self._n_snapshots_saved)
+                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionFlag'], self.inspection_flag, 1)
+                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionImage'], self._n_snapshots_saved, 1)
                 print("Inspection Flag", self.inspection_flag)
                 if self.inspection_flag == 1:
-                    insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_resultOKFlag'], result_ok_flag)
+                    insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_resultOKFlag'], result_ok_flag, 1)
                     print("Result OK Flag", result_ok_flag)
-                for entity_key in data_filters:
+                for entity_key, metric_id in data_filters:
                     entity_id = self.data.entity_lookup[entity_key]
-                    insert_datafilter(cursor, record_id, entity_id)
+                    insert_datafilter(cursor, record_id, entity_id, metric_id)
                     print("Filter:", record_id, entity_id)
-                for entity_key, value in integer_metrics:
+                for entity_key, value, metric_id in integer_metrics:
                     entity_id = self.data.entity_lookup[entity_key]
-                    insert_integer_metric(cursor, record_id, entity_id, value)
+                    insert_integer_metric(cursor, record_id, entity_id, value, metric_id)
                     print("Integer Metric:", record_id, entity_id, value)
-                for entity_key, value in string_metrics:
+                for entity_key, value, metric_id in string_metrics:
                     entity_id = self.data.entity_lookup[entity_key]
-                    insert_string_metric(cursor, record_id, entity_id, value)
+                    insert_string_metric(cursor, record_id, entity_id, value, metric_id)
                     print("String Metric:", record_id, entity_id, value)
                 connection.commit()
         except Exception as ex:

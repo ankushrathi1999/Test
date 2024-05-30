@@ -29,29 +29,29 @@ def get_entity_lookup():
             connection.close()
 
 
-def insert_datafilter(cursor, record_id, entity_id):
+def insert_datafilter(cursor, record_id, entity_id, metric_id):
     insert_data_query = '''
     insert into DataFilter
-    (record_id, entity_id)
+    (record_id, entity_id, metric_id)
     values
-    (%s, %s)
+    (%s, %s, %s)
     '''
-    cursor.execute(insert_data_query, (record_id, entity_id))
+    cursor.execute(insert_data_query, (record_id, entity_id, metric_id))
 
-def insert_string_metric(cursor, record_id, entity_id, value):
+def insert_string_metric(cursor, record_id, entity_id, value, metric_id):
     insert_data_query = '''
     insert into DataStringMetric
-    (record_id, entity_id, value)
+    (record_id, entity_id, value, metric_id)
     values
-    (%s, %s, %s)
+    (%s, %s, %s, %s)
     '''
-    cursor.execute(insert_data_query, (record_id, entity_id, value))
+    cursor.execute(insert_data_query, (record_id, entity_id, value, metric_id))
 
-def insert_integer_metric(cursor, record_id, entity_id, value):
+def insert_integer_metric(cursor, record_id, entity_id, value, metric_id):
     insert_data_query = '''
     insert into DataIntegerMetric
-    (record_id, entity_id, value)
+    (record_id, entity_id, value, metric_id)
     values
-    (%s, %s, %s)
+    (%s, %s, %s, %s)
     '''
-    cursor.execute(insert_data_query, (record_id, entity_id, value))
+    cursor.execute(insert_data_query, (record_id, entity_id, value, metric_id))

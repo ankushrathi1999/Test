@@ -9,9 +9,11 @@ class DetectionResult:
 
 class ClassificationDetails:
 
-    def __init__(self, class_id, class_name, model, confidence, color):
+    def __init__(self, class_id, class_name, part_number, is_flip, model, confidence, color):
         self.class_id = class_id
         self.class_name = class_name
+        self.part_number = part_number
+        self.is_flip = is_flip
         self.model = model
         self.confidence = confidence
         self.color = color

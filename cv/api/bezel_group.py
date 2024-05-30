@@ -18,9 +18,9 @@ class BezelGroup:
         # Load part details from vehicle_model
         self.bezel_part_id = None
         self.bezel_part_name = None
-        self.switch_part_types = [] # List of part types
         self.switch_part_ids = [] # List of part numbers
         self.switch_part_names = [] # List of part names
+        self.switch_positions= [] # List of part positions
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
         self.n_rows = 1
 
@@ -31,12 +31,12 @@ class BezelGroup:
             switches_top = part_details['switches_top']
             self.switch_part_ids = [s['id'] for s in switches_top]
             self.switch_part_names = [s['name'] for s in switches_top]
-            self.switch_part_types = [s['type'] for s in switches_top]
+            self.switch_positions = [s['position'] for s in switches_top]
             if part_details['n_rows'] > 1:
                 switches_bottom = part_details['switches_bottom']
                 self.switch_part_ids.extend([s['id'] for s in switches_bottom])
                 self.switch_part_names.extend([s['name'] for s in switches_bottom])
-                self.switch_part_types.extend([s['type'] for s in switches_bottom])
+                self.switch_positions.extend([s['position'] for s in switches_bottom])
                 self.n_rows = 2
 
         # Predictions
@@ -45,7 +45,38 @@ class BezelGroup:
 
         # Selection
         self.bezel_result = DetectionResult.NOT_EVALUATED # ok, incorrect_part
-        self.switch_results = [DetectionResult.NOT_EVALUATED for _ in self.switch_part_types] # all types of errors
+        self.bezel_pred = None # part number
+        self.switch_results = [DetectionResult.NOT_EVALUATED for _ in self.switch_part_ids] # all types of errors
+        self.switch_preds = [None for _ in self.switch_part_ids] # part number list
+
+    def get_part_results(self):
+        parts = []
+        parts.append({
+            'part_id': self.bezel_part_id,
+            'part_name': self.bezel_part_name,
+            'result': self.bezel_result,
+            'part_pred': self.bezel_pred,
+        })
+        for part_id, part_name, part_position, part_pred, part_result in zip(
+            self.switch_part_ids, self.switch_part_names, self.switch_positions, self.switch_preds, self.switch_results):
+            parts.append({
+                'part_id': part_id,
+                'part_name': part_name,
+                'result': part_result,
+                'part_pred': part_pred,
+                'position': part_position,
+            })
+        return parts
+
+    def get_ordered_part_results(self, part_results):
+        bezel_result = part_results[0]
+        switch_results = part_results[1:]
+        switch_pos_lookup = {res['position']:res for res in switch_results}
+        ordered_results = []
+        for i in range(11): # Max 11 switches
+            ordered_results.append(switch_pos_lookup.get(i+1))
+        ordered_results.append(bezel_result)
+        return ordered_results
 
     def update(self, bezel_detections, switch_detections):
         if not self.inspection_enabled:
@@ -55,32 +86,35 @@ class BezelGroup:
         switch_detections = [detection for detection in switch_detections if box_contains(bezel_detection.bbox, detection.bbox) >= BEZEL_SWITCH_IOU_THRESHOLD] if bezel_detection is not None else switch_detections
 
         # Inspection only happens whena contianer with the right number of switches is identified
-        if bezel_detection is None or (len(switch_detections) != len(self.switch_part_types)):
+        if bezel_detection is None or (len(switch_detections) != len(self.switch_part_ids)):
             for detection in [*bezel_detections, *switch_detections]:
                 detection.final_details.ignore = True
             return
         
         # Bezel
-        pred_bezel_part = bezel_detection.classification_details.class_id
+        pred_bezel_part = bezel_detection.classification_details.part_number
         result = DetectionResult.OK if pred_bezel_part == self.bezel_part_id else DetectionResult.INCORRECT_PART
-        self.bezel_results_count[result] += 1
+        self.bezel_results_count[(pred_bezel_part, result)] += 1
         bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         bezel_detection.final_details.result = result
         if len(self.bezel_results_count) > 0:
             result, result_count = sorted(self.bezel_results_count.items(), key=lambda x: x[1], reverse=True)[0]
             if result_count >= RESULT_COUNT_THRESHOLD:
-                self.bezel_result = result
+                self.bezel_pred = result[0]
+                self.bezel_result = result[1]
         
         # Switches
         switch_detections = sort_switches(switch_detections, self.n_rows)
         preds = []
         results = []
-        for detection, part_type in zip(switch_detections, self.switch_part_types):
-            pred_switch_part = detection.classification_details.class_id
-            if pred_switch_part == part_type:
-                result = DetectionResult.OK
-            elif pred_switch_part == part_type + '_flip':
-                result = DetectionResult.FLIP
+        for detection, part_id in zip(switch_detections, self.switch_part_ids):
+            pred_switch_part = detection.classification_details.part_number
+            is_flip = detection.classification_details.is_flip
+            if pred_switch_part == part_id:
+                if is_flip:
+                    result = DetectionResult.FLIP
+                else:
+                    result = DetectionResult.OK
             elif pred_switch_part == BezelSwitchClassificationModel.CLASS_MISSING:
                 result = DetectionResult.MISSING
             else:
@@ -89,22 +123,24 @@ class BezelGroup:
             results.append(result)
 
         # Incorrect Position case: All parts match but order is incorrect
-        if results != [DetectionResult.OK for _ in self.switch_part_types]:
-            if set(preds) == set(self.switch_part_types):
+        if results != [DetectionResult.OK for _ in self.switch_part_ids]:
+            if set(preds) == set(self.switch_part_ids):
                 results = [DetectionResult.INCORRECT_POSITION if result == DetectionResult.INCORRECT_PART else result for result in results]
 
+        # todo: part name should be looked up for actual part from a part number lookup for all detections
         for detection, result, part_name in zip(switch_detections, results, self.switch_part_names):
             if result in {DetectionResult.OK, DetectionResult.FLIP}:
                 detection.final_details.label = part_name
             detection.final_details.color = color_green if result == DetectionResult.OK else color_red
             detection.final_details.result = result
         
-        self.switch_results_counts[tuple(results)] += 1
+        self.switch_results_counts[tuple(zip(preds, results))] += 1
 
         if len(self.switch_results_counts) > 0:
             results, result_count = sorted(self.switch_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
             if result_count >= RESULT_COUNT_THRESHOLD:
-                self.switch_results = results
+                self.switch_preds = [res[0] for res in results]
+                self.switch_results = [res[1] for res in results]
 
 def sort_switches(switch_detections, n_rows):
     if n_rows > 1:
