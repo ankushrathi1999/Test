@@ -53,7 +53,7 @@ def flush_plc_data():
         signal_type = signal["type"]
         headdevice = signal["headdevice"]
         if signal_type == "array":
-            pymc3e.batchread_wordunits(headdevice=headdevice, values=value)
+            pymc3e.batchwrite_wordunits(headdevice=headdevice, values=value)
         else:
             raise Exception(f"Unsupported data type for write: {signal_type}")
 

@@ -48,7 +48,7 @@ PLC_SIGNALS = [
     {
 		"key": SIG_SEND_RESULT,
 		"type": "array",
-		"headdevice": "D16XXX", # todo: configure
+		"headdevice": "D16051",
 	},
 ]
 
