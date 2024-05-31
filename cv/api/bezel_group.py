@@ -39,6 +39,9 @@ class BezelGroup:
                 self.switch_positions.extend([s['position'] for s in switches_bottom])
                 self.n_rows = 2
 
+        self.has_bezel_master = self.bezel_part_id not in {None, 'na'}
+        self.has_switch_master = len(self.switch_part_ids) > 0 and self.switch_part_ids[0] != 'na'
+
         # Predictions
         self.bezel_results_count = defaultdict(int)
         self.switch_results_counts = defaultdict(int)
@@ -51,31 +54,34 @@ class BezelGroup:
 
     def get_part_results(self):
         parts = []
-        parts.append({
+        self.has_bezel_master and parts.append({
             'part_id': self.bezel_part_id,
             'part_name': self.bezel_part_name,
             'result': self.bezel_result,
             'part_pred': self.bezel_pred,
+            'type': 'bezel',
         })
-        for part_id, part_name, part_position, part_pred, part_result in zip(
-            self.switch_part_ids, self.switch_part_names, self.switch_positions, self.switch_preds, self.switch_results):
-            parts.append({
-                'part_id': part_id,
-                'part_name': part_name,
-                'result': part_result,
-                'part_pred': part_pred,
-                'position': part_position,
-            })
+        if self.has_switch_master:
+            for part_id, part_name, part_position, part_pred, part_result in zip(
+                self.switch_part_ids, self.switch_part_names, self.switch_positions, self.switch_preds, self.switch_results):
+                parts.append({
+                    'part_id': part_id,
+                    'part_name': part_name,
+                    'result': part_result,
+                    'part_pred': part_pred,
+                    'position': part_position,
+                    'type': 'bezel_switch',
+                })
         return parts
 
     def get_ordered_part_results(self, part_results):
-        bezel_result = part_results[0]
-        switch_results = part_results[1:]
+        bezel_results = [p for p in part_results if p.get('type') == 'bezel']
+        switch_results = [p for p in part_results if p.get('type') == 'bezel_switch']
         switch_pos_lookup = {res['position']:res for res in switch_results}
         ordered_results = []
         for i in range(11): # Max 11 switches
             ordered_results.append(switch_pos_lookup.get(i+1))
-        ordered_results.append(bezel_result)
+        ordered_results.append(bezel_results[0] if len(bezel_results) > 0 else None)
         return ordered_results
 
     def update(self, bezel_detections, switch_detections):

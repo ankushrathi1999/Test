@@ -31,7 +31,6 @@ class Artifact:
     def __init__(self, psn, chassis, vehicle_model, data):
         self.data = data
         self.inspection_flag = int(f'vehicle_model_{vehicle_model}' in self.data.entity_lookup)
-        print('debug:', self.inspection_flag, vehicle_model, self.data.entity_lookup)
         self.shift = get_current_shift()
 
         self.psn = psn
@@ -68,7 +67,6 @@ class Artifact:
         if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < 8):
             print("Saving snapshots", self._n_snapshots_saved+1)
             for img, img_type in zip([frame_top, frame_bottom, frame_up], ["top", "bottom", "up"]):
-                # img_name = f"{self.start_time.replace('-', '').replace(' ', '_')}_{self.psn}_{self.chassis}_{self.vehicle_model}_{img_type}_{self._n_snapshots_saved+1}.jpg"
                 img_name = f"{self.chassis}_{self.vehicle_model}_{img_type}_{self._n_snapshots_saved+1}.jpg"
                 img_path = os.path.join(snapshots_dir, img_name)
                 metadata_path = os.path.join(metadata_dir, img_name.replace('.jpg', '.json'))
@@ -110,6 +108,8 @@ class Artifact:
             else:
                 plc_array.append(int(part_result['result'] == DetectionResult.OK))
         plc_array.append(int(overall_ok))
+        if self.inspection_flag == 0:
+            plc_array = [-1 for _ in plc_array]
         return plc_array
 
     def save(self):
