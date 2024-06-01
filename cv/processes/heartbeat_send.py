@@ -15,7 +15,7 @@ def _heartbeat_send(thread):
     while not thread.is_terminated:
         try:
             # print("Heartbeat send:", cur_bit)
-            send_signal(SIG_SEND_HEART_BIT, cur_bit)
+            send_signal(SIG_SEND_HEART_BIT, [48 + cur_bit]) # ascii for 0/1
             cur_bit = 1 - cur_bit
         except Exception as ex:
             print("Error in heartbeat send thread:", ex)

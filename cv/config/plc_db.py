@@ -10,8 +10,8 @@ SIG_RECV_END_TRIGGER = "PLCEndTrigger"
 PLC_SIGNALS = [
 	{
 		"key": SIG_RECV_HEART_BIT,
-		"type": "int",
-		"pos": None,
+		"type": "bool",
+		"pos": 22,
 	},
     {
 		"key": SIG_RECV_START_TRIGGER,
@@ -43,7 +43,7 @@ PLC_SIGNALS = [
     {
 		"key": SIG_SEND_HEART_BIT,
 		"type": "array",
-		"headdevice": "D16000",
+		"headdevice": "D16075",
 	},
     {
 		"key": SIG_SEND_RESULT,
