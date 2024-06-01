@@ -6,6 +6,8 @@ mock_db_path = "./data/plc_db_mock.json"
 plc_data = {}
 plc_data_updates = []
 
+enable_write = False
+
 def flush_plc_data():
     global plc_data
     with open(mock_db_path, 'r') as x:
@@ -18,8 +20,9 @@ def flush_plc_data():
         signal_name, value = plc_data_updates.pop(0)
         #print("flushing", signal_name, value)
         plc_data[signal_name] = value
-    with open(mock_db_path, 'w') as x:
-        json.dump(plc_data, x)
+    if enable_write:
+        with open(mock_db_path, 'w') as x:
+            json.dump(plc_data, x)
     
 
 def get_signal(signal_name):

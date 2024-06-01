@@ -24,7 +24,7 @@ class FinalDetails:
         self.label = label
         self.color = color
         self.result = result
-        self.ignore = False
+        self.ignore = True
 
 class DetectionDetails:
 

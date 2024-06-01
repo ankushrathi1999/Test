@@ -91,10 +91,10 @@ class BezelGroup:
         bezel_detection = max(bezel_detections, key=lambda detection: detection.confidence) if len(bezel_detections) > 0 else None
         switch_detections = [detection for detection in switch_detections if box_contains(bezel_detection.bbox, detection.bbox) >= BEZEL_SWITCH_IOU_THRESHOLD] if bezel_detection is not None else switch_detections
 
-        # Inspection only happens whena contianer with the right number of switches is identified
+        # Inspection only happens when a contianer with the right number of switches is identified
         if bezel_detection is None or (len(switch_detections) != len(self.switch_part_ids)):
-            for detection in [*bezel_detections, *switch_detections]:
-                detection.final_details.ignore = True
+            # for detection in [*bezel_detections, *switch_detections]:
+            #     detection.final_details.ignore = True
             return
         
         # Bezel
@@ -103,6 +103,7 @@ class BezelGroup:
         self.bezel_results_count[(pred_bezel_part, result)] += 1
         bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         bezel_detection.final_details.result = result
+        bezel_detection.final_details.ignore = False
         if len(self.bezel_results_count) > 0:
             result, result_count = sorted(self.bezel_results_count.items(), key=lambda x: x[1], reverse=True)[0]
             if result_count >= RESULT_COUNT_THRESHOLD:
@@ -114,6 +115,7 @@ class BezelGroup:
         preds = []
         results = []
         for detection, part_id in zip(switch_detections, self.switch_part_ids):
+            detection.final_details.ignore = False
             pred_switch_part = detection.classification_details.part_number
             is_flip = detection.classification_details.is_flip
             if pred_switch_part == part_id:

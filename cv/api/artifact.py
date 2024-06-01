@@ -10,8 +10,10 @@ from config.config import config
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
 from utils.shift_utils import get_current_shift
 from .bezel_group import BezelGroup
+from .part import Part
 from .detection import DetectionResult
 from config.models.bezel_group_detection import BezelGroupDetectionModel
+from config.models.part_detection import PartDetectionModel
 
 api_config = config['api_artifact']
 part_success_threshold = api_config.getint('part_success_threshold')
@@ -39,7 +41,10 @@ class Artifact:
 
         # Parts
         self.bezel_group = BezelGroup(vehicle_model)
-        self.inspection_enabled = self.bezel_group.inspection_enabled
+        self.parts = {
+            detection_class:
+            Part(vehicle_model, detection_class) for detection_class in PartDetectionModel.ordered_class_list if detection_class is not None
+        }
 
         # Snapshots
         self._last_snapshot_time = time.time()
@@ -56,12 +61,18 @@ class Artifact:
         if self.is_ended:
             return
 
+        # Bezel update
         bezel_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_CONTAINER, [])
         bezel_switch_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_SWITCH, [])
         for cam_type in ('top', 'bottom'):
             bezel_detections_cur = [d for d in bezel_detections if d.cam_type == cam_type]
             bezel_switch_detections_cur = [d for d in bezel_switch_detections if d.cam_type == cam_type]
             self.bezel_group.update(bezel_detections_cur, bezel_switch_detections_cur)
+        
+        # Parts Update
+        for class_id in PartDetectionModel.ordered_class_list:
+            if class_id is not None and class_id in detection_groups:
+                self.parts[class_id].update(detection_groups[class_id])
 
         cur_time = time.time()
         if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < 8):
@@ -93,9 +104,15 @@ class Artifact:
         self.part_results, self.overall_result = self.get_part_results()
 
     def get_part_results(self):
-        parts = self.bezel_group.get_part_results()
-        overall_ok = self.inspection_enabled and all([part['result'] == DetectionResult.OK for part in parts])
-        return parts, overall_ok
+        bezel_part_results = self.bezel_group.get_part_results()
+        part_results = [p for p in [part.get_part_result() for part in self.parts.values()] if p is not None]
+        all_part_results = [*bezel_part_results, *part_results]
+        overall_ok = (
+            self.inspection_flag == 1 and
+            len(all_part_results) > 0 and
+            all([part['result'] == DetectionResult.OK for part in all_part_results])
+        )
+        return all_part_results, overall_ok
     
     def get_part_results_plc(self):
         OK_VAL = 48 + 1 # ascii 

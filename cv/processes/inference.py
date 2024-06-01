@@ -131,7 +131,7 @@ def _inference_loop(thread):
 
             # Plot
             for detection in detections:
-                if data.artifact is None or not data.artifact.inspection_enabled or detection.final_details.ignore:
+                if data.artifact is None or not data.artifact.inspection_flag == 1 or detection.final_details.ignore:
                     continue
                 class_bbox = detection.bbox
                 label = detection.final_details.label

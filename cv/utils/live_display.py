@@ -24,7 +24,7 @@ def prepare_dashboard_stats(dashboard):
         {
             "title": "Model",
             "value": dashboard.vehicle_model,
-            "color": color_green if dashboard.inspection_enabled else color_red
+            "color": color_green if dashboard.inspection_flag == 1 else color_red
         },
     ]
 
@@ -42,13 +42,13 @@ def prepare_dashboard_stats(dashboard):
                 })
             else:
                 cur_part = parts[cur_part_idx]
-                cur_part_desc = cur_part['part_name']
+                cur_part_desc = cur_part['part_name'][:20]
                 cur_part_ok = cur_part['result'] == DetectionResult.OK
                 cur_col.append({
                     "type": "message",
                     "title": cur_part_desc,
                     "color": color_green if cur_part_ok else color_red,
-                    "fontScale": 0.8,
+                    "fontScale": 0.6,
                     "textThickness": 1,
                 })
         part_cols.append(cur_col)
