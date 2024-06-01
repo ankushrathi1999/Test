@@ -105,12 +105,14 @@ class Artifact:
         assert self.is_ended
         parts, overall_ok = self.part_results, self.overall_result
         ordered_results = self.bezel_group.get_ordered_part_results(parts)
-        plc_array = [NA_VAL for i in range(20)] # Hardcoded for 20 parameters
+        plc_array = [NA_VAL for i in range(23)] # Hardcoded for 23 parameters
         if self.inspection_flag == 1:
             for i, part_result in enumerate(ordered_results):
+                if i >= 9: # Skipping overall result parameter at param 10
+                    i += 1
                 if part_result is not None:
                     plc_array[i] = OK_VAL if (int(part_result['result']) == DetectionResult.OK) else NG_VAL
-            plc_array[-1] = OK_VAL if overall_ok else NG_VAL
+            plc_array[9] = OK_VAL if overall_ok else NG_VAL
         return plc_array
 
     def save(self):
