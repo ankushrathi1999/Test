@@ -4,6 +4,7 @@ from datetime import datetime
 import pymysql
 import cv2
 import json
+import traceback
 
 from config.db_config import db_params
 from config.config import config
@@ -199,20 +200,30 @@ class Artifact:
                     insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_resultOKFlag'], result_ok_flag, 1)
                     print("Result OK Flag", result_ok_flag)
                 for entity_key, metric_id in data_filters:
+                    if entity_key not in self.data.entity_lookup:
+                        print("WARNING: Part not in Database:", entity_key)
+                        continue
                     entity_id = self.data.entity_lookup[entity_key]
                     insert_datafilter(cursor, record_id, entity_id, metric_id)
                     print("Filter:", record_id, entity_id)
                 for entity_key, value, metric_id in integer_metrics:
+                    if entity_key not in self.data.entity_lookup:
+                        print("WARNING: Part not in Database:", entity_key)
+                        continue
                     entity_id = self.data.entity_lookup[entity_key]
                     insert_integer_metric(cursor, record_id, entity_id, value, metric_id)
                     print("Integer Metric:", record_id, entity_id, value)
                 for entity_key, value, metric_id in string_metrics:
+                    if entity_key not in self.data.entity_lookup:
+                        print("WARNING: Part not in Database:", entity_key)
+                        continue
                     entity_id = self.data.entity_lookup[entity_key]
                     insert_string_metric(cursor, record_id, entity_id, value, metric_id)
                     print("String Metric:", record_id, entity_id, value)
                 connection.commit()
         except Exception as ex:
             print("Failed to save artifact.", ex)
+            traceback.print_exc()
         finally:
             if connection is not None:
                 connection.close()
