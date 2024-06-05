@@ -35,7 +35,7 @@ class PartDetectionModel:
     CLASS_wiper = name + '_wiper'
 
     ordered_class_list = [
-        CLASS_ac_control,
+        None, # CLASS_ac_control,
         CLASS_ac_ctr,
         CLASS_ac_ctr_left,
         CLASS_ac_ctr_right,
@@ -46,17 +46,17 @@ class PartDetectionModel:
         None, # dashboard
         CLASS_garnish_drvr_inside_yl,
         CLASS_hazard_switches,
-        CLASS_key,
+        None, # CLASS_key,
         CLASS_label_ac,
         CLASS_lights,
         CLASS_lower_panel,
         CLASS_orn_ctr,
         CLASS_orn_drvr,
-        CLASS_push_button,
-        CLASS_screen,
+        None, # CLASS_push_button,
+        None, # CLASS_screen,
         CLASS_sensor,
-        CLASS_speedometer,
-        CLASS_steering_coil,
+        None, # CLASS_speedometer,
+        None, # CLASS_steering_coil,
         CLASS_steering_cover,
         CLASS_switch,
         CLASS_upper_panel,

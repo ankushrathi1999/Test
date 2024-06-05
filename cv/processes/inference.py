@@ -9,7 +9,7 @@ from config.models import classification_models, detection_models, BezelSwitchCl
 from utils.image_utils import plot_one_box, draw_confirmation_prompt
 from utils.live_display import prepare_live_display
 from config.config import config
-from config.colors import color_red
+from config.colors import color_red, color_green
 from api.detection import DetectionDetails, ClassificationDetails, FinalDetails, DetectionResult
 
 process_config = config['process_inference']
@@ -83,7 +83,10 @@ def _inference_loop(thread):
                         class_name = model_config.class_names[class_id]
                         bbox = [int(x) for x in bbox]
                         class_color = model_config.class_colors[class_id]
-                        processed.append(DetectionDetails(class_id, class_name,  model_config.name, confidence, class_color, bbox, cam_type))
+                        detection = DetectionDetails(
+                            class_id, class_name,  model_config.name, confidence, class_color, bbox, cam_type)
+                        detection.final_details = FinalDetails(class_name, color_green, DetectionResult.NOT_EVALUATED)
+                        processed.append(detection)
                     detections.extend(processed)
 
             # Group detections by class

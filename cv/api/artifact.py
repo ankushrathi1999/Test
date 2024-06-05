@@ -11,10 +11,12 @@ from config.config import config
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
 from utils.shift_utils import get_current_shift
 from .bezel_group import BezelGroup
-from .part import Part
+from .classification_part import ClassificationPart
+from .detection_part import DetectionPart
 from .detection import DetectionResult
 from config.models.bezel_group_detection import BezelGroupDetectionModel
 from config.models.part_detection import PartDetectionModel
+from config.models.part_classification import PartClassificationModel
 
 api_config = config['api_artifact']
 part_success_threshold = api_config.getint('part_success_threshold')
@@ -42,9 +44,12 @@ class Artifact:
 
         # Parts
         self.bezel_group = BezelGroup(vehicle_model)
+        PartClassificationModel.target_detections
         self.parts = {
             detection_class:
-            Part(vehicle_model, detection_class) for detection_class in PartDetectionModel.ordered_class_list if detection_class is not None
+            ClassificationPart(vehicle_model, detection_class) if detection_class in PartClassificationModel.target_detections
+            else DetectionPart(vehicle_model, detection_class)
+            for detection_class in PartDetectionModel.ordered_class_list if detection_class is not None
         }
 
         # Snapshots
@@ -70,10 +75,10 @@ class Artifact:
             bezel_switch_detections_cur = [d for d in bezel_switch_detections if d.cam_type == cam_type]
             self.bezel_group.update(bezel_detections_cur, bezel_switch_detections_cur)
         
-        # Parts Update
-        for class_id in PartDetectionModel.ordered_class_list:
-            if class_id is not None and class_id in detection_groups:
-                self.parts[class_id].update(detection_groups[class_id])
+        # Parts Update - classification and detection
+        for detection_class, part in self.parts.items():
+            if detection_class in detection_groups:
+                part.update(detection_groups[detection_class])
 
         cur_time = time.time()
         if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < 8):

@@ -9,7 +9,7 @@ RESULT_COUNT_THRESHOLD = 2
 with open('./config/vehicle_parts_new.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
 
-class Part:
+class ClassificationPart:
 
     def __init__(self, vehicle_model, detection_class):
         self.detection_class = detection_class.replace('part_detection_', '')
@@ -44,6 +44,7 @@ class Part:
         }
 
     def update(self, part_detections):
+        print("Classification update", self.detection_class)
         if not self.inspection_enabled:
             return        
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None

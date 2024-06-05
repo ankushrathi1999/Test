@@ -1,7 +1,4 @@
 YHB23D2BP0600000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -45,9 +42,6 @@ YHB23D2BP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34100M50U10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -239,9 +233,6 @@ YHB23D7CP0600000:
       type: dummy
     vehicle_type: RHD
 YHB23D7CP0700000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R50-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -291,15 +282,6 @@ YHB23D7CP0700000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U73-0CE
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M50UG0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -379,9 +361,6 @@ YHB23D7CP7900000:
       type: dummy
     vehicle_type: LHD
 YHB23D7DP0700000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -431,18 +410,9 @@ YHB23D7DP0700000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R60-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U73-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M50UH0
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-5PK
@@ -522,9 +492,6 @@ YHB23D7DP7900000:
       type: dummy
     vehicle_type: LHD
 YHB4ED23P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -571,15 +538,6 @@ YHB4ED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72R04-ZCA
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34203M50UK0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -590,9 +548,6 @@ YHB4ED23P7400000:
     part_name: SW_WIP
     part_number: 37310M72R00
 YHB4ED24P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -639,21 +594,9 @@ YHB4ED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U12-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34205M50UJ0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -664,9 +607,6 @@ YHB4ED24P7400000:
     part_name: SW_WIP
     part_number: 37310M72R10
 YHB4ED2AP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -713,15 +653,6 @@ YHB4ED2AP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39182M66R00
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34203M50UN0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -732,9 +663,6 @@ YHB4ED2AP7400000:
     part_name: SW_WIP
     part_number: 37310M72R00
 YHB5ED22P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -781,15 +709,6 @@ YHB5ED22P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39182M66R00
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34205M50U70
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -800,9 +719,6 @@ YHB5ED22P7400000:
     part_name: SW_WIP
     part_number: 37310M72R00
 YHB5ED23P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -849,15 +765,6 @@ YHB5ED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72R04-ZCA
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34205M50U70
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -868,9 +775,6 @@ YHB5ED23P7400000:
     part_name: SW_WIP
     part_number: 37310M72R00
 YHB5ED24P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -917,21 +821,9 @@ YHB5ED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M50U30-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34205M50U60
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -942,9 +834,6 @@ YHB5ED24P7400000:
     part_name: SW_WIP
     part_number: 37310M72R10
 YHB5ED2AP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -991,15 +880,6 @@ YHB5ED2AP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39182M66R00
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34203M50UC0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -1010,9 +890,6 @@ YHB5ED2AP7400000:
     part_name: SW_WIP
     part_number: 37310M72R00
 YHB5ED2EP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1059,18 +936,9 @@ YHB5ED2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U02-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34205M50U60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -1081,9 +949,6 @@ YHB5ED2EP7400000:
     part_name: SW_WIP
     part_number: 37310M68P51
 YHB5EDXCP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1130,15 +995,6 @@ YHB5EDXCP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72R04-ZCA
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M50U60
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -1149,9 +1005,6 @@ YHB5EDXCP7400000:
     part_name: SW_WIP
     part_number: 37310M72R00
 YHB5EDXDP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1198,21 +1051,9 @@ YHB5EDXDP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M50U30-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34205M50UA0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -1223,9 +1064,6 @@ YHB5EDXDP7400000:
     part_name: SW_WIP
     part_number: 37310M72R10
 YHB5EDXEP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1272,18 +1110,9 @@ YHB5EDXEP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U02-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M50UA0
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -1363,9 +1192,6 @@ YHBB3D2BP7900000:
       type: dummy
     vehicle_type: LHD
 YHBB3D2CP0600000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R40-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -1412,15 +1238,6 @@ YHBB3D2CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-5PK
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U60-0CE
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34100M50U10
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -1707,9 +1524,6 @@ YHBC3D23P7400000:
       type: na
     vehicle_type: unknown
 YHBCED23P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1756,15 +1570,6 @@ YHBCED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72R04-ZCA
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34204M50UU0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -1798,9 +1603,6 @@ YHBDED22P7400000:
       type: head_lamp
     vehicle_type: RHD
 YHBDED23P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1847,15 +1649,6 @@ YHBDED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72R04-ZCA
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34204M50U50
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -1866,9 +1659,6 @@ YHBDED23P7400000:
     part_name: SW_WIP
     part_number: 37310M72R00
 YHBDED24P7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1915,21 +1705,9 @@ YHBDED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U81-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34200M50U40
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -1940,9 +1718,6 @@ YHBDED24P7400000:
     part_name: SW_WIP
     part_number: 37310M72R10
 YHBDED2EP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1989,18 +1764,9 @@ YHBDED2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U81-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34200M50U40
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -2057,9 +1823,6 @@ YHBDEDXDP7400000:
       type: head_lamp
     vehicle_type: RHD
 YHBDEDXEP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2106,18 +1869,9 @@ YHBDEDXEP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M50U02-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34200M50U80
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -2243,9 +1997,6 @@ YHC4ET2DP7400000:
       type: head_lamp
     vehicle_type: RHD
 YHC5ET2DP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2292,21 +2043,9 @@ YHC5ET2DP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72SG0-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34202M51U00
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2317,9 +2056,6 @@ YHC5ET2DP7400000:
     part_name: SW_WIP
     part_number: 37310M72R10
 YHC5ET2EP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2366,18 +2102,9 @@ YHC5ET2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M72S02-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34200M51U00
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2388,9 +2115,6 @@ YHC5ET2EP7400000:
     part_name: SW_WIP
     part_number: 37310M68P51
 YHC5ET2FP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2437,18 +2161,9 @@ YHC5ET2FP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M72S02-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34200M51U00
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2459,9 +2174,6 @@ YHC5ET2FP7400000:
     part_name: SW_WIP
     part_number: 37310M68P51
 YHC5ETXDP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2508,21 +2220,9 @@ YHC5ETXDP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72SG0-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34202M51U00
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2533,9 +2233,6 @@ YHC5ETXDP7400000:
     part_name: SW_WIP
     part_number: 37310M72R10
 YHC5ETXEP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2582,18 +2279,9 @@ YHC5ETXEP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M72S02-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34200M51U00
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2604,9 +2292,6 @@ YHC5ETXEP7400000:
     part_name: SW_WIP
     part_number: 37310M68P51
 YHC5ETXFP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2653,18 +2338,9 @@ YHC5ETXFP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M72SG0-0CE
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34202M51U00
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2813,9 +2489,6 @@ YL188C2EP7913606:
       type: dummy
     vehicle_type: LHD
 YL188C7CP0600000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M79M20-BGS
   ac_ctr_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
@@ -2865,15 +2538,6 @@ YL188C7CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-PPL
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M79M33-BJQ
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34100M82R31
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3140,9 +2804,6 @@ YL188C7EP0706087:
       type: traction
     vehicle_type: LHD
 YL188C7EP0710309:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M79M00-BJQ
   ac_ctr_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -3192,21 +2853,9 @@ YL188C7EP0710309:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M82P00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M79M33-BJQ
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M82R90
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -3312,9 +2961,6 @@ YL188C7EP7913606:
       type: dummy
     vehicle_type: LHD
 YL199C2CP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M79M20-BGS
   ac_ctr_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
@@ -3364,15 +3010,6 @@ YL199C2CP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-QM1
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M82R11-BJQ
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M82RF0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3386,9 +3023,6 @@ YL199C2CP7400000:
     part_name: SW_WIP
     part_number: 37310M74L00
 YL199C2DP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M79M30-BGS
   ac_ctr_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -3438,15 +3072,6 @@ YL199C2DP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-QM1
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M82R11-BJQ
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M82RF0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3460,9 +3085,6 @@ YL199C2DP7400000:
     part_name: SW_WIP
     part_number: 37310M74L00
 YL199C2EP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M79M30-BGS
   ac_ctr_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -3512,18 +3134,6 @@ YL199C2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M82P00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M82RE0-BJA
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M82RF0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -3583,9 +3193,6 @@ YL199C7DP7400000:
       type: head_lamp
     vehicle_type: RHD
 YL199C7EP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 74400M79M30-BGS
   ac_ctr_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -3635,21 +3242,9 @@ YL199C7EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M82P00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 39101M82RE0-BJA
   sensor:
     part_name: SNSR_SUN
     part_number: 95642-64G20
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34201M82RK0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -4031,9 +3626,6 @@ YXA14C2DP7400000:
       type: na
     vehicle_type: unknown
 YXA14C2EP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M66T00-EQU
   ac_garnish_yxa:
     part_name: GAR_ASST
     part_number: 73084M66T10-EVE
@@ -4095,18 +3687,6 @@ YXA14C2EP7400000:
   lower_panel:
     part_name: IP_LWR
     part_number: 73121M66T00-5PK
-  push_button:
-    part_name: BZ_SW_10
-    part_number: 37290M56R00
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M66T02-0CE
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34103M66TH0
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -4400,9 +3980,6 @@ YXA24C2EP7400000:
       type: head_lamp
     vehicle_type: RHD
 YXA24C2FP7400000:
-  ac_control:
-    part_name: CONT_HVAC
-    part_number: 39510M66T00-EQU
   ac_garnish_yxa:
     part_name: GAR_ASST
     part_number: 73084M66T10-DVV
@@ -4456,15 +4033,6 @@ YXA24C2FP7400000:
   lower_panel:
     part_name: IP_LWR
     part_number: 73121M66T00-5PK
-  screen:
-    part_name: TUN_ASSY
-    part_number: 3A102M66T02-0CE
-  speedometer:
-    part_name: SPD_ASSY
-    part_number: 34104M66T00
-  steering_coil:
-    part_name: CT_COIL
-    part_number: 37410M55T10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
