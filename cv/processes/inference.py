@@ -157,7 +157,7 @@ def _inference_loop(thread):
                 )
 
             # Generate display layout and stats
-            display_image =  prepare_live_display(frame_top, frame_bottom, data)
+            display_image =  prepare_live_display(frame_top, frame_bottom, frame_up, data)
             
             # Render confirm popup
             if confirm_mode:

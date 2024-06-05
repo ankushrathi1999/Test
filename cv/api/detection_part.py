@@ -44,7 +44,7 @@ class DetectionPart:
         }
 
     def update(self, part_detections):
-        print("Detection update", self.detection_class)
+        # print("Detection update", self.detection_class)
         if not self.inspection_enabled:
             return        
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
