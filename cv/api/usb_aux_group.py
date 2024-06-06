@@ -3,10 +3,9 @@ import yaml
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
-from config.models.bezel_switch_classification import BezelSwitchClassificationModel
 
 RESULT_COUNT_THRESHOLD = 2
-SWITCH_IOU_THRESHOLD = 0.9
+IOU_THRESHOLD = 0.9
 
 with open('./config/vehicle_parts_new.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
@@ -66,7 +65,7 @@ class UsbAuxGroup:
             return
         
         container_detection = max(container_detections, key=lambda detection: detection.confidence) if len(container_detections) > 0 else None
-        part_detections = [detection for detection in part_detections if box_contains(container_detection.bbox, detection.bbox) >= SWITCH_IOU_THRESHOLD] if container_detection is not None else part_detections
+        part_detections = [detection for detection in part_detections if box_contains(container_detection.bbox, detection.bbox) >= IOU_THRESHOLD] if container_detection is not None else part_detections
 
         # Inspection only happens when a contianer with the right number of parts is identified
         if container_detection is None or (len(part_detections) != len(self.part_ids)):
@@ -78,7 +77,7 @@ class UsbAuxGroup:
         for detection, part_id in zip(part_detections, self.part_ids):
             detection.final_details.ignore = False
             pred_part = detection.classification_details.part_number
-            if pred_switch_part == part_id:
+            if pred_part == part_id:
                 result = DetectionResult.OK
             else:
                 result = DetectionResult.INCORRECT_PART
