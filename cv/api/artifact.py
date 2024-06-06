@@ -77,8 +77,8 @@ class Artifact:
             self.bezel_group.update(bezel_detections_cur, bezel_switch_detections_cur)
 
         # USB Aux Update
-        usb_aux_container_detections = detection_groups.get(None, [])
-        usb_aux_detections = detection_groups.get(None, [])
+        usb_aux_container_detections = detection_groups.get(PartDetectionModel.CLASS_usb_aux_container, [])
+        usb_aux_detections = detection_groups.get(PartDetectionModel.CLASS_usb_aux, [])
         self.usb_aux_group.update(usb_aux_container_detections, usb_aux_detections) # Only bottom cam
         
         # Parts Update - classification and detection
