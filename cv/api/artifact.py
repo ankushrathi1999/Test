@@ -117,8 +117,9 @@ class Artifact:
 
     def get_part_results(self):
         bezel_part_results = self.bezel_group.get_part_results()
+        usb_aux_results = self.usb_aux_group.get_part_results()
         part_results = [p for p in [part.get_part_result() for part in self.parts.values()] if p is not None]
-        all_part_results = [*bezel_part_results, *part_results]
+        all_part_results = [*bezel_part_results, *usb_aux_results, *part_results]
         overall_ok = (
             self.inspection_flag == 1 and
             len(all_part_results) > 0 and
