@@ -98,17 +98,18 @@ class BezelGroup:
             return
         
         # Bezel
-        pred_bezel_part = bezel_detection.classification_details.part_number
-        result = DetectionResult.OK if pred_bezel_part == self.bezel_part_id else DetectionResult.INCORRECT_PART
-        self.bezel_results_count[(pred_bezel_part, result)] += 1
-        bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
-        bezel_detection.final_details.result = result
-        bezel_detection.final_details.ignore = False
-        if len(self.bezel_results_count) > 0:
-            result, result_count = sorted(self.bezel_results_count.items(), key=lambda x: x[1], reverse=True)[0]
-            if result_count >= RESULT_COUNT_THRESHOLD:
-                self.bezel_pred = result[0]
-                self.bezel_result = result[1]
+        if self.has_bezel_master:
+            pred_bezel_part = bezel_detection.classification_details.part_number
+            result = DetectionResult.OK if pred_bezel_part == self.bezel_part_id else DetectionResult.INCORRECT_PART
+            self.bezel_results_count[(pred_bezel_part, result)] += 1
+            bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
+            bezel_detection.final_details.result = result
+            bezel_detection.final_details.ignore = False
+            if len(self.bezel_results_count) > 0:
+                result, result_count = sorted(self.bezel_results_count.items(), key=lambda x: x[1], reverse=True)[0]
+                if result_count >= RESULT_COUNT_THRESHOLD:
+                    self.bezel_pred = result[0]
+                    self.bezel_result = result[1]
         
         # Switches
         switch_detections = sort_switches(switch_detections, self.n_rows)
