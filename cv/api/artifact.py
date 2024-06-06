@@ -5,6 +5,7 @@ import pymysql
 import cv2
 import json
 import traceback
+import json
 
 from config.db_config import db_params
 from config.config import config
@@ -173,20 +174,11 @@ class Artifact:
                     part['result'],
                     1
                 ])
-                # Add Predicted Part
-                if part['result'] not in {DetectionResult.MISSING, DetectionResult.NOT_EVALUATED}:
-                    string_metrics.append([
-                        f'part_{part["part_id"]}',
-                        part.get("part_pred", ""),
-                        2
-                    ])
-                # Add Part Position
-                if part.get('position', 0) > 0:
-                    integer_metrics.append([
-                        f'part_{part["part_id"]}',
-                        part["position"],
-                        3
-                    ])
+            string_metrics.append([
+                f'result_metadata_inspectionDetails',
+                json.dump(parts),
+                2
+            ])
 
 
         connection  = None

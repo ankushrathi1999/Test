@@ -60,6 +60,9 @@ class BezelGroup:
             'result': self.bezel_result,
             'part_pred': self.bezel_pred,
             'type': 'bezel',
+            'spec': self.bezel_part_id,
+            'actual': self.bezel_pred,
+            'key': 'BZ_AS_SW',
         })
         if self.has_switch_master:
             for part_id, part_name, part_position, part_pred, part_result in zip(
@@ -71,6 +74,9 @@ class BezelGroup:
                     'part_pred': part_pred,
                     'position': part_position,
                     'type': 'bezel_switch',
+                    'spec': part_id,
+                    'actual': part_pred,
+                    'key': 'BZ_SW_{}'.format(part_position),
                 })
         return parts
 

@@ -41,6 +41,9 @@ class ClassificationPart:
             'result': self.part_result,
             'part_pred': self.part_pred,
             'type': self.detection_class,
+            'spec': self.part_id,
+            'actual': self.part_pred,
+            'key': self.part_name,
         }
 
     def update(self, part_detections):

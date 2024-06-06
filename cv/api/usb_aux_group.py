@@ -47,6 +47,9 @@ class UsbAuxGroup:
                     'part_pred': part_pred,
                     'position': part_position,
                     'type': 'usb_aux',
+                    'spec': part_id,
+                    'actual': part_pred,
+                    'key': part_name,
                 })
         return parts
 
