@@ -27,3 +27,8 @@ class BezelGroupDetectionModel:
         CLASS_SWITCH: color_green,
         CLASS_CONTAINER: color_green,
     }
+
+    class_cams = {
+        CLASS_SWITCH: target_cams,
+        CLASS_CONTAINER: target_cams,
+    }

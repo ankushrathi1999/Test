@@ -77,6 +77,8 @@ def _inference_loop(thread):
                         class_id = model_config.ordered_class_list[class_idx]
                         if class_id is None: # skipped class
                             continue
+                        if cam_type not in model_config.class_cams.get(class_id, set()):
+                            continue
                         confidence = float(confidence)
                         if confidence < model_config.class_confidence[class_id]: # confidence filter
                             continue
