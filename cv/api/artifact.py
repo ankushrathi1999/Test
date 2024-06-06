@@ -87,7 +87,7 @@ class Artifact:
                 part.update(detection_groups[detection_class])
 
         cur_time = time.time()
-        if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < 8):
+        if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < 20):
             print("Saving snapshots", self._n_snapshots_saved+1)
             for img, img_type in zip([frame_top, frame_bottom, frame_up], ["top", "bottom", "up"]):
                 img_name = f"{self.chassis}_{self.vehicle_model}_{img_type}_{self._n_snapshots_saved+1}.jpg"
