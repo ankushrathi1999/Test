@@ -181,7 +181,7 @@ class PartDetectionModel:
         CLASS_sensor: {'up'},
         CLASS_speedometer: {'top'},
         CLASS_steering_coil: {'top'},
-        CLASS_steering_cover: {'top', 'bottom'},
+        CLASS_steering_cover: {'bottom'},
         CLASS_switch: {'bottom'},
         CLASS_upper_panel: {'up'},
         CLASS_usb_aux: {'bottom'},
