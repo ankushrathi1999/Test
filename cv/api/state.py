@@ -1,5 +1,6 @@
 import time
 from types import SimpleNamespace
+import traceback
 
 SYSTEM_STATES = SimpleNamespace(
     INSPECTION_START_PRE = "INSPECTION_START_PRE", # Check PLC healthy
@@ -63,6 +64,7 @@ class State:
                     self._state_history.pop(0)
                 except Exception as ex:
                     print("Error running action:", ex)
+                    traceback.print_exc()
                     time.sleep(1)
                 break
         else:

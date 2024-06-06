@@ -11,6 +11,7 @@ from config.config import config
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
 from utils.shift_utils import get_current_shift
 from .bezel_group import BezelGroup
+from .usb_aux_group import UsbAuxGroup
 from .classification_part import ClassificationPart
 from .detection_part import DetectionPart
 from .detection import DetectionResult
@@ -44,7 +45,7 @@ class Artifact:
 
         # Parts
         self.bezel_group = BezelGroup(vehicle_model)
-        PartClassificationModel.target_detections
+        self.usb_aux_group = UsbAuxGroup(vehicle_model)
         self.parts = {
             detection_class:
             ClassificationPart(vehicle_model, detection_class) if detection_class in PartClassificationModel.target_detections
@@ -74,6 +75,11 @@ class Artifact:
             bezel_detections_cur = [d for d in bezel_detections if d.cam_type == cam_type]
             bezel_switch_detections_cur = [d for d in bezel_switch_detections if d.cam_type == cam_type]
             self.bezel_group.update(bezel_detections_cur, bezel_switch_detections_cur)
+
+        # USB Aux Update
+        usb_aux_container_detections = detection_groups.get(None, [])
+        usb_aux_detections = detection_groups.get(None, [])
+        self.usb_aux_group.update(usb_aux_container_detections, usb_aux_detections) # Only bottom cam
         
         # Parts Update - classification and detection
         for detection_class, part in self.parts.items():

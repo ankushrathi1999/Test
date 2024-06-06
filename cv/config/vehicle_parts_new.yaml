@@ -48,6 +48,15 @@ YHB23D2BP0600000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 37275M75J00
 YHB23D2BP6800000:
   bezel:
     id: na
@@ -288,6 +297,13 @@ YHB23D7CP0700000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R30
@@ -419,6 +435,13 @@ YHB23D7DP0700000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P41
@@ -544,6 +567,13 @@ YHB4ED23P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -603,6 +633,13 @@ YHB4ED24P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R10
@@ -659,6 +696,13 @@ YHB4ED2AP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -715,6 +759,13 @@ YHB5ED22P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -771,6 +822,13 @@ YHB5ED23P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -830,6 +888,13 @@ YHB5ED24P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R10
@@ -886,6 +951,13 @@ YHB5ED2AP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -945,6 +1017,13 @@ YHB5ED2EP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -1001,6 +1080,13 @@ YHB5EDXCP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -1060,6 +1146,13 @@ YHB5EDXDP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R10
@@ -1119,6 +1212,13 @@ YHB5EDXEP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -1244,6 +1344,15 @@ YHBB3D2CP0600000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R10
@@ -1576,6 +1685,13 @@ YHBCED23P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -1655,6 +1771,13 @@ YHBDED23P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R00
@@ -1714,6 +1837,13 @@ YHBDED24P7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R10
@@ -1773,6 +1903,13 @@ YHBDED2EP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -1878,6 +2015,13 @@ YHBDEDXEP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -2052,6 +2196,15 @@ YHC5ET2DP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R10
@@ -2111,6 +2264,15 @@ YHC5ET2EP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -2170,6 +2332,15 @@ YHC5ET2FP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 95525M72S00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -2229,6 +2400,15 @@ YHC5ETXDP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M72R10
@@ -2288,6 +2468,15 @@ YHC5ETXEP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -2347,6 +2536,15 @@ YHC5ETXFP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 95525M72S00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P51
@@ -2547,6 +2745,13 @@ YL188C7CP0600000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -2865,6 +3070,13 @@ YL188C7EP0710309:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -3019,6 +3231,13 @@ YL199C2CP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -3081,6 +3300,13 @@ YL199C2DP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -3143,6 +3369,13 @@ YL199C2EP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -3254,6 +3487,13 @@ YL199C7EP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -3693,6 +3933,13 @@ YXA14C2EP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M66T00-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P21
@@ -4039,6 +4286,13 @@ YXA24C2FP7400000:
   upper_panel:
     part_name: IP_UPR
     part_number: 73111M66T00-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT_CVR
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P01
