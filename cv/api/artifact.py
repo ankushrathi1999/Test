@@ -99,7 +99,7 @@ class Artifact:
                 cv2.imwrite(img_path, img)
                 detections = [d.to_dict() for dl in detection_groups.values() for d in dl if d.cam_type == img_type]
                 with open(metadata_path, 'w') as f:
-                    json.dump(detections, f)
+                    json.dumps(detections, f)
             self._last_snapshot_time = time.time()
             self._n_snapshots_saved += 1
 
