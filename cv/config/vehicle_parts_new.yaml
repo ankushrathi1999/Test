@@ -51,7 +51,7 @@ YHB23D2BP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 88411M76T00
@@ -300,7 +300,7 @@ YHB23D7CP0700000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -438,7 +438,7 @@ YHB23D7DP0700000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -570,7 +570,7 @@ YHB4ED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -636,7 +636,7 @@ YHB4ED24P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -699,7 +699,7 @@ YHB4ED2AP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
@@ -762,7 +762,7 @@ YHB5ED22P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
@@ -825,7 +825,7 @@ YHB5ED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -891,7 +891,7 @@ YHB5ED24P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -954,7 +954,7 @@ YHB5ED2AP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
@@ -1020,7 +1020,7 @@ YHB5ED2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -1083,7 +1083,7 @@ YHB5EDXCP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -1149,7 +1149,7 @@ YHB5EDXDP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -1215,7 +1215,7 @@ YHB5EDXEP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -1347,7 +1347,7 @@ YHBB3D2CP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 88411M76T00
@@ -1688,7 +1688,7 @@ YHBCED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -1774,7 +1774,7 @@ YHBDED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -1840,7 +1840,7 @@ YHBDED24P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -1906,7 +1906,7 @@ YHBDED2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -2018,7 +2018,7 @@ YHBDEDXEP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -2199,7 +2199,7 @@ YHC5ET2DP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 88411M76T00
@@ -2267,7 +2267,7 @@ YHC5ET2EP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 88411M76T00
@@ -2335,7 +2335,7 @@ YHC5ET2FP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 95525M72S00
@@ -2403,7 +2403,7 @@ YHC5ETXDP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 88411M76T00
@@ -2471,7 +2471,7 @@ YHC5ETXEP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 88411M76T00
@@ -2539,7 +2539,7 @@ YHC5ETXFP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: SW_ST_VNT
       part_number: 95525M72S00
@@ -2748,7 +2748,7 @@ YL188C7CP0600000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -3073,7 +3073,7 @@ YL188C7EP0710309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -3234,7 +3234,7 @@ YL199C2CP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -3303,7 +3303,7 @@ YL199C2DP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -3372,7 +3372,7 @@ YL199C2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -3490,7 +3490,7 @@ YL199C7EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
@@ -3936,7 +3936,7 @@ YXA14C2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
@@ -4289,7 +4289,7 @@ YXA24C2FP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT_CVR
+    - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
