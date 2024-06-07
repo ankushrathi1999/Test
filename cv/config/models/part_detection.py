@@ -35,7 +35,7 @@ class PartDetectionModel:
     CLASS_wiper = name + '_wiper'
 
     ordered_class_list = [
-        None, # CLASS_ac_control,
+        CLASS_ac_control,
         CLASS_ac_ctr,
         CLASS_ac_ctr_left,
         CLASS_ac_ctr_right,
@@ -56,7 +56,7 @@ class PartDetectionModel:
         None, # CLASS_screen,
         CLASS_sensor,
         None, # CLASS_speedometer,
-        None, # CLASS_steering_coil,
+        CLASS_steering_coil,
         CLASS_steering_cover,
         CLASS_switch,
         CLASS_upper_panel,

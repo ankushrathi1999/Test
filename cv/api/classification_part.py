@@ -1,5 +1,6 @@
 from collections import defaultdict
 import yaml
+import json
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
@@ -9,12 +10,16 @@ RESULT_COUNT_THRESHOLD = 2
 with open('./config/vehicle_parts_new.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
 
+with open('./config/part_group_names.json') as x:
+    part_group_names_lookup = json.load(x)
+
 class ClassificationPart:
 
     def __init__(self, vehicle_model, detection_class):
         self.detection_class = detection_class.replace('part_detection_', '')
         self.part_id = None
         self.part_name = None
+        self.is_group = False
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
 
         if self.inspection_enabled:
@@ -22,6 +27,7 @@ class ClassificationPart:
             if part_details is None:
                 self.inspection_enabled = False
             else:
+                self.is_group = part_details.get('is_group') is True
                 self.part_id = part_details['part_number']
                 self.part_name = part_details['part_name']
 
@@ -35,14 +41,21 @@ class ClassificationPart:
     def get_part_result(self):
         if self.part_id is None:
             return None
+        if self.is_group:
+            spec = part_group_names_lookup.get(self.part_id, self.part_id)
+            actual = part_group_names_lookup.get(self.part_pred, self.part_pred)
+        else:
+            spec = self.part_id
+            actual = self.part_pred
+
         return {
             'part_id': self.part_id,
             'part_name': self.part_name,
             'result': self.part_result,
             'part_pred': self.part_pred,
             'type': self.detection_class,
-            'spec': self.part_id,
-            'actual': self.part_pred,
+            'spec': spec,
+            'actual': actual,
             'key': self.part_name,
         }
 
