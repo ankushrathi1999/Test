@@ -20,14 +20,11 @@ class PartDetectionModel:
     CLASS_label_ac = name + '_label_ac'
     CLASS_lights = name + '_lights'
     CLASS_lower_panel = name + '_lower_panel'
-    CLASS_nozzle_left = name + '_nozzle_left'
-    CLASS_nozzle_right = name + '_nozzle_right'
     CLASS_orn_ctr = name + '_orn_ctr'
     CLASS_orn_drvr = name + '_orn_drvr'
     CLASS_push_button = name + '_push_button'
     CLASS_screen = name + '_screen'
-    CLASS_sensor_left = name + '_sensor_left'
-    CLASS_sensor_right = name + '_sensor_right'
+    CLASS_sensor = name + '_sensor'
     CLASS_speedometer = name + '_speedometer'
     CLASS_steering_coil = name + '_steering_coil'
     CLASS_steering_cover = name + '_steering_cover'
@@ -53,14 +50,11 @@ class PartDetectionModel:
         CLASS_label_ac,
         CLASS_lights,
         CLASS_lower_panel,
-        None, # CLASS_nozzle_left,
-        None, # CLASS_nozzle_right,
         CLASS_orn_ctr,
         CLASS_orn_drvr,
         None, # CLASS_push_button,
         None, # CLASS_screen,
-        CLASS_sensor_left,
-        CLASS_sensor_right,
+        CLASS_sensor,
         None, # CLASS_speedometer,
         CLASS_steering_coil,
         CLASS_steering_cover,
@@ -87,14 +81,11 @@ class PartDetectionModel:
         CLASS_label_ac: 'label_ac',
         CLASS_lights: 'lights',
         CLASS_lower_panel: 'lower_panel',
-        CLASS_nozzle_left: 'nozzle_left',
-        CLASS_nozzle_right: 'nozzle_right',
         CLASS_orn_ctr: 'orn_ctr',
         CLASS_orn_drvr: 'orn_drvr',
         CLASS_push_button: 'push_button',
         CLASS_screen: 'screen',
-        CLASS_sensor_left: 'sensor_left',
-        CLASS_sensor_right: 'sensor_right',
+        CLASS_sensor: 'sensor',
         CLASS_speedometer: 'speedometer',
         CLASS_steering_coil: 'steering_coil',
         CLASS_steering_cover: 'steering_cover',
@@ -121,14 +112,11 @@ class PartDetectionModel:
         CLASS_label_ac: 0.25,
         CLASS_lights: 0.25,
         CLASS_lower_panel: 0.25,
-        CLASS_nozzle_left: 0.25,
-        CLASS_nozzle_right: 0.25,
         CLASS_orn_ctr: 0.25,
         CLASS_orn_drvr: 0.25,
         CLASS_push_button: 0.25,
         CLASS_screen: 0.25,
-        CLASS_sensor_left: 0.25,
-        CLASS_sensor_right: 0.25,
+        CLASS_sensor: 0.25,
         CLASS_speedometer: 0.25,
         CLASS_steering_coil: 0.25,
         CLASS_steering_cover: 0.25,
@@ -139,7 +127,36 @@ class PartDetectionModel:
         CLASS_wiper: 0.25,
     }
 
-    class_colors = {k: color_green for k in class_names}
+    class_colors = {
+        CLASS_ac_control: color_green,
+        CLASS_ac_ctr: color_green,
+        CLASS_ac_ctr_left: color_green,
+        CLASS_ac_ctr_right: color_green,
+        CLASS_ac_garnish_yxa: color_green,
+        CLASS_ac_left: color_green,
+        CLASS_ac_right: color_green,
+        CLASS_cover_upper_yxa: color_green,
+        CLASS_dashboard: color_green,
+        CLASS_garnish_drvr_inside_yl: color_green,
+        CLASS_hazard_switches: color_green,
+        CLASS_key: color_green,
+        CLASS_label_ac: color_green,
+        CLASS_lights: color_green,
+        CLASS_lower_panel: color_green,
+        CLASS_orn_ctr: color_green,
+        CLASS_orn_drvr: color_green,
+        CLASS_push_button: color_green,
+        CLASS_screen: color_green,
+        CLASS_sensor: color_green,
+        CLASS_speedometer: color_green,
+        CLASS_steering_coil: color_green,
+        CLASS_steering_cover: color_green,
+        CLASS_switch: color_green,
+        CLASS_upper_panel: color_green,
+        CLASS_usb_aux: color_green,
+        CLASS_usb_aux_container: color_green,
+        CLASS_wiper: color_green,
+    }
 
     class_cams = {
         CLASS_ac_control: {'top', 'bottom'},
@@ -157,14 +174,11 @@ class PartDetectionModel:
         CLASS_label_ac: {'bottom'},
         CLASS_lights: {'top'},
         CLASS_lower_panel: {'top', 'bottom'},
-        CLASS_nozzle_left: {'up'},
-        CLASS_nozzle_right: {'up'},
         CLASS_orn_ctr: {'top'},
         CLASS_orn_drvr: {'top'},
         CLASS_push_button: {'top', 'bottom'},
         CLASS_screen: {'top'},
-        CLASS_sensor_left: {'up'},
-        CLASS_sensor_right: {'up'},
+        CLASS_sensor: {'up'},
         CLASS_speedometer: {'top'},
         CLASS_steering_coil: {'top'},
         CLASS_steering_cover: {'bottom'},
