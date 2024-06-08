@@ -20,6 +20,7 @@ class ClassificationPart:
         self.part_id = None
         self.part_name = None
         self.is_group = False
+        self.missing_class_name = None
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
 
         if self.inspection_enabled:
@@ -30,6 +31,7 @@ class ClassificationPart:
                 self.is_group = part_details.get('is_group') is True
                 self.part_id = part_details['part_number']
                 self.part_name = part_details['part_name']
+                self.missing_class_name = part_details.get('missing_class_name')
 
         # Predictions
         self.part_results_count = defaultdict(int)
@@ -69,7 +71,10 @@ class ClassificationPart:
             return
                 
         pred_part = part_detection.classification_details.part_number
-        result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
+        if (self.missing_class_name and pred_part == self.missing_class_name):
+            result = DetectionResult.MISSING
+        else:
+            result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
         self.part_results_count[(pred_part, result)] += 1
         part_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         part_detection.final_details.result = result

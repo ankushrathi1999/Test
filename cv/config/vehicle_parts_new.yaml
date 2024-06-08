@@ -5,13 +5,13 @@ YHB23D2BP0600000:
     part_number: manual_black_no_defogger_yhb
   ac_ctr:
     part_name: GAR_DR_IN
-    part_number: 73082M72R10-C48
+    part_number: 73082M72R00-C48
   ac_left:
     part_name: GAR_ASST
     part_number: 73086M72R10-C48
   ac_right:
     part_name: GAR_DR_OUT
-    part_number: 73083M72R10-C48
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R00-5PK
     n_rows: 1
@@ -42,10 +42,10 @@ YHB23D2BP0600000:
     part_number: 73121M72R50-5PK
   orn_ctr:
     part_name: OR_IP_CTR
-    part_number: 73081M73R50-5PK
+    part_number: 73081M73R00-5PK
   orn_drvr:
     part_name: OR_IP_DR
-    part_number: 73832M73R50-5PK
+    part_number: 73832M73R00-5PK
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -443,7 +443,12 @@ YHB23D7DP0700000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R60-QWD
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -655,7 +660,8 @@ YHB4ED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
@@ -946,7 +952,8 @@ YHB5ED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
@@ -1093,7 +1100,12 @@ YHB5ED2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -1236,7 +1248,8 @@ YHB5EDXDP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
@@ -1311,7 +1324,12 @@ YHB5EDXEP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -1407,13 +1425,13 @@ YHBB3D2CP0600000:
     part_number: manual_black_defogger_yhb
   ac_ctr:
     part_name: GAR_DR_IN
-    part_number: 73082M72R10-C48
+    part_number: 73082M72R00-C48
   ac_left:
     part_name: GAR_ASST
     part_number: 73086M72R10-C48
   ac_right:
     part_name: GAR_DR_OUT
-    part_number: 73083M72R10-C48
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R00-5PK
     n_rows: 1
@@ -1968,7 +1986,8 @@ YHBDED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
@@ -2043,7 +2062,12 @@ YHBDED2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -2160,7 +2184,12 @@ YHBDEDXEP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -2346,7 +2375,8 @@ YHC5ET2DP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  sensor:
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
@@ -2423,7 +2453,12 @@ YHC5ET2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -2496,7 +2531,12 @@ YHC5ET2FP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -2569,7 +2609,8 @@ YHC5ETXDP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  sensor:
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
@@ -2646,7 +2687,12 @@ YHC5ETXEP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -2719,7 +2765,12 @@ YHC5ETXFP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
-  sensor:
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_cover:
@@ -2884,10 +2935,13 @@ YL188C7CP0600000:
     is_group: true
     part_name: CONT_HVAC
     part_number: manual_black_defogger_yl1
-  ac_ctr_left:
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_number: 73610M79M00-BJC
+  ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
-  ac_ctr_right:
+  ac_right:
     part_name: LVR_VT_RH
     part_number: 73630M79M00-C48
   bezel:
@@ -3214,10 +3268,13 @@ YL188C7EP0710309:
     is_group: true
     part_name: CONT_HVAC
     part_number: auto_black_yl1
-  ac_ctr_left:
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_number: 73610M79M10-BJC
+  ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
-  ac_ctr_right:
+  ac_right:
     part_name: LVR_VT_RH
     part_number: 73630M79M00-BJC
   bezel:
@@ -3262,8 +3319,9 @@ YL188C7EP0710309:
     part_number: 73870M82R00-DE3
   orn_drvr:
     part_name: OR_IP_DR
-    part_number: 73860M82R00-DE3
-  sensor:
+    part_number: 73860M82R10-DE3
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
@@ -3386,10 +3444,13 @@ YL199C2CP7400000:
     is_group: true
     part_name: CONT_HVAC
     part_number: manual_black_defogger_yl1
-  ac_ctr_left:
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_number: 73610M79M00-BJC
+  ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
-  ac_ctr_right:
+  ac_right:
     part_name: LVR_VT_RH
     part_number: 73630M79M00-C48
   bezel:
@@ -3463,10 +3524,13 @@ YL199C2DP7400000:
     is_group: true
     part_name: CONT_HVAC
     part_number: manual_black_defogger_yl1
-  ac_ctr_left:
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_number: 73610M79M00-BJC
+  ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
-  ac_ctr_right:
+  ac_right:
     part_name: LVR_VT_RH
     part_number: 73630M79M00-BJC
   bezel:
@@ -3540,10 +3604,13 @@ YL199C2EP7400000:
     is_group: true
     part_name: CONT_HVAC
     part_number: manual_black_defogger_yl1
-  ac_ctr_left:
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_number: 73610M79M00-BJC
+  ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
-  ac_ctr_right:
+  ac_right:
     part_name: LVR_VT_RH
     part_number: 73630M79M00-BJC
   bezel:
@@ -3663,10 +3730,13 @@ YL199C7EP7400000:
     is_group: true
     part_name: CONT_HVAC
     part_number: manual_black_defogger_yl1
-  ac_ctr_left:
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_number: 73610M79M00-BJC
+  ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
-  ac_ctr_right:
+  ac_right:
     part_name: LVR_VT_RH
     part_number: 73630M79M00-BJC
   bezel:
@@ -3712,7 +3782,8 @@ YL199C7EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
-  sensor:
+  sensor_right:
+    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
   steering_coil:
