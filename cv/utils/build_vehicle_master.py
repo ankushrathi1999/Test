@@ -1,0 +1,129 @@
+import pymysql
+import pymysql.cursors
+from collections import  defaultdict
+import pandas as pd
+import json
+import yaml
+
+from .db import get_vehicle_models, get_vehicle_part_mapping
+
+def _group_part_types(vehicle_parts, part_master_lookup):
+    bezel = []
+    bezel_switches = []
+    usb_aux_group = []
+    generic_parts = []
+    for part in vehicle_parts:
+        details = part_master_lookup.loc[part['part_number']]
+        {
+            'bezel': bezel,
+            'bezel_switch': bezel_switches,
+            'usb_aux': usb_aux_group,
+        }.get(details['part_class'], generic_parts).append([part, details])
+    return {
+        'bezel': bezel,
+        'bezel_switches': bezel_switches,
+        'usb_aux_group': usb_aux_group,
+        'generic_parts': generic_parts
+    }
+
+def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup):
+    for vehicle_model in vehicle_part_type_groups:
+        generic_parts = vehicle_part_type_groups[vehicle_model]['generic_parts']
+        for part, details in generic_parts:
+            data = vehicle_data[vehicle_model][details.part_class] = {
+                "part_name": details.part_name_msil,
+                "part_number": part['part_number'],
+            }
+            if len(details.part_group_name_er.strip()) > 0:
+                data["is_group"] = True
+                data["part_number"] = details.part_group_name_er.strip()
+            missing_class_name = missing_class_name_lookup.get(details.part_class)
+            if missing_class_name is not None:
+                data['missing_class_name'] = missing_class_name
+
+def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups):
+    for vehicle_model in vehicle_part_type_groups:
+        usb_aux_group = vehicle_part_type_groups[vehicle_model]['usb_aux_group']
+        if len(usb_aux_group) == 0:
+            print('No usb aux data for vehicle:', vehicle_model)
+            continue
+        assert 2 <= len(usb_aux_group) <= 3
+        usb_aux_group = sorted(usb_aux_group, key=lambda x: x[0]['part_position'])
+        vehicle_data[vehicle_model]['usb_aux_group'] = {
+            "n_parts": len(usb_aux_group),
+            "parts": list(map(lambda part: {
+                "part_name": part[1].part_name_msil,
+                "part_number": part[0]['part_number'],
+            }, usb_aux_group))
+        }
+
+def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions):
+    for vehicle_model in vehicle_part_type_groups:
+        bezel = vehicle_part_type_groups[vehicle_model]['bezel']
+        bezel_switches = vehicle_part_type_groups[vehicle_model]['bezel_switches']
+        if len(bezel) != 1:
+            print('No bezel data for vehicle:', vehicle_model)
+            continue
+        bezel_part, bezel_part_details = bezel[0]
+        switch_positions_top, switch_positions_bottom = bezel_switch_positions[bezel_part['part_number']]
+        data = vehicle_data[vehicle_model]['bezel'] = {
+            "id": bezel_part['part_number'],
+            "name": bezel_part['part_name'],
+            "n_rows": 2 if len(switch_positions_bottom) > 0 else 1,
+        }
+        if len(bezel_switches) == 0:
+            print('No switch data for vehicle:', vehicle_model)
+            data['switches_top'] = {'id': 'na', 'name': 'N/A', 'position': 1}
+            continue
+        assert len(switch_positions_top) + len(switch_positions_bottom) == len(bezel_switches), (vehicle_model, len(switch_positions_top), len(switch_positions_bottom), len(bezel_switches))
+        switch_pos_lookup = {}
+        for part, details in bezel_switches:
+            pos = part['part_position']
+            assert pos not in switch_pos_lookup, (part, pos)
+            switch_pos_lookup[pos] = (part, details)
+        assert len(switch_positions_top) > 0, vehicle_model
+        data['switches_top'] = []
+        for pos in switch_positions_top:
+            part, details = switch_pos_lookup[str(pos)]
+            data['switches_top'].append({
+                'id': part['part_number'],
+                'name': part['part_name'],
+                'position': int(part['part_position']),
+            })
+        if len(switch_positions_bottom) > 0:
+            data['switches_bottom'] = []
+            for pos in switch_positions_bottom:
+                part, details = switch_pos_lookup[str(pos)]
+                data['switches_bottom'].append({
+                    'id': part['part_number'],
+                    'name': part['part_name'],
+                    'position': int(part['part_position']),
+                })
+
+def build_vehicle_master():
+    # Part Master CSV
+    part_master = pd.read_csv('./config/part_master.csv').fillna('')
+    part_master_lookup = part_master.set_index('part_number')
+
+    vehicle_models = get_vehicle_models()
+    print("Vehicle models:", len(vehicle_models))
+
+    mapping = get_vehicle_part_mapping()
+    print("Vehicle part mapping:", len(mapping))
+
+    with open('./config/missing_class_names.json', 'r') as f:
+        missing_class_name_lookup = json.load(f)
+    print("Missing classes registered:", len(missing_class_name_lookup))
+
+    with open('./config/bezel_switch_positions.csv', 'r') as f:
+        bezel_switch_positions = json.load(f)
+    print("Bezels registered for switch position:", len(bezel_switch_positions))
+
+    vehicle_part_type_groups = {vehicle_model: _group_part_types(vehicle_parts, part_master_lookup) for vehicle_model, vehicle_parts in mapping.items()}
+    vehicle_data = defaultdict(dict)
+    _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
+    _process_usb_aux_group(vehicle_data, vehicle_part_type_groups)
+    _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions)
+
+    with open('./config/vehicle_parts.yaml', 'w') as x:
+        yaml.safe_dump(dict(vehicle_data), x)

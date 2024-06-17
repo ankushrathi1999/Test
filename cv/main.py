@@ -1,12 +1,21 @@
 import time
+import traceback
 
 from api.data import Data
 from api.state import SYSTEM_STATES
 from actions.actions import register_actions
 from processes.processes import get_processes
+from utils.build_vehicle_master import build_vehicle_master
 
 def run():
     print("Initializing.")
+
+    # Build vehicle master
+    try:
+        build_vehicle_master()
+    except Exception as ex:
+        print("Failed to build latest vehicle masrter from database")
+        traceback.print_exc()
 
     # Data
     data = Data()

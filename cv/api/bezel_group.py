@@ -8,7 +8,7 @@ from config.models.bezel_switch_classification import BezelSwitchClassificationM
 RESULT_COUNT_THRESHOLD = 2
 BEZEL_SWITCH_IOU_THRESHOLD = 0.9
 
-with open('./config/vehicle_parts_new.yaml') as x:
+with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
 print("Vehicles Registered in YAML:", len(vehicle_parts_lookup))
 

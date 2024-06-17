@@ -17,23 +17,18 @@ YHB23D2BP0600000:
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -61,191 +56,25 @@ YHB23D2BP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 37275M75J00
-YHB23D2BP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YHB23D2BP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHB23D2CP0600000:
-  bezel:
-    id: 73833M73R00-5PK
-    n_rows: 1
-    name: BLACK W/O HOLE, BEZEL YHB
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    vehicle_type: RHD
-YHB23D2CP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
-YHB23D2CP7900000:
-  bezel:
-    id: 73833M73R50-5PK
-    n_rows: 1
-    name: BLACK W/O HOLE, BEZEL YHB
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
-YHB23D2DP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
-YHB23D2DP7900000:
-  bezel:
-    id: 73833M73R50-5PK
-    n_rows: 1
-    name: BLACK W/O HOLE, BEZEL YHB
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
-YHB23D7CP0600000:
-  bezel:
-    id: 73833M73R00-5PK
-    n_rows: 1
-    name: BLACK W/O HOLE, BEZEL YHB
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    vehicle_type: RHD
-YHB23D7CP0700000:
   ac_control:
     is_group: true
     part_name: CONT_HVAC
@@ -260,27 +89,232 @@ YHB23D7CP0700000:
     part_name: GAR_DR_OUT
     part_number: 73083M72R10-C48
   bezel:
-    id: na
+    id: 73833M73R00-5PK
     n_rows: 1
-    name: na
+    name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
+      position: 4
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37585M66R00
+      name: ESP OFF, SW YHBC
+      position: 2
+    - id: 37285M66R00
+      name: CAP HOLE, SW YHBC
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+YHB23D2CP6800000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+YHB23D2CP7900000:
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BLACK W/O HOLE, BEZEL YHB
+    switches_top:
+    - id: 37285M66R00
+      name: CAP HOLE, SW YHBC
+      position: 1
+    - id: 37585M66R00
+      name: ESP OFF, SW YHBC
+      position: 2
+    - id: 37775M66R00
+      name: PARK SNSR, SW YHB
+      position: 3
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
+YHB23D2DP7900000:
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BLACK W/O HOLE, BEZEL YHB
+    switches_top:
+    - id: 37285M66R00
+      name: CAP HOLE, SW YHBC
+      position: 1
+    - id: 37585M66R00
+      name: ESP OFF, SW YHBC
+      position: 2
+    - id: 37775M66R00
+      name: PARK SNSR, SW YHB
+      position: 3
+    - id: 37285M66R00
+      name: CAP HOLE, SW YHBC
+      position: 4
+YHB23D7CP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R00-5PK
+    n_rows: 1
+    name: BLACK W/O HOLE, BEZEL YHB
+    switches_top:
+    - id: 37285M66R00
+      name: CAP HOLE, SW YHBC
+      position: 4
+    - id: 37775M66R00
+      name: PARK SNSR, SW YHB
+      position: 3
+    - id: 37585M66R00
+      name: ESP OFF, SW YHBC
+      position: 2
+    - id: 37285M66R00
+      name: CAP HOLE, SW YHBC
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+YHB23D7CP0700000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73824M73R50-5PK
@@ -326,69 +360,36 @@ YHB23D7CP4300000:
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
-YHB23D7CP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YHB23D7CP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHB23D7DP0700000:
   ac_control:
     is_group: true
@@ -403,28 +404,6 @@ YHB23D7DP0700000:
   ac_right:
     part_name: GAR_DR_OUT
     part_number: 73083M72R10-C48
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73824M73R60-5PK
@@ -474,69 +453,93 @@ YHB23D7DP4300000:
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHB23D7DP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yhbc
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R60-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68PH0
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R60-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R60-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
 YHB23D7DP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHB4ED23P7400000:
   ac_control:
     is_group: true
@@ -559,20 +562,15 @@ YHB4ED23P7400000:
     - id: 37960M66R00
       name: FUEL, SW YHBC
       position: 4
-      type: fuel
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -631,20 +629,15 @@ YHB4ED24P7400000:
     - id: 37960M66R00
       name: FUEL, SW YHBC
       position: 4
-      type: fuel
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -707,20 +700,15 @@ YHB4ED2AP7400000:
     - id: 37960M66R00
       name: FUEL, SW YHBC
       position: 4
-      type: fuel
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -779,20 +767,15 @@ YHB5ED22P7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -851,20 +834,15 @@ YHB5ED23P7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -923,20 +901,15 @@ YHB5ED24P7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -999,20 +972,15 @@ YHB5ED2AP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1071,20 +1039,15 @@ YHB5ED2EP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1147,20 +1110,15 @@ YHB5EDXCP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1219,20 +1177,15 @@ YHB5EDXDP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1295,20 +1248,15 @@ YHB5EDXEP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1350,74 +1298,92 @@ YHB5EDXEP7400000:
     part_name: SW_WIP
     part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHBB3D2BP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_no_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R00-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
-    vehicle_type: RHD
-YHBB3D2BP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: white_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
 YHBB3D2BP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHBB3D2CP0600000:
   ac_control:
     is_group: true
@@ -1437,23 +1403,18 @@ YHBB3D2CP0600000:
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1493,281 +1454,352 @@ YHBB3D2CP0600000:
     part_name: SW_WIP
     part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHBB3D2CP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
 YHBB3D2CP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHBB3D2DP0600000:
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
-    vehicle_type: RHD
 YHBB3D2DP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YHBB3D7CP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R00-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
-    vehicle_type: RHD
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
 YHBB3D7CP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
 YHBB3D7CP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHBB3D7DP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yhbc
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
-    vehicle_type: RHD
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68P83
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHBB3D7DP4600000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
-YHBB3D7DP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37585M66R00
-      name: ESP OFF, SW YHBC
-      position: 2
-      type: traction
-    - id: 37775M66R00
-      name: PARK SNSR, SW YHB
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YHBB3D7DP7900000:
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YHB
     switches_top:
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 37775M66R00
       name: PARK SNSR, SW YHB
       position: 3
-      type: park
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YHBC3D23P7400000:
   bezel:
     id: 73833M73R00-V6N
     n_rows: 1
     name: BEIGE W/O HOLE, BEZEL YHB
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YHBCED23P7400000:
   ac_control:
     is_group: true
@@ -1790,20 +1822,15 @@ YHBCED23P7400000:
     - id: 37960M66R00
       name: FUEL, SW YHBC
       position: 4
-      type: fuel
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1841,6 +1868,19 @@ YHBCED23P7400000:
     part_name: SW_WIP
     part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
 YHBDED22P7400000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_beige_no_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R00-V6N
     n_rows: 1
@@ -1849,20 +1889,51 @@ YHBDED22P7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R00-V6N
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R00-R8R
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: blue_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
 YHBDED23P7400000:
   ac_control:
     is_group: true
@@ -1885,20 +1956,15 @@ YHBDED23P7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -1957,20 +2023,15 @@ YHBDED24P7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2033,20 +2094,15 @@ YHBDED2EP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2088,6 +2144,19 @@ YHBDED2EP7400000:
     part_name: SW_WIP
     part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHBDEDXCP7400000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_beige_no_defogger_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R00-V6N
     n_rows: 1
@@ -2096,21 +2165,65 @@ YHBDEDXCP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R00-V6N
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R00-R8R
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
 YHBDEDXDP7400000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_beige_yhb
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R10-V6N
     n_rows: 1
@@ -2119,20 +2232,55 @@ YHBDEDXDP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R00-V6N
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R10-QWD
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHBDEDXEP7400000:
   ac_control:
     is_group: true
@@ -2155,20 +2303,15 @@ YHBDEDXEP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2215,93 +2358,160 @@ YHC23T2DP0600000:
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YHC23T2EP0600000:
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YHC23T7DP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yhbc
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M51U00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73081M72S00-DUF
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHC23T7EP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yhbc
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68P83
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M51U00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHC4ET2DP7400000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yhbc
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
@@ -2310,20 +2520,57 @@ YHC4ET2DP7400000:
     - id: 37960M66R00
       name: FUEL, SW YHBC
       position: 4
-      type: fuel
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M51U00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73081M72S00-DUF
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_name: SW_WIP
+    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YHC5ET2DP7400000:
   ac_control:
     is_group: true
@@ -2346,20 +2593,15 @@ YHC5ET2DP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2424,20 +2666,15 @@ YHC5ET2EP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
       position: 3
-      type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2502,20 +2739,15 @@ YHC5ET2FP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
       position: 3
-      type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2580,20 +2812,15 @@ YHC5ETXDP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
-    - id: 37285M75J00
+    - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 3
-      type: dummy
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2658,20 +2885,15 @@ YHC5ETXEP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
       position: 3
-      type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2736,20 +2958,15 @@ YHC5ETXFP7400000:
     - id: 37780M66R00
       name: ID STOP, SW YHBC
       position: 4
-      type: autostart
     - id: 37700M66R00
       name: CAMERA, SW YHC
       position: 3
-      type: camera
     - id: 37585M66R00
       name: ESP OFF, SW YHBC
       position: 2
-      type: traction
     - id: 35180M66R00
       name: HEAD LAMP, SW YHB
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   hazard_switches:
     part_name: SW_HZD
     part_number: 37430M68P20-5PK
@@ -2793,120 +3010,101 @@ YHC5ETXFP7400000:
     part_name: SW_WIP
     part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
 YL188C2CP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M00-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
-YL188C2CP6810309:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 2
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M20-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M00-PPL
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: blue_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
 YL188C2CP7910309:
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
-YL188C2EP0613606:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    - id: 37775M68P00
-      name: PARK SNSR, SW YL1
-      position: 3
-      type: park
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    vehicle_type: RHD
-YL188C2EP6813606:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37775M68P00
-      name: PARK SNSR, SW YL1
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YL188C2EP7913606:
   bezel:
     id: 73831M79M10-5PK
@@ -2914,22 +3112,17 @@ YL188C2EP7913606:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YL188C7CP0600000:
   ac_control:
     is_group: true
@@ -2950,22 +3143,17 @@ YL188C7CP0600000:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73832M79M00-5PK
@@ -3016,230 +3204,341 @@ YL188C7CP0710108:
     n_rows: 1
     name: BEIGE W/O HOLE, BEZEL YL1
     switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
-    vehicle_type: LHD
 YL188C7CP0713146:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 2
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37585M68P10
-      name: ESP OFF, SW YL1
-      position: 4
-      type: traction
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M79M00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-QM1
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: blue_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7CP0713147:
   bezel:
     id: 73831M79M10-V6N
     n_rows: 1
     name: BEIGE W/O HOLE, BEZEL YL1
     switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
-    vehicle_type: LHD
 YL188C7CP0713149:
   bezel:
     id: 73831M79M10-V6N
     n_rows: 1
     name: BEIGE W/O HOLE, BEZEL YL1
     switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
-    vehicle_type: LHD
-YL188C7CP6810309:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 2
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YL188C7CP7910309:
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YL188C7DP0710108:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37585M68P10
-      name: ESP OFF, SW YL1
-      position: 4
-      type: traction
-    vehicle_type: LHD
-YL188C7DP0713146:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37585M68P10
-      name: ESP OFF, SW YL1
-      position: 4
-      type: traction
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M79M00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-QM1
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: blue_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7DP0713149:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37585M68P10
-      name: ESP OFF, SW YL1
-      position: 4
-      type: traction
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M79M00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-QM1
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: blue_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7EP0613606:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M20-5PK
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
-    vehicle_type: RHD
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L40
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R00-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R00-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
 YL188C7EP0706087:
   bezel:
     id: 73831M79M10-V6N
@@ -3247,22 +3546,17 @@ YL188C7EP0706087:
     name: BEIGE W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
-    vehicle_type: LHD
 YL188C7EP0710309:
   ac_control:
     is_group: true
@@ -3283,22 +3577,17 @@ YL188C7EP0710309:
     name: BEIGE W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
-    vehicle_type: LHD
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73832M79M30-V6N
@@ -3347,52 +3636,75 @@ YL188C7EP0710309:
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
-YL188C7EP6810309:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37775M68P00
-      name: PARK SNSR, SW YL1
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YL188C7EP6813606:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37775M68P00
-      name: PARK SNSR, SW YL1
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: auto_black_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7EP7910309:
   bezel:
     id: 73831M79M10-5PK
@@ -3400,22 +3712,17 @@ YL188C7EP7910309:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YL188C7EP7913606:
   bezel:
     id: 73831M79M10-5PK
@@ -3423,22 +3730,17 @@ YL188C7EP7913606:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YL199C2CP7400000:
   ac_control:
     is_group: true
@@ -3461,20 +3763,15 @@ YL199C2CP7400000:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
       position: 3
-      type: autostart
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73832M79M00-V6N
@@ -3541,20 +3838,15 @@ YL199C2DP7400000:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
       position: 3
-      type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73832M79M00-V6N
@@ -3621,20 +3913,15 @@ YL199C2EP7400000:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
       position: 3
-      type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73832M79M00-V6N
@@ -3680,6 +3967,16 @@ YL199C2EP7400000:
     part_name: SW_WIP
     part_number: 37310M74L00
 YL199C2FP7400000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M20-V6N
     n_rows: 1
@@ -3688,21 +3985,80 @@ YL199C2FP7400000:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
       position: 3
-      type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L40
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R00-DE3
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R00-DE3
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
 YL199C7DP7400000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M00-V6N
     n_rows: 1
@@ -3711,20 +4067,69 @@ YL199C7DP7400000:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
       position: 3
-      type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M20-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M00-QM1
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
 YL199C7EP7400000:
   ac_control:
     is_group: true
@@ -3747,20 +4152,15 @@ YL199C7EP7400000:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
       position: 3
-      type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_number: 73832M79M00-V6N
@@ -3810,6 +4210,16 @@ YL199C7EP7400000:
     part_name: SW_WIP
     part_number: 37310M74L00
 YL199C7FP7400000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M20-V6N
     n_rows: 1
@@ -3818,89 +4228,87 @@ YL199C7FP7400000:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
-      type: traction
     - id: 37780M68P00
       name: ID STOP, SW YL1
       position: 3
-      type: autostart
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
-YL1T8C2CP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 2
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L40
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R00-DE3
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R00-DE3
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
 YL1T8C2CP7900000:
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
-YL1T8C2EP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37775M68P00
-      name: PARK SNSR, SW YL1
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YL1T8C2EP7900000:
   bezel:
     id: 73831M79M10-5PK
@@ -3908,22 +4316,17 @@ YL1T8C2EP7900000:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YL1T8C7CP0600000:
   bezel:
     id: 73831M79M00-5PK
@@ -3931,91 +4334,182 @@ YL1T8C7CP0600000:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
 YL1T8C7CP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
-      position: 1
-      type: head_lamp
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 2
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 3
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: blue_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL1T8C7CP7900000:
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
-    - id: 35180M66R00
-      name: HEAD LAMP, SW YHB
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
       position: 1
-      type: head_lamp
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 2
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 3
-      type: dummy
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YL1T8C7EP0600000:
+  ac_control:
+    is_group: true
+    part_name: CONT_HVAC
+    part_number: manual_black_defogger_yl1
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M20-5PK
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
-    vehicle_type: RHD
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L40
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R00-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R00-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_name: CT_COIL
+    part_number: yellow_lock
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
 YL1T8C7EP4600000:
   bezel:
     id: 73831M79M10-5PK
@@ -4023,45 +4517,17 @@ YL1T8C7EP4600000:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
-YL1T8C7EP6800000:
-  bezel:
-    id: na
-    n_rows: 1
-    name: na
-    switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 1
-      type: dummy
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-      type: fog
-    - id: 37775M68P00
-      name: PARK SNSR, SW YL1
-      position: 3
-      type: park
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
-      position: 4
-      type: dummy
-    vehicle_type: LHD
 YL1T8C7EP7900000:
   bezel:
     id: 73831M79M10-5PK
@@ -4069,114 +4535,53 @@ YL1T8C7EP7900000:
     name: BLACK W/O HOLE, BEZEL YL1
     switches_top:
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 1
-      type: dummy
     - id: 37270M68P00
       name: FRONT FOG, SW YL1
       position: 2
-      type: fog
     - id: 37775M68P00
       name: PARK SNSR, SW YL1
       position: 3
-      type: park
     - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+      name: CAP HOLE, SW YL1
       position: 4
-      type: dummy
-    vehicle_type: LHD
 YXA13CXBP7400000:
   bezel:
     id: 73826M66T00-5PK
-    n_rows: 1
+    n_rows: 2
     name: 7 HOLES, BEZEL YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA13CXCP7400000:
   bezel:
     id: 73826M66T10-5PK
-    n_rows: 1
+    n_rows: 2
     name: 10 HOLES, BEZE YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA13CXDP7400000:
   bezel:
     id: 73826M66T20-5PK
-    n_rows: 1
+    n_rows: 2
     name: 11 HOLES, BEZEL YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA14C2DP7400000:
   bezel:
     id: 73826M66T20-5PK
-    n_rows: 1
+    n_rows: 2
     name: 11 HOLES, BEZEL YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA14C2EP7400000:
   ac_control:
     is_group: true
@@ -4193,44 +4598,34 @@ YXA14C2EP7400000:
     n_rows: 2
     name: 10 HOLES, BEZE YXA
     switches_bottom:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 6
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 7
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 8
-      type: dummy
     - id: 37780M81R00
       name: ID STOP, SW YXA
       position: 9
-      type: autostart
     switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 5
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 4
-      type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
       position: 3
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 2
-      type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   cover_upper_yxa:
     part_name: CVR_CTR-UPR
     part_number: 73823M66T00-5PK
@@ -4269,283 +4664,175 @@ YXA14CXBP7400000:
     n_rows: 2
     name: 7 HOLES, BEZEL YXA
     switches_bottom:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 5
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 6
-      type: dummy
     - id: 37780M81R00
       name: ID STOP, SW YXA
       position: 7
-      type: autostart
     switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 4
-      type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
       position: 3
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 2
-      type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
 YXA14CXCP7400000:
   bezel:
     id: 73826M66T10-5PK
     n_rows: 2
     name: 10 HOLES, BEZE YXA
     switches_bottom:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 6
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 7
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 8
-      type: dummy
     - id: 37780M81R00
       name: ID STOP, SW YXA
       position: 9
-      type: autostart
     switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 5
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 4
-      type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
       position: 3
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 2
-      type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
 YXA14CXDP7400000:
   bezel:
     id: 73826M66T20-5PK
-    n_rows: 1
+    n_rows: 2
     name: 11 HOLES, BEZEL YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA23C2DP7400000:
   bezel:
     id: 73826M66T20-5PK
-    n_rows: 1
+    n_rows: 2
     name: 11 HOLES, BEZEL YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA23C2EP7400000:
   bezel:
     id: 73826M66T10-5PK
-    n_rows: 1
+    n_rows: 2
     name: 10 HOLES, BEZE YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA23C2FP7400000:
   bezel:
     id: 73826M66T00-5PK
-    n_rows: 1
+    n_rows: 2
     name: 7 HOLES, BEZEL YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA23C2GP7400000:
   bezel:
     id: 73826M66T00-5PK
-    n_rows: 1
+    n_rows: 2
     name: 7 HOLES, BEZEL YXA
     switches_top:
-    - id: na
+      id: na
       name: N/A
       position: 1
-      type: na
-    - id: na
-      name: N/A
-      position: 2
-      type: na
-    - id: na
-      name: N/A
-      position: 3
-      type: na
-    - id: na
-      name: N/A
-      position: 4
-      type: na
-    vehicle_type: unknown
 YXA24C2DP7400000:
   bezel:
     id: 73826M66T20-5PK
     n_rows: 2
     name: 11 HOLES, BEZEL YXA
     switches_bottom:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 6
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 7
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 8
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 9
-      type: dummy
     switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 5
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 4
-      type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
       position: 3
-      type: traction
     - id: 37700M81R00
       name: CAMERA, SW YXA
       position: 2
-      type: camera
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
 YXA24C2EP7400000:
   bezel:
     id: 73826M66T10-5PK
     n_rows: 2
     name: 10 HOLES, BEZE YXA
     switches_bottom:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 6
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 7
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 8
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 9
-      type: dummy
     switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 5
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 4
-      type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
       position: 3
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 2
-      type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
 YXA24C2FP7400000:
   ac_control:
     is_group: true
@@ -4562,36 +4849,28 @@ YXA24C2FP7400000:
     n_rows: 2
     name: 7 HOLES, BEZEL YXA
     switches_bottom:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 5
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 6
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 7
-      type: dummy
     switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 4
-      type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
       position: 3
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 2
-      type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
   cover_upper_yxa:
     part_name: CVR_CTR-UPR
     part_number: 73823M66T00-5PK
@@ -4631,33 +4910,25 @@ YXA24C2GP7400000:
     n_rows: 2
     name: 7 HOLES, BEZEL YXA
     switches_bottom:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 5
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 6
-      type: dummy
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 7
-      type: dummy
     switches_top:
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 4
-      type: dummy
     - id: 37585M81R00
       name: ESP OFF, SW YXA
       position: 3
-      type: traction
-    - id: 37285M75J00
-      name: CAP HOLE, SW YHBC
+    - id: 37285M81R00
+      name: CAP HOLE, SW YXA
       position: 2
-      type: dummy
     - id: 35180M69R00
       name: HEAD LAMP, SW YXA
       position: 1
-      type: head_lamp
-    vehicle_type: RHD
