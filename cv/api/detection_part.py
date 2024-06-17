@@ -6,7 +6,7 @@ from config.colors import color_green
 
 RESULT_COUNT_THRESHOLD = 2
 
-with open('./config/vehicle_parts_new.yaml') as x:
+with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
 
 class DetectionPart:
