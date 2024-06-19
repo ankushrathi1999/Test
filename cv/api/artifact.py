@@ -23,6 +23,7 @@ from config.models.part_classification import PartClassificationModel
 api_config = config['api_artifact']
 part_success_threshold = api_config.getint('part_success_threshold')
 snapshot_interval_secs = api_config.getfloat('snapshot_interval_secs')
+n_snapshots_max = api_config.getint('n_snapshots_max')
 snapshots_dir = api_config.get('snapshots_dir')
 metadata_dir = api_config.get('metadata_dir')
 metadata_dir_debug = os.path.join(metadata_dir, 'debug')
@@ -88,7 +89,7 @@ class Artifact:
                 part.update(detection_groups[detection_class])
 
         cur_time = time.time()
-        if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < 20):
+        if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < n_snapshots_max):
             print("Saving snapshots", self._n_snapshots_saved+1)
             for img, img_type in zip([frame_top, frame_bottom, frame_up], ["top", "bottom", "up"]):
                 img_name = f"{self.chassis}_{self.vehicle_model}_{img_type}_{self._n_snapshots_saved+1}.jpg"
