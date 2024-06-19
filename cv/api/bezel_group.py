@@ -4,9 +4,11 @@ import yaml
 from .detection import DetectionResult
 from config.colors import color_green, color_red
 from config.models.bezel_switch_classification import BezelSwitchClassificationModel
+from config.config import config
 
-RESULT_COUNT_THRESHOLD = 2
-BEZEL_SWITCH_IOU_THRESHOLD = 0.9
+api_config = config['api_common']
+RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
+BEZEL_SWITCH_IOU_THRESHOLD = api_config.getfloat('child_box_iou_threshold')
 
 with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
