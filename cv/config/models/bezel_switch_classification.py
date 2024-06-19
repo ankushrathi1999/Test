@@ -83,7 +83,7 @@ class BezelSwitchClassificationModel:
     yhbc_class_part_map = {
         CLASS_AUTOSTART: '37780M66R00',
         CLASS_CAMERA: '37700M66R00',
-        CLASS_DUMMY: '37285M75J00',
+        CLASS_DUMMY: '37285M66R00',
         CLASS_FUEL: '37960M66R00',
         CLASS_HEAD_LAMP: '35180M66R00',
         CLASS_PARK: '37775M66R00',
@@ -94,7 +94,7 @@ class BezelSwitchClassificationModel:
         CLASS_AUTOSTART: '37780M68P00',
         CLASS_DUMMY: '37285M75J00',
         CLASS_FOG: '37270M68P00',
-        CLASS_HEAD_LAMP: '35180M66R00',
+        CLASS_HEAD_LAMP: '35180M68P00',
         CLASS_PARK: '37775M68P00',
         CLASS_TRACTION: '37585M68P10',
     }
@@ -102,7 +102,7 @@ class BezelSwitchClassificationModel:
     yxa_class_part_map = {
         CLASS_AUTOSTART: '37780M81R00',
         CLASS_CAMERA: '37700M81R00',
-        CLASS_DUMMY: '37285M75J00',
+        CLASS_DUMMY: '37285M81R00',
         CLASS_HEAD_LAMP: '35180M69R00',
         CLASS_TRACTION: '37585M81R00',
     }
