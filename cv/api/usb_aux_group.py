@@ -19,7 +19,7 @@ class UsbAuxGroup:
         self.part_ids = [] # List of part numbers
         self.part_names = [] # List of part names
         self.part_positions= [] # List of part positions
-        self.inspection_enabled = vehicle_model in vehicle_parts_lookup
+        self.inspection_enabled = vehicle_model in vehicle_parts_lookup and 'usb_aux_group' in vehicle_parts_lookup[vehicle_model]
 
         if self.inspection_enabled:
             part_details = vehicle_parts_lookup[vehicle_model]['usb_aux_group']

@@ -23,7 +23,7 @@ class BezelGroup:
         self.switch_part_ids = [] # List of part numbers
         self.switch_part_names = [] # List of part names
         self.switch_positions= [] # List of part positions
-        self.inspection_enabled = vehicle_model in vehicle_parts_lookup
+        self.inspection_enabled = vehicle_model in vehicle_parts_lookup and 'bezel' in vehicle_parts_lookup[vehicle_model]
         self.n_rows = 1
 
         if self.inspection_enabled:
