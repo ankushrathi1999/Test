@@ -148,7 +148,7 @@ class BezelGroup:
         # Compute label offsets
         row_top = [detection for detection in switch_detections if detection.extra_params['row_num'] == 1]
         for i, detection in enumerate(row_top):
-            detection.final_details.label_position = 'bottom'
+            detection.final_details.label_position = 'top'
             detection.final_details.label_offset = (len(row_top)-i-1) * BEZEL_LABEL_OFFSET
         row_bottom = [detection for detection in switch_detections if detection.extra_params['row_num'] == 2]
         for i, detection in enumerate(row_bottom):
