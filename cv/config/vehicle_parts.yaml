@@ -66,6 +66,41 @@ YHB23D2BP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 37275M75J00
+YHB23D2BP0600099:
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BLACK W/ HOLE, BEZEL YHBC
+    switches_top:
+    - id: 35180M66R00
+      name: HEAD LAMP, SW YHB
+      position: 4
+    - id: 37285M66R00
+      name: CAP HOLE, SW YHBC
+      position: 3
+    - id: 37775M66R00
+      name: PARK SNSR, SW YHB
+      position: 2
+    - id: 37960M66R00
+      name: FUEL, SW YHBC
+      position: 1
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R00-DE3
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
 YHB23D2BP7900000:
   bezel:
     id: 73833M73R50-5PK

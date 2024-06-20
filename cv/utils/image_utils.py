@@ -15,45 +15,6 @@ def plot_one_box(x, img, color=None, label=None, line_thickness=3):
         cv2.putText(img, label, (c1[0], c1[1] - 2), 0, tl / 3, [0,0,0], thickness=tf, lineType=cv2.LINE_AA)
 
 
-def draw_stats(img, stats, stats_height=220, global_font_scale=1):
-    height, width = img.shape[0], img.shape[1]
-    column_offset = 30
-
-    # Write stats onto the layout in columns
-    for col, col_stats in enumerate(stats):
-        stats_x_offset = column_offset + (col * (width // len(stats)))
-        stats_y_offset = height - stats_height + 20 # top padding
-
-        for stat in col_stats:
-            stat_type = stat.get("type")
-            font_scale_factor = stat.get("fontScale", 1) * global_font_scale
-            text_thickness_override = stat.get('textThickness')
-            pad_top = stat.get("pad_top", 0)
-            if stat_type == "heading":
-                font = cv2.FONT_HERSHEY_SIMPLEX
-                font_scale = 1.75 * font_scale_factor
-                text_thickness = text_thickness_override or 3
-                text = stat['title'].upper()
-                text_color = stat.get('color', (0, 0, 0))
-                next_y_offset = 60
-            elif stat_type == "message":
-                font = cv2.FONT_HERSHEY_COMPLEX_SMALL
-                font_scale = 2 * font_scale_factor
-                text_thickness = text_thickness_override or 2
-                text = stat['title']
-                text_color = stat.get('color', (0, 0, 0))
-                next_y_offset = 40
-            else:
-                font = cv2.FONT_HERSHEY_COMPLEX_SMALL
-                font_scale = 2 * font_scale_factor
-                text_thickness = text_thickness_override or 2
-                text = f"{stat['title']}: {stat['value']}"
-                text_color = stat.get('color', (0, 0, 0))
-                next_y_offset = 40
-            cv2.putText(img, text, (stats_x_offset, stats_y_offset + pad_top), font, font_scale, text_color, text_thickness)
-            stats_y_offset += next_y_offset + pad_top
-
-
 def draw_confirmation_prompt(img, message, accept_button="Enter", reject_button="Escape"):
     # Calculate relative dimensions for centering the text and the box
     img_height, img_width = img.shape[:2]
