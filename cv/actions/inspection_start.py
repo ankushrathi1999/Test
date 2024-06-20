@@ -23,7 +23,8 @@ def inspection_start_actions(data):
     send_signal(SIG_SEND_RESULT, [0 for _ in range(23)])
 
     # Initialize engine
-    data.artifact = Artifact(psn, chassis, vehicle_model, data)
+    if data.is_active:
+        data.artifact = Artifact(psn, chassis, vehicle_model, data)
 
     next_state = SYSTEM_STATES.INSPECTION_RUNNING
     data.state.update_state(next_state)
