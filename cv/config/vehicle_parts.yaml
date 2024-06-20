@@ -67,7 +67,87 @@ YHB23D2BP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 37275M75J00
+YHB23D2BP6800000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: white_lock
+    part_name: CT_COIL
+    part_number: 37410M68P00
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHB23D2BP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -85,6 +165,57 @@ YHB23D2BP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: white_lock
+    part_name: CT_COIL
+    part_number: 37410M68P00
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHB23D2CP0600000:
   ac_control:
     is_group: true
@@ -234,6 +365,20 @@ YHB23D2CP6800000:
     part_name: SW_WIP
     part_number: 37310M72R30
 YHB23D2CP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -251,7 +396,131 @@ YHB23D2CP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
+YHB23D2DP6800000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R60-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68PH0
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R60-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R60-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M68P41
 YHB23D2DP7900000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -269,6 +538,50 @@ YHB23D2DP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R60-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68PH0
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R60-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R60-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M68P41
 YHB23D7CP0600000:
   ac_control:
     is_group: true
@@ -418,6 +731,20 @@ YHB23D7CP0700000:
     part_name: SW_WIP
     part_number: 37310M72R30
 YHB23D7CP4300000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -435,7 +762,138 @@ YHB23D7CP4300000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R40
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
+YHB23D7CP6800000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHB23D7CP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -453,6 +911,57 @@ YHB23D7CP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHB23D7DP0700000:
   ac_control:
     is_group: true
@@ -513,6 +1022,20 @@ YHB23D7DP0700000:
     part_name: SW_WIP
     part_number: 37310M68P41
 YHB23D7DP4300000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -530,6 +1053,50 @@ YHB23D7DP4300000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R60-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68P53
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R60-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R60-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M68P41
 YHB23D7DP6800000:
   ac_control:
     is_group: true
@@ -590,6 +1157,20 @@ YHB23D7DP6800000:
     part_name: SW_WIP
     part_number: 37310M68P41
 YHB23D7DP7900000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -607,6 +1188,50 @@ YHB23D7DP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R60-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68PH0
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R60-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R60-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M68P41
 YHB4ED23P7400000:
   ac_control:
     is_group: true
@@ -1552,7 +2177,87 @@ YHBB3D2BP0600000:
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_number: 37310M72R00
+YHBB3D2BP6800000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: white_lock
+    part_name: CT_COIL
+    part_number: 37410M68P00
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHBB3D2BP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -1570,6 +2275,57 @@ YHBB3D2BP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: white_lock
+    part_name: CT_COIL
+    part_number: 37410M68P00
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHBB3D2CP0600000:
   ac_control:
     is_group: true
@@ -1719,6 +2475,20 @@ YHBB3D2CP6800000:
     part_name: SW_WIP
     part_number: 37310M72R30
 YHBB3D2CP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -1736,7 +2506,72 @@ YHBB3D2CP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHBB3D2DP0600000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
@@ -1754,6 +2589,49 @@ YHBB3D2DP0600000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68P83
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_number: 37310M68P51
 YHBB3D2DP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -1912,6 +2790,20 @@ YHBB3D7CP6800000:
     part_name: SW_WIP
     part_number: 37310M72R30
 YHBB3D7CP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yhb
+    part_name: CONT_HVAC
+    part_number: 74400M72R50-5PK
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -1929,6 +2821,57 @@ YHBB3D7CP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R50-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M73R50-5PK
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R00-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M72R30
 YHBB3D7DP0600000:
   ac_control:
     is_group: true
@@ -2013,7 +2956,80 @@ YHBB3D7DP4600000:
       id: na
       name: N/A
       position: 1
+YHBB3D7DP6800000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R60-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68PH0
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R60-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R60-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M68P41
 YHBB3D7DP7900000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R10-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R10-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R10-C48
   bezel:
     id: 73833M73R50-5PK
     n_rows: 1
@@ -2031,6 +3047,50 @@ YHBB3D7DP7900000:
     - id: 37285M66R00
       name: CAP HOLE, SW YHBC
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73824M73R60-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68PH0
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M72R50-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73081M72R60-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73832M72R60-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55R10-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R50-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_name: SW_WIP
+    part_number: 37310M68P41
 YHBC3D23P7400000:
   bezel:
     id: 73833M73R00-V6N
@@ -2665,6 +3725,20 @@ YHBDEDXEP7400000:
     part_name: SW_WIP
     part_number: 37310M68P51
 YHC23T2DP0600000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
@@ -2673,7 +3747,70 @@ YHC23T2DP0600000:
       id: na
       name: N/A
       position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M51U00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_number: 37310M72R10
 YHC23T2EP0600000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
@@ -2682,6 +3819,49 @@ YHC23T2EP0600000:
       id: na
       name: N/A
       position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: CT_COIL
+    part_number: 37410M68P83
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M51U00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39440M56R20-5PK
+    - part_name: SW_ST_VNT
+      part_number: 88411M76T00
+    - part_name: USB_SKT
+      part_number: 39105M77S00-5PK
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_number: 37310M68P51
 YHC23T7DP0600000:
   ac_control:
     is_group: true
@@ -3453,7 +4633,91 @@ YL188C2CP0600000:
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
+YL188C2CP6810309:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C2CP7910309:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -3471,7 +4735,221 @@ YL188C2CP7910309:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
+YL188C2EP0613606:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L40
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R00-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R00-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
+YL188C2EP6813606:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C2EP7913606:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -3489,6 +4967,65 @@ YL188C2EP7913606:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7CP0600000:
   ac_control:
     is_group: true
@@ -3577,6 +5114,17 @@ YL188C7CP0600000:
     part_name: SW_WIP
     part_number: 37310M74L00
 YL188C7CP0710108:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M10-V6N
     n_rows: 1
@@ -3594,6 +5142,67 @@ YL188C7CP0710108:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M79M00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7CP0713146:
   ac_control:
     is_group: true
@@ -3668,6 +5277,17 @@ YL188C7CP0713146:
     part_name: SW_WIP
     part_number: 37310M74L20
 YL188C7CP0713147:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M10-V6N
     n_rows: 1
@@ -3685,7 +5305,79 @@ YL188C7CP0713147:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M79M00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7CP0713149:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M10-V6N
     n_rows: 1
@@ -3703,7 +5395,152 @@ YL188C7CP0713149:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M79M00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
+YL188C7CP6810309:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7CP7910309:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -3721,6 +5558,67 @@ YL188C7CP7910309:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7DP0710108:
   ac_control:
     is_group: true
@@ -3791,6 +5689,79 @@ YL188C7DP0710108:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
+YL188C7DP0713146:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M79M00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-QM1
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -3956,6 +5927,17 @@ YL188C7EP0613606:
     part_name: SW_WIP
     part_number: 37310M74L00
 YL188C7EP0706087:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M10-V6N
     n_rows: 1
@@ -3973,6 +5955,66 @@ YL188C7EP0706087:
     - id: 37585M68P10
       name: ESP OFF, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L60
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R00-DE3
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R00-DE3
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 37275M75J00
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7EP0710309:
   ac_control:
     is_group: true
@@ -4028,6 +6070,77 @@ YL188C7EP0710309:
     part_number: 73860M82R10-DE3
   sensor_left:
     is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
+YL188C7EP6810309:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
     part_number: 38680M56R00
@@ -4131,6 +6244,17 @@ YL188C7EP6813606:
     part_name: SW_WIP
     part_number: 37310M74L20
 YL188C7EP7910309:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -4148,7 +6272,77 @@ YL188C7EP7910309:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL188C7EP7913606:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -4166,6 +6360,65 @@ YL188C7EP7913606:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL199C2CP7400000:
   ac_control:
     is_group: true
@@ -4780,7 +7033,91 @@ YL199C7FP7400000:
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
+YL1T8C2CP6800000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL1T8C2CP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -4798,7 +7135,150 @@ YL1T8C2CP7900000:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
+YL1T8C2EP6800000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL1T8C2EP7900000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -4816,7 +7296,77 @@ YL1T8C2EP7900000:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL1T8C7CP0600000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M20-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M00-5PK
     n_rows: 1
@@ -4834,6 +7384,67 @@ YL1T8C7CP0600000:
     - id: 35180M68P00
       name: HEAD LAMP, SW YL1
       position: 1
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M00-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L00
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M20-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M00-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L00
 YL1T8C7CP6800000:
   ac_control:
     is_group: true
@@ -4908,6 +7519,17 @@ YL1T8C7CP6800000:
     part_name: SW_WIP
     part_number: 37310M74L20
 YL1T8C7CP7900000:
+  ac_control:
+    is_group: true
+    part_group: manual_black_defogger_yl1
+    part_name: CONT_HVAC
+    part_number: 74400M79M30-BGS
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-C48
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-C48
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -4925,6 +7547,67 @@ YL1T8C7CP7900000:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M10-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L20
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73852M79M10-PPL
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_number: 37410M55T50
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M74L00-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL1T8C7EP0600000:
   ac_control:
     is_group: true
@@ -5014,6 +7697,17 @@ YL1T8C7EP0600000:
     part_name: SW_WIP
     part_number: 37310M74L00
 YL1T8C7EP4600000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -5031,7 +7725,148 @@ YL1T8C7EP4600000:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
+YL1T8C7EP6800000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YL1T8C7EP7900000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_number: 39510M79M00-BJQ
+  ac_left:
+    part_name: LVR_VT_LH
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_number: 73630M79M00-BJC
   bezel:
     id: 73831M79M10-5PK
     n_rows: 1
@@ -5049,6 +7884,65 @@ YL1T8C7EP7900000:
     - id: 37285M75J00
       name: CAP HOLE, SW YL1
       position: 4
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_number: 73832M79M30-5PK
+  hazard_switches:
+    part_name: SW_HZD
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_number: 37210M74L50
+  lower_panel:
+    part_name: IP_LWR
+    part_number: 73121M79M10-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_number: 73870M82R10-DE4
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_number: 73860M82R10-DE4
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - part_name: ACC_SKT
+      part_number: 39441M75J01-5PK
+    - part_name: USB_SKT
+      part_number: 39105M56R00-5PK
+  wiper:
+    part_name: SW_WIP
+    part_number: 37310M74L20
 YXA13CXBP7400000:
   bezel:
     id: 73826M66T00-5PK
