@@ -8,6 +8,7 @@ from config.config import config
 
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
+ALLOW_OK_TO_NG = api_config.getboolean('allow_ok_to_ng')
 
 with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
@@ -90,6 +91,9 @@ class ClassificationPart:
             result = DetectionResult.INCORRECT_PART
         else:
             result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
+        # Keep in OK state if already passed
+        if not ALLOW_OK_TO_NG and self.part_result == DetectionResult.OK:
+            result = DetectionResult.OK
         self.part_results_count[(pred_part, result)] += 1
         part_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         part_detection.final_details.result = result

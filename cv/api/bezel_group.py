@@ -9,6 +9,7 @@ from config.config import config
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
 BEZEL_SWITCH_IOU_THRESHOLD = api_config.getfloat('child_box_iou_threshold')
+ALLOW_OK_TO_NG = api_config.getboolean('allow_ok_to_ng')
 BEZEL_LABEL_OFFSET = 35
 
 with open('./config/vehicle_parts.yaml') as x:
@@ -110,6 +111,9 @@ class BezelGroup:
         if self.has_bezel_master:
             pred_bezel_part = bezel_detection.classification_details.part_number
             result = DetectionResult.OK if pred_bezel_part == self.bezel_part_id else DetectionResult.INCORRECT_PART
+            # Keep in OK state if already passed
+            if not ALLOW_OK_TO_NG and self.bezel_result == DetectionResult.OK:
+                result = DetectionResult.OK
             self.bezel_results_count[(pred_bezel_part, result)] += 1
             bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
             bezel_detection.final_details.result = result
@@ -139,6 +143,10 @@ class BezelGroup:
                 result = DetectionResult.INCORRECT_PART
             preds.append(pred_switch_part)
             results.append(result)
+
+        # Keep in OK state if already passed
+        if not ALLOW_OK_TO_NG and set(self.switch_results) == {DetectionResult.OK}:
+            results = [DetectionResult.OK for _ in self.switch_part_ids]
 
         # Incorrect Position case: All parts match but order is incorrect
         if results != [DetectionResult.OK for _ in self.switch_part_ids]:

@@ -8,6 +8,7 @@ from config.config import config
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
 IOU_THRESHOLD = api_config.getfloat('child_box_iou_threshold')
+ALLOW_OK_TO_NG = api_config.getboolean('allow_ok_to_ng')
 
 with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
@@ -88,6 +89,10 @@ class UsbAuxGroup:
                 result = DetectionResult.INCORRECT_PART
             preds.append(pred_part)
             results.append(result)
+
+        # Keep in OK state if already passed
+        if not ALLOW_OK_TO_NG and set(self.part_results) == {DetectionResult.OK}:
+            results = [DetectionResult.OK for _ in self.part_ids]
 
         # Incorrect Position case: All parts match but order is incorrect
         if results != [DetectionResult.OK for _ in self.part_ids]:
