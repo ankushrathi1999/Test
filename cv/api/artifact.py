@@ -19,6 +19,7 @@ from .detection import DetectionResult
 from config.models.bezel_group_detection import BezelGroupDetectionModel
 from config.models.part_detection import PartDetectionModel
 from config.models.part_classification import PartClassificationModel
+from config.models.sensor_classification import SensorClassificationModel
 
 api_config = config['api_artifact']
 part_success_threshold = api_config.getint('part_success_threshold')
@@ -48,9 +49,13 @@ class Artifact:
         # Parts
         self.bezel_group = BezelGroup(vehicle_model)
         self.usb_aux_group = UsbAuxGroup(vehicle_model)
+        classification_targets = {
+            *PartClassificationModel.target_detections,
+            *SensorClassificationModel.target_detections,
+        }
         self.parts = {
             detection_class:
-            ClassificationPart(vehicle_model, detection_class) if detection_class in PartClassificationModel.target_detections
+            ClassificationPart(vehicle_model, detection_class) if detection_class in classification_targets
             else DetectionPart(vehicle_model, detection_class)
             for detection_class in PartDetectionModel.ordered_class_list if detection_class is not None
         }
