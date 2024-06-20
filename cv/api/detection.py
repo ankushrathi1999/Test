@@ -25,6 +25,8 @@ class FinalDetails:
         self.color = color
         self.result = result
         self.ignore = True
+        self.label_position = 'top'
+        self.label_offset = 0
 
 class DetectionDetails:
 
@@ -38,6 +40,7 @@ class DetectionDetails:
         self.cam_type = cam_type
         self.classification_details = None
         self.final_details = None
+        self.extra_params = {}
 
     def to_dict(self):
         dct = {**vars(self)}

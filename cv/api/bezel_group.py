@@ -9,6 +9,7 @@ from config.config import config
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
 BEZEL_SWITCH_IOU_THRESHOLD = api_config.getfloat('child_box_iou_threshold')
+BEZEL_LABEL_OFFSET = 35
 
 with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
@@ -144,6 +145,16 @@ class BezelGroup:
             if set(preds) == set(self.switch_part_ids):
                 results = [DetectionResult.INCORRECT_POSITION if result == DetectionResult.INCORRECT_PART else result for result in results]
 
+        # Compute label offsets
+        row_top = [detection for detection in switch_detections if detection.extra_params['row_num'] == 1]
+        for i, detection in enumerate(row_top):
+            detection.final_details.label_position = 'bottom'
+            detection.final_details.label_offset = (len(row_top)-i-1) * BEZEL_LABEL_OFFSET
+        row_bottom = [detection for detection in switch_detections if detection.extra_params['row_num'] == 2]
+        for i, detection in enumerate(row_bottom):
+            detection.final_details.label_position = 'bottom'
+            detection.final_details.label_offset = (len(row_bottom)-i-1) * BEZEL_LABEL_OFFSET
+
         # todo: part name should be looked up for actual part from a part number lookup for all detections
         for detection, result, part_name in zip(switch_detections, results, self.switch_part_names):
             if result in {DetectionResult.OK, DetectionResult.FLIP}:
@@ -170,6 +181,9 @@ def sort_switches(switch_detections, n_rows):
                 rows[1].append(detection)
     else:
         rows = [switch_detections]
+    for i, row in enumerate(rows):
+        for detection in row:
+            detection.extra_params['row_num'] = i+1
     rows = [sorted(row, key=lambda detection: detection.bbox[0]) for row in rows]
     return [detection for row in rows for detection in row]
 

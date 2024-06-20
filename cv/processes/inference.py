@@ -143,6 +143,8 @@ def _inference_loop(thread):
                 color = detection.final_details.color
                 confidence_detect = round(detection.confidence, 2)
                 confidence_cls = round(detection.classification_details.confidence, 2) if detection.classification_details is not None else 0
+                label_position = detection.final_details.label_position
+                label_offset = detection.final_details.label_offset
 
                 frame_cam = {
                     'top': frame_top,  
@@ -153,9 +155,11 @@ def _inference_loop(thread):
                 plot_one_box(
                     class_bbox,
                     frame_cam,
-                    color,
-                    f'{label}',#_{confidence_detect}_{confidence_cls}',
-                    3
+                    color=color,
+                    label=f'{label}',#_{confidence_detect}_{confidence_cls}',
+                    line_thickness=3,
+                    label_position=label_position,
+                    label_offset=label_offset
                 )
 
             # Generate display layout and stats
