@@ -1,8 +1,9 @@
 YHB23D2BP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_no_defogger_yhb
+    part_number: 74400M72R20-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -87,8 +88,9 @@ YHB23D2BP7900000:
 YHB23D2CP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R40-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -142,8 +144,9 @@ YHB23D2CP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -161,13 +164,15 @@ YHB23D2CP0600000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB23D2CP6800000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R50-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -207,8 +212,9 @@ YHB23D2CP6800000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -224,8 +230,9 @@ YHB23D2CP6800000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_number: 37310M72R30
 YHB23D2CP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -265,8 +272,9 @@ YHB23D2DP7900000:
 YHB23D7CP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R40-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -320,8 +328,9 @@ YHB23D7CP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -339,13 +348,15 @@ YHB23D7CP0600000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB23D7CP0700000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R50-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -385,8 +396,9 @@ YHB23D7CP0700000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -402,8 +414,9 @@ YHB23D7CP0700000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_number: 37310M72R30
 YHB23D7CP4300000:
   bezel:
     id: 73833M73R50-5PK
@@ -443,8 +456,9 @@ YHB23D7CP7900000:
 YHB23D7DP0700000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -495,8 +509,9 @@ YHB23D7DP0700000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_number: 37310M68P41
 YHB23D7DP4300000:
   bezel:
     id: 73833M73R50-5PK
@@ -518,8 +533,9 @@ YHB23D7DP4300000:
 YHB23D7DP6800000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -570,8 +586,9 @@ YHB23D7DP6800000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_number: 37310M68P41
 YHB23D7DP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -593,8 +610,9 @@ YHB23D7DP7900000:
 YHB4ED23P7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -648,8 +666,9 @@ YHB4ED23P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -665,13 +684,15 @@ YHB4ED23P7400000:
       part_number: 39105M56R00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB4ED24P7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -724,8 +745,9 @@ YHB4ED24P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -741,13 +763,15 @@ YHB4ED24P7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHB4ED2AP7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -801,8 +825,9 @@ YHB4ED2AP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -818,13 +843,15 @@ YHB4ED2AP7400000:
       part_number: 37275M75J00
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB5ED22P7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -878,8 +905,9 @@ YHB5ED22P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -895,13 +923,15 @@ YHB5ED22P7400000:
       part_number: 37275M75J00
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB5ED23P7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -955,8 +985,9 @@ YHB5ED23P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -972,13 +1003,15 @@ YHB5ED23P7400000:
       part_number: 39105M56R00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB5ED24P7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1031,8 +1064,9 @@ YHB5ED24P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -1048,13 +1082,15 @@ YHB5ED24P7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHB5ED2AP7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1108,8 +1144,9 @@ YHB5ED2AP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -1125,13 +1162,15 @@ YHB5ED2AP7400000:
       part_number: 37275M75J00
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB5ED2EP7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1196,13 +1235,15 @@ YHB5ED2EP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHB5EDXCP7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1256,8 +1297,9 @@ YHB5EDXCP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -1273,13 +1315,15 @@ YHB5EDXCP7400000:
       part_number: 39105M56R00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHB5EDXDP7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1332,8 +1376,9 @@ YHB5EDXDP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -1349,13 +1394,15 @@ YHB5EDXDP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHB5EDXEP7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1420,13 +1467,15 @@ YHB5EDXEP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHBB3D2BP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_no_defogger_yhb
+    part_number: 74400M72R20-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -1480,8 +1529,9 @@ YHBB3D2BP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: white_lock
     part_name: CT_COIL
-    part_number: white_lock
+    part_number: 37410M68P00
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -1499,8 +1549,9 @@ YHBB3D2BP0600000:
       part_number: 37275M75J00
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHBB3D2BP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -1522,8 +1573,9 @@ YHBB3D2BP7900000:
 YHBB3D2CP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R40-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -1577,8 +1629,9 @@ YHBB3D2CP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -1596,13 +1649,15 @@ YHBB3D2CP0600000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHBB3D2CP6800000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R50-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -1642,8 +1697,9 @@ YHBB3D2CP6800000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -1659,8 +1715,9 @@ YHBB3D2CP6800000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_number: 37310M72R30
 YHBB3D2CP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -1709,8 +1766,9 @@ YHBB3D2DP7900000:
 YHBB3D7CP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R40-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -1764,8 +1822,9 @@ YHBB3D7CP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -1783,13 +1842,15 @@ YHBB3D7CP0600000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHBB3D7CP6800000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yhb
+    part_number: 74400M72R50-5PK
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -1829,8 +1890,9 @@ YHBB3D7CP6800000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -1846,8 +1908,9 @@ YHBB3D7CP6800000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
+    part_number: 37310M72R30
 YHBB3D7CP7900000:
   bezel:
     id: 73833M73R50-5PK
@@ -1869,8 +1932,9 @@ YHBB3D7CP7900000:
 YHBB3D7DP0600000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R10-C48
@@ -1937,8 +2001,9 @@ YHBB3D7DP0600000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHBB3D7DP4600000:
   bezel:
     id: 73833M73R50-5PK
@@ -1978,8 +2043,9 @@ YHBC3D23P7400000:
 YHBCED23P7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2033,8 +2099,9 @@ YHBCED23P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -2050,13 +2117,15 @@ YHBCED23P7400000:
       part_number: 39105M56R00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHBDED22P7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2110,8 +2179,9 @@ YHBDED22P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -2127,13 +2197,15 @@ YHBDED22P7400000:
       part_number: 37275M75J00
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHBDED23P7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2187,8 +2259,9 @@ YHBDED23P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -2204,13 +2277,15 @@ YHBDED23P7400000:
       part_number: 39105M56R00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHBDED24P7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2263,8 +2338,9 @@ YHBDED24P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M68P10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -2280,13 +2356,15 @@ YHBDED24P7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHBDED2EP7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2351,13 +2429,15 @@ YHBDED2EP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHBDEDXCP7400000:
   ac_control:
     is_group: true
+    part_group: manual_beige_no_defogger_yhb
     part_name: CONT_HVAC
-    part_number: manual_beige_no_defogger_yhb
+    part_number: 74400M72R20-V6N
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2411,8 +2491,9 @@ YHBDEDXCP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-R8R
@@ -2428,13 +2509,15 @@ YHBDEDXCP7400000:
       part_number: 39105M56R00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M72R00
 YHBDEDXDP7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2487,8 +2570,9 @@ YHBDEDXDP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R10-R8R
@@ -2504,13 +2588,15 @@ YHBDEDXDP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHBDEDXEP7400000:
   ac_control:
     is_group: true
+    part_group: auto_beige_yhb
     part_name: CONT_HVAC
-    part_number: auto_beige_yhb
+    part_number: 39510M72R10-AJ4
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2575,8 +2661,9 @@ YHBDEDXEP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHC23T2DP0600000:
   bezel:
     id: 73833M73R10-5PK
@@ -2598,8 +2685,9 @@ YHC23T2EP0600000:
 YHC23T7DP0600000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2643,8 +2731,9 @@ YHC23T7DP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2662,13 +2751,15 @@ YHC23T7DP0600000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHC23T7EP0600000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2726,13 +2817,15 @@ YHC23T7EP0600000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHC4ET2DP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2785,8 +2878,9 @@ YHC4ET2DP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2804,13 +2898,15 @@ YHC4ET2DP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHC5ET2DP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2863,8 +2959,9 @@ YHC5ET2DP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -2882,13 +2979,15 @@ YHC5ET2DP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHC5ET2EP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -2955,13 +3054,15 @@ YHC5ET2EP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHC5ET2FP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -3028,13 +3129,15 @@ YHC5ET2FP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHC5ETXDP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -3087,8 +3190,9 @@ YHC5ETXDP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M68P20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -3106,13 +3210,15 @@ YHC5ETXDP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M72R10
 YHC5ETXEP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -3179,13 +3285,15 @@ YHC5ETXEP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YHC5ETXFP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yhbc
     part_name: CONT_HVAC
-    part_number: auto_black_yhbc
+    part_number: 39510M72R10-BGT
   ac_ctr:
     part_name: GAR_DR_IN
     part_number: 73082M72R00-C48
@@ -3252,13 +3360,15 @@ YHC5ETXFP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
-    part_number: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_number: 37310M68P51
 YL188C2CP0600000:
   ac_control:
     is_group: true
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
-    part_number: auto_black_yl1
+    part_number: 39510M79M00-BJQ
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
@@ -3321,8 +3431,9 @@ YL188C2CP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3381,8 +3492,9 @@ YL188C2EP7913606:
 YL188C7CP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M20-BGS
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_number: 73610M79M00-BJC
@@ -3442,8 +3554,9 @@ YL188C7CP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3484,8 +3597,9 @@ YL188C7CP0710108:
 YL188C7CP0713146:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
@@ -3531,8 +3645,9 @@ YL188C7CP0713146:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3609,8 +3724,9 @@ YL188C7CP7910309:
 YL188C7DP0710108:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
@@ -3656,8 +3772,9 @@ YL188C7DP0710108:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3680,8 +3797,9 @@ YL188C7DP0710108:
 YL188C7DP0713149:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
@@ -3727,8 +3845,9 @@ YL188C7DP0713149:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -3751,8 +3870,9 @@ YL188C7DP0713149:
 YL188C7EP0613606:
   ac_control:
     is_group: true
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
-    part_number: auto_black_yl1
+    part_number: 39510M79M00-BJQ
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -3813,8 +3933,9 @@ YL188C7EP0613606:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -3855,8 +3976,9 @@ YL188C7EP0706087:
 YL188C7EP0710309:
   ac_control:
     is_group: true
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
-    part_number: auto_black_yl1
+    part_number: 39510M79M00-BJQ
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_number: 73610M79M10-BJC
@@ -3915,8 +4037,9 @@ YL188C7EP0710309:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -3939,8 +4062,9 @@ YL188C7EP0710309:
 YL188C7EP6813606:
   ac_control:
     is_group: true
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
-    part_number: auto_black_yl1
+    part_number: 39510M79M00-BJQ
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -3984,8 +4108,9 @@ YL188C7EP6813606:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -4044,8 +4169,9 @@ YL188C7EP7913606:
 YL199C2CP7400000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M20-BGS
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_number: 73610M79M00-BJC
@@ -4105,8 +4231,9 @@ YL199C2CP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -4129,8 +4256,9 @@ YL199C2CP7400000:
 YL199C2DP7400000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_number: 73610M79M00-BJC
@@ -4190,8 +4318,9 @@ YL199C2DP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -4214,8 +4343,9 @@ YL199C2DP7400000:
 YL199C2EP7400000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_number: 73610M79M00-BJC
@@ -4275,8 +4405,9 @@ YL199C2EP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -4299,8 +4430,9 @@ YL199C2EP7400000:
 YL199C2FP7400000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -4362,8 +4494,9 @@ YL199C2FP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -4386,8 +4519,9 @@ YL199C2FP7400000:
 YL199C7DP7400000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -4449,8 +4583,9 @@ YL199C7DP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -4473,8 +4608,9 @@ YL199C7DP7400000:
 YL199C7EP7400000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_number: 73610M79M00-BJC
@@ -4533,8 +4669,9 @@ YL199C7EP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -4557,8 +4694,9 @@ YL199C7EP7400000:
 YL199C7FP7400000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -4620,8 +4758,9 @@ YL199C7FP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -4698,8 +4837,9 @@ YL1T8C7CP0600000:
 YL1T8C7CP6800000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-C48
@@ -4745,8 +4885,9 @@ YL1T8C7CP6800000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T50
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M74L00-5PK
@@ -4787,8 +4928,9 @@ YL1T8C7CP7900000:
 YL1T8C7EP0600000:
   ac_control:
     is_group: true
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
-    part_number: manual_black_defogger_yl1
+    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_number: 73640M79M00-BJC
@@ -4849,8 +4991,9 @@ YL1T8C7EP0600000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T60
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M79M30-5PK
@@ -4945,8 +5088,9 @@ YXA14C2DP7400000:
 YXA14C2EP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yxa
     part_name: CONT_HVAC
-    part_number: auto_black_yxa
+    part_number: 39510M66T00-EQU
   ac_garnish_yxa:
     part_name: GAR_ASST
     part_number: 73084M66T10-EVE
@@ -5010,8 +5154,9 @@ YXA14C2EP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: yellow_lock
     part_name: CT_COIL
-    part_number: yellow_lock
+    part_number: 37410M55T20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55T30-5PK
@@ -5206,8 +5351,9 @@ YXA24C2EP7400000:
 YXA24C2FP7400000:
   ac_control:
     is_group: true
+    part_group: auto_black_yxa
     part_name: CONT_HVAC
-    part_number: auto_black_yxa
+    part_number: 39510M66T00-EQU
   ac_garnish_yxa:
     part_name: GAR_ASST
     part_number: 73084M66T10-DVV
@@ -5265,8 +5411,9 @@ YXA24C2FP7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
+    part_group: blue_lock
     part_name: CT_COIL
-    part_number: blue_lock
+    part_number: 37410M55T10
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -5282,8 +5429,9 @@ YXA24C2FP7400000:
       part_number: 39105M77S00-5PK
   wiper:
     is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
-    part_number: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_number: 37310M68P01
 YXA24C2GP7400000:
   bezel:
     id: 73826M66T00-5PK

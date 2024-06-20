@@ -20,6 +20,7 @@ class ClassificationPart:
     def __init__(self, vehicle_model, detection_class):
         self.detection_class = detection_class.replace('part_detection_', '')
         self.part_id = None
+        self.part_number = None
         self.part_name = None
         self.is_group = False
         self.missing_class_name = None
@@ -33,7 +34,12 @@ class ClassificationPart:
             else:
                 self.is_group = part_details.get('is_group') is True
                 self.is_miss_inspection = part_details.get('is_miss') is True
-                self.part_id = part_details['part_number']
+                print(vehicle_model, detection_class, part_details)
+                if self.is_group:
+                    self.part_id = part_details['part_group']
+                else:
+                    self.part_id = part_details['part_number']
+                self.part_number = part_details['part_number']
                 self.part_name = part_details['part_name']
                 self.missing_class_name = part_details.get('missing_class_name')
 
@@ -58,7 +64,7 @@ class ClassificationPart:
             actual = self.part_pred
 
         return {
-            'part_id': self.part_id,
+            'part_id': self.part_number,
             'part_name': self.part_name,
             'result': self.part_result,
             'part_pred': self.part_pred,
