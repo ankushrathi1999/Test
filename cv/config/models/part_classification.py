@@ -8,8 +8,8 @@ class PartClassificationModel:
         [cl for cl in PartDetectionModel.ordered_class_list if cl is not None]
     ) - {
         PartDetectionModel.CLASS_label_ac,
-        PartDetectionModel.CLASS_ac_ctr_left,
-        PartDetectionModel.CLASS_ac_ctr_right,
+        # PartDetectionModel.CLASS_ac_ctr_left,
+        # PartDetectionModel.CLASS_ac_ctr_right,
         PartDetectionModel.CLASS_sensor_left,
         PartDetectionModel.CLASS_sensor_right,
         PartDetectionModel.CLASS_nozzle_left,
