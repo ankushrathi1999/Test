@@ -23,6 +23,7 @@ class ClassificationPart:
         self.part_name = None
         self.is_group = False
         self.missing_class_name = None
+        self.is_miss_inspection = False
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
 
         if self.inspection_enabled:
@@ -31,6 +32,7 @@ class ClassificationPart:
                 self.inspection_enabled = False
             else:
                 self.is_group = part_details.get('is_group') is True
+                self.is_miss_inspection = part_details.get('is_miss') is True
                 self.part_id = part_details['part_number']
                 self.part_name = part_details['part_name']
                 self.missing_class_name = part_details.get('missing_class_name')
@@ -48,6 +50,9 @@ class ClassificationPart:
         if self.is_group:
             spec = part_group_names_lookup.get(self.part_id, self.part_id)
             actual = part_group_names_lookup.get(self.part_pred, self.part_pred)
+        elif self.is_miss_inspection:
+            spec = None
+            actual = self.part_pred if self.part_pred != self.missing_class_name else None
         else:
             spec = self.part_id
             actual = self.part_pred
@@ -74,7 +79,9 @@ class ClassificationPart:
                 
         pred_part = part_detection.classification_details.part_number
         if (self.missing_class_name and pred_part == self.missing_class_name):
-            result = DetectionResult.MISSING
+            result = DetectionResult.OK if self.is_miss_inspection else DetectionResult.MISSING
+        elif (self.missing_class_name and self.is_miss_inspection):
+            result = DetectionResult.INCORRECT_PART
         else:
             result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
         self.part_results_count[(pred_part, result)] += 1

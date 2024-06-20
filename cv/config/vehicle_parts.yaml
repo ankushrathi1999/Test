@@ -41,6 +41,16 @@ YHB23D2BP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_cover:
     part_name: CLMN_CVR
     part_number: 48400M55R00-5PK
@@ -120,6 +130,16 @@ YHB23D2CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -175,6 +195,16 @@ YHB23D2CP6800000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -278,6 +308,16 @@ YHB23D7CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -333,6 +373,16 @@ YHB23D7CP0700000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -586,6 +636,16 @@ YHB4ED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -653,6 +713,11 @@ YHB4ED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -724,6 +789,16 @@ YHB4ED2AP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -791,6 +866,16 @@ YHB5ED22P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -858,6 +943,16 @@ YHB5ED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -925,6 +1020,11 @@ YHB5ED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -996,6 +1096,16 @@ YHB5ED2AP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1134,6 +1244,16 @@ YHB5EDXCP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1201,6 +1321,11 @@ YHB5EDXDP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -1343,6 +1468,16 @@ YHBB3D2BP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1430,6 +1565,16 @@ YHBB3D2CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1485,6 +1630,16 @@ YHBB3D2CP6800000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1597,6 +1752,16 @@ YHBB3D7CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1652,6 +1817,16 @@ YHBB3D7CP6800000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R50-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1846,6 +2021,16 @@ YHBCED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1913,6 +2098,16 @@ YHBDED22P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -1980,6 +2175,16 @@ YHBDED23P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -2047,6 +2252,11 @@ YHBDED24P7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -2189,6 +2399,16 @@ YHBDEDXCP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -2256,6 +2476,11 @@ YHBDEDXDP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -2407,6 +2632,11 @@ YHC23T7DP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -2544,6 +2774,11 @@ YHC4ET2DP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -2617,6 +2852,11 @@ YHC5ET2DP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -2836,6 +3076,11 @@ YHC5ETXDP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -3064,6 +3309,16 @@ YL188C2CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -3175,6 +3430,16 @@ YL188C7CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -3254,6 +3519,16 @@ YL188C7CP0713146:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M10-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -3369,6 +3644,16 @@ YL188C7DP0710108:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M10-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -3430,6 +3715,16 @@ YL188C7DP0713149:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M10-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -3609,6 +3904,11 @@ YL188C7EP0710309:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R10-DE3
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -3793,6 +4093,16 @@ YL199C2CP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -3868,6 +4178,16 @@ YL199C2DP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -3943,6 +4263,16 @@ YL199C2EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -4021,6 +4351,11 @@ YL199C2FP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -4103,6 +4438,11 @@ YL199C7DP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M00-QM1
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -4182,6 +4522,11 @@ YL199C7EP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -4264,6 +4609,11 @@ YL199C7FP7400000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
   sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
@@ -4383,6 +4733,16 @@ YL1T8C7CP6800000:
   orn_drvr:
     part_name: OR_IP_DR
     part_number: 73851M79M10-PPL
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -4638,6 +4998,16 @@ YXA14C2EP7400000:
   lower_panel:
     part_name: IP_LWR
     part_number: 73121M66T00-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL
@@ -4883,6 +5253,16 @@ YXA24C2FP7400000:
   lower_panel:
     part_name: IP_LWR
     part_number: 73121M66T00-5PK
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_number: 95642-64G20
   steering_coil:
     is_group: true
     part_name: CT_COIL

@@ -1,0 +1,12 @@
+[
+  {
+    "part_class": "sensor_left",
+    "part_name": "SNSR_AUTO",
+    "part_number": "38680M56R00"
+  },
+  {
+    "part_class": "sensor_right",
+    "part_name": "SNSR_SUN",
+    "part_number": "95642-64G20"
+  }
+]

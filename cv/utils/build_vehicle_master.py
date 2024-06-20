@@ -7,6 +7,22 @@ import yaml
 
 from .db import get_vehicle_models, get_vehicle_part_mapping
 
+def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks):
+    ip_upr = [v for v in vehicle_parts if v['part_name'] == 'IP_UPR']
+    if len(ip_upr) == 0:
+        return vehicle_parts
+    classes = set()
+    for part in vehicle_parts:
+        details = part_master_lookup.loc[part['part_number']]
+        classes.add(details['part_class'])
+    for part in missing_part_checks:
+        if part['part_class'] not in classes:
+            vehicle_parts.append({
+                **part,
+                "is_miss": True,
+            })
+    return vehicle_parts
+
 def _group_part_types(vehicle_parts, part_master_lookup):
     bezel = []
     bezel_switches = []
@@ -34,6 +50,8 @@ def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class
                 "part_name": details.part_name_msil,
                 "part_number": part['part_number'],
             }
+            if part.get('is_miss'):
+                data['is_miss'] = True
             if len(details.part_group_name_er.strip()) > 0:
                 data["is_group"] = True
                 data["part_number"] = details.part_group_name_er.strip()
@@ -115,11 +133,20 @@ def build_vehicle_master():
         missing_class_name_lookup = json.load(f)
     print("Missing classes registered:", len(missing_class_name_lookup))
 
+    with open('./config/missing_part_checks.json', 'r') as f:
+        missing_part_checks = json.load(f)
+    print("Missing part checks:", len(missing_part_checks))
+
     with open('./config/bezel_switch_positions.csv', 'r') as f:
         bezel_switch_positions = json.load(f)
     print("Bezels registered for switch position:", len(bezel_switch_positions))
 
-    vehicle_part_type_groups = {vehicle_model: _group_part_types(vehicle_parts, part_master_lookup) for vehicle_model, vehicle_parts in mapping.items()}
+    for vehicle_model, vehicle_parts in mapping.items():
+        print(vehicle_model, len(vehicle_parts))
+
+    vehicle_part_type_groups = {vehicle_model: _group_part_types(
+        _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks),
+        part_master_lookup) for vehicle_model, vehicle_parts in mapping.items()}
     vehicle_data = defaultdict(dict)
     _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_usb_aux_group(vehicle_data, vehicle_part_type_groups)
