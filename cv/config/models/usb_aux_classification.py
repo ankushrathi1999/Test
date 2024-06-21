@@ -12,6 +12,7 @@ class UsbAuxClassificationModel:
         '88411M76T00',
         '95525M72S00',
         '39105M77S00-5PK',
+        '37275M75J00',
         '39105M56R00-5PK',
     ]
 
@@ -21,6 +22,7 @@ class UsbAuxClassificationModel:
         '88411M76T00': 'SW_ST_VNT',
         '95525M72S00': 'SW_ST_VNT',
         '39105M77S00-5PK': 'USB_SKT',
+        '37275M75J00': 'USB_SKT',
         '39105M56R00-5PK': 'USB_SKT',
     }
 
@@ -30,5 +32,6 @@ class UsbAuxClassificationModel:
         '88411M76T00': color_green,
         '95525M72S00': color_green,
         '39105M77S00-5PK': color_green,
+        '37275M75J00': color_green,
         '39105M56R00-5PK': color_green,
     }

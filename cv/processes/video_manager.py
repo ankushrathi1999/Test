@@ -3,7 +3,7 @@ import threading
 import traceback
 import cv2
 
-video_mode = False
+video_mode = True
 if video_mode:
     skip_frames = 0
 else:
