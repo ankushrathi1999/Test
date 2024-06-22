@@ -3,7 +3,7 @@ from ..colors import color_white, color_green
 
 class UsbAuxClassificationModel:
     name = 'usb_aux_classification'
-    imgsz = 32
+    imgsz = 64
     target_detections = {PartDetectionModel.CLASS_usb_aux}
 
     ordered_class_list = [
