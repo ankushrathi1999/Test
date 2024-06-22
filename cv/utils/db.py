@@ -81,7 +81,7 @@ def get_vehicle_models():
         if connection is not None:
             connection.close()
 
-def get_vehicle_part_mapping():
+def get_vehicle_part_mapping(vehicle_models):
     query = """
         select EP.code as vehicle_model, EC.code as part_number, EC.name as part_name, HM.value as part_position
         from EntityHierarchy H join Entity EP on H.parent_id = EP.id
@@ -99,7 +99,8 @@ def get_vehicle_part_mapping():
         with connection.cursor() as cursor:
             cursor.execute(query)
             for row in cursor.fetchall():
-                mapping[row['vehicle_model']].append(row)
+                if row['vehicle_model'] in vehicle_models:
+                    mapping[row['vehicle_model']].append(row)
         return mapping
     except Exception as ex:
         print("Error fetching vehicle part mapping.", ex)

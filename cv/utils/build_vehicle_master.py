@@ -126,7 +126,7 @@ def build_vehicle_master():
     vehicle_models = get_vehicle_models()
     print("Vehicle models:", len(vehicle_models))
 
-    mapping = get_vehicle_part_mapping()
+    mapping = get_vehicle_part_mapping(vehicle_models)
     print("Vehicle part mapping:", len(mapping))
 
     with open('./config/missing_class_names.json', 'r') as f:
