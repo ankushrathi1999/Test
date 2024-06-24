@@ -5,6 +5,7 @@ from .bezel_switch_classification import BezelSwitchClassificationModel
 from .usb_aux_classification import UsbAuxClassificationModel
 from .part_classification import PartClassificationModel
 from .sensor_classification import SensorClassificationModel
+from .ac_control_classification import ACControlClassificationModel
 
 detection_models = [
     BezelGroupDetectionModel,
@@ -17,4 +18,5 @@ classification_models = [
     UsbAuxClassificationModel,
     PartClassificationModel,
     SensorClassificationModel,
+    ACControlClassificationModel,
 ]

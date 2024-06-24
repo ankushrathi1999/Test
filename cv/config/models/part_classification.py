@@ -7,6 +7,7 @@ class PartClassificationModel:
     target_detections = set(
         [cl for cl in PartDetectionModel.ordered_class_list if cl is not None]
     ) - {
+        PartDetectionModel.CLASS_ac_control,
         PartDetectionModel.CLASS_label_ac,
         # PartDetectionModel.CLASS_ac_ctr_left,
         # PartDetectionModel.CLASS_ac_ctr_right,
