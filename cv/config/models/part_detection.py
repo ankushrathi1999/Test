@@ -174,7 +174,7 @@ class PartDetectionModel:
     }
 
     class_cams = {
-        CLASS_ac_control: {'top', 'bottom'},
+        CLASS_ac_control: {'top'},
         CLASS_ac_ctr: {'top'},
         CLASS_ac_ctr_left: {'top'},
         CLASS_ac_ctr_right: {'top'},
@@ -188,7 +188,7 @@ class PartDetectionModel:
         CLASS_key: {'top', 'bottom' },
         CLASS_label_ac: {'bottom'},
         CLASS_lights: {'top'},
-        CLASS_lower_panel: {'top', 'bottom'},
+        CLASS_lower_panel: {'bottom'},
         CLASS_nozzle_left: {'up'},
         CLASS_nozzle_right: {'up'},
         CLASS_orn_ctr: {'top'},
