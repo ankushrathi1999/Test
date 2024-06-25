@@ -79,10 +79,6 @@ def _inference_loop(thread):
                         class_id = model_config.ordered_class_list[class_idx]
                         if class_id is None: # skipped class
                             continue
-                        try:
-                            class_id = PartDetectionModel.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
-                        except:
-                            pass
                         if cam_type not in model_config.class_cams.get(class_id, set()):
                             continue
                         confidence = float(confidence)
@@ -91,6 +87,10 @@ def _inference_loop(thread):
                         class_name = model_config.class_names[class_id]
                         bbox = [int(x) for x in bbox]
                         class_color = model_config.class_colors[class_id]
+                        try:
+                            class_id = PartDetectionModel.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                        except:
+                            pass
                         detection = DetectionDetails(
                             class_id, class_name,  model_config.name, confidence, class_color, bbox, cam_type)
                         detection.final_details = FinalDetails(class_name, color_green, DetectionResult.NOT_EVALUATED)
@@ -136,6 +136,8 @@ def _inference_loop(thread):
                     else:
                         try:
                             part_number = model_config.get_part_number(detection.class_id, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                            # print(data.artifact.vehicle_category, data.artifact.vehicle_type)
+                            # print('Part number update:', detection.class_id, part_number)
                         except:
                             part_number = class_id
 

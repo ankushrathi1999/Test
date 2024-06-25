@@ -52,4 +52,5 @@ class OrnClassificationModel:
 
     @staticmethod
     def get_part_number(detection_label, class_name, vehicle_category, vehicle_type):
+        detection_label = detection_label.replace('part_detection_v2_', '')
         return part_number_lookup.get((vehicle_category, detection_label, class_name, vehicle_type))

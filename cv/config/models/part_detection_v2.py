@@ -35,7 +35,7 @@ class PartDetectionModel:
     CLASS_upper_panel = name + '_upper_panel'
     CLASS_usb_aux = name + '_usb_aux'
     CLASS_usb_aux_container = name + '_usb_aux_container'
-    CLASS_lgt_wip_left = name + '_lgt_wip_right'
+    CLASS_lgt_wip_left = name + '_lgt_wip_left'
     # Inferred Classes
     CLASS_lights = name + '_lights'
     CLASS_wiper = name + '_wiper'
@@ -52,7 +52,7 @@ class PartDetectionModel:
         None, # dashboard
         CLASS_garnish_drvr_inside_yl,
         CLASS_hazard_switches,
-        None, # CLASS_key,
+        CLASS_key, # Not part of primary spec,
         CLASS_label_ac,
         CLASS_lgt_wip_right,
         CLASS_lower_panel,

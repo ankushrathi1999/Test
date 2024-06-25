@@ -73,9 +73,9 @@ class PartClassificationModel:
         '73832M79M30-V6N',
         'clmn_cvr_black',
         'clmn_cvr_gray',
-        'ct_coil_blue_lock',
-        'ct_coil_white_lock',
-        'ct_coil_yellow_lock',
+        'blue_lock',
+        'white_lock',
+        'yellow_lock',
         'gar_yxa_dvv',
         'gar_yxa_eve',
         'ip_upr_black',
@@ -93,9 +93,9 @@ class PartClassificationModel:
         '73832M79M30-V6N': 'CVR_DRVR',
         'clmn_cvr_black': 'CLMN_CVR',
         'clmn_cvr_gray': 'CLMN_CVR',
-        'ct_coil_blue_lock': 'CT_COIL',
-        'ct_coil_white_lock': 'CT_COIL',
-        'ct_coil_yellow_lock': 'CT_COIL',
+        'blue_lock': 'CT_COIL',
+        'white_lock': 'CT_COIL',
+        'yellow_lock': 'CT_COIL',
         'gar_yxa_dvv': 'GAR_YXA',
         'gar_yxa_eve': 'GAR_YXA',
         'ip_upr_black': 'IP_UPR',
@@ -107,14 +107,15 @@ class PartClassificationModel:
     class_colors = {k: color_green for k in class_names.keys()}
 
     staticmethod
-    def get_part_number(detection_label, class_name, vehicle_category, vehicle_type):
-        if detection_label in {PartDetectionModel.CLASS_upper_panel}:
+    def get_part_number(detection_label_full, class_name, vehicle_category, vehicle_type):
+        detection_label = detection_label_full.replace('part_detection_v2_', '')
+        if detection_label_full in {PartDetectionModel.CLASS_upper_panel}:
             return part_upper_panel_lookup.get((vehicle_category, vehicle_type, class_name))
-        elif vehicle_category == 'YL1' and detection_label in {PartDetectionModel.CLASS_ac_left, PartDetectionModel.CLASS_ac_right}:
+        elif vehicle_category == 'YL1' and detection_label_full in {PartDetectionModel.CLASS_ac_left, PartDetectionModel.CLASS_ac_right}:
             return part_lvr_vt_yl1_lookup.get((detection_label, class_name))
-        elif vehicle_category == 'YXA' and detection_label in {PartDetectionModel.CLASS_ac_garnish_yxa, PartDetectionModel.CLASS_ac_right}:
+        elif vehicle_category == 'YXA' and detection_label_full in {PartDetectionModel.CLASS_ac_garnish_yxa, PartDetectionModel.CLASS_ac_right}:
             return part_garnish_yxa_lookup.get((detection_label, class_name))
-        elif vehicle_category in {'YHB', 'YHC'} and detection_label in {PartDetectionModel.CLASS_ac_left, PartDetectionModel.CLASS_ac_right}:
-            return part_garnish_yhbc_lookup.get(vehicle_type, detection_label)
+        elif vehicle_category in {'YHB', 'YHC'} and detection_label_full in {PartDetectionModel.CLASS_ac_left, PartDetectionModel.CLASS_ac_right}:
+            return part_garnish_yhbc_lookup.get((vehicle_type, detection_label))
         else:
             return class_name

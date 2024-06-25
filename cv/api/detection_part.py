@@ -14,7 +14,7 @@ with open('./config/vehicle_parts.yaml') as x:
 class DetectionPart:
 
     def __init__(self, vehicle_model, detection_class):
-        self.detection_class = detection_class.replace('part_detection_', '')
+        self.detection_class = detection_class.replace('part_detection_v2_', '')
         self.part_id = None
         self.part_name = None
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup

@@ -10,7 +10,7 @@ debug_vehicle_model = api_config.get('debug_vehicle_model')
 class Data:
 
     def __init__(self):
-        self.is_active = False # inspection active
+        self.is_active = True # inspection active
         self.state = State()
         if debug_mode:
             self.entity_lookup = {}

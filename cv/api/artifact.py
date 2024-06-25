@@ -17,10 +17,11 @@ from .usb_aux_group import UsbAuxGroup
 from .classification_part import ClassificationPart
 from .detection_part import DetectionPart
 from .detection import DetectionResult
-from config.models.bezel_group_detection import BezelGroupDetectionModel
-from config.models.part_detection import PartDetectionModel
-from config.models.part_classification import PartClassificationModel
-from config.models.sensor_classification import SensorClassificationModel
+from config.models import BezelGroupDetectionModel, PartDetectionModel
+from config.models import (
+    PartClassificationModel, ACControlClassificationModel, SensorClassificationModel, LightsClassificationModel,
+    WiperClassificationModel, LowerPanelClassificationModel, OrnClassificationModel
+)
 
 api_config = config['api_artifact']
 part_success_threshold = api_config.getint('part_success_threshold')
@@ -56,14 +57,21 @@ class Artifact:
         self.bezel_group = BezelGroup(vehicle_model)
         self.usb_aux_group = UsbAuxGroup(vehicle_model)
         classification_targets = {
-            *PartClassificationModel.target_detections,
-            *SensorClassificationModel.target_detections,
+             *PartClassificationModel.target_detections,
+             *ACControlClassificationModel.target_detections,
+             *SensorClassificationModel.target_detections,
+             *LightsClassificationModel.target_detections,
+             *WiperClassificationModel.target_detections,
+             *LowerPanelClassificationModel.target_detections,
+             *OrnClassificationModel.target_detections
         }
         self.parts = {
             detection_class:
             ClassificationPart(vehicle_model, detection_class) if detection_class in classification_targets
             else DetectionPart(vehicle_model, detection_class)
-            for detection_class in PartDetectionModel.ordered_class_list if detection_class is not None
+            for detection_class in
+            [PartDetectionModel.get_processed_class(dc, self.vehicle_category, self.vehicle_type)
+             for dc in PartDetectionModel.ordered_class_list if dc is not None]
         }
 
         # Snapshots
