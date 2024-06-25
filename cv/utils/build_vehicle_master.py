@@ -7,6 +7,21 @@ import yaml
 
 from .db import get_vehicle_models, get_vehicle_part_mapping
 
+def _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_upper_panel_map):
+    for vehicle_model in list(vehicle_part_type_groups.keys()):
+        generic_parts = vehicle_part_type_groups[vehicle_model]['generic_parts']
+        for part, details in generic_parts:
+            if details.part_class == 'upper_panel':
+                if part['part_number'] in vehicle_type_upper_panel_map:
+                    vehicle_data[vehicle_model]['vehicle_type'] = vehicle_type_upper_panel_map[part['part_number']]
+                else:
+                    print("Unregistered upper panel found:", part['part_number'])
+                    vehicle_part_type_groups.pop(vehicle_model)
+                break
+        else:
+            print("Upper panel is not registered for vehicle:", vehicle_model)
+            vehicle_part_type_groups.pop(vehicle_model)
+
 def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks):
     ip_upr = [v for v in vehicle_parts if v['part_name'] == 'IP_UPR']
     if len(ip_upr) == 0:
@@ -119,6 +134,8 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
                 })
 
 def build_vehicle_master():
+    print("Building vehicle master")
+
     # Part Master CSV
     part_master = pd.read_csv('./config/part_master.csv').fillna('')
     part_master_lookup = part_master.set_index('part_number')
@@ -137,9 +154,13 @@ def build_vehicle_master():
         missing_part_checks = json.load(f)
     print("Missing part checks:", len(missing_part_checks))
 
-    with open('./config/bezel_switch_positions.csv', 'r') as f:
+    with open('./config/bezel_switch_positions.json', 'r') as f:
         bezel_switch_positions = json.load(f)
     print("Bezels registered for switch position:", len(bezel_switch_positions))
+
+    with open('./config/vehicle_type_upper_panel_map.json', 'r') as f:
+        vehicle_type_upper_panel_map = json.load(f)
+    print("Upper panels registered:", len(vehicle_type_upper_panel_map))
 
     for vehicle_model, vehicle_parts in mapping.items():
         print(vehicle_model, len(vehicle_parts))
@@ -148,6 +169,7 @@ def build_vehicle_master():
         _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks),
         part_master_lookup) for vehicle_model, vehicle_parts in mapping.items()}
     vehicle_data = defaultdict(dict)
+    _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_upper_panel_map)
     _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_usb_aux_group(vehicle_data, vehicle_part_type_groups)
     _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions)

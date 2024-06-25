@@ -67,6 +67,7 @@ YHB23D2BP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
 YHB23D2BP6800000:
   ac_control:
     is_group: true
@@ -128,6 +129,7 @@ YHB23D2BP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -211,6 +213,7 @@ YHB23D2BP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -293,6 +296,7 @@ YHB23D2CP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -359,6 +363,7 @@ YHB23D2CP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -442,6 +447,7 @@ YHB23D2CP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -501,6 +507,7 @@ YHB23D2DP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -577,6 +584,7 @@ YHB23D2DP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -659,6 +667,7 @@ YHB23D7CP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -725,6 +734,7 @@ YHB23D7CP0700000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -808,6 +818,7 @@ YHB23D7CP4300000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -874,6 +885,7 @@ YHB23D7CP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -957,6 +969,7 @@ YHB23D7CP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -1016,6 +1029,7 @@ YHB23D7DP0700000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -1092,6 +1106,7 @@ YHB23D7DP4300000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -1151,6 +1166,7 @@ YHB23D7DP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -1227,6 +1243,7 @@ YHB23D7DP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -1307,6 +1324,7 @@ YHB4ED23P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -1386,6 +1404,7 @@ YHB4ED24P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -1466,6 +1485,7 @@ YHB4ED2AP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -1546,6 +1566,7 @@ YHB5ED22P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -1626,6 +1647,7 @@ YHB5ED23P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -1705,6 +1727,7 @@ YHB5ED24P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -1785,6 +1808,7 @@ YHB5ED2AP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -1858,6 +1882,7 @@ YHB5ED2EP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -1938,6 +1963,7 @@ YHB5EDXCP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -2017,6 +2043,7 @@ YHB5EDXDP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -2090,6 +2117,7 @@ YHB5EDXEP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -2172,6 +2200,7 @@ YHBB3D2BP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -2238,6 +2267,7 @@ YHBB3D2BP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -2321,6 +2351,7 @@ YHBB3D2BP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -2403,6 +2434,7 @@ YHBB3D2CP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -2469,6 +2501,7 @@ YHBB3D2CP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -2552,6 +2585,7 @@ YHBB3D2CP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -2627,20 +2661,12 @@ YHBB3D2DP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
     part_number: 37310M68P51
-YHBB3D2DP7900000:
-  bezel:
-    id: 73833M73R50-5PK
-    n_rows: 1
-    name: BLACK W/O HOLE, BEZEL YHB
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
 YHBB3D7CP0600000:
   ac_control:
     is_group: true
@@ -2718,6 +2744,7 @@ YHBB3D7CP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -2784,6 +2811,7 @@ YHBB3D7CP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -2867,6 +2895,7 @@ YHBB3D7CP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -2942,20 +2971,12 @@ YHBB3D7DP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
     part_number: 37310M68P51
-YHBB3D7DP4600000:
-  bezel:
-    id: 73833M73R50-5PK
-    n_rows: 1
-    name: BLACK W/O HOLE, BEZEL YHB
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
 YHBB3D7DP6800000:
   ac_control:
     is_group: true
@@ -3010,6 +3031,7 @@ YHBB3D7DP6800000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -3086,20 +3108,12 @@ YHBB3D7DP7900000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
     part_name: SW_WIP
     part_number: 37310M68P41
-YHBC3D23P7400000:
-  bezel:
-    id: 73833M73R00-V6N
-    n_rows: 1
-    name: BEIGE W/O HOLE, BEZEL YHB
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
 YHBCED23P7400000:
   ac_control:
     is_group: true
@@ -3175,6 +3189,7 @@ YHBCED23P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -3255,6 +3270,7 @@ YHBDED22P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -3335,6 +3351,7 @@ YHBDED23P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -3414,6 +3431,7 @@ YHBDED24P7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3487,6 +3505,7 @@ YHBDED2EP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3567,6 +3586,7 @@ YHBDEDXCP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
@@ -3646,6 +3666,7 @@ YHBDEDXDP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3719,6 +3740,7 @@ YHBDEDXEP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3791,6 +3813,7 @@ YHC23T2DP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3857,6 +3880,7 @@ YHC23T2EP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3929,6 +3953,7 @@ YHC23T7DP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3995,6 +4020,7 @@ YHC23T7EP0600000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4076,6 +4102,7 @@ YHC4ET2DP7400000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4157,6 +4184,7 @@ YHC5ET2DP7400000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4232,6 +4260,7 @@ YHC5ET2EP7400000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4307,6 +4336,7 @@ YHC5ET2FP7400000:
       part_number: 95525M72S00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4388,6 +4418,7 @@ YHC5ETXDP7400000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4463,6 +4494,7 @@ YHC5ETXEP7400000:
       part_number: 88411M76T00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4538,6 +4570,7 @@ YHC5ETXFP7400000:
       part_number: 95525M72S00
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -4630,6 +4663,7 @@ YL188C2CP0600000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -4703,6 +4737,7 @@ YL188C2CP6810309:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -4793,6 +4828,7 @@ YL188C2CP7910309:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -4864,6 +4900,7 @@ YL188C2EP0613606:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -4935,6 +4972,7 @@ YL188C2EP6813606:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5023,6 +5061,7 @@ YL188C2EP7913606:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5110,6 +5149,7 @@ YL188C7CP0600000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -5200,6 +5240,7 @@ YL188C7CP0710108:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5273,6 +5314,7 @@ YL188C7CP0713146:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5363,6 +5405,7 @@ YL188C7CP0713147:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5453,6 +5496,7 @@ YL188C7CP0713149:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5526,6 +5570,7 @@ YL188C7CP6810309:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5616,6 +5661,7 @@ YL188C7CP7910309:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5689,6 +5735,7 @@ YL188C7DP0710108:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5762,6 +5809,7 @@ YL188C7DP0713146:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5835,6 +5883,7 @@ YL188C7DP0713149:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -5923,6 +5972,7 @@ YL188C7EP0613606:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -6012,6 +6062,7 @@ YL188C7EP0706087:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 37275M75J00
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -6098,6 +6149,7 @@ YL188C7EP0710309:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -6169,6 +6221,7 @@ YL188C7EP6810309:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -6240,6 +6293,7 @@ YL188C7EP6813606:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -6328,6 +6382,7 @@ YL188C7EP7910309:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -6416,6 +6471,7 @@ YL188C7EP7913606:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -6503,6 +6559,7 @@ YL199C2CP7400000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -6590,6 +6647,7 @@ YL199C2DP7400000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -6677,6 +6735,7 @@ YL199C2EP7400000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -6766,6 +6825,7 @@ YL199C2FP7400000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -6855,6 +6915,7 @@ YL199C7DP7400000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -6941,6 +7002,7 @@ YL199C7EP7400000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -7030,6 +7092,7 @@ YL199C7FP7400000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -7103,6 +7166,7 @@ YL1T8C2CP6800000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7193,6 +7257,7 @@ YL1T8C2CP7900000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7264,6 +7329,7 @@ YL1T8C2EP6800000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7352,6 +7418,7 @@ YL1T8C2EP7900000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7442,6 +7509,7 @@ YL1T8C7CP0600000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -7515,6 +7583,7 @@ YL1T8C7CP6800000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7605,6 +7674,7 @@ YL1T8C7CP7900000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7693,6 +7763,7 @@ YL1T8C7EP0600000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L00
@@ -7781,6 +7852,7 @@ YL1T8C7EP4600000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7852,6 +7924,7 @@ YL1T8C7EP6800000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
@@ -7940,45 +8013,10 @@ YL1T8C7EP7900000:
       part_number: 39441M75J01-5PK
     - part_name: USB_SKT
       part_number: 39105M56R00-5PK
+  vehicle_type: LHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M74L20
-YXA13CXBP7400000:
-  bezel:
-    id: 73826M66T00-5PK
-    n_rows: 2
-    name: 7 HOLES, BEZEL YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA13CXCP7400000:
-  bezel:
-    id: 73826M66T10-5PK
-    n_rows: 2
-    name: 10 HOLES, BEZE YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA13CXDP7400000:
-  bezel:
-    id: 73826M66T20-5PK
-    n_rows: 2
-    name: 11 HOLES, BEZEL YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA14C2DP7400000:
-  bezel:
-    id: 73826M66T20-5PK
-    n_rows: 2
-    name: 11 HOLES, BEZEL YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
 YXA14C2EP7400000:
   ac_control:
     is_group: true
@@ -8064,184 +8102,10 @@ YXA14C2EP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     part_name: SW_WIP
     part_number: 37310M68P21
-YXA14CXBP7400000:
-  bezel:
-    id: 73826M66T00-5PK
-    n_rows: 2
-    name: 7 HOLES, BEZEL YXA
-    switches_bottom:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 5
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 6
-    - id: 37780M81R00
-      name: ID STOP, SW YXA
-      position: 7
-    switches_top:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 4
-    - id: 37585M81R00
-      name: ESP OFF, SW YXA
-      position: 3
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 2
-    - id: 35180M69R00
-      name: HEAD LAMP, SW YXA
-      position: 1
-YXA14CXCP7400000:
-  bezel:
-    id: 73826M66T10-5PK
-    n_rows: 2
-    name: 10 HOLES, BEZE YXA
-    switches_bottom:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 6
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 7
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 8
-    - id: 37780M81R00
-      name: ID STOP, SW YXA
-      position: 9
-    switches_top:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 5
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 4
-    - id: 37585M81R00
-      name: ESP OFF, SW YXA
-      position: 3
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 2
-    - id: 35180M69R00
-      name: HEAD LAMP, SW YXA
-      position: 1
-YXA14CXDP7400000:
-  bezel:
-    id: 73826M66T20-5PK
-    n_rows: 2
-    name: 11 HOLES, BEZEL YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA23C2DP7400000:
-  bezel:
-    id: 73826M66T20-5PK
-    n_rows: 2
-    name: 11 HOLES, BEZEL YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA23C2EP7400000:
-  bezel:
-    id: 73826M66T10-5PK
-    n_rows: 2
-    name: 10 HOLES, BEZE YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA23C2FP7400000:
-  bezel:
-    id: 73826M66T00-5PK
-    n_rows: 2
-    name: 7 HOLES, BEZEL YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA23C2GP7400000:
-  bezel:
-    id: 73826M66T00-5PK
-    n_rows: 2
-    name: 7 HOLES, BEZEL YXA
-    switches_top:
-      id: na
-      name: N/A
-      position: 1
-YXA24C2DP7400000:
-  bezel:
-    id: 73826M66T20-5PK
-    n_rows: 2
-    name: 11 HOLES, BEZEL YXA
-    switches_bottom:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 6
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 7
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 8
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 9
-    switches_top:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 5
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 4
-    - id: 37585M81R00
-      name: ESP OFF, SW YXA
-      position: 3
-    - id: 37700M81R00
-      name: CAMERA, SW YXA
-      position: 2
-    - id: 35180M69R00
-      name: HEAD LAMP, SW YXA
-      position: 1
-YXA24C2EP7400000:
-  bezel:
-    id: 73826M66T10-5PK
-    n_rows: 2
-    name: 10 HOLES, BEZE YXA
-    switches_bottom:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 6
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 7
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 8
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 9
-    switches_top:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 5
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 4
-    - id: 37585M81R00
-      name: ESP OFF, SW YXA
-      position: 3
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 2
-    - id: 35180M69R00
-      name: HEAD LAMP, SW YXA
-      position: 1
 YXA24C2FP7400000:
   ac_control:
     is_group: true
@@ -8321,36 +8185,9 @@ YXA24C2FP7400000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_number: 37310M68P01
-YXA24C2GP7400000:
-  bezel:
-    id: 73826M66T00-5PK
-    n_rows: 2
-    name: 7 HOLES, BEZEL YXA
-    switches_bottom:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 5
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 6
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 7
-    switches_top:
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 4
-    - id: 37585M81R00
-      name: ESP OFF, SW YXA
-      position: 3
-    - id: 37285M81R00
-      name: CAP HOLE, SW YXA
-      position: 2
-    - id: 35180M69R00
-      name: HEAD LAMP, SW YXA
-      position: 1
