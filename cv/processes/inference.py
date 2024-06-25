@@ -5,7 +5,7 @@ import threading
 import traceback
 from collections import defaultdict
 
-from config.models import classification_models, detection_models, BezelSwitchClassificationModel
+from config.models import classification_models, detection_models, BezelSwitchClassificationModel, PartDetectionModel
 from utils.image_utils import plot_one_box, draw_confirmation_prompt
 from utils.live_display import prepare_live_display
 from config.config import config
@@ -57,6 +57,8 @@ def _inference_loop(thread):
             ]:
                 if frame_cam is None:
                     continue
+                if data.artifact is None: # skip detections when vehicle is not available
+                    continue
                 for model, model_config in zip(models_detect, detection_models):
                     if cam_type not in model_config.target_cams:
                         continue
@@ -77,6 +79,10 @@ def _inference_loop(thread):
                         class_id = model_config.ordered_class_list[class_idx]
                         if class_id is None: # skipped class
                             continue
+                        try:
+                            class_id = PartDetectionModel.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                        except:
+                            pass
                         if cam_type not in model_config.class_cams.get(class_id, set()):
                             continue
                         confidence = float(confidence)
@@ -115,6 +121,10 @@ def _inference_loop(thread):
                     result = results[0]
                     pred_class_idx = result.probs.top1
                     class_id = model_config.ordered_class_list[pred_class_idx] # todo: class_id None and confidence filters
+                    try:
+                        class_id = model_config.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                    except:
+                        pass
                     class_name = model_config.class_names[class_id]
                     confidence = round(float(result.probs.data.max()), 2)
                     class_color = model_config.class_colors[class_id]
@@ -122,16 +132,19 @@ def _inference_loop(thread):
                     # Part number
                     is_flip = False
                     if data.artifact and model_config is BezelSwitchClassificationModel:
-                        part_number, is_flip = BezelSwitchClassificationModel.get_part_number(class_id, data.artifact.vehicle_model)
+                        part_number, is_flip = BezelSwitchClassificationModel.get_part_number(None, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
                     else:
-                        part_number = class_id
+                        try:
+                            part_number = model_config.get_part_number(detection.class_id, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                        except:
+                            part_number = class_id
 
                     detection.classification_details = ClassificationDetails(
                         class_id, class_name, part_number, is_flip, model_config.name, confidence, class_color)
                     detection.final_details = FinalDetails(class_name, color_red, DetectionResult.NOT_EVALUATED)
             
             # Update data
-            if data.artifact is not None:
+            if data.artifact:
                 data.artifact.update(detection_groups, frame_top_orig, frame_bottom_orig, frame_up_orig)
 
             # Plot

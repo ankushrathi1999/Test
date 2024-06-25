@@ -6,6 +6,7 @@ import cv2
 import json
 import traceback
 import json
+import yaml
 
 from config.db_config import db_params
 from config.config import config
@@ -35,6 +36,9 @@ os.makedirs(snapshots_dir, exist_ok=True)
 os.makedirs(metadata_dir, exist_ok=True)
 debug_mode and os.makedirs(metadata_dir_debug, exist_ok=True)
 
+with open('./config/vehicle_parts.yaml') as x:
+    vehicle_parts_lookup = yaml.safe_load(x)
+
 class Artifact:
 
     def __init__(self, psn, chassis, vehicle_model, data):
@@ -45,6 +49,8 @@ class Artifact:
         self.psn = psn
         self.chassis = chassis
         self.vehicle_model = vehicle_model
+        self.vehicle_category = vehicle_model[:3] if (vehicle_model and len(vehicle_model) >= 3) else None
+        self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type')
 
         # Parts
         self.bezel_group = BezelGroup(vehicle_model)

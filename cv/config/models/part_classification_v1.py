@@ -1,23 +1,27 @@
-from .part_detection import PartDetectionModel
+from .part_detection_v2 import PartDetectionModel
 from ..colors import color_white, color_green
 
 class PartClassificationModel:
-    name = 'part_classification'
+    name = 'part_classification_v1'
     imgsz = 256
     target_detections = set(
         [cl for cl in PartDetectionModel.ordered_class_list if cl is not None]
     ) - {
+        # Handled by other classifiers
+        PartDetectionModel.CLASS_lights,
+        PartDetectionModel.CLASS_wiper,
         PartDetectionModel.CLASS_ac_control,
-        PartDetectionModel.CLASS_label_ac,
-        # PartDetectionModel.CLASS_ac_ctr_left,
-        # PartDetectionModel.CLASS_ac_ctr_right,
+        PartDetectionModel.CLASS_lower_panel,
+        PartDetectionModel.CLASS_orn_drvr,
+        PartDetectionModel.CLASS_orn_ctr,
         PartDetectionModel.CLASS_sensor_left,
         PartDetectionModel.CLASS_sensor_right,
-        # PartDetectionModel.CLASS_nozzle_left,
-        # PartDetectionModel.CLASS_nozzle_right,
-        PartDetectionModel.CLASS_switch,
         PartDetectionModel.CLASS_usb_aux,
         PartDetectionModel.CLASS_usb_aux_container,
+
+        # Detection Only
+        PartDetectionModel.CLASS_label_ac,
+        PartDetectionModel.CLASS_switch,
     }
 
     ordered_class_list = [

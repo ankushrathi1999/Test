@@ -108,8 +108,7 @@ class BezelSwitchClassificationModel:
     }
 
     @staticmethod
-    def get_part_number(class_name, vehicle_model):
-        vehicle_category = vehicle_model[:3].lower() if vehicle_model else None
+    def get_part_number(detection_label, class_name, vehicle_category, vehicle_type):
         is_flip = class_name.endswith('_flip')
         if is_flip:
             class_name = class_name.replace('_flip', '')
@@ -117,11 +116,11 @@ class BezelSwitchClassificationModel:
         part_number = None
         if class_name == BezelSwitchClassificationModel.CLASS_MISSING:
             part_number = BezelSwitchClassificationModel.CLASS_MISSING
-        elif vehicle_category in {'yhb', 'yhc'}:
+        elif vehicle_category in {'YHB', 'YHC'}:
             part_number = BezelSwitchClassificationModel.yhbc_class_part_map.get(class_name)
-        elif vehicle_category in {'yl1'}:
+        elif vehicle_category in {'YL1'}:
             part_number = BezelSwitchClassificationModel.yl1_class_part_map.get(class_name)
-        elif vehicle_category in {'yxa'}:
+        elif vehicle_category in {'YXA'}:
             part_number = BezelSwitchClassificationModel.yxa_class_part_map.get(class_name)
 
         return part_number, is_flip

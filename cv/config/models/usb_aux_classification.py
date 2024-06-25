@@ -1,4 +1,4 @@
-from .part_detection import PartDetectionModel
+from .part_detection_v2 import PartDetectionModel
 from ..colors import color_white, color_green
 
 class UsbAuxClassificationModel:

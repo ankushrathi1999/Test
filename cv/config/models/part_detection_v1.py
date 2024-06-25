@@ -1,7 +1,7 @@
 from ..colors import color_white, color_green
 
 class PartDetectionModel:
-    name = 'part_detection'
+    name = 'part_detection_v1'
     imgsz = 640
     target_cams = {'top', 'bottom', 'up'}
 
