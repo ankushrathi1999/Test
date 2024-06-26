@@ -93,6 +93,7 @@ class UsbAuxGroup:
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and set(self.part_results) == {DetectionResult.OK}:
             results = [DetectionResult.OK for _ in self.part_ids]
+            preds = self.part_preds
 
         # Incorrect Position case: All parts match but order is incorrect
         if results != [DetectionResult.OK for _ in self.part_ids]:

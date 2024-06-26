@@ -114,6 +114,7 @@ class BezelGroup:
             # Keep in OK state if already passed
             if not ALLOW_OK_TO_NG and self.bezel_result == DetectionResult.OK:
                 result = DetectionResult.OK
+                pred_bezel_part = self.bezel_pred
             self.bezel_results_count[(pred_bezel_part, result)] += 1
             bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
             bezel_detection.final_details.result = result
@@ -147,6 +148,7 @@ class BezelGroup:
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and set(self.switch_results) == {DetectionResult.OK}:
             results = [DetectionResult.OK for _ in self.switch_part_ids]
+            preds = self.switch_preds
 
         # Incorrect Position case: All parts match but order is incorrect
         if results != [DetectionResult.OK for _ in self.switch_part_ids]:
