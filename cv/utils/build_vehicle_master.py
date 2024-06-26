@@ -67,9 +67,9 @@ def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class
             }
             if part.get('is_miss'):
                 data['is_miss'] = True
-            if len(details.part_group_name_er.strip()) > 0:
+            if len(details.part_group_name.strip()) > 0:
                 data["is_group"] = True
-                data["part_group"] = details.part_group_name_er.strip()
+                data["part_group"] = details.part_group_name.strip()
             missing_class_name = missing_class_name_lookup.get(details.part_class)
             if missing_class_name is not None:
                 data['missing_class_name'] = missing_class_name
