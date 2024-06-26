@@ -67,7 +67,7 @@ class Artifact:
         }
         self.parts = {
             detection_class:
-            ClassificationPart(vehicle_model, detection_class) if detection_class in classification_targets
+            ClassificationPart(vehicle_model, detection_class, self) if detection_class in classification_targets
             else DetectionPart(vehicle_model, detection_class)
             for detection_class in
             [PartDetectionModel.get_processed_class(dc, self.vehicle_category, self.vehicle_type)
@@ -105,7 +105,7 @@ class Artifact:
         # Parts Update - classification and detection
         for detection_class, part in self.parts.items():
             if detection_class in detection_groups:
-                part.update(detection_groups[detection_class])
+                part.update(detection_groups[detection_class], detection_groups)
 
         cur_time = time.time()
         if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < n_snapshots_max):

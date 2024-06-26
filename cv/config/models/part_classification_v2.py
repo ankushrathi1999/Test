@@ -32,6 +32,28 @@ part_garnish_yhbc_lookup = {
     ('RHD', 'ac_right'): '73083M72R00-C48'
  }
 
+# todo: combine lookup for yhb and yhcx after adding telescopic steering class
+part_steering_cover_lookup_yhb = {
+    ('clmn_cvr_black', True): '48400M55R00-5PK', # classification label x is_key_present
+    ('clmn_cvr_black', False): '48400M55R10-5PK',
+    # ('clmn_cvr_black', False): '48400M55T30-5PK',
+    ('clmn_cvr_gray', True): '48400M55R00-R8R',
+    ('clmn_cvr_gray', False): '48400M55R10-R8R',
+}
+
+part_steering_cover_lookup_yhcx = {
+    ('clmn_cvr_black', True): '48400M55R00-5PK', # classification label x is_key_present
+    # ('clmn_cvr_black', False): '48400M55R10-5PK',
+    ('clmn_cvr_black', False): '48400M55T30-5PK',
+    ('clmn_cvr_gray', True): '48400M55R00-R8R',
+    ('clmn_cvr_gray', False): '48400M55R10-R8R',
+}
+
+part_steering_cover_lookup_yl1 = {
+    ('clmn_cvr_black', True): '48400M74L00-5PK', # classification label x is_key_present
+    ('clmn_cvr_black', False): '48400M79M30-5PK',
+}
+
 class PartClassificationModel:
     name = 'part_classification_v2'
     imgsz = 256
@@ -106,7 +128,7 @@ class PartClassificationModel:
 
     class_colors = {k: color_green for k in class_names.keys()}
 
-    staticmethod
+    @staticmethod
     def get_part_number(detection_label_full, class_name, vehicle_category, vehicle_type):
         detection_label = detection_label_full.replace('part_detection_v2_', '')
         if detection_label_full in {PartDetectionModel.CLASS_upper_panel}:
@@ -119,3 +141,13 @@ class PartClassificationModel:
             return part_garnish_yhbc_lookup.get((vehicle_type, detection_label))
         else:
             return class_name
+        
+    @staticmethod
+    def get_part_number_steering_cover(class_name, is_key_present, vehicle_category):
+        if vehicle_category == 'YHB':
+            return part_steering_cover_lookup_yhb.get((class_name, is_key_present))
+        elif vehicle_category in {'YHC', 'YXA'}:
+            return part_steering_cover_lookup_yhcx.get((class_name, is_key_present))
+        elif vehicle_category == 'YL1':
+            return part_steering_cover_lookup_yl1.get((class_name, is_key_present))
+

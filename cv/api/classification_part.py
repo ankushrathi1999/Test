@@ -18,7 +18,8 @@ with open('./config/part_group_names.json') as x:
 
 class ClassificationPart:
 
-    def __init__(self, vehicle_model, detection_class):
+    def __init__(self, vehicle_model, detection_class, artifact):
+        self.artifact = artifact
         self.detection_class = detection_class.replace('part_detection_v2_', '')
         self.part_id = None
         self.part_number = None
@@ -75,8 +76,7 @@ class ClassificationPart:
             'key': self.part_name,
         }
 
-    def update(self, part_detections):
-        # print("Classification update", self.detection_class)
+    def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
             return        
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
