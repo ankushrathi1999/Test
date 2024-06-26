@@ -121,10 +121,6 @@ def _inference_loop(thread):
                     result = results[0]
                     pred_class_idx = result.probs.top1
                     class_id = model_config.ordered_class_list[pred_class_idx] # todo: class_id None and confidence filters
-                    try:
-                        class_id = model_config.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
-                    except:
-                        pass
                     class_name = model_config.class_names[class_id]
                     confidence = round(float(result.probs.data.max()), 2)
                     class_color = model_config.class_colors[class_id]
