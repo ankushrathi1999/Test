@@ -730,7 +730,7 @@ YHB23D7CP0700000:
     part_number: 48400M55R00-5PK
   upper_panel:
     part_name: IP_UPR
-    part_number: 73111M72R00-5PK
+    part_number: 73111M72R50-5PK
   usb_aux_group:
     n_parts: 2
     parts:
@@ -738,7 +738,7 @@ YHB23D7CP0700000:
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
       part_number: 39105M77S00-5PK
-  vehicle_type: RHD
+  vehicle_type: LHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_72R30_SW_WIP_YHBC_68P41
@@ -1496,7 +1496,7 @@ YHB4ED2AP7400000:
     - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
-      part_number: 37275M75J00
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     is_group: true
@@ -1819,7 +1819,7 @@ YHB5ED2AP7400000:
     - part_name: ACC_SKT
       part_number: 39440M56R20-5PK
     - part_name: USB_SKT
-      part_number: 37275M75J00
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     is_group: true
@@ -7031,7 +7031,6 @@ YL199C7EP7400000:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
   sensor_left:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
     part_number: 38680M56R00
@@ -8146,7 +8145,6 @@ YXA14C2EP7400000:
     part_name: SNSR_AUTO
     part_number: 38680M56R00
   sensor_right:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
@@ -8229,7 +8227,6 @@ YXA24C2FP7400000:
     part_name: SNSR_AUTO
     part_number: 38680M56R00
   sensor_right:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20

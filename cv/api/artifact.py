@@ -15,6 +15,7 @@ from utils.shift_utils import get_current_shift
 from .bezel_group import BezelGroup
 from .usb_aux_group import UsbAuxGroup
 from .classification_part import ClassificationPart
+from .steering_cover import SteeringCover
 from .detection_part import DetectionPart
 from .detection import DetectionResult
 from config.models import BezelGroupDetectionModel, PartDetectionModel
@@ -51,7 +52,7 @@ class Artifact:
         self.chassis = chassis
         self.vehicle_model = vehicle_model
         self.vehicle_category = vehicle_model[:3] if (vehicle_model and len(vehicle_model) >= 3) else None
-        self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type')
+        self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type', 'RHD')
 
         # Parts
         self.bezel_group = BezelGroup(vehicle_model)
@@ -65,14 +66,27 @@ class Artifact:
              *LowerPanelClassificationModel.target_detections,
              *OrnClassificationModel.target_detections
         }
-        self.parts = {
-            detection_class:
-            ClassificationPart(vehicle_model, detection_class, self) if detection_class in classification_targets
-            else DetectionPart(vehicle_model, detection_class)
-            for detection_class in
-            [PartDetectionModel.get_processed_class(dc, self.vehicle_category, self.vehicle_type)
-             for dc in PartDetectionModel.ordered_class_list if dc is not None]
-        }
+
+        self.parts = {}
+        for detection_class in PartDetectionModel.ordered_class_list:
+            if detection_class is None:
+                continue
+            detection_class = PartDetectionModel.get_processed_class(detection_class, self.vehicle_category, self.vehicle_type)
+            if detection_class not in classification_targets:
+                self.parts[detection_class] = DetectionPart(vehicle_model, detection_class)
+            elif detection_class == PartDetectionModel.CLASS_steering_cover:
+                self.parts[detection_class] = SteeringCover(vehicle_model, detection_class, self)
+            else:
+                self.parts[detection_class] = ClassificationPart(vehicle_model, detection_class, self)
+
+        # self.parts = {
+        #     detection_class:
+        #     ClassificationPart(vehicle_model, detection_class, self) if detection_class in classification_targets
+        #     else DetectionPart(vehicle_model, detection_class)
+        #     for detection_class in
+        #     [PartDetectionModel.get_processed_class(dc, self.vehicle_category, self.vehicle_type)
+        #      for dc in PartDetectionModel.ordered_class_list if dc is not None]
+        # }
 
         # Snapshots
         self._last_snapshot_time = time.time()

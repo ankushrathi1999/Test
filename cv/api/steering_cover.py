@@ -19,8 +19,8 @@ with open('./config/part_group_names.json') as x:
 
 class SteeringCover(ClassificationPart):
 
-    def __init__(self, vehicle_model, detection_class):
-        super().__init__(vehicle_model, detection_class)
+    def __init__(self, vehicle_model, detection_class, artifact):
+        super().__init__(vehicle_model, detection_class, artifact)
         self.key_detecton_count = 0
 
     def update(self, part_detections, detection_groups):

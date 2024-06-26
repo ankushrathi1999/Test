@@ -104,3 +104,5 @@ class ClassificationPart:
             if result_count >= RESULT_COUNT_THRESHOLD:
                 self.part_pred = result[0]
                 self.part_result = result[1]
+
+        
