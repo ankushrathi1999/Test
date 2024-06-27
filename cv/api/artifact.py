@@ -179,13 +179,14 @@ class Artifact:
             part_results_lookup = {p['part_name']: p['result'] for p in parts}
             results = []
             for part_name in part_order_plc:
-                if part_name.startswith['BZ_']:
+                if part_name.startswith('BZ_'):
                     results.append(self.bezel_group.get_result_by_part_name(parts, part_name))
                 elif part_name in part_results_lookup:
                     results.append(part_results_lookup[part_name])
                 else:
                     print("RESULT UNAVAILABLE FOR", part_name, self.vehicle_model, self.psn)
                     results.append(None)
+                print("PART RESULT:", part_name, results[-1])
             for i, part_result in enumerate(results):
                 plc_array = plc_array_1
                 if i >= 22: # Switch to Array 2

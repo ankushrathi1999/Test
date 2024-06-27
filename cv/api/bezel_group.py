@@ -100,7 +100,7 @@ class BezelGroup:
         switch_pos_lookup = {res['position']:res for res in switch_results}
         if part_name.startswith('BZ_SW_'):
             try:
-                position = int(part_name.replace('BZ_SW_'))
+                position = int(part_name.replace('BZ_SW_', ''))
                 part = switch_pos_lookup.get(position)
                 return part['result'] if part is not None else None
             except ValueError:
