@@ -74,7 +74,7 @@ def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class
             if missing_class_name is not None:
                 data['missing_class_name'] = missing_class_name
 
-def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups):
+def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup):
     for vehicle_model in vehicle_part_type_groups:
         usb_aux_group = vehicle_part_type_groups[vehicle_model]['usb_aux_group']
         if len(usb_aux_group) == 0:
@@ -82,11 +82,13 @@ def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups):
             continue
         assert 2 <= len(usb_aux_group) <= 3
         usb_aux_group = sorted(usb_aux_group, key=lambda x: x[0]['part_position'])
+        missing_class_name = missing_class_name_lookup.get('usb_aux') # todo: hardcoded class name
         vehicle_data[vehicle_model]['usb_aux_group'] = {
             "n_parts": len(usb_aux_group),
             "parts": list(map(lambda part: {
                 "part_name": part[1].part_name_msil,
                 "part_number": part[0]['part_number'],
+                "missing_class_name": missing_class_name,
             }, usb_aux_group))
         }
 
@@ -171,7 +173,7 @@ def build_vehicle_master():
     vehicle_data = defaultdict(dict)
     _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_upper_panel_map)
     _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
-    _process_usb_aux_group(vehicle_data, vehicle_part_type_groups)
+    _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions)
 
     with open('./config/vehicle_parts.yaml', 'w') as x:

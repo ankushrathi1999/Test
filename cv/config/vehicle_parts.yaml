@@ -61,11 +61,14 @@ YHB23D2BP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: RHD
 YHB23D2BP6800000:
@@ -125,9 +128,11 @@ YHB23D2BP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -209,9 +214,11 @@ YHB23D2BP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -290,11 +297,14 @@ YHB23D2CP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -359,9 +369,11 @@ YHB23D2CP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -443,9 +455,11 @@ YHB23D2CP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -505,9 +519,11 @@ YHB23D2DP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -584,9 +600,11 @@ YHB23D2DP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -665,11 +683,14 @@ YHB23D7CP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -734,9 +755,11 @@ YHB23D7CP0700000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -818,9 +841,11 @@ YHB23D7CP4300000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -885,9 +910,11 @@ YHB23D7CP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -969,9 +996,11 @@ YHB23D7CP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -1031,9 +1060,11 @@ YHB23D7DP0700000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -1110,9 +1141,11 @@ YHB23D7DP4300000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -1172,9 +1205,11 @@ YHB23D7DP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -1251,9 +1286,11 @@ YHB23D7DP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -1332,9 +1369,11 @@ YHB4ED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -1412,9 +1451,11 @@ YHB4ED24P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -1493,9 +1534,11 @@ YHB4ED2AP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -1574,9 +1617,11 @@ YHB5ED22P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: RHD
   wiper:
@@ -1655,9 +1700,11 @@ YHB5ED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -1735,9 +1782,11 @@ YHB5ED24P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -1816,9 +1865,11 @@ YHB5ED2AP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -1892,9 +1943,11 @@ YHB5ED2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -1973,9 +2026,11 @@ YHB5EDXCP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -2053,9 +2108,11 @@ YHB5EDXDP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -2129,9 +2186,11 @@ YHB5EDXEP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -2210,11 +2269,14 @@ YHBB3D2BP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: RHD
   wiper:
@@ -2279,9 +2341,11 @@ YHBB3D2BP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -2363,9 +2427,11 @@ YHBB3D2BP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -2444,11 +2510,14 @@ YHBB3D2CP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -2513,9 +2582,11 @@ YHBB3D2CP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -2597,9 +2668,11 @@ YHBB3D2CP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -2673,11 +2746,14 @@ YHBB3D2DP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -2756,11 +2832,14 @@ YHBB3D7CP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -2825,9 +2904,11 @@ YHBB3D7CP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -2909,9 +2990,11 @@ YHBB3D7CP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -2985,11 +3068,14 @@ YHBB3D7DP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -3049,9 +3135,11 @@ YHBB3D7DP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -3128,9 +3216,11 @@ YHBB3D7DP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: LHD
   wiper:
@@ -3209,9 +3299,11 @@ YHBCED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -3290,9 +3382,11 @@ YHBDED22P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: RHD
   wiper:
@@ -3371,9 +3465,11 @@ YHBDED23P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -3451,9 +3547,11 @@ YHBDED24P7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -3527,9 +3625,11 @@ YHBDED2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -3608,9 +3708,11 @@ YHBDEDXCP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -3688,9 +3790,11 @@ YHBDEDXDP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -3764,9 +3868,11 @@ YHBDEDXEP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -3835,11 +3941,14 @@ YHC23T2DP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -3904,11 +4013,14 @@ YHC23T2EP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -3977,11 +4089,14 @@ YHC23T7DP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4046,11 +4161,14 @@ YHC23T7EP0600000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4128,11 +4246,14 @@ YHC4ET2DP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4210,11 +4331,14 @@ YHC5ET2DP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4288,11 +4412,14 @@ YHC5ET2EP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4366,11 +4493,14 @@ YHC5ET2FP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 95525M72S00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4448,11 +4578,14 @@ YHC5ETXDP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4526,11 +4659,14 @@ YHC5ETXEP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 88411M76T00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4604,11 +4740,14 @@ YHC5ETXFP7400000:
   usb_aux_group:
     n_parts: 3
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: SW_ST_VNT
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
       part_number: 95525M72S00
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -4699,9 +4838,11 @@ YL188C2CP0600000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -4775,9 +4916,11 @@ YL188C2CP6810309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -4866,9 +5009,11 @@ YL188C2CP7910309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -4938,9 +5083,11 @@ YL188C2EP0613606:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -5012,9 +5159,11 @@ YL188C2EP6813606:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -5101,9 +5250,11 @@ YL188C2EP7913606:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -5189,9 +5340,11 @@ YL188C7CP0600000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -5282,9 +5435,11 @@ YL188C7CP0710108:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -5356,9 +5511,11 @@ YL188C7CP0713146:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -5447,9 +5604,11 @@ YL188C7CP0713147:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -5538,9 +5697,11 @@ YL188C7CP0713149:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -5612,9 +5773,11 @@ YL188C7CP6810309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -5703,9 +5866,11 @@ YL188C7CP7910309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -5777,9 +5942,11 @@ YL188C7DP0710108:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -5851,9 +6018,11 @@ YL188C7DP0713146:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -5925,9 +6094,11 @@ YL188C7DP0713149:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -6014,9 +6185,11 @@ YL188C7EP0613606:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -6106,9 +6279,11 @@ YL188C7EP0706087:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
@@ -6193,9 +6368,11 @@ YL188C7EP0710309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -6265,9 +6442,11 @@ YL188C7EP6810309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -6337,9 +6516,11 @@ YL188C7EP6813606:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -6426,9 +6607,11 @@ YL188C7EP7910309:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -6515,9 +6698,11 @@ YL188C7EP7913606:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -6603,9 +6788,11 @@ YL199C2CP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -6693,9 +6880,11 @@ YL199C2DP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -6757,12 +6946,10 @@ YL199C2EP7400000:
     part_name: OR_IP_DR
     part_number: 73860M82R00-DE3
   sensor_left:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
     part_number: 38680M56R00
   sensor_right:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_number: 95642-64G20
@@ -6783,9 +6970,11 @@ YL199C2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -6875,9 +7064,11 @@ YL199C2FP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -6967,9 +7158,11 @@ YL199C7DP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -7055,9 +7248,11 @@ YL199C7EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -7147,9 +7342,11 @@ YL199C7FP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -7223,9 +7420,11 @@ YL1T8C2CP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -7314,9 +7513,11 @@ YL1T8C2CP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -7386,9 +7587,11 @@ YL1T8C2EP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -7475,9 +7678,11 @@ YL1T8C2EP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -7566,9 +7771,11 @@ YL1T8C7CP0600000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -7642,9 +7849,11 @@ YL1T8C7CP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -7733,9 +7942,11 @@ YL1T8C7CP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -7822,9 +8033,11 @@ YL1T8C7EP0600000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
@@ -7913,9 +8126,11 @@ YL1T8C7EP4600000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -7985,9 +8200,11 @@ YL1T8C7EP6800000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -8074,9 +8291,11 @@ YL1T8C7EP7900000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39441M75J01-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
@@ -8162,9 +8381,11 @@ YXA14C2EP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:
@@ -8244,9 +8465,11 @@ YXA24C2FP7400000:
   usb_aux_group:
     n_parts: 2
     parts:
-    - part_name: ACC_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
       part_number: 39440M56R20-5PK
-    - part_name: USB_SKT
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
       part_number: 39105M77S00-5PK
   vehicle_type: RHD
   wiper:

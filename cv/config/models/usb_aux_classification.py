@@ -1,5 +1,5 @@
 from .part_detection_v2 import PartDetectionModel
-from ..colors import color_white, color_green
+from ..colors import color_green, color_red
 
 class UsbAuxClassificationModel:
     name = 'usb_aux_classification'
@@ -14,6 +14,7 @@ class UsbAuxClassificationModel:
         '39105M77S00-5PK',
         '37275M75J00',
         '39105M56R00-5PK',
+        'acc_usb_ng',
     ]
 
     class_names = {
@@ -24,6 +25,7 @@ class UsbAuxClassificationModel:
         '39105M77S00-5PK': 'USB_SKT',
         '37275M75J00': 'USB_SKT',
         '39105M56R00-5PK': 'USB_SKT',
+        'acc_usb_ng': 'ACC_USB_NG'
     }
 
     class_colors = {
@@ -34,4 +36,5 @@ class UsbAuxClassificationModel:
         '39105M77S00-5PK': color_green,
         '37275M75J00': color_green,
         '39105M56R00-5PK': color_green,
+        'acc_usb_ng': color_red,
     }

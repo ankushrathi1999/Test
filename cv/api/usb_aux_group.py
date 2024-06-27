@@ -20,6 +20,7 @@ class UsbAuxGroup:
         self.part_ids = [] # List of part numbers
         self.part_names = [] # List of part names
         self.part_positions= [] # List of part positions
+        self.missing_class_names = []
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup and 'usb_aux_group' in vehicle_parts_lookup[vehicle_model]
 
         if self.inspection_enabled:
@@ -27,6 +28,7 @@ class UsbAuxGroup:
             for i, detail in enumerate(part_details.get('parts', [])):
                 self.part_ids.append(detail['part_number'])
                 self.part_names.append(detail['part_name'])
+                self.missing_class_names.append(detail.get('missing_class_name'))
                 self.part_positions.append(i+1)
 
         self.has_master = len(self.part_ids) > 1
@@ -80,10 +82,12 @@ class UsbAuxGroup:
         part_detections = list(sorted(part_detections, key=lambda detection: detection.bbox[0]))
         preds = []
         results = []
-        for detection, part_id in zip(part_detections, self.part_ids):
+        for detection, part_id, missing_class_name in zip(part_detections, self.part_ids, self.missing_class_names):
             detection.final_details.ignore = False
             pred_part = detection.classification_details.part_number
-            if pred_part == part_id:
+            if missing_class_name and pred_part == missing_class_name:
+                result = DetectionResult.MISSING
+            elif pred_part == part_id:
                 result = DetectionResult.OK
             else:
                 result = DetectionResult.INCORRECT_PART

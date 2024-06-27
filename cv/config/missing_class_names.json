@@ -1,4 +1,5 @@
 {
   "sensor_left": "no_sensor",
-  "sensor_right": "no_sensor"
+  "sensor_right": "no_sensor",
+  "usb_aux": "acc_usb_ng"
 }
