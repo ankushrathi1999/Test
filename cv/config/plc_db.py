@@ -1,5 +1,6 @@
 SIG_SEND_HEART_BIT = "PCHeartBit"
-SIG_SEND_RESULT = "PCResult"
+SIG_SEND_RESULT_MID1 = "PCResultMID1"
+SIG_SEND_RESULT_MID2 = "PCResultMID2"
 SIG_SEND_START_TRIGGET_ACK = "PCStartTriggerAck"
 SIG_SEND_END_TRIGGET_ACK = "PCEndTriggerAck"
 SIG_RECV_HEART_BIT = "PLCHeartBit"
@@ -48,9 +49,14 @@ PLC_SIGNALS = [
 		"headdevice": "D16075",
 	},
     {
-		"key": SIG_SEND_RESULT,
+		"key": SIG_SEND_RESULT_MID1,
 		"type": "array",
 		"headdevice": "D16051",
+	},
+    {
+		"key": SIG_SEND_RESULT_MID2,
+		"type": "array",
+		"headdevice": "D16151",
 	},
     {
 		"key": SIG_SEND_START_TRIGGET_ACK,

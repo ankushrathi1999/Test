@@ -178,7 +178,7 @@ class Artifact:
                 if part_result is not None:
                     plc_array[i] = OK_VAL if (int(part_result['result']) == DetectionResult.OK) else NG_VAL
             plc_array[9] = OK_VAL if overall_ok else NG_VAL
-        return plc_array
+        return [plc_array, plc_array] # todo: send all parts data
 
     def save(self):
         assert self.is_ended
