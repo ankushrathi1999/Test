@@ -1,7 +1,7 @@
 import time
 
 from utils.plc import send_signal,  get_signal
-from config.plc_db import SIG_RECV_END_TRIGGER, SIG_RECV_PSN, SIG_RECV_MODEL, SIG_RECV_CHASSIS
+from config.plc_db import SIG_RECV_END_TRIGGER, SIG_SEND_START_TRIGGET_ACK, SIG_SEND_END_TRIGGET_ACK
 from api.state import SYSTEM_STATES
 from api.artifact import Artifact
 
@@ -14,5 +14,7 @@ def inspection_running_actions(data):
         return
 
     print("End trigger received.")
+    send_signal(SIG_SEND_START_TRIGGET_ACK, [48]) # Reset to 0
+    send_signal(SIG_SEND_END_TRIGGET_ACK, [49]) # Set to 1
     next_state = SYSTEM_STATES.INSPECTION_END
     data.state.update_state(next_state)

@@ -1,5 +1,7 @@
 SIG_SEND_HEART_BIT = "PCHeartBit"
 SIG_SEND_RESULT = "PCResult"
+SIG_SEND_START_TRIGGET_ACK = "PCStartTriggerAck"
+SIG_SEND_END_TRIGGET_ACK = "PCEndTriggerAck"
 SIG_RECV_HEART_BIT = "PLCHeartBit"
 SIG_RECV_PSN = "PLCPSNData"
 SIG_RECV_MODEL = "PLCVehicleModelData"
@@ -49,6 +51,16 @@ PLC_SIGNALS = [
 		"key": SIG_SEND_RESULT,
 		"type": "array",
 		"headdevice": "D16051",
+	},
+    {
+		"key": SIG_SEND_START_TRIGGET_ACK,
+		"type": "array",
+		"headdevice": "D16076",
+	},
+    {
+		"key": SIG_SEND_END_TRIGGET_ACK,
+		"type": "array",
+		"headdevice": "D16077",
 	},
 ]
 
