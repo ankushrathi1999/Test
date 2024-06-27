@@ -84,15 +84,32 @@ class BezelGroup:
                 })
         return parts
 
-    def get_ordered_part_results(self, part_results):
+    # def get_ordered_part_results(self, part_results):
+    #     bezel_results = [p for p in part_results if p.get('type') == 'bezel']
+    #     switch_results = [p for p in part_results if p.get('type') == 'bezel_switch']
+    #     switch_pos_lookup = {res['position']:res for res in switch_results}
+    #     ordered_results = []
+    #     for i in range(11): # Max 11 switches
+    #         ordered_results.append(switch_pos_lookup.get(i+1))
+    #     ordered_results.append(bezel_results[0] if len(bezel_results) > 0 else None)
+    #     return ordered_results
+    
+    def get_result_by_part_name(self, part_results, part_name):
         bezel_results = [p for p in part_results if p.get('type') == 'bezel']
         switch_results = [p for p in part_results if p.get('type') == 'bezel_switch']
         switch_pos_lookup = {res['position']:res for res in switch_results}
-        ordered_results = []
-        for i in range(11): # Max 11 switches
-            ordered_results.append(switch_pos_lookup.get(i+1))
-        ordered_results.append(bezel_results[0] if len(bezel_results) > 0 else None)
-        return ordered_results
+        if part_name.startswith('BZ_SW_'):
+            try:
+                position = int(part_name.replace('BZ_SW_'))
+                part = switch_pos_lookup.get(position)
+                return part['result'] if part is not None else None
+            except ValueError:
+                print("Failed to parse part_name:", part_name)
+        elif part_name == 'BZ_AS_SW':
+            return bezel_results[0]['result'] if len(bezel_results) > 0 else None
+        return None
+
+
 
     def update(self, bezel_detections, switch_detections):
         if not self.inspection_enabled:

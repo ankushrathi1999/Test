@@ -41,6 +41,9 @@ debug_mode and os.makedirs(metadata_dir_debug, exist_ok=True)
 with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
 
+with open('./config/part_order_plc.csv') as f:
+    part_order_plc = [x.strip() for x in f]
+
 class Artifact:
 
     def __init__(self, psn, chassis, vehicle_model, data):
@@ -169,16 +172,32 @@ class Artifact:
 
         assert self.is_ended
         parts, overall_ok = self.part_results, self.overall_result
-        ordered_results = self.bezel_group.get_ordered_part_results(parts)
-        plc_array = [NA_VAL for i in range(23)] # Hardcoded for 23 parameters
+
+        plc_array_1 = [NA_VAL for i in range(23)] # Hardcoded for 23 parameters
+        plc_array_2 = [NA_VAL for i in range(23)]
         if self.inspection_flag == 1:
-            for i, part_result in enumerate(ordered_results):
-                if i >= 9: # Skipping overall result parameter at param 10
+            part_results_lookup = {p['part_name']: p['result'] for p in parts}
+            results = []
+            for part_name in part_order_plc:
+                if part_name.startswith['BZ_']:
+                    results.append(self.bezel_group.get_result_by_part_name(parts, part_name))
+                elif part_name in part_results_lookup:
+                    results.append(part_results_lookup[part_name])
+                else:
+                    print("RESULT UNAVAILABLE FOR", part_name, self.vehicle_model, self.psn)
+                    results.append(None)
+            for i, part_result in enumerate(results):
+                plc_array = plc_array_1
+                if i >= 22: # Switch to Array 2
+                    plc_array = plc_array_2
+                    i = i - 22
+                if i >= 9: # Skip position 10, reserved for overall result
                     i += 1
                 if part_result is not None:
-                    plc_array[i] = OK_VAL if (int(part_result['result']) == DetectionResult.OK) else NG_VAL
-            plc_array[9] = OK_VAL if overall_ok else NG_VAL
-        return [plc_array, plc_array] # todo: send all parts data
+                    plc_array[i] = OK_VAL if (part_result == DetectionResult.OK) else NG_VAL
+            plc_array_1[9] = OK_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_1) if i != 9]) else NG_VAL
+            plc_array_2[9] = OK_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_2) if i != 9]) else NG_VAL
+        return [plc_array_1, plc_array_2]
 
     def save(self):
         assert self.is_ended
