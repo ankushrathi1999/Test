@@ -32,6 +32,7 @@ snapshots_dir = api_config.get('snapshots_dir')
 metadata_dir = api_config.get('metadata_dir')
 metadata_dir_debug = os.path.join(metadata_dir, 'debug')
 debug_mode = api_config.getboolean('debug_mode')
+plc_write_enabled = api_config.getboolean('plc_write_enabled')
 
 # Create data directories
 os.makedirs(snapshots_dir, exist_ok=True)
@@ -175,7 +176,7 @@ class Artifact:
 
         plc_array_1 = [NA_VAL for i in range(23)] # Hardcoded for 23 parameters
         plc_array_2 = [NA_VAL for i in range(23)]
-        if self.inspection_flag == 1:
+        if self.inspection_flag == 1 and plc_write_enabled:
             part_results_lookup = {p['part_name']: p['result'] for p in parts}
             results = []
             for part_name in part_order_plc:
