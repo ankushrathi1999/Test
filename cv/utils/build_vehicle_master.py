@@ -23,7 +23,7 @@ def _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_u
             vehicle_part_type_groups.pop(vehicle_model)
 
 def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks):
-    ip_upr = [v for v in vehicle_parts if v['part_name'] == 'IP_UPR']
+    ip_upr = [v for v in vehicle_parts if part_master_lookup.loc[v['part_number']].part_class == 'upper_panel']
     if len(ip_upr) == 0:
         return vehicle_parts
     classes = set()

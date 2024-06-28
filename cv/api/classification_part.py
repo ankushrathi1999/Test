@@ -70,7 +70,7 @@ class ClassificationPart:
         return {
             'part_id': self.part_number,
             'part_name': self.part_name,
-            'part_name_long': self.part_name_long,
+            'part_name_long': ("MISS/" if self.is_miss_inspection else "") + self.part_name_long,
             'result': self.part_result,
             'part_pred': self.part_pred,
             'type': self.detection_class,
