@@ -17,6 +17,7 @@ class DetectionPart:
         self.detection_class = detection_class.replace('part_detection_v2_', '')
         self.part_id = None
         self.part_name = None
+        self.part_name_long = None
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
 
         if self.inspection_enabled:
@@ -26,6 +27,7 @@ class DetectionPart:
             else:
                 self.part_id = part_details['part_number']
                 self.part_name = part_details['part_name']
+                self.part_name_long = part_details['part_name_long']
 
         # Predictions
         self.part_results_count = 0
@@ -40,6 +42,7 @@ class DetectionPart:
         return {
             'part_id': self.part_id,
             'part_name': self.part_name,
+            'part_name_long': self.part_name_long,
             'result': self.part_result,
             'part_pred': self.part_pred,
             'type': self.detection_class,

@@ -24,6 +24,7 @@ class ClassificationPart:
         self.part_id = None
         self.part_number = None
         self.part_name = None
+        self.part_name_long = None
         self.is_group = False
         self.missing_class_name = None
         self.is_miss_inspection = False
@@ -43,6 +44,7 @@ class ClassificationPart:
                     self.part_id = part_details['part_number']
                 self.part_number = part_details['part_number']
                 self.part_name = part_details['part_name']
+                self.part_name_long = part_details['part_name_long']
                 self.missing_class_name = part_details.get('missing_class_name')
 
         # Predictions
@@ -68,6 +70,7 @@ class ClassificationPart:
         return {
             'part_id': self.part_number,
             'part_name': self.part_name,
+            'part_name_long': self.part_name_long,
             'result': self.part_result,
             'part_pred': self.part_pred,
             'type': self.detection_class,

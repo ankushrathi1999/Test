@@ -19,6 +19,7 @@ class UsbAuxGroup:
         # Load part details from vehicle_model
         self.part_ids = [] # List of part numbers
         self.part_names = [] # List of part names
+        self.part_names_long = [] # List of part names
         self.part_positions= [] # List of part positions
         self.missing_class_names = []
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup and 'usb_aux_group' in vehicle_parts_lookup[vehicle_model]
@@ -28,6 +29,7 @@ class UsbAuxGroup:
             for i, detail in enumerate(part_details.get('parts', [])):
                 self.part_ids.append(detail['part_number'])
                 self.part_names.append(detail['part_name'])
+                self.part_names_long.append(detail['part_name_long'])
                 self.missing_class_names.append(detail.get('missing_class_name'))
                 self.part_positions.append(i+1)
 
@@ -43,11 +45,12 @@ class UsbAuxGroup:
     def get_part_results(self):
         parts = []
         if self.has_master:
-            for part_id, part_name, part_position, part_pred, part_result in zip(
-                self.part_ids, self.part_names, self.part_positions, self.part_preds, self.part_results):
+            for part_id, part_name, part_name_long, part_position, part_pred, part_result in zip(
+                self.part_ids, self.part_names, self.part_names_long, self.part_positions, self.part_preds, self.part_results):
                 parts.append({
                     'part_id': part_id,
                     'part_name': part_name,
+                    'part_name_long': part_name_long,
                     'result': part_result,
                     'part_pred': part_pred,
                     'position': part_position,

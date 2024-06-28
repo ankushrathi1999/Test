@@ -64,6 +64,7 @@ def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class
             data = vehicle_data[vehicle_model][details.part_class] = {
                 "part_name": details.part_name_msil,
                 "part_number": part['part_number'],
+                "part_name_long": part['part_name'],
             }
             if part.get('is_miss'):
                 data['is_miss'] = True
@@ -88,6 +89,7 @@ def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class
             "parts": list(map(lambda part: {
                 "part_name": part[1].part_name_msil,
                 "part_number": part[0]['part_number'],
+                "part_name_long": part[0]['part_name'],
                 "missing_class_name": missing_class_name,
             }, usb_aux_group))
         }

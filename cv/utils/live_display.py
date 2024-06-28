@@ -15,7 +15,7 @@ def prepare_dashbord_data(dashboard):
         'vehicle_model': dashboard.vehicle_model if has_dashboard else '-',
         'result': ("OK" if overall_ok else "NG") if has_dashboard else None,
         'parts': [{
-            "title": part['part_name'][:30], # 30 char limit on part names
+            "title": (part.get('part_name_long') or part['part_name'])[:40], # 40 char limit on part names
             "is_ok": part['result'] == DetectionResult.OK
         } for part in parts[:40]] # max 40 parts can be displayed
     }
