@@ -199,6 +199,10 @@ class Artifact:
                     plc_array[i] = OK_VAL if (part_result == DetectionResult.OK) else NG_VAL
             plc_array_1[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_1) if i != 9]) else OK_VAL
             plc_array_2[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_2) if i != 9]) else OK_VAL
+        print("PLC Array 1")
+        print(plc_array_1)
+        print("PLC Array 2")
+        print(plc_array_2)
         return [plc_array_1, plc_array_2]
 
     def save(self):
