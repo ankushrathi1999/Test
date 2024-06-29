@@ -16,6 +16,24 @@ with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
 print("Vehicles Registered in YAML:", len(vehicle_parts_lookup))
 
+def aggregate_results(result_counts):
+    result_counts = sorted(result_counts.items(), key=lambda x: x[1], reverse=True)
+    ok_counts = [res for res in result_counts if res[0][1] == DetectionResult.OK]
+    if len(ok_counts) > 0 and ok_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return ok_counts[0][0]
+    elif len(result_counts) > 0 and result_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return result_counts[0][0]
+    return None
+
+def aggregate_list_results(result_counts):
+    result_counts = sorted(result_counts.items(), key=lambda x: x[1], reverse=True)
+    ok_counts = [res for res in result_counts if all([r[1] == DetectionResult.OK for r in res[0]])]
+    if len(ok_counts) > 0 and ok_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return ok_counts[0][0]
+    elif len(result_counts) > 0 and result_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return result_counts[0][0]
+    return None
+
 class BezelGroup:
 
     def __init__(self, vehicle_model):
@@ -136,11 +154,13 @@ class BezelGroup:
             bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
             bezel_detection.final_details.result = result
             bezel_detection.final_details.ignore = False
-            if len(self.bezel_results_count) > 0:
-                result, result_count = sorted(self.bezel_results_count.items(), key=lambda x: x[1], reverse=True)[0]
-                if result_count >= RESULT_COUNT_THRESHOLD:
-                    self.bezel_pred = result[0]
-                    self.bezel_result = result[1]
+            result = aggregate_results(self.bezel_results_count)
+            # if len(self.bezel_results_count) > 0:
+            if result is not None:
+                # result, result_count = sorted(self.bezel_results_count.items(), key=lambda x: x[1], reverse=True)[0]
+                # if result_count >= RESULT_COUNT_THRESHOLD:
+                self.bezel_pred = result[0]
+                self.bezel_result = result[1]
         
         # Switches
         switch_detections = sort_switches(switch_detections, self.n_rows)
@@ -191,11 +211,13 @@ class BezelGroup:
         
         self.switch_results_counts[tuple(zip(preds, results))] += 1
 
-        if len(self.switch_results_counts) > 0:
-            results, result_count = sorted(self.switch_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
-            if result_count >= RESULT_COUNT_THRESHOLD:
-                self.switch_preds = [res[0] for res in results]
-                self.switch_results = [res[1] for res in results]
+        results = aggregate_list_results(self.switch_results_counts)
+        if results is not None:
+            # if len(self.switch_results_counts) > 0:
+            # results, result_count = sorted(self.switch_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
+            # if result_count >= RESULT_COUNT_THRESHOLD:
+            self.switch_preds = [res[0] for res in results]
+            self.switch_results = [res[1] for res in results]
 
 def sort_switches(switch_detections, n_rows):
     if n_rows > 1:
