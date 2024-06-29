@@ -38,6 +38,10 @@ YHB23D2BP0600000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY, HAZARD & A/B IND
     part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY, LIGHTING & TURN
+    part_number: 37210M72R00
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
@@ -62,6 +66,12 @@ YHB23D2BP0600000:
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: white_lock
+    part_name: CT_COIL
+    part_name_long: SET, CONTACT COIL
+    part_number: 37410M68P00
   steering_cover:
     part_name: CLMN_CVR
     part_name_long: COVER ASSY, STEERING COLUMN
@@ -86,6 +96,12 @@ YHB23D2BP0600000:
       part_name_long: CAP/SOCKET, USB
       part_number: 37275M75J00
   vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY, WIPER & WASHER
+    part_number: 37310M72R00
 YHB23D2BP6800000:
   ac_control:
     is_group: true
@@ -332,7 +348,7 @@ YHB23D2CP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
-    part_number: 73832M73R50-5PK
+    part_number: 73832M73R00-5PK
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
@@ -761,15 +777,15 @@ YHB23D7CP0600000:
   ac_ctr:
     part_name: GAR_DR_IN
     part_name_long: GARNISH IP DRVR INSIDE (YHB)
-    part_number: 73082M72R10-C48
+    part_number: 73082M72R00-C48
   ac_left:
     part_name: GAR_ASST
     part_name_long: GARNISH IP ASST(YHB/YXA)
-    part_number: 73086M72R10-C48
+    part_number: 73086M72R00-C48
   ac_right:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH IP DRVR OUTSIDE (YHB/YXA)
-    part_number: 73083M72R10-C48
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R00-5PK
     n_rows: 1
@@ -798,15 +814,15 @@ YHB23D7CP0600000:
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
-    part_number: 73121M72R50-5PK
+    part_number: 73121M51U00-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73081M73R50-5PK
+    part_number: 73081M73R00-5PK
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
-    part_number: 73832M73R50-5PK
+    part_number: 73832M73R00-5PK
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
@@ -832,7 +848,7 @@ YHB23D7CP0600000:
   upper_panel:
     part_name: IP_UPR
     part_name_long: PANEL, INSTRUMENT MAIN UPPER
-    part_number: 73111M72R50-5PK
+    part_number: 73111M72R00-5PK
   usb_aux_group:
     n_parts: 3
     parts:
@@ -848,13 +864,13 @@ YHB23D7CP0600000:
       part_name: USB_SKT
       part_name_long: CAP/SOCKET, USB
       part_number: 39105M77S00-5PK
-  vehicle_type: LHD
+  vehicle_type: RHD
   wiper:
     is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
     part_name_long: SWITCH ASSY, WIPER & WASHER
-    part_number: 37310M72R00
+    part_number: 37310M72R10
 YHB23D7CP0700000:
   ac_control:
     is_group: true
@@ -865,15 +881,15 @@ YHB23D7CP0700000:
   ac_ctr:
     part_name: GAR_DR_IN
     part_name_long: GARNISH IP DRVR INSIDE (YHB)
-    part_number: 73082M72R00-C48
+    part_number: 73082M72R10-C48
   ac_left:
     part_name: GAR_ASST
     part_name_long: GARNISH IP ASST(YHB/YXA)
-    part_number: 73086M72R00-C48
+    part_number: 73086M72R10-C48
   ac_right:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH IP DRVR OUTSIDE (YHB/YXA)
-    part_number: 73083M72R00-C48
+    part_number: 73083M72R10-C48
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER, DRVR INSIDE(YHB/YL1)
@@ -889,11 +905,11 @@ YHB23D7CP0700000:
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
-    part_number: 73121M51U00-5PK
+    part_number: 73121M72R50-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73081M73R00-5PK
+    part_number: 73081M73R50-5PK
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
@@ -1964,10 +1980,10 @@ YHB5ED22P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
-    part_group: blue_lock
+    part_group: white_lock
     part_name: CT_COIL
     part_name_long: SET, CONTACT COIL
-    part_number: 37410M68P10
+    part_number: 37410M68P00
   steering_cover:
     part_name: CLMN_CVR
     part_name_long: COVER ASSY, STEERING COLUMN
@@ -2735,7 +2751,7 @@ YHBB3D2BP0600000:
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
-    part_number: 73832M73R50-5PK
+    part_number: 73832M73R00-5PK
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
@@ -3280,15 +3296,15 @@ YHBB3D2DP0600000:
   ac_ctr:
     part_name: GAR_DR_IN
     part_name_long: GARNISH IP DRVR INSIDE (YHB)
-    part_number: 73082M72R10-C48
+    part_number: 73082M72R00-C48
   ac_left:
     part_name: GAR_ASST
     part_name_long: GARNISH IP ASST(YHB/YXA)
-    part_number: 73086M72R10-C48
+    part_number: 73086M72R00-C48
   ac_right:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH IP DRVR OUTSIDE (YHB/YXA)
-    part_number: 73083M72R10-C48
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R10-5PK
     n_rows: 1
@@ -3313,15 +3329,15 @@ YHBB3D2DP0600000:
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
-    part_number: 73121M72R50-5PK
+    part_number: 73121M51U00-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73081M72R60-QWD
+    part_number: 73081M72R10-QWD
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
-    part_number: 73832M72R60-QWD
+    part_number: 73832M72R10-QWD
   sensor_left:
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
@@ -3345,7 +3361,7 @@ YHBB3D2DP0600000:
   upper_panel:
     part_name: IP_UPR
     part_name_long: PANEL, INSTRUMENT MAIN UPPER
-    part_number: 73111M72R50-5PK
+    part_number: 73111M72R00-5PK
   usb_aux_group:
     n_parts: 3
     parts:
@@ -3361,7 +3377,7 @@ YHBB3D2DP0600000:
       part_name: USB_SKT
       part_name_long: CAP/SOCKET, USB
       part_number: 39105M77S00-5PK
-  vehicle_type: LHD
+  vehicle_type: RHD
   wiper:
     is_group: true
     part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
@@ -3378,15 +3394,15 @@ YHBB3D7CP0600000:
   ac_ctr:
     part_name: GAR_DR_IN
     part_name_long: GARNISH IP DRVR INSIDE (YHB)
-    part_number: 73082M72R10-C48
+    part_number: 73082M72R00-C48
   ac_left:
     part_name: GAR_ASST
     part_name_long: GARNISH IP ASST(YHB/YXA)
-    part_number: 73086M72R10-C48
+    part_number: 73086M72R00-C48
   ac_right:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH IP DRVR OUTSIDE (YHB/YXA)
-    part_number: 73083M72R10-C48
+    part_number: 73083M72R00-C48
   bezel:
     id: 73833M73R00-5PK
     n_rows: 1
@@ -3415,15 +3431,15 @@ YHBB3D7CP0600000:
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
-    part_number: 73121M72R50-5PK
+    part_number: 73121M51U00-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73081M73R50-5PK
+    part_number: 73081M73R00-5PK
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
-    part_number: 73832M73R50-5PK
+    part_number: 73832M73R00-5PK
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
@@ -3449,7 +3465,7 @@ YHBB3D7CP0600000:
   upper_panel:
     part_name: IP_UPR
     part_name_long: PANEL, INSTRUMENT MAIN UPPER
-    part_number: 73111M72R50-5PK
+    part_number: 73111M72R00-5PK
   usb_aux_group:
     n_parts: 3
     parts:
@@ -3465,13 +3481,13 @@ YHBB3D7CP0600000:
       part_name: USB_SKT
       part_name_long: CAP/SOCKET, USB
       part_number: 39105M77S00-5PK
-  vehicle_type: LHD
+  vehicle_type: RHD
   wiper:
     is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
     part_name: SW_WIP
     part_name_long: SWITCH ASSY, WIPER & WASHER
-    part_number: 37310M72R00
+    part_number: 37310M72R10
 YHBB3D7CP6800000:
   ac_control:
     is_group: true
@@ -4110,10 +4126,10 @@ YHBDED22P7400000:
     part_number: 95642-64G20
   steering_coil:
     is_group: true
-    part_group: blue_lock
+    part_group: white_lock
     part_name: CT_COIL
     part_name_long: SET, CONTACT COIL
-    part_number: 37410M68P10
+    part_number: 37410M68P00
   steering_cover:
     part_name: CLMN_CVR
     part_name_long: COVER ASSY, STEERING COLUMN
@@ -4750,7 +4766,7 @@ YHC23T2DP0600000:
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-      id: na
+    - id: na
       name: N/A
       position: 1
   hazard_switches:
@@ -4844,7 +4860,7 @@ YHC23T2EP0600000:
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-      id: na
+    - id: na
       name: N/A
       position: 1
   hazard_switches:
@@ -4933,7 +4949,7 @@ YHC23T7DP0600000:
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-      id: na
+    - id: na
       name: N/A
       position: 1
   hazard_switches:
@@ -5027,7 +5043,7 @@ YHC23T7EP0600000:
     n_rows: 1
     name: BLACK W/ HOLE, BEZEL YHBC
     switches_top:
-      id: na
+    - id: na
       name: N/A
       position: 1
   hazard_switches:
@@ -5796,10 +5812,14 @@ YHC5ETXFP7400000:
 YL188C2CP0600000:
   ac_control:
     is_group: true
-    part_group: auto_black_yl1
+    part_group: manual_black_defogger_yl1
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
-    part_number: 39510M79M00-BJQ
+    part_number: 74400M79M20-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -5914,6 +5934,10 @@ YL188C2CP6810309:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6011,6 +6035,10 @@ YL188C2CP7910309:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6125,6 +6153,10 @@ YL188C2EP0613606:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6220,6 +6252,10 @@ YL188C2EP6813606:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6315,6 +6351,10 @@ YL188C2EP7913606:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6476,6 +6516,14 @@ YL188C7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M79M00-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
@@ -6537,6 +6585,10 @@ YL188C7CP0710108:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6651,6 +6703,10 @@ YL188C7CP0713146:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6748,6 +6804,10 @@ YL188C7CP0713147:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6862,6 +6922,10 @@ YL188C7CP0713149:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -6976,6 +7040,10 @@ YL188C7CP6810309:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7073,6 +7141,10 @@ YL188C7CP7910309:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7187,6 +7259,10 @@ YL188C7DP0710108:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7284,6 +7360,10 @@ YL188C7DP0713146:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7381,6 +7461,10 @@ YL188C7DP0713149:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7478,6 +7562,10 @@ YL188C7EP0613606:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7590,6 +7678,10 @@ YL188C7EP0706087:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7646,13 +7738,12 @@ YL188C7EP0706087:
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73870M82R00-DE3
+    part_number: 73870M82R10-DE3
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
     part_number: 73860M82R10-DE3
   sensor_left:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
     part_name_long: SENSOR, AUTO LIGHT
@@ -7752,16 +7843,23 @@ YL188C7EP0710309:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M79M00-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73870M82R00-DE3
+    part_number: 73870M82R10-DE3
   orn_drvr:
     part_name: OR_IP_DR
     part_name_long: ORNAMENT COMP, I/P DRVR
     part_number: 73860M82R10-DE3
   sensor_left:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
     part_name_long: SENSOR, AUTO LIGHT
@@ -7812,6 +7910,10 @@ YL188C7EP6810309:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -7907,6 +8009,10 @@ YL188C7EP6813606:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -8002,6 +8108,10 @@ YL188C7EP7910309:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -8114,6 +8224,10 @@ YL188C7EP7913606:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -8275,6 +8389,14 @@ YL199C2CP7400000:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M79M00-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
@@ -8332,10 +8454,10 @@ YL199C2CP7400000:
 YL199C2DP7400000:
   ac_control:
     is_group: true
-    part_group: manual_black_defogger_yl1
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
-    part_number: 74400M79M30-BGS
+    part_number: 39510M79M00-BJQ
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_name_long: LOUVER COMP, CTR VENT (YL1)
@@ -8385,6 +8507,14 @@ YL199C2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M79M00-5PK
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT COMP, I/P CENTER
@@ -8400,7 +8530,6 @@ YL199C2DP7400000:
     part_name_long: SENSOR, AUTO LIGHT
     part_number: 38680M56R00
   sensor_right:
-    is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
@@ -8442,118 +8571,14 @@ YL199C2DP7400000:
 YL199C2EP7400000:
   ac_control:
     is_group: true
-    part_group: manual_black_defogger_yl1
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
-    part_number: 74400M79M30-BGS
+    part_number: 39510M79M00-BJQ
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_name_long: LOUVER COMP, CTR VENT (YL1)
     part_number: 73610M79M00-BJC
-  ac_left:
-    part_name: LVR_VT_LH
-    part_name_long: LOUVER COMP, SIDE VENT L (YL1)
-    part_number: 73640M79M00-BJC
-  ac_right:
-    part_name: LVR_VT_RH
-    part_name_long: LOUVER COMP, SIDE VENT R (YL1)
-    part_number: 73630M79M00-BJC
-  bezel:
-    id: 73831M79M20-V6N
-    n_rows: 1
-    name: BEIGE W/ HOLE, BEZEL YL1
-    switches_top:
-    - id: 37585M68P10
-      name: ESP OFF, SW YL1
-      position: 4
-    - id: 37780M68P00
-      name: ID STOP, SW YL1
-      position: 3
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-    - id: 35180M68P00
-      name: HEAD LAMP, SW YL1
-      position: 1
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: COVER, DRVR INSIDE(YHB/YL1)
-    part_number: 73832M79M00-V6N
-  hazard_switches:
-    part_name: SW_HZD
-    part_name_long: SWITCH ASSY, HAZARD & A/B IND
-    part_number: 37430M74L10-5PK
-  label_ac:
-    part_name: LBL_ACC
-    part_name_long: LABEL, ACC SOCKET (YL1)
-    part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY, LIGHTING & TURN
-    part_number: 37210M74L40
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL, INSTRUMENT MAIN LOWER
-    part_number: 73121M79M00-V6N
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73870M82R00-DE3
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT COMP, I/P DRVR
-    part_number: 73860M82R00-DE3
-  sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
-    part_name: SNSR_SUN
-    part_name_long: SENSOR, SUN LIGHT
-    part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SET,CONTACT COIL
-    part_number: 37410M55T60
-  steering_cover:
-    part_name: CLMN_CVR
-    part_name_long: COVER ASSY, STEERING COLUMN
-    part_number: 48400M79M30-5PK
-  switch:
-    part_name: SW_TRNK
-    part_name_long: SWITCH ASSY, TRUNK OPENER (YL1)
-    part_number: 37220M79M10
-  upper_panel:
-    part_name: IP_UPR
-    part_name_long: PANEL, INSTRUMENT MAIN UPPER
-    part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: CAP/SOCKET, USB
-      part_number: 39105M56R00-5PK
-  vehicle_type: RHD
-  wiper:
-    part_name: SW_WIP
-    part_name_long: SWITCH ASSY, WIPER & WASHER
-    part_number: 37310M74L00
-YL199C2FP7400000:
-  ac_control:
-    is_group: true
-    part_group: manual_black_defogger_yl1
-    part_name: CONT_HVAC
-    part_name_long: CONTROL UNIT, HVAC
-    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -8616,7 +8641,122 @@ YL199C2FP7400000:
     part_name_long: ORNAMENT COMP, I/P DRVR
     part_number: 73860M82R00-DE3
   sensor_left:
-    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY, STEERING COLUMN
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_name_long: SWITCH ASSY, TRUNK OPENER (YL1)
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL, INSTRUMENT MAIN UPPER
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP/SOCKET, USB
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY, WIPER & WASHER
+    part_number: 37310M74L00
+YL199C2FP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT, HVAC
+    part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
+  ac_left:
+    part_name: LVR_VT_LH
+    part_name_long: LOUVER COMP, SIDE VENT L (YL1)
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_name_long: LOUVER COMP, SIDE VENT R (YL1)
+    part_number: 73630M79M00-BJC
+  bezel:
+    id: 73831M79M20-V6N
+    n_rows: 1
+    name: BEIGE W/ HOLE, BEZEL YL1
+    switches_top:
+    - id: 37585M68P10
+      name: ESP OFF, SW YL1
+      position: 4
+    - id: 37780M68P00
+      name: ID STOP, SW YL1
+      position: 3
+    - id: 37270M68P00
+      name: FRONT FOG, SW YL1
+      position: 2
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
+      position: 1
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_name_long: COVER, DRVR INSIDE(YHB/YL1)
+    part_number: 73832M79M00-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY, HAZARD & A/B IND
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_name_long: LABEL, ACC SOCKET (YL1)
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY, LIGHTING & TURN
+    part_number: 37210M74L40
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL, INSTRUMENT MAIN LOWER
+    part_number: 73121M79M00-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT COMP, I/P CENTER
+    part_number: 73870M82R00-DE3
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT COMP, I/P DRVR
+    part_number: 73860M82R00-DE3
+  sensor_left:
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
     part_name_long: SENSOR, AUTO LIGHT
@@ -8663,10 +8803,14 @@ YL199C2FP7400000:
 YL199C7DP7400000:
   ac_control:
     is_group: true
-    part_group: manual_black_defogger_yl1
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
-    part_number: 74400M79M30-BGS
+    part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -8776,118 +8920,14 @@ YL199C7DP7400000:
 YL199C7EP7400000:
   ac_control:
     is_group: true
-    part_group: manual_black_defogger_yl1
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
-    part_number: 74400M79M30-BGS
+    part_number: 39510M79M00-BJQ
   ac_ctr_right:
     part_name: LVR_VT_CTR
     part_name_long: LOUVER COMP, CTR VENT (YL1)
     part_number: 73610M79M00-BJC
-  ac_left:
-    part_name: LVR_VT_LH
-    part_name_long: LOUVER COMP, SIDE VENT L (YL1)
-    part_number: 73640M79M00-BJC
-  ac_right:
-    part_name: LVR_VT_RH
-    part_name_long: LOUVER COMP, SIDE VENT R (YL1)
-    part_number: 73630M79M00-BJC
-  bezel:
-    id: 73831M79M20-V6N
-    n_rows: 1
-    name: BEIGE W/ HOLE, BEZEL YL1
-    switches_top:
-    - id: 37585M68P10
-      name: ESP OFF, SW YL1
-      position: 4
-    - id: 37780M68P00
-      name: ID STOP, SW YL1
-      position: 3
-    - id: 37270M68P00
-      name: FRONT FOG, SW YL1
-      position: 2
-    - id: 35180M68P00
-      name: HEAD LAMP, SW YL1
-      position: 1
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: COVER, DRVR INSIDE(YHB/YL1)
-    part_number: 73832M79M00-V6N
-  hazard_switches:
-    part_name: SW_HZD
-    part_name_long: SWITCH ASSY, HAZARD & A/B IND
-    part_number: 37430M74L10-5PK
-  label_ac:
-    part_name: LBL_ACC
-    part_name_long: LABEL, ACC SOCKET (YL1)
-    part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY, LIGHTING & TURN
-    part_number: 37210M74L40
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL, INSTRUMENT MAIN LOWER
-    part_number: 73121M79M00-V6N
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT COMP, I/P CENTER
-    part_number: 73870M82R00-DE3
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT COMP, I/P DRVR
-    part_number: 73860M82R00-DE3
-  sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
-    part_name: SNSR_SUN
-    part_name_long: SENSOR, SUN LIGHT
-    part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SET,CONTACT COIL
-    part_number: 37410M55T60
-  steering_cover:
-    part_name: CLMN_CVR
-    part_name_long: COVER ASSY, STEERING COLUMN
-    part_number: 48400M79M30-5PK
-  switch:
-    part_name: SW_TRNK
-    part_name_long: SWITCH ASSY, TRUNK OPENER (YL1)
-    part_number: 37220M79M10
-  upper_panel:
-    part_name: IP_UPR
-    part_name_long: PANEL, INSTRUMENT MAIN UPPER
-    part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: CAP/SOCKET, USB
-      part_number: 39105M56R00-5PK
-  vehicle_type: RHD
-  wiper:
-    part_name: SW_WIP
-    part_name_long: SWITCH ASSY, WIPER & WASHER
-    part_number: 37310M74L00
-YL199C7FP7400000:
-  ac_control:
-    is_group: true
-    part_group: manual_black_defogger_yl1
-    part_name: CONT_HVAC
-    part_name_long: CONTROL UNIT, HVAC
-    part_number: 74400M79M30-BGS
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -8950,7 +8990,122 @@ YL199C7FP7400000:
     part_name_long: ORNAMENT COMP, I/P DRVR
     part_number: 73860M82R00-DE3
   sensor_left:
-    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M55T60
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY, STEERING COLUMN
+    part_number: 48400M79M30-5PK
+  switch:
+    part_name: SW_TRNK
+    part_name_long: SWITCH ASSY, TRUNK OPENER (YL1)
+    part_number: 37220M79M10
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL, INSTRUMENT MAIN UPPER
+    part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP/SOCKET, USB
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY, WIPER & WASHER
+    part_number: 37310M74L00
+YL199C7FP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yl1
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT, HVAC
+    part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
+  ac_left:
+    part_name: LVR_VT_LH
+    part_name_long: LOUVER COMP, SIDE VENT L (YL1)
+    part_number: 73640M79M00-BJC
+  ac_right:
+    part_name: LVR_VT_RH
+    part_name_long: LOUVER COMP, SIDE VENT R (YL1)
+    part_number: 73630M79M00-BJC
+  bezel:
+    id: 73831M79M20-V6N
+    n_rows: 1
+    name: BEIGE W/ HOLE, BEZEL YL1
+    switches_top:
+    - id: 37585M68P10
+      name: ESP OFF, SW YL1
+      position: 4
+    - id: 37780M68P00
+      name: ID STOP, SW YL1
+      position: 3
+    - id: 37270M68P00
+      name: FRONT FOG, SW YL1
+      position: 2
+    - id: 35180M68P00
+      name: HEAD LAMP, SW YL1
+      position: 1
+  garnish_drvr_inside_yl:
+    part_name: CVR_DRVR
+    part_name_long: COVER, DRVR INSIDE(YHB/YL1)
+    part_number: 73832M79M00-V6N
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY, HAZARD & A/B IND
+    part_number: 37430M74L10-5PK
+  label_ac:
+    part_name: LBL_ACC
+    part_name_long: LABEL, ACC SOCKET (YL1)
+    part_number: 39442M79M00
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY, LIGHTING & TURN
+    part_number: 37210M74L40
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL, INSTRUMENT MAIN LOWER
+    part_number: 73121M79M00-V6N
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M79M00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M79M00-5PK
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT COMP, I/P CENTER
+    part_number: 73870M82R00-DE3
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT COMP, I/P DRVR
+    part_number: 73860M82R00-DE3
+  sensor_left:
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
     part_name_long: SENSOR, AUTO LIGHT
@@ -9001,6 +9156,10 @@ YL1T8C2CP6800000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9098,6 +9257,10 @@ YL1T8C2CP7900000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9212,6 +9375,10 @@ YL1T8C2EP6800000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9307,6 +9474,10 @@ YL1T8C2EP7900000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9419,6 +9590,10 @@ YL1T8C7CP0600000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M20-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9533,6 +9708,10 @@ YL1T8C7CP6800000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9630,6 +9809,10 @@ YL1T8C7CP7900000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 74400M79M30-BGS
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9740,10 +9923,14 @@ YL1T8C7CP7900000:
 YL1T8C7EP0600000:
   ac_control:
     is_group: true
-    part_group: manual_black_defogger_yl1
+    part_group: auto_black_yl1
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
-    part_number: 74400M79M30-BGS
+    part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M00-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9856,6 +10043,10 @@ YL1T8C7EP4600000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -9968,6 +10159,10 @@ YL1T8C7EP6800000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -10063,6 +10258,10 @@ YL1T8C7EP7900000:
     part_name: CONT_HVAC
     part_name_long: CONTROL UNIT, HVAC
     part_number: 39510M79M00-BJQ
+  ac_ctr_right:
+    part_name: LVR_VT_CTR
+    part_name_long: LOUVER COMP, CTR VENT (YL1)
+    part_number: 73610M79M10-BJC
   ac_left:
     part_name: LVR_VT_LH
     part_name_long: LOUVER COMP, SIDE VENT L (YL1)
@@ -10232,6 +10431,14 @@ YXA14C2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
     part_number: 73121M66T00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M66T00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M66T00-5PK
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
@@ -10243,6 +10450,10 @@ YXA14C2EP7400000:
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  skip:
+    part_name: GAR_IP_CTR
+    part_name_long: GAR_IP_CTR
+    part_number: 73821M66T00-0CE
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -10273,6 +10484,10 @@ YXA14C2EP7400000:
     part_name: SW_WIP
     part_name_long: SWITCH ASSY, WIPER & WASHER
     part_number: 37310M68P21
+  wir_chr:
+    part_name: WIR_CHR
+    part_name_long: COVER/CHARGER, WIRELESS (YXA)
+    part_number: 73824M66T00-5PK
 YXA24C2FP7400000:
   ac_control:
     is_group: true
@@ -10331,6 +10546,14 @@ YXA24C2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL, INSTRUMENT MAIN LOWER
     part_number: 73121M66T00-5PK
+  nozzle_left:
+    part_name: NOZ_DEM_LH
+    part_name_long: NOZZLE, SIDE DEMISTER, L (YXA/YL1)
+    part_number: 73652M66T00-5PK
+  nozzle_right:
+    part_name: NOZ_DEM_RH
+    part_name_long: NOZZLE, SIDE DEMISTER, R (YXA/YL1)
+    part_number: 73651M66T00-5PK
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
@@ -10342,6 +10565,10 @@ YXA24C2FP7400000:
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  skip:
+    part_name: GAR_IP_CTR
+    part_name_long: GAR_IP_CTR
+    part_number: 73821M66T00-ZCA
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -10374,3 +10601,7 @@ YXA24C2FP7400000:
     part_name: SW_WIP
     part_name_long: SWITCH ASSY, WIPER & WASHER
     part_number: 37310M68P01
+  wir_chr:
+    part_name: WIR_CHR
+    part_name_long: COVER/CHARGER, WIRELESS (YXA)
+    part_number: 73824M66T00-5PK
