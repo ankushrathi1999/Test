@@ -110,7 +110,7 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
         }
         if len(bezel_switches) == 0:
             print('No switch data for vehicle:', vehicle_model)
-            data['switches_top'] = {'id': 'na', 'name': 'N/A', 'position': 1}
+            data['switches_top'] = [{'id': 'na', 'name': 'N/A', 'position': 1}]
             continue
         assert len(switch_positions_top) + len(switch_positions_bottom) == len(bezel_switches), (vehicle_model, len(switch_positions_top), len(switch_positions_bottom), len(bezel_switches))
         switch_pos_lookup = {}
