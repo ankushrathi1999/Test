@@ -128,10 +128,15 @@ class Artifact:
         cur_time = time.time()
         if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < n_snapshots_max):
             print("Saving snapshots", self._n_snapshots_saved+1)
+            date_folder_name = datetime.now().strftime('%Y%m%d')
             for img, img_type in zip([frame_top, frame_bottom, frame_up], ["top", "bottom", "up"]):
+                snapshots_dir_cur = os.path.join(snapshots_dir, date_folder_name, self.vehicle_model, img_type)
+                metadata_dir_cur = os.path.join(metadata_dir, date_folder_name, self.vehicle_model, img_type)
+                os.makedirs(snapshots_dir_cur, exist_ok=True)
+                os.makedirs(metadata_dir_cur, exist_ok=True)
                 img_name = f"{self.chassis}_{self.vehicle_model}_{img_type}_{self._n_snapshots_saved+1}.jpg"
-                img_path = os.path.join(snapshots_dir, img_name)
-                metadata_path = os.path.join(metadata_dir, img_name.replace('.jpg', '.json'))
+                img_path = os.path.join(snapshots_dir_cur, img_name)
+                metadata_path = os.path.join(metadata_dir_cur, img_name.replace('.jpg', '.json'))
                 height, width = img.shape[0], img.shape[1]
                 img = cv2.resize(img, (1000, round(height * (1000 / width))))
                 cv2.imwrite(img_path, img)
