@@ -16,6 +16,15 @@ with open('./config/vehicle_parts.yaml') as x:
 with open('./config/part_group_names.json') as x:
     part_group_names_lookup = json.load(x)
 
+def aggregate_results(result_counts):
+    result_counts = sorted(result_counts.items(), key=lambda x: x[1], reverse=True)
+    ok_counts = [res for res in result_counts if res[0][1] == DetectionResult.OK]
+    if len(ok_counts) > 0 and ok_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return ok_counts[0][0]
+    elif len(result_counts) > 0 and result_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return result_counts[0][0]
+    return None
+
 class ClassificationPart:
 
     def __init__(self, vehicle_model, detection_class, artifact):
@@ -103,8 +112,10 @@ class ClassificationPart:
         part_detection.final_details.result = result
         part_detection.final_details.ignore = False
         if len(self.part_results_count) > 0:
-            result, result_count = sorted(self.part_results_count.items(), key=lambda x: x[1], reverse=True)[0]
-            if result_count >= RESULT_COUNT_THRESHOLD:
+            result = aggregate_results(self.part_results_count)
+            # result, result_count = sorted(self.part_results_count.items(), key=lambda x: x[1], reverse=True)[0]
+            # if result_count >= RESULT_COUNT_THRESHOLD:
+            if result is not None:
                 self.part_pred = result[0]
                 self.part_result = result[1]
 

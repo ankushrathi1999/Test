@@ -13,6 +13,15 @@ ALLOW_OK_TO_NG = api_config.getboolean('allow_ok_to_ng')
 with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
 
+def aggregate_list_results(result_counts):
+    result_counts = sorted(result_counts.items(), key=lambda x: x[1], reverse=True)
+    ok_counts = [res for res in result_counts if all([r[1] == DetectionResult.OK for r in res[0]])]
+    if len(ok_counts) > 0 and ok_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return ok_counts[0][0]
+    elif len(result_counts) > 0 and result_counts[0][1] >= RESULT_COUNT_THRESHOLD:
+        return result_counts[0][0]
+    return None
+
 class UsbAuxGroup:
 
     def __init__(self, vehicle_model):
@@ -116,11 +125,13 @@ class UsbAuxGroup:
         
         self.part_results_counts[tuple(zip(preds, results))] += 1
 
-        if len(self.part_results_counts) > 0:
-            results, result_count = sorted(self.part_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
-            if result_count >= RESULT_COUNT_THRESHOLD:
-                self.part_preds = [res[0] for res in results]
-                self.part_results = [res[1] for res in results]
+        results = aggregate_list_results(self.part_results_counts)
+        if results is not None:
+            # if len(self.part_results_counts) > 0:
+            # results, result_count = sorted(self.part_results_counts.items(), key=lambda x: x[1], reverse=True)[0]
+            # if result_count >= RESULT_COUNT_THRESHOLD:
+            self.part_preds = [res[0] for res in results]
+            self.part_results = [res[1] for res in results]
 
 def box_contains(box1, box2): #parent, child
     x1, y1, x2, y2 = box1
