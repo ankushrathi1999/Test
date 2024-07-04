@@ -63,6 +63,19 @@ class ClassificationPart:
         self.part_result = DetectionResult.MISSING
         self.part_pred = None # part number
 
+        print('Init classification:', {
+            'vehicle_model': vehicle_model,
+            'detection_class': self.detection_class,
+            'part_id': self.part_id,
+            'part_number': self.part_number,
+            'part_name': self.part_name,
+            'part_name_long': self.part_name_long,
+            'is_group': self.is_group,
+            'missing_class_name': self.missing_class_name,
+            'is_miss_inspection': self.is_miss_inspection,
+        })
+
+
     def get_part_result(self):
         if self.part_id is None:
             return None
@@ -91,8 +104,9 @@ class ClassificationPart:
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
             return        
-        part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
+        print("Updating classification:", self.detection_class)
 
+        part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
         if part_detection is None:
             return
                 
@@ -103,10 +117,13 @@ class ClassificationPart:
             result = DetectionResult.INCORRECT_PART
         else:
             result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
+        print("Current result:", pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and self.part_result == DetectionResult.OK:
             result = DetectionResult.OK
             pred_part = self.part_pred
+            print("Updated result:", pred_part, result)
+        print("Counts:", self.part_results_count)
         self.part_results_count[(pred_part, result)] += 1
         part_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         part_detection.final_details.result = result
@@ -118,5 +135,8 @@ class ClassificationPart:
             if result is not None:
                 self.part_pred = result[0]
                 self.part_result = result[1]
+                print("Final result:", self.part_pred, self.part_result)
+            else:
+                print("Result is not available yet.")
 
         

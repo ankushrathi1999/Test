@@ -83,15 +83,6 @@ class Artifact:
             else:
                 self.parts[detection_class] = ClassificationPart(vehicle_model, detection_class, self)
 
-        # self.parts = {
-        #     detection_class:
-        #     ClassificationPart(vehicle_model, detection_class, self) if detection_class in classification_targets
-        #     else DetectionPart(vehicle_model, detection_class)
-        #     for detection_class in
-        #     [PartDetectionModel.get_processed_class(dc, self.vehicle_category, self.vehicle_type)
-        #      for dc in PartDetectionModel.ordered_class_list if dc is not None]
-        # }
-
         # Snapshots
         self._last_snapshot_time = time.time()
         self._n_snapshots_saved = 0
@@ -102,6 +93,17 @@ class Artifact:
         self.is_ended = False
         self.part_results = []
         self.overall_result = None
+
+        print("Artifact created:", {
+            'start_time': self.start_time,
+            'inspection_flag': self.inspection_flag,
+            'shift': self.shift,
+            'psn': self.psn,
+            'chassis': self.chassis,
+            'vehicle_model': self.vehicle_model,
+            'vehicle_category': self.vehicle_category,
+            'vehicle_type': self.vehicle_type,
+        })
 
     def update(self, detection_groups, frame_top, frame_bottom, frame_up):
         if self.is_ended:
@@ -139,10 +141,14 @@ class Artifact:
                 metadata_path = os.path.join(metadata_dir_cur, img_name.replace('.jpg', '.json'))
                 height, width = img.shape[0], img.shape[1]
                 img = cv2.resize(img, (1000, round(height * (1000 / width))))
-                cv2.imwrite(img_path, img)
+                if cv2.imwrite(img_path, img):
+                    print("Snapshot saved to:", img_path)
+                else:
+                    print("Failed to save snapshot to:", img_path)
                 detections = [d.to_dict() for dl in detection_groups.values() for d in dl if d.cam_type == img_type]
                 with open(metadata_path, 'w') as f:
                     json.dump(detections, f)
+                print("Metadata saved to:", metadata_path)
             self._last_snapshot_time = time.time()
             self._n_snapshots_saved += 1
 
@@ -154,10 +160,13 @@ class Artifact:
 
     def end_inspection(self):
         if self.is_ended:
+            print('Inspection is already ended.')
             return
         self.is_ended = True
         self.end_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.part_results, self.overall_result = self.get_part_results()
+        print("Inspection ended", self.end_time, self.overall_result)
+        print("Part results:", self.part_results)
 
     def get_part_results(self):
         bezel_part_results = self.bezel_group.get_part_results()
@@ -204,10 +213,6 @@ class Artifact:
                     plc_array[i] = OK_VAL if (part_result == DetectionResult.OK) else NG_VAL
             plc_array_1[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_1) if i != 9]) else OK_VAL
             plc_array_2[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_2) if i != 9]) else OK_VAL
-        print("PLC Array 1")
-        print(plc_array_1)
-        print("PLC Array 2")
-        print(plc_array_2)
         return [plc_array_1, plc_array_2]
 
     def save(self):

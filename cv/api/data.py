@@ -16,7 +16,10 @@ class Data:
             self.entity_lookup = {}
             self.artifact = Artifact(1260, 'MA3BNC22S00795581', debug_vehicle_model, self)
         else:
+            print("Loading entities")
             self.entity_lookup = get_entity_lookup()
+            print("Loaded entities:", len(self.entity_lookup))
+            print(self.entity_lookup)
             self.artifact = None
         self.frames = {}
         self.video_paths = []

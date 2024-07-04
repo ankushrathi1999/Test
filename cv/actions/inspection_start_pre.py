@@ -6,11 +6,11 @@ def inspection_start_pre_actions(data):
     # hearbeat_ok = True # temp
     if hearbeat_ok:
         data.state.plc_state = PLC_STATES.HEALTHY
-        print("Emergency and heartbeat checks passed.")
+        print("Heartbeat checks passed.")
         next_state = SYSTEM_STATES.INSPECTION_START
     else:
         data.state.plc_state = PLC_STATES.UNHEALTHY
-        print(f"Heartbeat: {hearbeat_ok}. Checks Failed.")
+        print(f"Heartbeat checks failed.")
         # next_state = SYSTEM_STATES.INSPECTION_HALT # Do we halt inspection based on PLC Health?
         next_state = SYSTEM_STATES.INSPECTION_START
 

@@ -29,7 +29,9 @@ def aggregate_results(result_counts):
 class SteeringCover(ClassificationPart):
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
-            return        
+            return
+        print("Updating steering cover classification:", self.detection_class)
+        
         key_detections = detection_groups.get(PartDetectionModel.CLASS_key, [])
         key_detection = max(key_detections, key=lambda detection: detection.confidence) if len(key_detections) > 0 else None
 
@@ -52,10 +54,12 @@ class SteeringCover(ClassificationPart):
         pred_part_group = part_detection.classification_details.part_number
         pred_part = PartClassificationModel.get_part_number_steering_cover(pred_part_group, is_key_present, self.artifact.vehicle_category)
         result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
+        print("Current result:", pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and self.part_result == DetectionResult.OK:
             result = DetectionResult.OK
             pred_part = self.part_pred
+            print("Updated result:", pred_part, result)
         self.part_results_count[(pred_part, result)] += 1
         part_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         part_detection.final_details.result = result
@@ -67,6 +71,9 @@ class SteeringCover(ClassificationPart):
             if result is not None:
                 self.part_pred = result[0]
                 self.part_result = result[1]
+                print("Final result:", self.part_pred, self.part_result)
+            else:
+                print("Result is not available yet.")
 
 def box_contains(box1, box2): #parent, child
     x1, y1, x2, y2 = box1

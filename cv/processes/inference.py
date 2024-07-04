@@ -88,7 +88,9 @@ def _inference_loop(thread):
                         bbox = [int(x) for x in bbox]
                         class_color = model_config.class_colors[class_id]
                         try:
+                            print("Get processed class before:", class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
                             class_id = PartDetectionModel.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                            print("Get processed class after:", class_id)
                         except:
                             pass
                         detection = DetectionDetails(
@@ -129,12 +131,13 @@ def _inference_loop(thread):
                     is_flip = False
                     if data.artifact and model_config is BezelSwitchClassificationModel:
                         part_number, is_flip = BezelSwitchClassificationModel.get_part_number(None, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                        print("Bezel switch get part nuimber:", part_number, is_flip, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
                     else:
                         try:
                             part_number = model_config.get_part_number(detection.class_id, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
-                            # print(data.artifact.vehicle_category, data.artifact.vehicle_type)
-                            # print('Part number update:', detection.class_id, part_number)
+                            print("Classification get part nuimber:", part_number, detection.class_id, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
                         except:
+                            print("Get part number failed. Using class id:", class_id)
                             part_number = class_id
 
                     detection.classification_details = ClassificationDetails(

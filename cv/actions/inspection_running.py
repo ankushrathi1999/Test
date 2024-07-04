@@ -13,8 +13,10 @@ def inspection_running_actions(data):
         data.state.update_state(next_state, force=True)
         return
 
-    print("End trigger received.")
+    print("End trigger received.", SIG_RECV_END_TRIGGER)
+    print("Sending end trigger acknowledgement", SIG_SEND_START_TRIGGET_ACK, [48], SIG_SEND_END_TRIGGET_ACK, [49])
     send_signal(SIG_SEND_START_TRIGGET_ACK, [48]) # Reset to 0
     send_signal(SIG_SEND_END_TRIGGET_ACK, [49]) # Set to 1
+
     next_state = SYSTEM_STATES.INSPECTION_END
     data.state.update_state(next_state)

@@ -22,6 +22,7 @@ def _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_u
             print("Upper panel is not registered for vehicle:", vehicle_model)
             vehicle_part_type_groups.pop(vehicle_model)
 
+# todo: LHD vehicles have opposite sensor placements, currently parts are added in RHD spec only
 def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks):
     ip_upr = [v for v in vehicle_parts if part_master_lookup.loc[v['part_number']].part_class == 'upper_panel']
     if len(ip_upr) == 0:
@@ -143,6 +144,7 @@ def build_vehicle_master():
     # Part Master CSV
     part_master = pd.read_csv('./config/part_master.csv').fillna('')
     part_master_lookup = part_master.set_index('part_number')
+    print("Parts loaded:", len(part_master))
 
     vehicle_models = get_vehicle_models()
     print("Vehicle models:", len(vehicle_models))
@@ -166,6 +168,7 @@ def build_vehicle_master():
         vehicle_type_upper_panel_map = json.load(f)
     print("Upper panels registered:", len(vehicle_type_upper_panel_map))
 
+    print("Count of parts by vechicle model:")
     for vehicle_model, vehicle_parts in mapping.items():
         print(vehicle_model, len(vehicle_parts))
 
@@ -178,5 +181,7 @@ def build_vehicle_master():
     _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions)
 
-    with open('./config/vehicle_parts.yaml', 'w') as x:
+    yaml_path = './config/vehicle_parts.yaml'
+    with open(yaml_path, 'w') as x:
         yaml.safe_dump(dict(vehicle_data), x)
+    print("Vehicle master successfully written:", yaml_path)

@@ -36,6 +36,14 @@ class DetectionPart:
         self.part_result = DetectionResult.MISSING
         self.part_pred = None # part number
 
+        print('Init detection:', {
+            'vehicle_model': vehicle_model,
+            'detection_class': self.detection_class,
+            'part_id': self.part_id,
+            'part_name': self.part_name,
+            'part_name_long': self.part_name_long,
+        })
+
     def get_part_result(self):
         if self.part_id is None:
             return None
@@ -53,12 +61,14 @@ class DetectionPart:
 
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
-            return        
-        part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
+            return
+        print("Updating detection:", self.detection_class)
 
+        part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
         if part_detection is None:
             return
-                
+        
+        print("Counts:", self.part_results_count)
         result = DetectionResult.OK
         self.part_results_count += 1
         part_detection.final_details.color = color_green
@@ -67,3 +77,6 @@ class DetectionPart:
         if self.part_results_count >= RESULT_COUNT_THRESHOLD:
             self.part_pred = self.part_id
             self.part_result = result
+            print("Final result:", self.part_pred, self.part_result)
+        else:
+            print("Result is not available yet.")

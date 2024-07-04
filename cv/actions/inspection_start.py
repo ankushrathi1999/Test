@@ -23,14 +23,20 @@ def inspection_start_actions(data):
     print("Fetched part data:", psn, chassis, vehicle_model)
 
     # Reset results on PLC
+    print("Sending start trigger acknowledgement", SIG_SEND_END_TRIGGET_ACK, [48], SIG_SEND_START_TRIGGET_ACK, [49])
     send_signal(SIG_SEND_END_TRIGGET_ACK, [48]) # Reset to 0
     send_signal(SIG_SEND_START_TRIGGET_ACK, [49]) # Set to 1
-    send_signal(SIG_SEND_RESULT_MID1, [0 for _ in range(23)])
-    send_signal(SIG_SEND_RESULT_MID2, [0 for _ in range(23)])
+    reset_value = [0 for _ in range(23)]
+    print("Resetting PLC results", SIG_SEND_RESULT_MID1, SIG_SEND_RESULT_MID2, reset_value)
+    send_signal(SIG_SEND_RESULT_MID1, reset_value)
+    send_signal(SIG_SEND_RESULT_MID2, reset_value)
 
     # Initialize engine
     if data.is_active:
+        print("Initializing artifact.")
         data.artifact = Artifact(psn, chassis, vehicle_model, data)
+    else:
+        print("Data active flag is off. Skipping inspection.")
 
     next_state = SYSTEM_STATES.INSPECTION_RUNNING
     data.state.update_state(next_state)
