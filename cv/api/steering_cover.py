@@ -27,22 +27,27 @@ def aggregate_results(result_counts):
     return None
 
 class SteeringCover(ClassificationPart):
-
-    def __init__(self, vehicle_model, detection_class, artifact):
-        super().__init__(vehicle_model, detection_class, artifact)
-        self.key_detecton_count = 0
-
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
             return        
         key_detections = detection_groups.get(PartDetectionModel.CLASS_key, [])
-        if len(key_detections) > 0:
-            self.key_detecton_count += 1
-        is_key_present = self.key_detecton_count >= RESULT_COUNT_THRESHOLD
+        key_detection = max(key_detections, key=lambda detection: detection.confidence) if len(key_detections) > 0 else None
 
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
         if part_detection is None:
             return
+        
+        img_height, img_width = self.artifact.data.frames[1].shape[:2]
+        x2_pos = part_detection.bbox[2] / img_width
+        x2_check_start, x2_check_end = [0.5, 0.75] if self.artifact.vehicle_type == "RHD" else [0.15, 0.4] 
+        if x2_pos < x2_check_start or x2_pos> x2_check_end:
+            print('Steering skip:', x2_pos, x2_check_start, x2_check_end, part_detection.bbox, img_width, img_height)
+            return
+        
+        is_key_present = key_detection is not None and box_contains(part_detection.bbox, key_detection.bbox) > 0.3
+        print("Key detection:", is_key_present, key_detection is None)
+        if key_detection is not None:
+            print("box contians:", box_contains(part_detection.bbox, key_detection.bbox))
                 
         pred_part_group = part_detection.classification_details.part_number
         pred_part = PartClassificationModel.get_part_number_steering_cover(pred_part_group, is_key_present, self.artifact.vehicle_category)
@@ -62,3 +67,23 @@ class SteeringCover(ClassificationPart):
             if result is not None:
                 self.part_pred = result[0]
                 self.part_result = result[1]
+
+def box_contains(box1, box2): #parent, child
+    x1, y1, x2, y2 = box1
+    x3, y3, x4, y4 = box2
+
+    # Intersection rectangle
+    ix1 = max(x1, x3)
+    iy1 = max(y1, y3)
+    ix2 = min(x2, x4)
+    iy2 = min(y2, y4)
+
+    if ix2 <= ix1 or iy2 <= iy1:
+        return 0.0
+
+    intersection_area = (ix2 - ix1) * (iy2 - iy1)
+
+    # Calculate each box area
+    box2_area = (x4 - x3) * (y4 - y3)
+
+    return intersection_area / box2_area
