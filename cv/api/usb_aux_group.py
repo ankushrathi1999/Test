@@ -48,7 +48,7 @@ class UsbAuxGroup:
         self.part_results_counts = defaultdict(int)
 
         # Selection
-        self.part_results = [DetectionResult.NOT_EVALUATED for _ in self.part_ids] # all types of errors
+        self.part_results = [DetectionResult.MISSING for _ in self.part_ids] # all types of errors
         self.part_preds = [None for _ in self.part_ids] # part number list
 
     def get_part_results(self):

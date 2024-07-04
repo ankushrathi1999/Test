@@ -69,9 +69,9 @@ class BezelGroup:
         self.switch_results_counts = defaultdict(int)
 
         # Selection
-        self.bezel_result = DetectionResult.NOT_EVALUATED # ok, incorrect_part
+        self.bezel_result = DetectionResult.MISSING # ok, incorrect_part
         self.bezel_pred = None # part number
-        self.switch_results = [DetectionResult.NOT_EVALUATED for _ in self.switch_part_ids] # all types of errors
+        self.switch_results = [DetectionResult.MISSING for _ in self.switch_part_ids] # all types of errors
         self.switch_preds = [None for _ in self.switch_part_ids] # part number list
 
     def get_part_results(self):
