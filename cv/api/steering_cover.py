@@ -41,7 +41,7 @@ class SteeringCover(ClassificationPart):
         
         img_height, img_width = self.artifact.data.frames[1].shape[:2]
         x2_pos = part_detection.bbox[2] / img_width
-        x2_check_start, x2_check_end = [0.5, 0.75] if self.artifact.vehicle_type == "RHD" else [0.15, 0.4] 
+        x2_check_start, x2_check_end = [0.45, 0.8] if self.artifact.vehicle_type == "RHD" else [0.1, 0.45] 
         if x2_pos < x2_check_start or x2_pos> x2_check_end:
             print('Steering skip:', x2_pos, x2_check_start, x2_check_end, part_detection.bbox, img_width, img_height)
             return
