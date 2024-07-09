@@ -20,11 +20,11 @@ class ClassificationDetails:
 
 class FinalDetails:
 
-    def __init__(self, label, color, result):
+    def __init__(self, label, color, result, ignore=True):
         self.label = label
         self.color = color
         self.result = result
-        self.ignore = True
+        self.ignore = ignore
         self.label_position = 'top'
         self.label_offset = 0
 

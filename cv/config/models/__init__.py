@@ -1,5 +1,6 @@
 from .bezel_group_detection import BezelGroupDetectionModel
 from .part_detection_v2 import PartDetectionModel
+from .screw_detection import ScrewDetectionModel
 from .bezel_classification import BezelClassificationModel
 from .bezel_switch_classification import BezelSwitchClassificationModel
 from .usb_aux_classification import UsbAuxClassificationModel
@@ -14,6 +15,7 @@ from .orn_classification import OrnClassificationModel
 detection_models = [
     BezelGroupDetectionModel,
     PartDetectionModel,
+    ScrewDetectionModel,
 ]
 
 classification_models = [

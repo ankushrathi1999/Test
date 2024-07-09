@@ -5,7 +5,7 @@ import threading
 import traceback
 from collections import defaultdict
 
-from config.models import classification_models, detection_models, BezelSwitchClassificationModel, PartDetectionModel
+from config.models import classification_models, detection_models, BezelSwitchClassificationModel, PartDetectionModel, ScrewDetectionModel
 from utils.image_utils import plot_one_box, draw_confirmation_prompt
 from utils.live_display import prepare_live_display
 from config.config import config
@@ -93,9 +93,14 @@ def _inference_loop(thread):
                             print("Get processed class after:", class_id)
                         except:
                             pass
+                        # Temp
+                        if model_config is ScrewDetectionModel:
+                            ignore = False
+                        else:
+                            ignore = True
                         detection = DetectionDetails(
                             class_id, class_name,  model_config.name, confidence, class_color, bbox, cam_type)
-                        detection.final_details = FinalDetails(class_name, color_green, DetectionResult.NOT_EVALUATED)
+                        detection.final_details = FinalDetails(class_name, color_green, DetectionResult.NOT_EVALUATED, ignore=ignore)
                         processed.append(detection)
                     detections.extend(processed)
 
