@@ -16,6 +16,7 @@ from .bezel_group import BezelGroup
 from .usb_aux_group import UsbAuxGroup
 from .classification_part import ClassificationPart
 from .steering_cover import SteeringCover
+from .lower_panel import LowerPanel
 from .detection_part import DetectionPart
 from .detection import DetectionResult
 from config.models import BezelGroupDetectionModel, PartDetectionModel
@@ -81,6 +82,8 @@ class Artifact:
                 self.parts[detection_class] = DetectionPart(vehicle_model, detection_class)
             elif detection_class == PartDetectionModel.CLASS_steering_cover:
                 self.parts[detection_class] = SteeringCover(vehicle_model, detection_class, self)
+            elif detection_class == PartDetectionModel.CLASS_lower_panel:
+                self.parts[detection_class] = LowerPanel(vehicle_model, detection_class, self)
             else:
                 self.parts[detection_class] = ClassificationPart(vehicle_model, detection_class, self)
 

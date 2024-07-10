@@ -22,6 +22,16 @@ def _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_u
             print("Upper panel is not registered for vehicle:", vehicle_model)
             vehicle_part_type_groups.pop(vehicle_model)
 
+def _process_n_screws(vehicle_data):
+    for vehicle_model in vehicle_data:
+        vechicle = vehicle_model[:3]
+        vehicle_data[vehicle_model]['n_screws'] = {
+            'YHB': 5,
+            'YHC': 5,
+            'YXA': 5,
+            'YL1': 4,
+        }[vechicle]
+
 sensor_sun_part = {
     "part_name": "SENSOR, SUN LIGHT",
     "part_number": "95642-64G20"
@@ -208,6 +218,7 @@ def build_vehicle_master():
         part_master_lookup) for vehicle_model, vehicle_parts in mapping.items()}
     vehicle_data = defaultdict(dict)
     _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_upper_panel_map)
+    _process_n_screws(vehicle_data)
     _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions)

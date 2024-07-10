@@ -46,6 +46,7 @@ YHB23D2BP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -150,6 +151,7 @@ YHB23D2BP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -250,6 +252,7 @@ YHB23D2BP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -350,6 +353,7 @@ YHB23D2CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -454,6 +458,7 @@ YHB23D2CP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -554,6 +559,7 @@ YHB23D2CP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -654,6 +660,7 @@ YHB23D2DP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -748,6 +755,7 @@ YHB23D2DP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -842,6 +850,7 @@ YHB23D7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -950,6 +959,7 @@ YHB23D7CP0700000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1050,6 +1060,7 @@ YHB23D7CP4300000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1150,6 +1161,7 @@ YHB23D7CP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1250,6 +1262,7 @@ YHB23D7CP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1350,6 +1363,7 @@ YHB23D7DP0700000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1450,6 +1464,7 @@ YHB23D7DP4300000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1550,6 +1565,7 @@ YHB23D7DP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1644,6 +1660,7 @@ YHB23D7DP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1738,6 +1755,7 @@ YHB4ED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1838,6 +1856,7 @@ YHB4ED24P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1937,6 +1956,7 @@ YHB4ED2AP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2037,6 +2057,7 @@ YHB5ED22P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2137,6 +2158,7 @@ YHB5ED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2237,6 +2259,7 @@ YHB5ED24P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2336,6 +2359,7 @@ YHB5ED2AP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2432,6 +2456,7 @@ YHB5ED2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2530,6 +2555,7 @@ YHB5EDXCP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2630,6 +2656,7 @@ YHB5EDXDP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2725,6 +2752,7 @@ YHB5EDXEP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2823,6 +2851,7 @@ YHBB3D2BP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2927,6 +2956,7 @@ YHBB3D2BP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3027,6 +3057,7 @@ YHBB3D2BP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3127,6 +3158,7 @@ YHBB3D2CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3231,6 +3263,7 @@ YHBB3D2CP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3331,6 +3364,7 @@ YHBB3D2CP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3427,6 +3461,7 @@ YHBB3D2DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3531,6 +3566,7 @@ YHBB3D7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3635,6 +3671,7 @@ YHBB3D7CP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3735,6 +3772,7 @@ YHBB3D7CP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3831,6 +3869,7 @@ YHBB3D7DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3935,6 +3974,7 @@ YHBB3D7DP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4029,6 +4069,7 @@ YHBB3D7DP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4123,6 +4164,7 @@ YHBCED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4223,6 +4265,7 @@ YHBDED22P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4323,6 +4366,7 @@ YHBDED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4423,6 +4467,7 @@ YHBDED24P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4518,6 +4563,7 @@ YHBDED2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4616,6 +4662,7 @@ YHBDEDXCP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4716,6 +4763,7 @@ YHBDEDXDP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4811,6 +4859,7 @@ YHBDEDXEP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4900,6 +4949,7 @@ YHC23T2DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4992,6 +5042,7 @@ YHC23T2EP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5087,6 +5138,7 @@ YHC23T7DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5179,6 +5231,7 @@ YHC23T7EP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5283,6 +5336,7 @@ YHC4ET2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5388,6 +5442,7 @@ YHC5ET2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5489,6 +5544,7 @@ YHC5ET2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5589,6 +5645,7 @@ YHC5ET2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5693,6 +5750,7 @@ YHC5ETXDP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5794,6 +5852,7 @@ YHC5ETXEP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5894,6 +5953,7 @@ YHC5ETXFP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -6006,6 +6066,7 @@ YL188C2CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6103,6 +6164,7 @@ YL188C2CP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6190,6 +6252,7 @@ YL188C2CP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6289,6 +6352,7 @@ YL188C2EP0613606:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6376,6 +6440,7 @@ YL188C2EP6813606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6461,6 +6526,7 @@ YL188C2EP7913606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6558,6 +6624,7 @@ YL188C7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6667,6 +6734,7 @@ YL188C7CP0710108:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6774,6 +6842,7 @@ YL188C7CP0713146:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6881,6 +6950,7 @@ YL188C7CP0713147:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6988,6 +7058,7 @@ YL188C7CP0713149:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7083,6 +7154,7 @@ YL188C7CP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7170,6 +7242,7 @@ YL188C7CP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7269,6 +7342,7 @@ YL188C7DP0710108:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7376,6 +7450,7 @@ YL188C7DP0713146:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7483,6 +7558,7 @@ YL188C7DP0713149:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7590,6 +7666,7 @@ YL188C7EP0613606:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7689,6 +7766,7 @@ YL188C7EP0706087:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7794,6 +7872,7 @@ YL188C7EP0710309:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7887,6 +7966,7 @@ YL188C7EP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7972,6 +8052,7 @@ YL188C7EP6813606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8057,6 +8138,7 @@ YL188C7EP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8142,6 +8224,7 @@ YL188C7EP7913606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8239,6 +8322,7 @@ YL199C2CP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8348,6 +8432,7 @@ YL199C2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8456,6 +8541,7 @@ YL199C2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8563,6 +8649,7 @@ YL199C2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8670,6 +8757,7 @@ YL199C7DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8778,6 +8866,7 @@ YL199C7EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8885,6 +8974,7 @@ YL199C7FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8980,6 +9070,7 @@ YL1T8C2CP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9067,6 +9158,7 @@ YL1T8C2CP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9154,6 +9246,7 @@ YL1T8C2EP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9239,6 +9332,7 @@ YL1T8C2EP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9336,6 +9430,7 @@ YL1T8C7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9433,6 +9528,7 @@ YL1T8C7CP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9520,6 +9616,7 @@ YL1T8C7CP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9619,6 +9716,7 @@ YL1T8C7EP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9706,6 +9804,7 @@ YL1T8C7EP4600000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9791,6 +9890,7 @@ YL1T8C7EP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9876,6 +9976,7 @@ YL1T8C7EP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9985,6 +10086,7 @@ YXA14C2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M66T00-5PK
+  n_screws: 5
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -10102,6 +10204,7 @@ YXA24C2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M66T00-5PK
+  n_screws: 5
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L

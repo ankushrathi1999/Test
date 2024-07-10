@@ -4,6 +4,7 @@ class BezelGroupDetectionModel:
     name = 'bezel_group_detection'
     imgsz = 640
     target_cams = {'top', 'bottom'}
+    tracking = False
 
     CLASS_SWITCH = name + '_switch'
     CLASS_CONTAINER = name + '_container'

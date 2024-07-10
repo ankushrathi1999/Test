@@ -4,6 +4,7 @@ class PartDetectionModel:
     name = 'part_detection_v2'
     imgsz = 640
     target_cams = {'top', 'bottom', 'up'}
+    tracking = False
 
     CLASS_ac_control = name + '_ac_control'
     CLASS_ac_ctr = name + '_ac_ctr'
