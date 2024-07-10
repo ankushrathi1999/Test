@@ -87,6 +87,8 @@ def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class
     for vehicle_model in vehicle_part_type_groups:
         generic_parts = vehicle_part_type_groups[vehicle_model]['generic_parts']
         for part, details in generic_parts:
+            if details['is_supported'] == 0:
+                continue
             part_class = part.get('part_class', details.part_class)
             data = vehicle_data[vehicle_model][part_class] = {
                 "part_name": details.part_name_msil,
@@ -109,6 +111,13 @@ def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class
             print('No usb aux data for vehicle:', vehicle_model)
             continue
         assert 2 <= len(usb_aux_group) <= 3
+        _proceed = True
+        for part, details in usb_aux_group:
+            if details['is_supported'] == 0:
+                _proceed = False
+                break
+        if not _proceed:
+            continue
         usb_aux_group = sorted(usb_aux_group, key=lambda x: x[0]['part_position'])
         missing_class_name = missing_class_name_lookup.get('usb_aux') # todo: hardcoded class name
         vehicle_data[vehicle_model]['usb_aux_group'] = {
@@ -131,7 +140,7 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
         bezel_part, bezel_part_details = bezel[0]
         switch_positions_top, switch_positions_bottom = bezel_switch_positions[bezel_part['part_number']]
         data = vehicle_data[vehicle_model]['bezel'] = {
-            "id": bezel_part['part_number'],
+            "id": "na" if bezel_part_details['is_supported'] == 0 else bezel_part['part_number'],
             "name": bezel_part['part_name'],
             "n_rows": 2 if len(switch_positions_bottom) > 0 else 1,
         }
