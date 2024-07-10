@@ -25,7 +25,7 @@ class PartDetectionModel:
     CLASS_orn_ctr = name + '_orn_ctr'
     CLASS_orn_drvr = name + '_orn_drvr'
     CLASS_push_button = name + '_push_button'
-    CLASS_screen = name + '_screen'
+    CLASS_screen = name + '_gar_ip_ctr'
     CLASS_sensor_left = name + '_sensor_left'
     CLASS_sensor_right = name + '_sensor_right'
     CLASS_speedometer = name + '_speedometer'
@@ -61,7 +61,7 @@ class PartDetectionModel:
         CLASS_orn_ctr,
         CLASS_orn_drvr,
         None, # CLASS_push_button,
-        None, # CLASS_screen,
+        CLASS_screen,
         CLASS_sensor_left,
         CLASS_sensor_right,
         None, # CLASS_speedometer,
@@ -95,7 +95,7 @@ class PartDetectionModel:
         CLASS_orn_ctr: 'orn_ctr',
         CLASS_orn_drvr: 'orn_drvr',
         CLASS_push_button: 'push_button',
-        CLASS_screen: 'screen',
+        CLASS_screen: 'gar_ip_ctr',
         CLASS_sensor_left: 'sensor_left',
         CLASS_sensor_right: 'sensor_right',
         CLASS_speedometer: 'speedometer',

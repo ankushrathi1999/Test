@@ -21,7 +21,7 @@ from .detection import DetectionResult
 from config.models import BezelGroupDetectionModel, PartDetectionModel
 from config.models import (
     PartClassificationModel, ACControlClassificationModel, SensorClassificationModel, LightsClassificationModel,
-    WiperClassificationModel, LowerPanelClassificationModel, OrnClassificationModel
+    WiperClassificationModel, LowerPanelClassificationModel, OrnClassificationModel, GarCTClassificationModel
 )
 
 api_config = config['api_artifact']
@@ -68,7 +68,8 @@ class Artifact:
              *LightsClassificationModel.target_detections,
              *WiperClassificationModel.target_detections,
              *LowerPanelClassificationModel.target_detections,
-             *OrnClassificationModel.target_detections
+             *OrnClassificationModel.target_detections,
+             *GarCTClassificationModel.target_detections
         }
 
         self.parts = {}
