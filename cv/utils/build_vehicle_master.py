@@ -44,7 +44,11 @@ def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, vehicle_type_up
     ip_upr = [v for v in vehicle_parts if part_master_lookup.loc[v['part_number']].part_class == 'upper_panel']
     if len(ip_upr) == 0:
         return vehicle_parts
-    assert len(ip_upr) == 1, "Multiple upper panels registered"
+    try:
+        assert len(ip_upr) == 1, "Multiple upper panels registered"
+    except AssertionError as ex:
+        print("Error:", ex)
+        return vehicle_parts
     vtype = vehicle_type_upper_panel_map[ip_upr[0]['part_number']]
     sensor_sun = None
     sensor_auto = None
@@ -120,7 +124,9 @@ def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class
         if len(usb_aux_group) == 0:
             print('No usb aux data for vehicle:', vehicle_model)
             continue
-        assert 2 <= len(usb_aux_group) <= 3
+        if not (2 <= len(usb_aux_group) <= 3):
+            print('Invalid usb aux count for vehicle:', vehicle_model, len(usb_aux_group))
+            continue
         _proceed = True
         for part, details in usb_aux_group:
             if details['is_supported'] == 0:
@@ -158,7 +164,11 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
             print('No switch data for vehicle:', vehicle_model)
             data['switches_top'] = [{'id': 'na', 'name': 'N/A', 'position': 1}]
             continue
-        assert len(switch_positions_top) + len(switch_positions_bottom) == len(bezel_switches), (vehicle_model, len(switch_positions_top), len(switch_positions_bottom), len(bezel_switches))
+        _check = len(switch_positions_top) + len(switch_positions_bottom) == len(bezel_switches)
+        if not _check:
+            print('Invalid switch data for vehicle:',  vehicle_model, len(switch_positions_top), len(switch_positions_bottom), len(bezel_switches))
+            data['switches_top'] = [{'id': 'na', 'name': 'N/A', 'position': 1}]
+            continue
         switch_pos_lookup = {}
         for part, details in bezel_switches:
             pos = part['part_position']
