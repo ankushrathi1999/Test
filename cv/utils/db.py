@@ -87,6 +87,7 @@ def get_vehicle_part_mapping(vehicle_models):
         from EntityHierarchy H join Entity EP on H.parent_id = EP.id
         join Entity EC on H.child_id = EC.id
         left join EntityHierarchyMetricTable HM on HM.entity_hierarchy_id = H.id
+        where EC.activeFlag = 1
     """
     connection  = None
     mapping = defaultdict(list)
