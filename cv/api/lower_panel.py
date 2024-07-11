@@ -7,7 +7,7 @@ from config.models import ScrewDetectionModel
 from config.config import config
 
 api_config = config['api_common']
-RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
+RESULT_COUNT_THRESHOLD = 1
 ALLOW_OK_TO_NG = api_config.getboolean('allow_ok_to_ng')
 
 with open('./config/vehicle_parts.yaml') as x:
@@ -18,6 +18,12 @@ class LowerPanel(ClassificationPart):
         super().__init__(vehicle_model, detection_class, artifact)
         self.n_screws = vehicle_parts_lookup.get(vehicle_model, {}).get('n_screws', 0)
         self.screw_counts = defaultdict(int)
+
+    def get_part_result(self):
+        result = super().get_part_result()
+        if result is not None and self.n_screws > 0:
+            result['part_name_long'] = f"{result['part_name_long']} ({min(self.n_screws, len(self.screw_counts))}/{self.n_screws})"
+        return result
 
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
@@ -37,5 +43,6 @@ class LowerPanel(ClassificationPart):
             all_screw_detections = [tracking_id for tracking_id, count in self.screw_counts.items() if count >= RESULT_COUNT_THRESHOLD]
             print("Evaluating screw counts:", len(all_screw_detections), self.n_screws)
             if len(all_screw_detections) < self.n_screws:
-                self.part_result = DetectionResult.MISSING_SCREWS
+                # self.part_result = DetectionResult.MISSING_SCREWS
+                print("Screw inspection NG. Currently disabled.")
 
