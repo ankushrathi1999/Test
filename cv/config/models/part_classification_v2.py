@@ -35,16 +35,16 @@ part_garnish_yhbc_lookup = {
 # todo: combine lookup for yhb and yhcx after adding telescopic steering class
 part_steering_cover_lookup_yhb = {
     ('clmn_cvr_black', True): '48400M55R00-5PK', # classification label x is_key_present
-    ('clmn_cvr_black', False): '48400M55R10-5PK',
-    # ('clmn_cvr_black', False): '48400M55T30-5PK',
+    ('clmn_cvr_black', False): 'clmn_cvr_black_no_key_yhbcx',
+    # ('clmn_cvr_black', False): '48400M55R10-5PK',
     ('clmn_cvr_gray', True): '48400M55R00-R8R',
     ('clmn_cvr_gray', False): '48400M55R10-R8R',
 }
 
 part_steering_cover_lookup_yhcx = {
     ('clmn_cvr_black', True): '48400M55R00-5PK', # classification label x is_key_present
-    # ('clmn_cvr_black', False): '48400M55R10-5PK',
-    ('clmn_cvr_black', False): '48400M55T30-5PK',
+    ('clmn_cvr_black', False): 'clmn_cvr_black_no_key_yhbcx',
+    # ('clmn_cvr_black', False): '48400M55T30-5PK',
     ('clmn_cvr_gray', True): '48400M55R00-R8R',
     ('clmn_cvr_gray', False): '48400M55R10-R8R',
 }
