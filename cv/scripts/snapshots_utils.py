@@ -25,7 +25,7 @@ def move_to_date_folder(date, directory):
         dest_dir = os.path.join(directory, date, vehicle_model, cam_type)
         os.makedirs(dest_dir, exist_ok=True)
         dest_path = os.path.join(dest_dir, file)
-        print("Moving:", filepath, dest_path)
+        # print("Moving:", filepath, dest_path)
         shutil.move(filepath, dest_path)
 
 def count_files_by_date(directory):

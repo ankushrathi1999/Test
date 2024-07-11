@@ -2,7 +2,7 @@ from ..colors import color_white, color_green
 
 class ScrewDetectionModel:
     name = 'screw_detection'
-    imgsz = 32
+    imgsz = 640
     target_cams = {'bottom'}
 
     CLASS_SCREW_BIG = name + '_screw_big'
