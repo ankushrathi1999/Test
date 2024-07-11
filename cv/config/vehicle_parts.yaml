@@ -6066,7 +6066,7 @@ YL188C2CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6164,7 +6164,7 @@ YL188C2CP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6252,7 +6252,7 @@ YL188C2CP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6352,7 +6352,7 @@ YL188C2EP0613606:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6440,7 +6440,7 @@ YL188C2EP6813606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6526,7 +6526,7 @@ YL188C2EP7913606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6624,7 +6624,7 @@ YL188C7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6734,7 +6734,7 @@ YL188C7CP0710108:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6842,7 +6842,7 @@ YL188C7CP0713146:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6950,7 +6950,7 @@ YL188C7CP0713147:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7058,7 +7058,7 @@ YL188C7CP0713149:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7154,7 +7154,7 @@ YL188C7CP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7242,7 +7242,7 @@ YL188C7CP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7342,7 +7342,7 @@ YL188C7DP0710108:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7450,7 +7450,7 @@ YL188C7DP0713146:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7558,7 +7558,7 @@ YL188C7DP0713149:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7666,7 +7666,7 @@ YL188C7EP0613606:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7766,7 +7766,7 @@ YL188C7EP0706087:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7872,7 +7872,7 @@ YL188C7EP0710309:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7966,7 +7966,7 @@ YL188C7EP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8052,7 +8052,7 @@ YL188C7EP6813606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8138,7 +8138,7 @@ YL188C7EP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8224,7 +8224,7 @@ YL188C7EP7913606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8322,7 +8322,7 @@ YL199C2CP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8432,7 +8432,7 @@ YL199C2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8541,7 +8541,7 @@ YL199C2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8649,7 +8649,7 @@ YL199C2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8757,7 +8757,7 @@ YL199C7DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8866,7 +8866,7 @@ YL199C7EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8974,7 +8974,7 @@ YL199C7FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9070,7 +9070,7 @@ YL1T8C2CP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9158,7 +9158,7 @@ YL1T8C2CP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9246,7 +9246,7 @@ YL1T8C2EP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9332,7 +9332,7 @@ YL1T8C2EP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9430,7 +9430,7 @@ YL1T8C7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9528,7 +9528,7 @@ YL1T8C7CP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9616,7 +9616,7 @@ YL1T8C7CP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9716,7 +9716,7 @@ YL1T8C7EP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9804,7 +9804,7 @@ YL1T8C7EP4600000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9890,7 +9890,7 @@ YL1T8C7EP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9976,7 +9976,7 @@ YL1T8C7EP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  n_screws: 4
+  n_screws: 3
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L

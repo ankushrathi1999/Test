@@ -29,7 +29,7 @@ def _process_n_screws(vehicle_data):
             'YHB': 5,
             'YHC': 5,
             'YXA': 5,
-            'YL1': 4,
+            'YL1': 3,
         }[vechicle]
 
 sensor_sun_part = {
