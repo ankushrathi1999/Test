@@ -4,6 +4,7 @@ class ScrewDetectionModel:
     name = 'screw_detection'
     imgsz = 640
     target_cams = {'bottom'}
+    tracking = True
 
     CLASS_SCREW_BIG = name + '_screw_big'
     CLASS_SCREW_SMALL = name + '_screw_small'

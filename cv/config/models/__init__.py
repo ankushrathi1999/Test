@@ -11,6 +11,7 @@ from .lights_classification import LightsClassificationModel
 from .wiper_classification import WiperClassificationModel
 from .lower_panel_classification import LowerPanelClassificationModel
 from .orn_classification import OrnClassificationModel
+from .gar_ct_classification import GarCTClassificationModel
 
 detection_models = [
     BezelGroupDetectionModel,
@@ -29,4 +30,5 @@ classification_models = [
     WiperClassificationModel,
     LowerPanelClassificationModel,
     OrnClassificationModel,
+    GarCTClassificationModel,
 ]

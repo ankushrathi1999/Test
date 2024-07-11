@@ -5,6 +5,7 @@ class DetectionResult:
     FLIP = 3
     INCORRECT_POSITION = 4
     NOT_EVALUATED = 5
+    MISSING_SCREWS = 6
 
 
 class ClassificationDetails:
@@ -30,7 +31,7 @@ class FinalDetails:
 
 class DetectionDetails:
 
-    def __init__(self, class_id, class_name,  model, confidence, color, bbox, cam_type):
+    def __init__(self, class_id, class_name,  model, confidence, color, bbox, cam_type, tracking_id=None):
         self.class_id = class_id
         self.class_name = class_name
         self.model = model
@@ -40,6 +41,7 @@ class DetectionDetails:
         self.cam_type = cam_type
         self.classification_details = None
         self.final_details = None
+        self.tracking_id = tracking_id
         self.extra_params = {}
 
     def to_dict(self):

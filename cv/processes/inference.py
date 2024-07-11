@@ -62,19 +62,24 @@ def _inference_loop(thread):
                 for model, model_config in zip(models_detect, detection_models):
                     if cam_type not in model_config.target_cams:
                         continue
-                    results = model.predict(frame_cam, conf=0.25, verbose=False)
+                    if model_config.tracking:
+                        results = model.track(frame_cam, conf=0.25, verbose=False, persist=True)
+                    else:
+                        results = model.predict(frame_cam, conf=0.25, verbose=False)
                     result = results[0]
                     try:
                         bboxs = result.boxes.xyxy.cpu()
                         conf = result.boxes.conf.cpu()
                         cls = result.boxes.cls.cpu().tolist()
+                        track_ids = result.boxes.id.cpu().tolist() if model_config.tracking else [None for _ in cls]
                     except Exception as ex:
                         #print("No detections")
                         bboxs = []
                         conf = []
                         cls = []
+                        track_ids = []
                     processed = []
-                    for bbox, confidence, class_idx in zip(bboxs, conf, cls):
+                    for bbox, confidence, class_idx, tracking_id in zip(bboxs, conf, cls, track_ids):
                         class_idx = int(class_idx)
                         class_id = model_config.ordered_class_list[class_idx]
                         if class_id is None: # skipped class
@@ -93,14 +98,9 @@ def _inference_loop(thread):
                             print("Get processed class after:", class_id)
                         except:
                             pass
-                        # Temp
-                        if model_config is ScrewDetectionModel:
-                            ignore = False
-                        else:
-                            ignore = True
                         detection = DetectionDetails(
-                            class_id, class_name,  model_config.name, confidence, class_color, bbox, cam_type)
-                        detection.final_details = FinalDetails(class_name, color_green, DetectionResult.NOT_EVALUATED, ignore=ignore)
+                            class_id, class_name,  model_config.name, confidence, class_color, bbox, cam_type, tracking_id=tracking_id)
+                        detection.final_details = FinalDetails(class_name, color_green, DetectionResult.NOT_EVALUATED)
                         processed.append(detection)
                     detections.extend(processed)
 

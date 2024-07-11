@@ -22,21 +22,56 @@ def _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_u
             print("Upper panel is not registered for vehicle:", vehicle_model)
             vehicle_part_type_groups.pop(vehicle_model)
 
-# todo: LHD vehicles have opposite sensor placements, currently parts are added in RHD spec only
-def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks):
+def _process_n_screws(vehicle_data):
+    for vehicle_model in vehicle_data:
+        vechicle = vehicle_model[:3]
+        vehicle_data[vehicle_model]['n_screws'] = {
+            'YHB': 5,
+            'YHC': 5,
+            'YXA': 5,
+            'YL1': 4,
+        }[vechicle]
+
+sensor_sun_part = {
+    "part_name": "SENSOR, SUN LIGHT",
+    "part_number": "95642-64G20"
+}
+sensor_auto_part = {
+    "part_name": "SENSOR, AUTO LIGHT",
+    "part_number": "38680M56R00"
+}
+def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, vehicle_type_upper_panel_map):
     ip_upr = [v for v in vehicle_parts if part_master_lookup.loc[v['part_number']].part_class == 'upper_panel']
     if len(ip_upr) == 0:
         return vehicle_parts
-    classes = set()
+    assert len(ip_upr) == 1, "Multiple upper panels registered"
+    vtype = vehicle_type_upper_panel_map[ip_upr[0]['part_number']]
+    sensor_sun = None
+    sensor_auto = None
     for part in vehicle_parts:
         details = part_master_lookup.loc[part['part_number']]
-        classes.add(details['part_class'])
-    for part in missing_part_checks:
-        if part['part_class'] not in classes:
-            vehicle_parts.append({
-                **part,
-                "is_miss": True,
-            })
+        if details['part_class'] == 'sensor_sun':
+            sensor_sun = part
+        elif details['part_class'] == 'sensor_auto':
+            sensor_auto = part
+    sensor_sun_class = "sensor_right" if vtype == 'RHD' else "sensor_left"
+    sensor_auto_class = "sensor_left" if vtype == 'RHD' else "sensor_right"
+    if sensor_sun is None:
+        vehicle_parts.append({
+            **sensor_sun_part,
+            "part_class": sensor_sun_class,
+            "is_miss": True,
+        })
+    else:
+        sensor_sun["part_class"] = sensor_sun_class
+    if sensor_auto is None:
+        vehicle_parts.append({
+            **sensor_auto_part,
+            "part_class": sensor_auto_class,
+            "is_miss": True,
+        })
+    else:
+        sensor_auto["part_class"] = sensor_auto_class
     return vehicle_parts
 
 def _group_part_types(vehicle_parts, part_master_lookup):
@@ -62,7 +97,10 @@ def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class
     for vehicle_model in vehicle_part_type_groups:
         generic_parts = vehicle_part_type_groups[vehicle_model]['generic_parts']
         for part, details in generic_parts:
-            data = vehicle_data[vehicle_model][details.part_class] = {
+            if details['is_supported'] == 0:
+                continue
+            part_class = part.get('part_class', details.part_class)
+            data = vehicle_data[vehicle_model][part_class] = {
                 "part_name": details.part_name_msil,
                 "part_number": part['part_number'],
                 "part_name_long": part['part_name'],
@@ -72,7 +110,7 @@ def _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class
             if len(details.part_group_name.strip()) > 0:
                 data["is_group"] = True
                 data["part_group"] = details.part_group_name.strip()
-            missing_class_name = missing_class_name_lookup.get(details.part_class)
+            missing_class_name = missing_class_name_lookup.get(part_class)
             if missing_class_name is not None:
                 data['missing_class_name'] = missing_class_name
 
@@ -83,6 +121,13 @@ def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class
             print('No usb aux data for vehicle:', vehicle_model)
             continue
         assert 2 <= len(usb_aux_group) <= 3
+        _proceed = True
+        for part, details in usb_aux_group:
+            if details['is_supported'] == 0:
+                _proceed = False
+                break
+        if not _proceed:
+            continue
         usb_aux_group = sorted(usb_aux_group, key=lambda x: x[0]['part_position'])
         missing_class_name = missing_class_name_lookup.get('usb_aux') # todo: hardcoded class name
         vehicle_data[vehicle_model]['usb_aux_group'] = {
@@ -105,7 +150,7 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
         bezel_part, bezel_part_details = bezel[0]
         switch_positions_top, switch_positions_bottom = bezel_switch_positions[bezel_part['part_number']]
         data = vehicle_data[vehicle_model]['bezel'] = {
-            "id": bezel_part['part_number'],
+            "id": "na" if bezel_part_details['is_supported'] == 0 else bezel_part['part_number'],
             "name": bezel_part['part_name'],
             "n_rows": 2 if len(switch_positions_bottom) > 0 else 1,
         }
@@ -156,10 +201,6 @@ def build_vehicle_master():
         missing_class_name_lookup = json.load(f)
     print("Missing classes registered:", len(missing_class_name_lookup))
 
-    with open('./config/missing_part_checks.json', 'r') as f:
-        missing_part_checks = json.load(f)
-    print("Missing part checks:", len(missing_part_checks))
-
     with open('./config/bezel_switch_positions.json', 'r') as f:
         bezel_switch_positions = json.load(f)
     print("Bezels registered for switch position:", len(bezel_switch_positions))
@@ -173,10 +214,11 @@ def build_vehicle_master():
         print(vehicle_model, len(vehicle_parts))
 
     vehicle_part_type_groups = {vehicle_model: _group_part_types(
-        _add_missing_sensor_parts(vehicle_parts, part_master_lookup, missing_part_checks),
+        _add_missing_sensor_parts(vehicle_parts, part_master_lookup, vehicle_type_upper_panel_map),
         part_master_lookup) for vehicle_model, vehicle_parts in mapping.items()}
     vehicle_data = defaultdict(dict)
     _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_upper_panel_map)
+    _process_n_screws(vehicle_data)
     _process_generic_parts(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions)

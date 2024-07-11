@@ -46,6 +46,7 @@ YHB23D2BP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -121,6 +122,23 @@ YHB23D2BP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -129,14 +147,11 @@ YHB23D2BP6800000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -148,15 +163,15 @@ YHB23D2BP6800000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: white_lock
@@ -233,14 +248,11 @@ YHB23D2BP7900000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -252,15 +264,15 @@ YHB23D2BP7900000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: white_lock
@@ -341,6 +353,7 @@ YHB23D2CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -416,6 +429,23 @@ YHB23D2CP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -424,14 +454,11 @@ YHB23D2CP6800000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -443,15 +470,15 @@ YHB23D2CP6800000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -528,14 +555,11 @@ YHB23D2CP7900000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -547,15 +571,15 @@ YHB23D2CP7900000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -607,6 +631,23 @@ YHB23D2DP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -619,6 +660,7 @@ YHB23D2DP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -629,21 +671,17 @@ YHB23D2DP6800000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37410M68PH0
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -717,6 +755,7 @@ YHB23D2DP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -727,21 +766,17 @@ YHB23D2DP7900000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37410M68PH0
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -815,6 +850,7 @@ YHB23D7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -890,6 +926,23 @@ YHB23D7CP0700000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -906,6 +959,7 @@ YHB23D7CP0700000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -917,15 +971,15 @@ YHB23D7CP0700000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -1002,14 +1056,11 @@ YHB23D7CP4300000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R40
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1021,15 +1072,15 @@ YHB23D7CP4300000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -1081,6 +1132,23 @@ YHB23D7CP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -1089,14 +1157,11 @@ YHB23D7CP6800000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1108,15 +1173,15 @@ YHB23D7CP6800000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -1193,14 +1258,11 @@ YHB23D7CP7900000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1212,15 +1274,15 @@ YHB23D7CP7900000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -1272,6 +1334,23 @@ YHB23D7DP0700000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -1284,6 +1363,7 @@ YHB23D7DP0700000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1294,14 +1374,14 @@ YHB23D7DP0700000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -1309,6 +1389,8 @@ YHB23D7DP0700000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P53
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -1382,6 +1464,7 @@ YHB23D7DP4300000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1392,14 +1475,14 @@ YHB23D7DP4300000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -1407,6 +1490,8 @@ YHB23D7DP4300000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P53
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -1451,6 +1536,23 @@ YHB23D7DP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -1463,6 +1565,7 @@ YHB23D7DP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1473,21 +1576,17 @@ YHB23D7DP6800000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37410M68PH0
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -1561,6 +1660,7 @@ YHB23D7DP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1571,21 +1671,17 @@ YHB23D7DP7900000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37410M68PH0
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -1659,6 +1755,7 @@ YHB4ED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1759,6 +1856,7 @@ YHB4ED24P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1858,6 +1956,7 @@ YHB4ED2AP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -1958,6 +2057,7 @@ YHB5ED22P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2058,6 +2158,7 @@ YHB5ED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2158,6 +2259,7 @@ YHB5ED24P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2257,6 +2359,7 @@ YHB5ED2AP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2353,6 +2456,7 @@ YHB5ED2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2451,6 +2555,7 @@ YHB5EDXCP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2551,6 +2656,7 @@ YHB5EDXDP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2646,6 +2752,7 @@ YHB5EDXEP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2744,6 +2851,7 @@ YHBB3D2BP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2819,6 +2927,23 @@ YHBB3D2BP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -2827,14 +2952,11 @@ YHBB3D2BP6800000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2846,15 +2968,15 @@ YHBB3D2BP6800000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: white_lock
@@ -2931,14 +3053,11 @@ YHBB3D2BP7900000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -2950,15 +3069,15 @@ YHBB3D2BP7900000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: white_lock
@@ -3039,6 +3158,7 @@ YHBB3D2CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3114,6 +3234,23 @@ YHBB3D2CP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -3122,14 +3259,11 @@ YHBB3D2CP6800000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3141,15 +3275,15 @@ YHBB3D2CP6800000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -3226,14 +3360,11 @@ YHBB3D2CP7900000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3245,15 +3376,15 @@ YHBB3D2CP7900000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -3330,6 +3461,7 @@ YHBB3D2DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3355,6 +3487,8 @@ YHBB3D2DP0600000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -3432,6 +3566,7 @@ YHBB3D7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3507,6 +3642,23 @@ YHBB3D7CP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -3515,14 +3667,11 @@ YHBB3D7CP6800000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3534,15 +3683,15 @@ YHBB3D7CP6800000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -3619,14 +3768,11 @@ YHBB3D7CP7900000:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
     part_number: 37430M68P20-5PK
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M72R20
   lower_panel:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3638,15 +3784,15 @@ YHBB3D7CP7900000:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -3723,6 +3869,7 @@ YHBB3D7DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3748,6 +3895,8 @@ YHBB3D7DP0600000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -3796,6 +3945,23 @@ YHBB3D7DP6800000:
     part_name: GAR_DR_OUT
     part_name_long: GARNISH SET IP DRVR INSIDE
     part_number: 73083M72R10-C48
+  bezel:
+    id: 73833M73R50-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: COVER,I/P DRVR INSIDE LOWER
@@ -3808,6 +3974,7 @@ YHBB3D7DP6800000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3818,21 +3985,17 @@ YHBB3D7DP6800000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37410M68PH0
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -3906,6 +4069,7 @@ YHBB3D7DP7900000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R50-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -3916,21 +4080,17 @@ YHBB3D7DP7900000:
     part_number: 73832M72R60-QWD
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  steering_coil:
-    is_group: true
-    part_group: yellow_lock
-    part_name: CT_COIL
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37410M68PH0
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55R10-5PK
@@ -4004,6 +4164,7 @@ YHBCED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4104,6 +4265,7 @@ YHBDED22P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4204,6 +4366,7 @@ YHBDED23P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4304,6 +4467,7 @@ YHBDED24P7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4399,6 +4563,7 @@ YHBDED2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4497,6 +4662,7 @@ YHBDEDXCP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4597,6 +4763,7 @@ YHBDEDXDP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4692,6 +4859,7 @@ YHBDEDXEP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M72R00-V6N
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4781,6 +4949,7 @@ YHC23T2DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4807,6 +4976,8 @@ YHC23T2DP0600000:
     part_name_long: SET,CONTACT COIL
     part_number: 37410M68P20
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -4871,6 +5042,7 @@ YHC23T2EP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4896,6 +5068,8 @@ YHC23T2EP0600000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -4964,6 +5138,7 @@ YHC23T7DP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -4990,6 +5165,8 @@ YHC23T7DP0600000:
     part_name_long: SET,CONTACT COIL
     part_number: 37410M68P20
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5054,6 +5231,7 @@ YHC23T7EP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5079,6 +5257,8 @@ YHC23T7EP0600000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5156,6 +5336,7 @@ YHC4ET2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5182,6 +5363,8 @@ YHC4ET2DP7400000:
     part_name_long: SET,CONTACT COIL
     part_number: 37410M68P20
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5259,6 +5442,7 @@ YHC5ET2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5285,6 +5469,8 @@ YHC5ET2DP7400000:
     part_name_long: SET,CONTACT COIL
     part_number: 37410M68P20
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5358,6 +5544,7 @@ YHC5ET2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5383,6 +5570,8 @@ YHC5ET2EP7400000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5456,6 +5645,7 @@ YHC5ET2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5481,6 +5671,8 @@ YHC5ET2FP7400000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5558,6 +5750,7 @@ YHC5ETXDP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5584,6 +5777,8 @@ YHC5ETXDP7400000:
     part_name_long: SET,CONTACT COIL
     part_number: 37410M68P20
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5657,6 +5852,7 @@ YHC5ETXEP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5682,6 +5878,8 @@ YHC5ETXEP7400000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5755,6 +5953,7 @@ YHC5ETXFP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M51U00-5PK
+  n_screws: 5
   orn_ctr:
     part_name: OR_IP_CTR
     part_name_long: ORNAMENT,I/P CENTER
@@ -5780,6 +5979,8 @@ YHC5ETXFP7400000:
     part_name_long: SWITCH ASSY,LIGHTING & TURN
     part_number: 37410M68P83
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -5865,6 +6066,7 @@ YL188C2CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -5911,19 +6113,10 @@ YL188C2CP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -5946,10 +6139,23 @@ YL188C2CP6810309:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -5958,14 +6164,7 @@ YL188C2CP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -5974,26 +6173,18 @@ YL188C2CP6810309:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -6012,17 +6203,6 @@ YL188C2CP6810309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6048,7 +6228,7 @@ YL188C2CP7910309:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -6064,10 +6244,6 @@ YL188C2CP7910309:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -6076,14 +6252,7 @@ YL188C2CP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6092,26 +6261,18 @@ YL188C2CP7910309:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -6130,17 +6291,6 @@ YL188C2CP7910309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6165,6 +6315,23 @@ YL188C2EP0613606:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
+    - id: 37775M68P00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 1
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: GARNISH,I/P DRVR INSIDE
@@ -6185,6 +6352,7 @@ YL188C2EP0613606:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6193,14 +6361,6 @@ YL188C2EP0613606:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R00-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R00-DE4
   sensor_left:
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
@@ -6229,19 +6389,10 @@ YL188C2EP0613606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -6264,10 +6415,23 @@ YL188C2EP6813606:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37775M68P00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -6276,14 +6440,7 @@ YL188C2EP6813606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6292,24 +6449,16 @@ YL188C2EP6813606:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -6328,17 +6477,6 @@ YL188C2EP6813606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6364,7 +6502,7 @@ YL188C2EP7913606:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -6380,10 +6518,6 @@ YL188C2EP7913606:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -6392,14 +6526,7 @@ YL188C2EP7913606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6408,24 +6535,16 @@ YL188C2EP7913606:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -6444,17 +6563,6 @@ YL188C2EP7913606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6516,6 +6624,7 @@ YL188C7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6562,19 +6671,10 @@ YL188C7CP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -6634,6 +6734,7 @@ YL188C7CP0710108:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6653,15 +6754,15 @@ YL188C7CP0710108:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -6680,17 +6781,6 @@ YL188C7CP0710108:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6715,6 +6805,23 @@ YL188C7CP0713146:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
+  bezel:
+    id: 73831M79M10-V6N
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M68P10
+      name: SWITCH ASSY,ESP OFF
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: GARNISH,I/P DRVR INSIDE
@@ -6735,6 +6842,7 @@ YL188C7CP0713146:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6754,15 +6862,15 @@ YL188C7CP0713146:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -6781,17 +6889,6 @@ YL188C7CP0713146:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: CAP,USB HOLE
-      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6853,6 +6950,7 @@ YL188C7CP0713147:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6872,15 +6970,15 @@ YL188C7CP0713147:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -6899,17 +6997,6 @@ YL188C7CP0713147:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: CAP,USB HOLE
-      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6971,6 +7058,7 @@ YL188C7CP0713149:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -6990,15 +7078,15 @@ YL188C7CP0713149:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -7017,17 +7105,6 @@ YL188C7CP0713149:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7052,10 +7129,23 @@ YL188C7CP6810309:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -7064,14 +7154,7 @@ YL188C7CP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7080,26 +7163,18 @@ YL188C7CP6810309:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -7118,17 +7193,6 @@ YL188C7CP6810309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7154,7 +7218,7 @@ YL188C7CP7910309:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -7170,10 +7234,6 @@ YL188C7CP7910309:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -7182,14 +7242,7 @@ YL188C7CP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7198,26 +7251,18 @@ YL188C7CP7910309:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -7236,17 +7281,6 @@ YL188C7CP7910309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7271,6 +7305,23 @@ YL188C7DP0710108:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
+  bezel:
+    id: 73831M79M10-V6N
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M68P10
+      name: SWITCH ASSY,ESP OFF
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: GARNISH,I/P DRVR INSIDE
@@ -7291,6 +7342,7 @@ YL188C7DP0710108:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7310,15 +7362,15 @@ YL188C7DP0710108:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -7337,17 +7389,6 @@ YL188C7DP0710108:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7372,6 +7413,23 @@ YL188C7DP0713146:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
+  bezel:
+    id: 73831M79M10-V6N
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M68P10
+      name: SWITCH ASSY,ESP OFF
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: GARNISH,I/P DRVR INSIDE
@@ -7392,6 +7450,7 @@ YL188C7DP0713146:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7411,15 +7470,15 @@ YL188C7DP0713146:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -7438,17 +7497,6 @@ YL188C7DP0713146:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: CAP,USB HOLE
-      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7473,6 +7521,23 @@ YL188C7DP0713149:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
+  bezel:
+    id: 73831M79M10-V6N
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M68P10
+      name: SWITCH ASSY,ESP OFF
+      position: 4
   garnish_drvr_inside_yl:
     part_name: CVR_DRVR
     part_name_long: GARNISH,I/P DRVR INSIDE
@@ -7493,6 +7558,7 @@ YL188C7DP0713149:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7512,15 +7578,15 @@ YL188C7DP0713149:
   sensor_left:
     is_miss: true
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    is_miss: true
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -7539,17 +7605,6 @@ YL188C7DP0713149:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7575,7 +7630,7 @@ YL188C7EP0613606:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M20-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -7611,6 +7666,7 @@ YL188C7EP0613606:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7619,14 +7675,6 @@ YL188C7EP0613606:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R00-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R00-DE4
   sensor_left:
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
@@ -7655,19 +7703,10 @@ YL188C7EP0613606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -7727,6 +7766,7 @@ YL188C7EP0706087:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7745,14 +7785,14 @@ YL188C7EP0706087:
     part_number: 73860M82R10-DE3
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -7771,17 +7811,6 @@ YL188C7EP0706087:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: CAP,USB HOLE
-      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7843,6 +7872,7 @@ YL188C7EP0710309:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M10-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7861,14 +7891,14 @@ YL188C7EP0710309:
     part_number: 73860M82R10-DE3
   sensor_left:
     missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
-    missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -7887,17 +7917,6 @@ YL188C7EP0710309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7922,10 +7941,23 @@ YL188C7EP6810309:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37775M68P00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -7934,14 +7966,7 @@ YL188C7EP6810309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -7950,24 +7975,16 @@ YL188C7EP6810309:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -7986,17 +8003,6 @@ YL188C7EP6810309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8021,10 +8027,23 @@ YL188C7EP6813606:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37775M68P00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -8033,14 +8052,7 @@ YL188C7EP6813606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8049,24 +8061,16 @@ YL188C7EP6813606:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -8085,17 +8089,6 @@ YL188C7EP6813606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8121,7 +8114,7 @@ YL188C7EP7910309:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -8137,10 +8130,6 @@ YL188C7EP7910309:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -8149,14 +8138,7 @@ YL188C7EP7910309:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8165,24 +8147,16 @@ YL188C7EP7910309:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -8201,17 +8175,6 @@ YL188C7EP7910309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8237,7 +8200,7 @@ YL188C7EP7913606:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -8253,10 +8216,6 @@ YL188C7EP7913606:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -8265,14 +8224,7 @@ YL188C7EP7913606:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8281,24 +8233,16 @@ YL188C7EP7913606:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -8317,17 +8261,6 @@ YL188C7EP7913606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8389,6 +8322,7 @@ YL199C2CP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8435,19 +8369,10 @@ YL199C2CP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8507,6 +8432,7 @@ YL199C2DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8552,19 +8478,10 @@ YL199C2DP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8624,6 +8541,7 @@ YL199C2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8668,19 +8586,10 @@ YL199C2EP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8740,6 +8649,7 @@ YL199C2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8784,19 +8694,10 @@ YL199C2FP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8856,6 +8757,7 @@ YL199C7DP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -8901,19 +8803,10 @@ YL199C7DP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8973,6 +8866,7 @@ YL199C7EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9017,19 +8911,10 @@ YL199C7EP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -9089,6 +8974,7 @@ YL199C7FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-V6N
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9133,19 +9019,10 @@ YL199C7FP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -9168,10 +9045,23 @@ YL1T8C2CP6800000:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -9180,14 +9070,7 @@ YL1T8C2CP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9196,26 +9079,18 @@ YL1T8C2CP6800000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -9234,17 +9109,6 @@ YL1T8C2CP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9270,7 +9134,7 @@ YL1T8C2CP7900000:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -9286,10 +9150,6 @@ YL1T8C2CP7900000:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -9298,14 +9158,7 @@ YL1T8C2CP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9314,26 +9167,18 @@ YL1T8C2CP7900000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -9352,17 +9197,6 @@ YL1T8C2CP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9387,10 +9221,23 @@ YL1T8C2EP6800000:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37775M68P00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -9399,14 +9246,7 @@ YL1T8C2EP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9415,24 +9255,16 @@ YL1T8C2EP6800000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -9451,17 +9283,6 @@ YL1T8C2EP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9487,7 +9308,7 @@ YL1T8C2EP7900000:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -9503,10 +9324,6 @@ YL1T8C2EP7900000:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -9515,14 +9332,7 @@ YL1T8C2EP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9531,24 +9341,16 @@ YL1T8C2EP7900000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -9567,17 +9369,6 @@ YL1T8C2EP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9639,6 +9430,7 @@ YL1T8C7CP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9685,19 +9477,10 @@ YL1T8C7CP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -9720,10 +9503,23 @@ YL1T8C7CP6800000:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 35180M68P00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 2
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -9732,14 +9528,7 @@ YL1T8C7CP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9748,26 +9537,18 @@ YL1T8C7CP6800000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -9786,17 +9567,6 @@ YL1T8C7CP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9822,7 +9592,7 @@ YL1T8C7CP7900000:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-C48
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -9838,10 +9608,6 @@ YL1T8C7CP7900000:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M10-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -9850,14 +9616,7 @@ YL1T8C7CP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L20
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9866,26 +9625,18 @@ YL1T8C7CP7900000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73852M79M10-PPL
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73851M79M10-PPL
   sensor_left:
-    is_miss: true
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR, AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     is_miss: true
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR, SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: blue_lock
@@ -9904,17 +9655,6 @@ YL1T8C7CP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9940,7 +9680,7 @@ YL1T8C7EP0600000:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M20-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -9976,6 +9716,7 @@ YL1T8C7EP0600000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M79M00-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -9984,14 +9725,6 @@ YL1T8C7EP0600000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R00-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R00-DE4
   sensor_left:
     missing_class_name: no_sensor
     part_name: SNSR_AUTO
@@ -10020,19 +9753,10 @@ YL1T8C7EP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -10056,7 +9780,7 @@ YL1T8C7EP4600000:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -10072,10 +9796,6 @@ YL1T8C7EP4600000:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -10084,14 +9804,7 @@ YL1T8C7EP4600000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -10100,24 +9813,16 @@ YL1T8C7EP4600000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -10136,17 +9841,6 @@ YL1T8C7EP4600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -10171,10 +9865,23 @@ YL1T8C7EP6800000:
     part_name: LVR_VT_RH
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
+  bezel:
+    id: na
+    n_rows: 1
+    name: GARNISH,I/P DRVR OUTSIDE
+    switches_top:
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 1
+    - id: 37270M68P00
+      name: SWITCH ASSY,FR FOG
+      position: 2
+    - id: 37775M68P00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37285M75J00
+      name: CAP,OPTION SW HOLE
+      position: 4
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -10183,14 +9890,7 @@ YL1T8C7EP6800000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -10199,24 +9899,16 @@ YL1T8C7EP6800000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -10235,17 +9927,6 @@ YL1T8C7EP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -10271,7 +9952,7 @@ YL1T8C7EP7900000:
     part_name_long: LOUVER COMP,SIDE VENT R
     part_number: 73630M79M00-BJC
   bezel:
-    id: 73831M79M10-5PK
+    id: na
     n_rows: 1
     name: GARNISH,I/P DRVR OUTSIDE
     switches_top:
@@ -10287,10 +9968,6 @@ YL1T8C7EP7900000:
     - id: 37285M75J00
       name: CAP,OPTION SW HOLE
       position: 4
-  garnish_drvr_inside_yl:
-    part_name: CVR_DRVR
-    part_name_long: GARNISH,I/P DRVR INSIDE
-    part_number: 73832M79M30-5PK
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -10299,14 +9976,7 @@ YL1T8C7EP7900000:
     part_name: LBL_ACC
     part_name_long: LABEL,ACC SOCKET
     part_number: 39442M79M00
-  lights:
-    part_name: SW_LGT
-    part_name_long: SWITCH ASSY,LIGHTING & TURN
-    part_number: 37210M74L50
-  lower_panel:
-    part_name: IP_LWR
-    part_name_long: PANEL,INSTRUMENT MAIN LOWER
-    part_number: 73121M79M10-5PK
+  n_screws: 4
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -10315,24 +9985,16 @@ YL1T8C7EP7900000:
     part_name: NOZ_DEM_RH
     part_name_long: NOZZLE,SIDE DEMISTER,R
     part_number: 73651M79M00-5PK
-  orn_ctr:
-    part_name: OR_IP_CTR
-    part_name_long: ORNAMENT,I/P CENTER
-    part_number: 73870M82R10-DE4
-  orn_drvr:
-    part_name: OR_IP_DR
-    part_name_long: ORNAMENT,I/P DRVR
-    part_number: 73860M82R10-DE4
   sensor_left:
-    missing_class_name: no_sensor
-    part_name: SNSR_AUTO
-    part_name_long: SENSOR ASSY,AUTO LIGHT
-    part_number: 38680M56R00
-  sensor_right:
     missing_class_name: no_sensor
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -10351,17 +10013,6 @@ YL1T8C7EP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
-  usb_aux_group:
-    n_parts: 2
-    parts:
-    - missing_class_name: acc_usb_ng
-      part_name: ACC_SKT
-      part_name_long: COVER, SOCKET
-      part_number: 39441M75J01-5PK
-    - missing_class_name: acc_usb_ng
-      part_name: USB_SKT
-      part_name_long: SOCKET,USB & AUX
-      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -10419,6 +10070,10 @@ YXA14C2EP7400000:
     part_name: CVR_CTR-UPR
     part_name_long: COVER,I/P CTR UPPER
     part_number: 73823M66T00-5PK
+  gar_ip_ctr:
+    part_name: GAR_IP_CTR
+    part_name_long: GARNISH,I/P CTR
+    part_number: 73821M66T00-0CE
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -10431,6 +10086,7 @@ YXA14C2EP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M66T00-5PK
+  n_screws: 5
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -10450,10 +10106,6 @@ YXA14C2EP7400000:
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  skip:
-    part_name: GAR_IP_CTR
-    part_name_long: GARNISH,I/P CTR
-    part_number: 73821M66T00-0CE
   steering_coil:
     is_group: true
     part_group: yellow_lock
@@ -10461,6 +10113,8 @@ YXA14C2EP7400000:
     part_name_long: SET,CONTACT COIL
     part_number: 37410M55T20
   steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
     part_name: CLMN_CVR
     part_name_long: COVER ASSY,STEERING COLUMN
     part_number: 48400M55T30-5PK
@@ -10534,6 +10188,10 @@ YXA24C2FP7400000:
     part_name: CVR_CTR-UPR
     part_name_long: COVER,I/P CTR UPPER
     part_number: 73823M66T00-5PK
+  gar_ip_ctr:
+    part_name: GAR_IP_CTR
+    part_name_long: GARNISH,I/P CTR
+    part_number: 73821M66T00-ZCA
   hazard_switches:
     part_name: SW_HZD
     part_name_long: SWITCH ASSY,HAZARD & SECURITY
@@ -10546,6 +10204,7 @@ YXA24C2FP7400000:
     part_name: IP_LWR
     part_name_long: PANEL,INSTRUMENT MAIN LOWER
     part_number: 73121M66T00-5PK
+  n_screws: 5
   nozzle_left:
     part_name: NOZ_DEM_LH
     part_name_long: NOZZLE,SIDE DEMISTER,L
@@ -10565,10 +10224,6 @@ YXA24C2FP7400000:
     part_name: SNSR_SUN
     part_name_long: SENSOR,SUN LIGHT
     part_number: 95642-64G20
-  skip:
-    part_name: GAR_IP_CTR
-    part_name_long: GARNISH,I/P CTR
-    part_number: 73821M66T00-ZCA
   steering_coil:
     is_group: true
     part_group: blue_lock
