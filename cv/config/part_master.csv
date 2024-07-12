@@ -1,7 +1,7 @@
 part_number,part_name_er,part_name_msil,part_class,part_group_name_er,part_group_name,is_supported
 39420M83P00,ACC_SKT_BDY_YHBCXL,ACC_SKT,skip,,,0
 39440M56R20-5PK,ACC_SKT_CVR_YHBCX,ACC_SKT,usb_aux,,,1
-39441M75J01-5PK,ACC_SKT_CVR_YL1,ACC_SKT,usb_aux,,,0
+39441M75J01-5PK,ACC_SKT_CVR_YL1,ACC_SKT,usb_aux,,,1
 73822M73R00-5PK,BS_CTR_YHBC_005PK,BS_CTR,skip,,,0
 73822M73R50-5PK,BS_CTR_YHBC_505PK,BS_CTR,skip,,,0
 73833M73R00-5PK,BZ_AS_SW_YHBC_005PK,BZ_AS_SW,bezel,bezel_yhbc_black_no_key,,1
