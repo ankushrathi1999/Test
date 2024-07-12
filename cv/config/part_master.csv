@@ -39,13 +39,13 @@ part_number,part_name_er,part_name_msil,part_class,part_group_name_er,part_group
 37780M81R00,BZ_SW_IDSTP_YXA,BZ_SW_9,bezel_switch,,,1
 37775M66R00,BZ_SW_PRK_YHBC,BZ_SW_3,bezel_switch,,,1
 37775M68P00,BZ_SW_PRK_YL1,BZ_SW_3,bezel_switch,,,1
-48400M55R00-R8R,CLMN_CVR_YHBC_00R8R,CLMN_CVR,steering_cover,clmn_cvr_gray,,1
+48400M55R00-R8R,CLMN_CVR_YHBC_00R8R,CLMN_CVR,steering_cover,clmn_cvr_gray_key,,1
 48400M55R10-5PK,CLMN_CVR_YHBC_105PK,CLMN_CVR,steering_cover,clmn_cvr_black,clmn_cvr_black_no_key_yhbcx,1
 48400M55R10-R8R,CLMN_CVR_YHBC_10R8R,CLMN_CVR,steering_cover,clmn_cvr_gray,,1
-48400M55R00-5PK,CLMN_CVR_YHBCX_R005PK,CLMN_CVR,steering_cover,clmn_cvr_black,,1
+48400M55R00-5PK,CLMN_CVR_YHBCX_R005PK,CLMN_CVR,steering_cover,clmn_cvr_black_key,,1
 48400M55T30-5PK,CLMN_CVR_YHBCX_T305PK,CLMN_CVR,steering_cover,clmn_cvr_black,clmn_cvr_black_no_key_yhbcx,1
 48400M74L00-5PK,CLMN_CVR_YL1_4L005PK,CLMN_CVR,steering_cover,clmn_cvr_black,,1
-48400M79M30-5PK,CLMN_CVR_YL1_9M305PK,CLMN_CVR,steering_cover,clmn_cvr_black,,1
+48400M79M30-5PK,CLMN_CVR_YL1_9M305PK,CLMN_CVR,steering_cover,clmn_cvr_black_key,,1
 73310M72R00-5PK,CLSTR_CVR_YHBC_005PK,CLSTR_CVR,skip,,,0
 73310M72R50-5PK,CLSTR_CVR_YHBC_505PK,CLSTR_CVR,skip,,,0
 73310M79M00-5PK,CLSTR_CVR_YL1_005PK,CLSTR_CVR,skip,,,0
