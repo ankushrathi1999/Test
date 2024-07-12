@@ -6115,8 +6115,6 @@ YL188C2CP0600000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -6391,8 +6389,6 @@ YL188C2EP0613606:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -6673,8 +6669,6 @@ YL188C7CP0600000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -7705,8 +7699,6 @@ YL188C7EP0613606:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8371,8 +8363,6 @@ YL199C2CP7400000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8480,8 +8470,6 @@ YL199C2DP7400000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8588,8 +8576,6 @@ YL199C2EP7400000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8696,8 +8682,6 @@ YL199C2FP7400000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8805,8 +8789,6 @@ YL199C7DP7400000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -8913,8 +8895,6 @@ YL199C7EP7400000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -9021,8 +9001,6 @@ YL199C7FP7400000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -9479,8 +9457,6 @@ YL1T8C7CP0600000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
@@ -9755,8 +9731,6 @@ YL1T8C7EP0600000:
     part_number: 73111M79M02-5PK
   vehicle_type: RHD
   wiper:
-    is_group: true
-    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M74L00
