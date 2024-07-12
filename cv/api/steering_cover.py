@@ -32,8 +32,8 @@ class SteeringCover(ClassificationPart):
             return
         print("Updating steering cover classification:", self.detection_class)
         
-        key_detections = detection_groups.get(PartDetectionModel.CLASS_key, [])
-        key_detection = max(key_detections, key=lambda detection: detection.confidence) if len(key_detections) > 0 else None
+        # key_detections = detection_groups.get(PartDetectionModel.CLASS_key, [])
+        # key_detection = max(key_detections, key=lambda detection: detection.confidence) if len(key_detections) > 0 else None
 
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
         if part_detection is None:
@@ -41,18 +41,20 @@ class SteeringCover(ClassificationPart):
         
         img_height, img_width = self.artifact.data.frames[1].shape[:2]
         x2_pos = part_detection.bbox[2] / img_width
-        x2_check_start, x2_check_end = [0.45, 0.8] if self.artifact.vehicle_type == "RHD" else [0.1, 0.45] 
+        # x2_check_start, x2_check_end = [0.45, 0.8] if self.artifact.vehicle_type == "RHD" else [0.1, 0.45]
+        x2_check_start, x2_check_end = [0, 0.56]
         if x2_pos < x2_check_start or x2_pos> x2_check_end:
             print('Steering skip:', x2_pos, x2_check_start, x2_check_end, part_detection.bbox, img_width, img_height)
             return
         
-        is_key_present = key_detection is not None and box_contains(part_detection.bbox, key_detection.bbox) > 0.3
-        print("Key detection:", is_key_present, key_detection is None)
-        if key_detection is not None:
-            print("box contians:", box_contains(part_detection.bbox, key_detection.bbox))
+        # is_key_present = key_detection is not None and box_contains(part_detection.bbox, key_detection.bbox) > 0.3
+        # print("Key detection:", is_key_present, key_detection is None)
+        # if key_detection is not None:
+        #     print("box contains:", box_contains(part_detection.bbox, key_detection.bbox))
                 
-        pred_part_group = part_detection.classification_details.part_number
-        pred_part = PartClassificationModel.get_part_number_steering_cover(pred_part_group, is_key_present, self.artifact.vehicle_category)
+        # pred_part_group = part_detection.classification_details.part_number
+        #PartClassificationModel.get_part_number_steering_cover(pred_part_group, is_key_present, self.artifact.vehicle_category)
+        pred_part = part_detection.classification_details.part_number
         result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
         print("Current result:", pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
         # Keep in OK state if already passed

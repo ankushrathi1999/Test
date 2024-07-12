@@ -34,24 +34,24 @@ part_garnish_yhbc_lookup = {
 
 # todo: combine lookup for yhb and yhcx after adding telescopic steering class
 part_steering_cover_lookup_yhb = {
-    ('clmn_cvr_black', True): '48400M55R00-5PK', # classification label x is_key_present
-    ('clmn_cvr_black', False): 'clmn_cvr_black_no_key_yhbcx',
-    # ('clmn_cvr_black', False): '48400M55R10-5PK',
-    ('clmn_cvr_gray', True): '48400M55R00-R8R',
-    ('clmn_cvr_gray', False): '48400M55R10-R8R',
+    ('clmn_cvr_black_key'): '48400M55R00-5PK',
+    ('clmn_cvr_black'): 'clmn_cvr_black_no_key_yhbcx',
+    # ('clmn_cvr_black'): '48400M55R10-5PK',
+    ('clmn_cvr_gray_key'): '48400M55R00-R8R',
+    ('clmn_cvr_gray'): '48400M55R10-R8R',
 }
 
 part_steering_cover_lookup_yhcx = {
-    ('clmn_cvr_black', True): '48400M55R00-5PK', # classification label x is_key_present
-    ('clmn_cvr_black', False): 'clmn_cvr_black_no_key_yhbcx',
-    # ('clmn_cvr_black', False): '48400M55T30-5PK',
-    ('clmn_cvr_gray', True): '48400M55R00-R8R',
-    ('clmn_cvr_gray', False): '48400M55R10-R8R',
+    ('clmn_cvr_black_key'): '48400M55R00-5PK',
+    ('clmn_cvr_black'): 'clmn_cvr_black_no_key_yhbcx',
+    # ('clmn_cvr_black'): '48400M55T30-5PK',
+    ('clmn_cvr_gray_key'): '48400M55R00-R8R',
+    ('clmn_cvr_gray'): '48400M55R10-R8R',
 }
 
 part_steering_cover_lookup_yl1 = {
-    ('clmn_cvr_black', True): '48400M74L00-5PK', # classification label x is_key_present
-    ('clmn_cvr_black', False): '48400M79M30-5PK',
+    ('clmn_cvr_black_key'): '48400M74L00-5PK',
+    ('clmn_cvr_black'): '48400M79M30-5PK',
 }
 
 class PartClassificationModel:
@@ -94,7 +94,9 @@ class PartClassificationModel:
         '73832M79M10-V6N',
         '73832M79M30-V6N',
         'clmn_cvr_black',
+        'clmn_cvr_black_key',
         'clmn_cvr_gray',
+        'clmn_cvr_gray_key',
         'blue_lock',
         'white_lock',
         'yellow_lock',
@@ -115,6 +117,8 @@ class PartClassificationModel:
         '73832M79M30-V6N': 'CVR_DRVR',
         'clmn_cvr_black': 'CLMN_CVR',
         'clmn_cvr_gray': 'CLMN_CVR',
+        'clmn_cvr_black_key': 'CLMN_CVR',
+        'clmn_cvr_gray_key': 'CLMN_CVR',
         'blue_lock': 'CT_COIL',
         'white_lock': 'CT_COIL',
         'yellow_lock': 'CT_COIL',
@@ -139,15 +143,12 @@ class PartClassificationModel:
             return part_garnish_yxa_lookup.get((detection_label, class_name))
         elif vehicle_category in {'YHB', 'YHC'} and detection_label_full in {PartDetectionModel.CLASS_ac_left, PartDetectionModel.CLASS_ac_right}:
             return part_garnish_yhbc_lookup.get((vehicle_type, detection_label))
+        elif detection_label_full in {PartDetectionModel.CLASS_steering_cover}:
+            if vehicle_category == 'YHB':
+                return part_steering_cover_lookup_yhb.get(class_name)
+            elif vehicle_category == 'YL1':
+                return part_steering_cover_lookup_yl1.get(class_name)
+            elif vehicle_category in {'YHC', 'YXA'}:
+                return part_steering_cover_lookup_yhcx.get(class_name)
         else:
             return class_name
-        
-    @staticmethod
-    def get_part_number_steering_cover(class_name, is_key_present, vehicle_category):
-        if vehicle_category == 'YHB':
-            return part_steering_cover_lookup_yhb.get((class_name, is_key_present))
-        elif vehicle_category in {'YHC', 'YXA'}:
-            return part_steering_cover_lookup_yhcx.get((class_name, is_key_present))
-        elif vehicle_category == 'YL1':
-            return part_steering_cover_lookup_yl1.get((class_name, is_key_present))
-
