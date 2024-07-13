@@ -1,14 +1,32 @@
 import time
 import traceback
 
+
+### 1/3 Prevent duplicate executions
+
+from config.config import config
+from utils.generic_utils import is_port_in_use
+
+process_config = config['process_health_server']
+health_port = process_config.getint('port')
+print("Checking port availability:", health_port)
+if is_port_in_use(health_port):
+    raise Exception(f'Application port {health_port} is already in use.')
+
+
+### 2/3 Build vehicle master
+
 from utils.build_vehicle_master import build_vehicle_master
 
-# Build vehicle master
+print("Building vehcile master")
 try:
     build_vehicle_master()
 except Exception as ex:
     print("Failed to build latest vehicle master from database.", ex)
     traceback.print_exc()
+
+
+### 3/3 Start Application
 
 from api.data import Data
 from api.state import SYSTEM_STATES

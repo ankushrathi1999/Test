@@ -4,6 +4,24 @@ from collections import defaultdict
 
 from config.db_config import db_params
 
+def test_conection():
+    query = 'select 1 from Entity;'
+    connection  = None
+    try:
+        connection = pymysql.connect(host=db_params['host'],
+                                    user=db_params['user'],
+                                    password=db_params['password'],
+                                    database=db_params['database'])
+        with connection.cursor() as cursor:
+            cursor.execute(query)
+            return True
+    except Exception as ex:
+        print("Error connecting to database", ex)
+        return False
+    finally:
+        if connection is not None:
+            connection.close()
+
 def get_entity_lookup():
     query = """
         select m.code as type, e.code as code, e.id as id from Entity e join EntityTypeMaster m on e.entity_type_id = m.id;
