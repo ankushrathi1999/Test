@@ -4934,8 +4934,17 @@ YHC23T2DP0600000:
     n_rows: 1
     name: BEZEL,I/P SWITCH
     switches_top:
-    - id: na
-      name: N/A
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
       position: 1
   hazard_switches:
     part_name: SW_HZD
@@ -5031,8 +5040,17 @@ YHC23T2EP0600000:
     n_rows: 1
     name: BEZEL,I/P SWITCH
     switches_top:
-    - id: na
-      name: N/A
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
       position: 1
   hazard_switches:
     part_name: SW_HZD
@@ -5123,8 +5141,17 @@ YHC23T7DP0600000:
     n_rows: 1
     name: BEZEL,I/P SWITCH
     switches_top:
-    - id: na
-      name: N/A
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
       position: 1
   hazard_switches:
     part_name: SW_HZD
@@ -5220,8 +5247,17 @@ YHC23T7EP0600000:
     n_rows: 1
     name: BEZEL,I/P SWITCH
     switches_top:
-    - id: na
-      name: N/A
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 4
+    - id: 37775M66R00
+      name: SWITCH ASSY,PARK SNSR
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
       position: 1
   hazard_switches:
     part_name: SW_HZD
@@ -6113,6 +6149,17 @@ YL188C2CP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -6201,6 +6248,17 @@ YL188C2CP6810309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6289,6 +6347,17 @@ YL188C2CP7910309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6387,6 +6456,17 @@ YL188C2EP0613606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -6473,6 +6553,17 @@ YL188C2EP6813606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6559,6 +6650,17 @@ YL188C2EP7913606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6667,6 +6769,17 @@ YL188C7CP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -6775,6 +6888,17 @@ YL188C7CP0710108:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6883,6 +7007,17 @@ YL188C7CP0713146:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP,USB HOLE
+      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -6991,6 +7126,17 @@ YL188C7CP0713147:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP,USB HOLE
+      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7099,6 +7245,17 @@ YL188C7CP0713149:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7187,6 +7344,17 @@ YL188C7CP6810309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7275,6 +7443,17 @@ YL188C7CP7910309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7383,6 +7562,17 @@ YL188C7DP0710108:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7491,6 +7681,17 @@ YL188C7DP0713146:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP,USB HOLE
+      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7599,6 +7800,17 @@ YL188C7DP0713149:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7697,6 +7909,17 @@ YL188C7EP0613606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -7803,6 +8026,17 @@ YL188C7EP0706087:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP,USB HOLE
+      part_number: 37275M75J00
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7909,6 +8143,17 @@ YL188C7EP0710309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -7995,6 +8240,17 @@ YL188C7EP6810309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8081,6 +8337,17 @@ YL188C7EP6813606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8167,6 +8434,17 @@ YL188C7EP7910309:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8253,6 +8531,17 @@ YL188C7EP7913606:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -8361,6 +8650,17 @@ YL199C2CP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -8468,6 +8768,17 @@ YL199C2DP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -8574,6 +8885,17 @@ YL199C2EP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -8680,6 +9002,17 @@ YL199C2FP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -8787,6 +9120,17 @@ YL199C7DP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -8893,6 +9237,17 @@ YL199C7EP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -8999,6 +9354,17 @@ YL199C7FP7400000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -9087,6 +9453,17 @@ YL1T8C2CP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9175,6 +9552,17 @@ YL1T8C2CP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9261,6 +9649,17 @@ YL1T8C2EP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9347,6 +9746,17 @@ YL1T8C2EP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9455,6 +9865,17 @@ YL1T8C7CP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -9543,6 +9964,17 @@ YL1T8C7CP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9631,6 +10063,17 @@ YL1T8C7CP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9729,6 +10172,17 @@ YL1T8C7EP0600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M02-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: RHD
   wiper:
     part_name: SW_WIP
@@ -9815,6 +10269,17 @@ YL1T8C7EP4600000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9901,6 +10366,17 @@ YL1T8C7EP6800000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
@@ -9987,6 +10463,17 @@ YL1T8C7EP7900000:
     part_name: IP_UPR
     part_name_long: PANEL,INSTRUMENT MAIN UPPER
     part_number: 73111M79M12-5PK
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER, SOCKET
+      part_number: 39441M75J01-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
   vehicle_type: LHD
   wiper:
     part_name: SW_WIP
