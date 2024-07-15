@@ -22,4 +22,4 @@ loggers:
   '':
     level: DEBUG
     handlers: [console, file]
-    propagate: True
+    propagate: False
