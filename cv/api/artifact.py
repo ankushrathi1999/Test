@@ -8,7 +8,7 @@ import logging
 import json
 
 from config.db_config import db_params
-from config.config import config, vehicle_parts_lookup, part_order_plc
+from config.config import config, get_vehicle_parts_lookup, part_order_plc
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
 from utils.shift_utils import get_current_shift
 from .bezel_group import BezelGroup
@@ -43,6 +43,8 @@ debug_mode and os.makedirs(metadata_dir_debug, exist_ok=True)
 class Artifact:
 
     def __init__(self, psn, chassis, vehicle_model, data):
+        vehicle_parts_lookup = get_vehicle_parts_lookup()
+        
         self.data = data
         self.inspection_flag = int(f'vehicle_model_{vehicle_model}' in self.data.entity_lookup)
         self.shift = get_current_shift()

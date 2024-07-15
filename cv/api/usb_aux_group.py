@@ -4,7 +4,7 @@ import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
-from config.config import config, vehicle_parts_lookup
+from config.config import config, get_vehicle_parts_lookup
 
 logger = logging.getLogger(__name__)
 
@@ -25,6 +25,8 @@ def aggregate_list_results(result_counts):
 class UsbAuxGroup:
 
     def __init__(self, vehicle_model):
+        vehicle_parts_lookup = get_vehicle_parts_lookup()
+        
         # Load part details from vehicle_model
         self.part_ids = [] # List of part numbers
         self.part_names = [] # List of part names

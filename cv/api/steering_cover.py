@@ -5,7 +5,7 @@ import logging
 from .detection import DetectionResult
 from .classification_part import ClassificationPart
 from config.colors import color_green, color_red
-from config.config import config, vehicle_parts_lookup, part_group_names_lookup
+from config.config import config
 
 logger = logging.getLogger(__name__)
 

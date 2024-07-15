@@ -15,11 +15,14 @@ config.read(config_files)
 
 # Other config files
 
-vehicle_parts_lookup = {}
+_vehicle_parts_lookup = {}
 def load_vehicle_parts_lookup():
-    global vehicle_parts_lookup
+    global _vehicle_parts_lookup
     with open('./config/vehicle_parts.yaml') as x:
-        vehicle_parts_lookup = yaml.safe_load(x)
+        _vehicle_parts_lookup = yaml.safe_load(x)
+
+def get_vehicle_parts_lookup():
+    return _vehicle_parts_lookup
 
 with open('./config/part_order_plc.csv') as f:
     part_order_plc = [x.strip() for x in f]
