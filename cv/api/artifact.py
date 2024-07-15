@@ -6,10 +6,9 @@ import cv2
 import json
 import logging
 import json
-import yaml
 
 from config.db_config import db_params
-from config.config import config
+from config.config import config, vehicle_parts_lookup, part_order_plc
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
 from utils.shift_utils import get_current_shift
 from .bezel_group import BezelGroup
@@ -40,12 +39,6 @@ plc_write_enabled = api_config.getboolean('plc_write_enabled')
 os.makedirs(snapshots_dir, exist_ok=True)
 os.makedirs(metadata_dir, exist_ok=True)
 debug_mode and os.makedirs(metadata_dir_debug, exist_ok=True)
-
-with open('./config/vehicle_parts.yaml') as x:
-    vehicle_parts_lookup = yaml.safe_load(x)
-
-with open('./config/part_order_plc.csv') as f:
-    part_order_plc = [x.strip() for x in f]
 
 class Artifact:
 

@@ -5,6 +5,7 @@ from .video_manager import VideoManager
 from .heartbeat_get import HeartbeatGet
 from .heartbeat_send import HeartbeatSend
 from .health_server import HealthServer
+from .rebuild_vehicle_master import RebuildVehicleMaster
 
 def get_processes(data):
     return [
@@ -17,4 +18,5 @@ def get_processes(data):
         HeartbeatSend(),
         HeartbeatGet(),
         HealthServer(data),
+        RebuildVehicleMaster(),
     ]

@@ -197,30 +197,30 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
                 })
 
 def build_vehicle_master():
-    logger.info("Building vehicle master")
+    logger.debug("Building vehicle master")
 
     # Part Master CSV
     part_master = pd.read_csv('./config/part_master.csv').fillna('')
     part_master_lookup = part_master.set_index('part_number')
-    logger.info("Parts loaded: %s", len(part_master))
+    logger.debug("Parts loaded: %s", len(part_master))
 
     vehicle_models = get_vehicle_models()
-    logger.info("Vehicle models: %s", len(vehicle_models))
+    logger.debug("Vehicle models: %s", len(vehicle_models))
 
     mapping = get_vehicle_part_mapping(vehicle_models)
-    logger.info("Vehicle part mapping: %s", len(mapping))
+    logger.debug("Vehicle part mapping: %s", len(mapping))
 
     with open('./config/missing_class_names.json', 'r') as f:
         missing_class_name_lookup = json.load(f)
-    logger.info("Missing classes registered: %s", len(missing_class_name_lookup))
+    logger.debug("Missing classes registered: %s", len(missing_class_name_lookup))
 
     with open('./config/bezel_switch_positions.json', 'r') as f:
         bezel_switch_positions = json.load(f)
-    logger.info("Bezels registered for switch position: %s", len(bezel_switch_positions))
+    logger.debug("Bezels registered for switch position: %s", len(bezel_switch_positions))
 
     with open('./config/vehicle_type_upper_panel_map.json', 'r') as f:
         vehicle_type_upper_panel_map = json.load(f)
-    logger.info("Upper panels registered: %s", len(vehicle_type_upper_panel_map))
+    logger.debug("Upper panels registered: %s", len(vehicle_type_upper_panel_map))
 
     logger.debug("Count of parts by vechicle model:")
     for vehicle_model, vehicle_parts in mapping.items():
@@ -239,4 +239,4 @@ def build_vehicle_master():
     yaml_path = './config/vehicle_parts.yaml'
     with open(yaml_path, 'w') as x:
         yaml.safe_dump(dict(vehicle_data), x)
-    logger.info("Vehicle master successfully written: %s", yaml_path)
+    logger.debug("Vehicle master successfully written: %s", yaml_path)

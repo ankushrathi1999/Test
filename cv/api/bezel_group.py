@@ -1,11 +1,10 @@
 from collections import defaultdict
-import yaml
 import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
 from config.models.bezel_switch_classification import BezelSwitchClassificationModel
-from config.config import config
+from config.config import config, vehicle_parts_lookup
 
 logger = logging.getLogger(__name__)
 
@@ -14,9 +13,6 @@ RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
 BEZEL_SWITCH_IOU_THRESHOLD = api_config.getfloat('child_box_iou_threshold')
 ALLOW_OK_TO_NG = api_config.getboolean('allow_ok_to_ng')
 BEZEL_LABEL_OFFSET = 35
-
-with open('./config/vehicle_parts.yaml') as x:
-    vehicle_parts_lookup = yaml.safe_load(x)
 
 def aggregate_results(result_counts):
     result_counts = sorted(result_counts.items(), key=lambda x: x[1], reverse=True)

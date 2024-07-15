@@ -4,7 +4,7 @@ import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
-from config.config import config
+from config.config import config, vehicle_parts_lookup
 
 logger = logging.getLogger(__name__)
 
@@ -12,9 +12,6 @@ api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
 IOU_THRESHOLD = api_config.getfloat('child_box_iou_threshold')
 ALLOW_OK_TO_NG = api_config.getboolean('allow_ok_to_ng')
-
-with open('./config/vehicle_parts.yaml') as x:
-    vehicle_parts_lookup = yaml.safe_load(x)
 
 def aggregate_list_results(result_counts):
     result_counts = sorted(result_counts.items(), key=lambda x: x[1], reverse=True)
