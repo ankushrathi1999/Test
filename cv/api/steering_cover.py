@@ -1,11 +1,13 @@
 import yaml
 import json
+import logging
 
 from .detection import DetectionResult
 from .classification_part import ClassificationPart
-from config.models import PartClassificationModel, PartDetectionModel
 from config.colors import color_green, color_red
 from config.config import config
+
+logger = logging.getLogger(__name__)
 
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
@@ -30,7 +32,7 @@ class SteeringCover(ClassificationPart):
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
             return
-        print("Updating steering cover classification:", self.detection_class)
+        logger.debug("Updating steering cover classification: %s", self.detection_class)
         
         # key_detections = detection_groups.get(PartDetectionModel.CLASS_key, [])
         # key_detection = max(key_detections, key=lambda detection: detection.confidence) if len(key_detections) > 0 else None
@@ -44,7 +46,7 @@ class SteeringCover(ClassificationPart):
         # x2_check_start, x2_check_end = [0.45, 0.8] if self.artifact.vehicle_type == "RHD" else [0.1, 0.45]
         x2_check_start, x2_check_end = [0, 0.56]
         if x2_pos < x2_check_start or x2_pos> x2_check_end:
-            print('Steering skip:', x2_pos, x2_check_start, x2_check_end, part_detection.bbox, img_width, img_height)
+            logger.debug('Steering skip: %s', [x2_pos, x2_check_start, x2_check_end, part_detection.bbox, img_width, img_height])
             return
         
         # is_key_present = key_detection is not None and box_contains(part_detection.bbox, key_detection.bbox) > 0.3
@@ -56,12 +58,13 @@ class SteeringCover(ClassificationPart):
         #PartClassificationModel.get_part_number_steering_cover(pred_part_group, is_key_present, self.artifact.vehicle_category)
         pred_part = part_detection.classification_details.part_number
         result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
-        print("Current result:", pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
+        logger.debug("Current result: pred_part=%s result=%s part_id=%s missing_class_name=%s is_miss_inspection=%s",
+              pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and self.part_result == DetectionResult.OK:
             result = DetectionResult.OK
             pred_part = self.part_pred
-            print("Updated result:", pred_part, result)
+            logger.debug("Updated result: pred_part=%s result=%s", pred_part, result)
         self.part_results_count[(pred_part, result)] += 1
         part_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         part_detection.final_details.result = result
@@ -73,9 +76,9 @@ class SteeringCover(ClassificationPart):
             if result is not None:
                 self.part_pred = result[0]
                 self.part_result = result[1]
-                print("Final result:", self.part_pred, self.part_result)
+                logger.debug("Final result: part_pre=%s part_result=%s", self.part_pred, self.part_result)
             else:
-                print("Result is not available yet.")
+                logger.debug("Result is not available yet.")
 
 def box_contains(box1, box2): #parent, child
     x1, y1, x2, y2 = box1

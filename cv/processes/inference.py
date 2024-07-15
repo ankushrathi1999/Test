@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 import os
 import threading
-import traceback
+import logging
 from collections import defaultdict
 
 from config.models import classification_models, detection_models, BezelSwitchClassificationModel, PartDetectionModel, ScrewDetectionModel
@@ -11,6 +11,8 @@ from utils.live_display import prepare_live_display
 from config.config import config
 from config.colors import color_red, color_green
 from api.detection import DetectionDetails, ClassificationDetails, FinalDetails, DetectionResult
+
+logger = logging.getLogger(__name__)
 
 process_config = config['process_inference']
 models_base_path = process_config.get('models_base_path')
@@ -24,11 +26,18 @@ CONFIRM_MODE_RESET = "reset"
 CONFIRM_MODE_SUBMIT = "submit"
 
 def _inference_loop(thread):
+    logger.info("Start of inference thread.")
     data = thread.data
     data.video_paths = [video_path_top, video_path_bottom, video_path_up]
     try:
         models_detect = [YOLO(os.path.join(models_base_path, f'{m.name}.pt'), task="detect") for m in detection_models]
+        for model, model_config in zip(models_detect, detection_models):
+            logger.info("Detection model: %s", model_config.name)
+            logger.info("Model loaded labels: %s", model.names)
         models_cls = [YOLO(os.path.join(models_base_path, f'{m.name}.pt')) for m in classification_models]
+        for model, model_config in zip(models_cls, classification_models):
+            logger.info("Classification model: %s", model_config.name)
+            logger.info("Model loaded labels: %s", model.names)
         
         cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
         cv2.setWindowProperty(window_name, cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
@@ -93,9 +102,10 @@ def _inference_loop(thread):
                         bbox = [int(x) for x in bbox]
                         class_color = model_config.class_colors[class_id]
                         try:
-                            print("Get processed class before:", class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
-                            class_id = PartDetectionModel.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
-                            print("Get processed class after:", class_id)
+                            class_id_new = PartDetectionModel.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                            if class_id_new != class_id:
+                                logger.debug("Class ID updated. class_id=%s class_id_new=%s vehicle_category=%s vehicle_type=%s", class_id, class_id_new, data.artifact.vehicle_category, data.artifact.vehicle_type)
+                                class_id = class_id_new
                         except:
                             pass
                         detection = DetectionDetails(
@@ -136,13 +146,10 @@ def _inference_loop(thread):
                     is_flip = False
                     if data.artifact and model_config is BezelSwitchClassificationModel:
                         part_number, is_flip = BezelSwitchClassificationModel.get_part_number(None, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
-                        print("Bezel switch get part nuimber:", part_number, is_flip, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
                     else:
                         try:
                             part_number = model_config.get_part_number(detection.class_id, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
-                            print("Classification get part nuimber:", part_number, detection.class_id, class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
                         except:
-                            print("Get part number failed. Using class id:", class_id)
                             part_number = class_id
 
                     detection.classification_details = ClassificationDetails(
@@ -192,7 +199,7 @@ def _inference_loop(thread):
                     CONFIRM_MODE_SUBMIT: "Submit for Inspection?",
                 }.get(confirm_mode)
                 if not confirm_text:
-                    print("Unhandled confirm mode:", confirm_mode)
+                    logger.warn("Unhandled confirm mode: %s", confirm_mode)
                 else:
                     draw_confirmation_prompt(display_image, confirm_text, accept_button="Enter", reject_button="Escape")
 
@@ -202,24 +209,23 @@ def _inference_loop(thread):
             k = cv2.waitKey(1)
             if k == 27:  # Escape/Quit
                 if confirm_mode:
-                    print("Popup rejected:", confirm_mode)
+                    logger.info("Popup rejected: %s", confirm_mode)
                     confirm_mode = None
                 else:
-                    print("Quit selected.")
+                    logger.info("Quit selected.")
                     confirm_mode = CONFIRM_MODE_QUIT
             elif k == 13: # Enter
-                print("Handling confirm:", confirm_mode)
+                logger.info("Handling confirm: %s", confirm_mode)
                 if confirm_mode == CONFIRM_MODE_QUIT:
-                    print("Quit confirmed.")
+                    logger.info("Quit confirmed.")
                     break
 
             
     except Exception as ex:
-        print("Inference loop thread error:", ex)
-        traceback.print_exc()
+        logger.exception("Inference loop thread error.")
     finally:
         thread.is_terminated = True
-        print("End of inference loop thread.")
+        logger.info("End of inference loop thread.")
 
 
 class InferenceLoop:

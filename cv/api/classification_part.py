@@ -1,10 +1,13 @@
 from collections import defaultdict
 import yaml
 import json
+import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
 from config.config import config
+
+logger = logging.getLogger(__name__)
 
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
@@ -46,7 +49,6 @@ class ClassificationPart:
             else:
                 self.is_group = part_details.get('is_group') is True
                 self.is_miss_inspection = part_details.get('is_miss') is True
-                print(vehicle_model, detection_class, part_details)
                 if self.is_group:
                     self.part_id = part_details['part_group']
                 else:
@@ -63,7 +65,7 @@ class ClassificationPart:
         self.part_result = DetectionResult.MISSING
         self.part_pred = None # part number
 
-        print('Init classification:', {
+        logger.info('Init classification: %s', {
             'vehicle_model': vehicle_model,
             'detection_class': self.detection_class,
             'part_id': self.part_id,
@@ -104,7 +106,7 @@ class ClassificationPart:
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
             return        
-        print("Updating classification:", self.detection_class)
+        logger.debug("Updating classification: %s", self.detection_class)
 
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
         if part_detection is None:
@@ -117,13 +119,14 @@ class ClassificationPart:
             result = DetectionResult.INCORRECT_PART
         else:
             result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
-        print("Current result:", pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
+        logger.debug("Current result: pred_part=%s result=%s self.part_id=%s missing_class_name=%s is_miss_inspection=%s",
+              pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and self.part_result == DetectionResult.OK:
             result = DetectionResult.OK
             pred_part = self.part_pred
-            print("Updated result:", pred_part, result)
-        print("Counts:", self.part_results_count)
+            logger.debug("Updated result: pred_part=%s result=%s", pred_part, result)
+        logger.debug("Result counts: %s", self.part_results_count)
         self.part_results_count[(pred_part, result)] += 1
         part_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
         part_detection.final_details.result = result
@@ -135,8 +138,8 @@ class ClassificationPart:
             if result is not None:
                 self.part_pred = result[0]
                 self.part_result = result[1]
-                print("Final result:", self.part_pred, self.part_result)
+                logger.debug("Final result: part_pred=%s self.part_result=%s", self.part_pred, self.part_result)
             else:
-                print("Result is not available yet.")
+                logger.debug("Result is not available yet.")
 
         

@@ -1,7 +1,10 @@
+import logging
 import pymcprotocol
 
 from config.plc_db import PLC_SIGNAL_LOOKUP
 from config.config import config
+
+logger = logging.getLogger(__name__)
 
 plc_config = config['PLC']
 ip_address = plc_config.get('ip_address')
@@ -42,7 +45,7 @@ def flush_plc_data():
 
     # Get data
     plc_data = pymc3e.batchread_wordunits(headdevice="D16001", readsize=23) # parameterize
-    # print(plc_data)
+    logger.debug("PLC data received: %s", plc_data)
 
     # Updates
     if len(plc_data_updates) == 0:
@@ -54,6 +57,7 @@ def flush_plc_data():
         headdevice = signal["headdevice"]
         if signal_type == "array":
             pymc3e.batchwrite_wordunits(headdevice=headdevice, values=value)
+            logger.debug("PLC data sent: headdevice=%s, values=%s", headdevice, value)
         else:
             raise Exception(f"Unsupported data type for write: {signal_type}")
 

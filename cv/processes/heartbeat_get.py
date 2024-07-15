@@ -1,10 +1,12 @@
 import time
 import threading
-import traceback
+import logging
 
 from utils.plc import get_signal
 from config.plc_db import SIG_RECV_HEART_BIT
 from config.config import config
+
+logger = logging.getLogger(__name__)
 
 process_config = config['process_heartbeat_get']
 
@@ -18,22 +20,22 @@ def is_heartbeat_healthy():
     return not all(heartbeat_history[i] == heartbeat_history[i + 1] for i in range(len(heartbeat_history) - 1))
 
 def _heartbeat_get(thread):
+    logger.info("Start of heartbeat get thread.")
     while not thread.is_terminated:
         try:
             cur_bit = get_signal(SIG_RECV_HEART_BIT)
-            # print("Heartbeat get:", cur_bit)
+            logger.debug('Heart bit received: %s', cur_bit)
 
             # Add the current bit to the history and ensure it doesn't exceed the health_check_duration
             heartbeat_history.append(cur_bit)
             if len(heartbeat_history) > health_check_duration * cycle_poll_frequency:
                 heartbeat_history.pop(0)
         except Exception as ex:
-            print("Error in heartbeat get thread:", ex)
-            # traceback.print_exc()
+            logger.exception("Error in heartbeat get thread.")
         finally:
             time.sleep(cycle_time / cycle_poll_frequency)
     thread.is_terminated = True
-    print("End of heartbeat get thread")
+    logger.info("End of heartbeat get thread")
 
 class HeartbeatGet:
 

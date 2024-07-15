@@ -1,10 +1,13 @@
 from collections import defaultdict
 import yaml
+import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
 from config.models.bezel_switch_classification import BezelSwitchClassificationModel
 from config.config import config
+
+logger = logging.getLogger(__name__)
 
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
@@ -14,7 +17,6 @@ BEZEL_LABEL_OFFSET = 35
 
 with open('./config/vehicle_parts.yaml') as x:
     vehicle_parts_lookup = yaml.safe_load(x)
-print("Vehicles Registered in YAML:", len(vehicle_parts_lookup))
 
 def aggregate_results(result_counts):
     result_counts = sorted(result_counts.items(), key=lambda x: x[1], reverse=True)
@@ -74,9 +76,10 @@ class BezelGroup:
         self.switch_results = [DetectionResult.MISSING for _ in self.switch_part_ids] # all types of errors
         self.switch_preds = [None for _ in self.switch_part_ids] # part number list
 
-        print('Init BezelGroup:', self.inspection_enabled, self.has_bezel_master, self.has_switch_master)
-        print(self.bezel_part_id, self.bezel_part_name, self.n_rows)
-        print(self.switch_part_ids, self.switch_part_names, self.switch_positions)
+        logger.info('Init BezelGroup: inspection_enabled=%s has_bezel_master=%s has_switch_master=%s',
+                     self.inspection_enabled, self.has_bezel_master, self.has_switch_master)
+        logger.info('bezel_part_id=%s bezel_part_name=%s n_rows=%s',self.bezel_part_id, self.bezel_part_name, self.n_rows)
+        logger.info('switch_part_ids=%s switch_part_names=%s switch_positions=%s', self.switch_part_ids, self.switch_part_names, self.switch_positions)
 
     def get_part_results(self):
         parts = []
@@ -116,7 +119,7 @@ class BezelGroup:
                 part = switch_pos_lookup.get(position)
                 return part['result'] if part is not None else None
             except ValueError:
-                print("Failed to parse part_name:", part_name)
+                logger.warn("Failed to parse part_name: %s", part_name)
         elif part_name == 'BZ_AS_SW':
             return bezel_results[0]['result'] if len(bezel_results) > 0 else None
         return None
@@ -124,27 +127,28 @@ class BezelGroup:
     def update(self, bezel_detections, switch_detections):
         if not self.inspection_enabled:
             return
-        print("Updating bezel group")
+        logger.debug("Updating bezel group")
         
         bezel_detection = max(bezel_detections, key=lambda detection: detection.confidence) if len(bezel_detections) > 0 else None
         switch_detections = [detection for detection in switch_detections if box_contains(bezel_detection.bbox, detection.bbox) >= BEZEL_SWITCH_IOU_THRESHOLD] if bezel_detection is not None else switch_detections
 
         # Inspection only happens when a contianer with the right number of switches is identified
         if bezel_detection is None or (len(switch_detections) != len(self.switch_part_ids)):
-            print('bezel group condition not matched:', bezel_detection is None, len(switch_detections), len(self.switch_part_ids))
+            logger.debug('bezel group condition not matched: %s',
+                         (bezel_detection is None, len(switch_detections), len(self.switch_part_ids)))
             return
         
         # Bezel
         if self.has_bezel_master:
             pred_bezel_part = bezel_detection.classification_details.part_number
             result = DetectionResult.OK if pred_bezel_part == self.bezel_part_id else DetectionResult.INCORRECT_PART
-            print("Current result", pred_bezel_part, result)
+            logger.debug("Current result: pred_bezel_part=%s result=%s", pred_bezel_part, result)
             # Keep in OK state if already passed
             if not ALLOW_OK_TO_NG and self.bezel_result == DetectionResult.OK:
                 result = DetectionResult.OK
                 pred_bezel_part = self.bezel_pred
-                print("Updated result", pred_bezel_part, result)
-            print("Counts:", self.bezel_results_count)
+                logger.debug("Updated result: pred_bezel_part=%s result=%s", pred_bezel_part, result)
+            logger.debug("Counts: %s", self.bezel_results_count)
             self.bezel_results_count[(pred_bezel_part, result)] += 1
             bezel_detection.final_details.color = color_green if result == DetectionResult.OK else color_red
             bezel_detection.final_details.result = result
@@ -156,16 +160,14 @@ class BezelGroup:
                 # if result_count >= RESULT_COUNT_THRESHOLD:
                 self.bezel_pred = result[0]
                 self.bezel_result = result[1]
-                print("Bezel final result", self.bezel_pred, self.bezel_result)
+                logger.debug("Bezel final result: bezel_pred=%s bezel_result=%s", self.bezel_pred, self.bezel_result)
             else:
-                print("Bezel final result is not available yet.")
+                logger.debug("Bezel final result is not available yet.")
         else:
-            print("Bezel master unavailable. Skipping bezel inspection.")
+            logger.debug("Bezel master unavailable. Skipping bezel inspection.")
         
         # Switches
-        print("Switch detections:", [d.to_dict() for d in switch_detections])
         switch_detections = sort_switches(switch_detections, self.n_rows)
-        print("Switch detections sorted:", [d.to_dict() for row in switch_detections for d in switch_detections])
         preds = []
         results = []
         for detection, part_id in zip(switch_detections, self.switch_part_ids):
@@ -183,19 +185,19 @@ class BezelGroup:
                 result = DetectionResult.INCORRECT_PART
             preds.append(pred_switch_part)
             results.append(result)
-        print("Switch predictions:", preds, results)
+        logger.debug("Switch predictions. preds=%s results=%s", preds, results)
 
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and set(self.switch_results) == {DetectionResult.OK}:
             results = [DetectionResult.OK for _ in self.switch_part_ids]
             preds = self.switch_preds
-            print("Updated switch predictions:", preds, results)
+            logger.debug("Updated switch predictions. preds=%s results=%s", preds, results)
 
         # Incorrect Position case: All parts match but order is incorrect
         if results != [DetectionResult.OK for _ in self.switch_part_ids]:
-            print("Evaluating incorrect position case:", set(preds), set(self.switch_part_ids))
+            logger.debug("Evaluating incorrect position case: preds=%s switch_part_ids=%s", set(preds), set(self.switch_part_ids))
             if set(preds) == set(self.switch_part_ids):
-                print("Incorrect position case detected.")
+                logger.debug("Incorrect position case detected.")
                 results = [DetectionResult.INCORRECT_POSITION if result == DetectionResult.INCORRECT_PART else result for result in results]
 
         # Compute label offsets
@@ -215,7 +217,7 @@ class BezelGroup:
             detection.final_details.color = color_green if result == DetectionResult.OK else color_red
             detection.final_details.result = result
         
-        print("Switch counts:", self.switch_results_counts)
+        logger.debug("Switch result counts: %s", self.switch_results_counts)
         self.switch_results_counts[tuple(zip(preds, results))] += 1
 
         results = aggregate_list_results(self.switch_results_counts)
@@ -225,9 +227,9 @@ class BezelGroup:
             # if result_count >= RESULT_COUNT_THRESHOLD:
             self.switch_preds = [res[0] for res in results]
             self.switch_results = [res[1] for res in results]
-            print("Switch final result:", self.switch_preds, self.switch_results)
+            logger.debug("Switch final result: switch_preds=%s switch_results=%s", self.switch_preds, self.switch_results)
         else:
-            print("Switch final result is not available yet.")
+            logger.debug("Switch final result is not available yet.")
 
 def sort_switches(switch_detections, n_rows):
     if n_rows > 1:

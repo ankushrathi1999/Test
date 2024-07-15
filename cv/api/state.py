@@ -1,6 +1,8 @@
 import time
 from types import SimpleNamespace
-import traceback
+import logging
+
+logger = logging.getLogger(__name__)
 
 SYSTEM_STATES = SimpleNamespace(
     INSPECTION_START_PRE = "INSPECTION_START_PRE", # Check PLC healthy
@@ -46,7 +48,7 @@ class State:
         old_state = self.state
         self.state = new_state
         self._state_history.append([old_state, new_state])
-        print("Update state:", old_state, new_state)
+        logger.debug("Update state: %s to %s", old_state, new_state)
 
     def register_action(self, action_fn, from_states=None, to_states=None):
         self._actions.append((action_fn, from_states, to_states))
@@ -59,15 +61,14 @@ class State:
             from_check = from_states is None or old_state in from_states
             to_check = to_states is None or new_state in to_states
             if from_check and to_check:
-                # print("Running action:", action_fn.__name__, old_state, new_state)
+                logger.debug("Running action: %s (%s to %s)", action_fn.__name__, old_state, new_state)
                 try:
                     action_fn(data)
                     self._state_history.pop(0) # Pop state update only on successful action handling
                 except Exception as ex:
-                    print("Error running action:", ex)
-                    traceback.print_exc()
+                    logger.exception("Error running action: %s (%s to %s)", action_fn.__name__, old_state, new_state)
                     time.sleep(1)
                 break
         else:
-            print("No handlers found for action:", old_state, new_state)
+            logger.error("No handlers found for state change: %s to %s", old_state, new_state)
             self._state_history.pop(0)

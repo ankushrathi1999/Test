@@ -1,9 +1,12 @@
 from collections import defaultdict
 import yaml
+import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
 from config.config import config
+
+logger = logging.getLogger(__name__)
 
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
@@ -51,8 +54,10 @@ class UsbAuxGroup:
         self.part_results = [DetectionResult.MISSING for _ in self.part_ids] # all types of errors
         self.part_preds = [None for _ in self.part_ids] # part number list
 
-        print("Init usb aux group:", self.inspection_enabled, self.part_ids, self.part_names, self.part_names_long,
-              self.part_positions, self.missing_class_names)
+        logger.info(
+            "Init usb aux group. inspection_enabled=%s part_ids=%s part_names=%s part_names_long=%s part_positions=%s missing_class_names=%s",
+            self.inspection_enabled, self.part_ids, self.part_names, self.part_names_long, self.part_positions, self.missing_class_names
+        )
 
     def get_part_results(self):
         parts = []
@@ -76,19 +81,17 @@ class UsbAuxGroup:
     def update(self, container_detections, part_detections):
         if not self.inspection_enabled:
             return
-        print("Updating usb aux group")
+        logger.debug("Updating usb aux group")
         
         container_detection = max(container_detections, key=lambda detection: detection.confidence) if len(container_detections) > 0 else None
         part_detections = [detection for detection in part_detections if box_contains(container_detection.bbox, detection.bbox) >= IOU_THRESHOLD] if container_detection is not None else part_detections
 
         # Inspection only happens when a contianer with the right number of parts is identified
         if container_detection is None or (len(part_detections) != len(self.part_ids)):
-            print('usb aux group condition not matched:', container_detection is None, len(part_detections), len(self.part_ids))
+            logger.debug('usb aux group condition not matched: %s', (container_detection is None, len(part_detections), len(self.part_ids)))
             return
         
-        print("usb aux detections:", [d.to_dict() for d in part_detections])
         part_detections = list(sorted(part_detections, key=lambda detection: detection.bbox[0]))
-        print("usb aux detections sorted:", [d.to_dict() for d in part_detections])
         preds = []
         results = []
         for detection, part_id, missing_class_name in zip(part_detections, self.part_ids, self.missing_class_names):
@@ -102,19 +105,19 @@ class UsbAuxGroup:
                 result = DetectionResult.INCORRECT_PART
             preds.append(pred_part)
             results.append(result)
-        print("usb aux predictions:", preds, results)
+        logger.debug("usb aux predictions: preds=%s results=%s", preds, results)
 
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and set(self.part_results) == {DetectionResult.OK}:
             results = [DetectionResult.OK for _ in self.part_ids]
             preds = self.part_preds
-            print("Updated usb aux predictions:", preds, results)
+            logger.debug("Updated usb aux predictions: preds=%s results=%s", preds, results)
 
         # Incorrect Position case: All parts match but order is incorrect
         if results != [DetectionResult.OK for _ in self.part_ids]:
-            print("Evaluating incorrect position case:", set(preds), set(self.part_ids))
+            logger.debug("Evaluating incorrect position case: preds=%s part_ids=%s", set(preds), set(self.part_ids))
             if set(preds) == set(self.part_ids):
-                print("Incorrect position case detected.")
+                logger.debug("Incorrect position case detected.")
                 results = [DetectionResult.INCORRECT_POSITION if result == DetectionResult.INCORRECT_PART else result for result in results]
 
         # todo: part name should be looked up for actual part from a part number lookup for all detections
@@ -124,7 +127,7 @@ class UsbAuxGroup:
             detection.final_details.color = color_green if result == DetectionResult.OK else color_red
             detection.final_details.result = result
         
-        print("Counts:", self.part_results_counts)
+        logger.debug("Result counts: %s", self.part_results_counts)
         self.part_results_counts[tuple(zip(preds, results))] += 1
 
         results = aggregate_list_results(self.part_results_counts)
@@ -134,9 +137,9 @@ class UsbAuxGroup:
             # if result_count >= RESULT_COUNT_THRESHOLD:
             self.part_preds = [res[0] for res in results]
             self.part_results = [res[1] for res in results]
-            print("Final result:", self.part_preds, self.part_results)
+            logger.debug("Final result: part_preds=%s part_results=%s", self.part_preds, self.part_results)
         else:
-            print("Final result is not available yet.")
+            logger.debug("Final result is not available yet.")
 
 
 def box_contains(box1, box2): #parent, child

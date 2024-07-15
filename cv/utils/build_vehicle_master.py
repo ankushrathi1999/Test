@@ -4,8 +4,11 @@ from collections import  defaultdict
 import pandas as pd
 import json
 import yaml
+import logging
 
 from .db import get_vehicle_models, get_vehicle_part_mapping
+
+logger = logging.getLogger(__name__)
 
 def _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_upper_panel_map):
     for vehicle_model in list(vehicle_part_type_groups.keys()):
@@ -15,11 +18,11 @@ def _process_vehicle_type(vehicle_data, vehicle_part_type_groups, vehicle_type_u
                 if part['part_number'] in vehicle_type_upper_panel_map:
                     vehicle_data[vehicle_model]['vehicle_type'] = vehicle_type_upper_panel_map[part['part_number']]
                 else:
-                    print("Unregistered upper panel found:", part['part_number'])
+                    logger.warn("Unregistered upper panel found: %s", part['part_number'])
                     vehicle_part_type_groups.pop(vehicle_model)
                 break
         else:
-            print("Upper panel is not registered for vehicle:", vehicle_model)
+            logger.warn("Upper panel is not registered for vehicle: %s", vehicle_model)
             vehicle_part_type_groups.pop(vehicle_model)
 
 def _process_n_screws(vehicle_data):
@@ -47,7 +50,7 @@ def _add_missing_sensor_parts(vehicle_parts, part_master_lookup, vehicle_type_up
     try:
         assert len(ip_upr) == 1, "Multiple upper panels registered"
     except AssertionError as ex:
-        print("Error:", ex)
+        logger.warn(str(ex))
         return vehicle_parts
     vtype = vehicle_type_upper_panel_map[ip_upr[0]['part_number']]
     sensor_sun = None
@@ -122,10 +125,10 @@ def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class
     for vehicle_model in vehicle_part_type_groups:
         usb_aux_group = vehicle_part_type_groups[vehicle_model]['usb_aux_group']
         if len(usb_aux_group) == 0:
-            print('No usb aux data for vehicle:', vehicle_model)
+            logger.warn('No usb aux data for vehicle: %s', vehicle_model)
             continue
         if not (2 <= len(usb_aux_group) <= 3):
-            print('Invalid usb aux count for vehicle:', vehicle_model, len(usb_aux_group))
+            logger.warn('Invalid usb aux count for vehicle: %s', vehicle_model, len(usb_aux_group))
             continue
         _proceed = True
         for part, details in usb_aux_group:
@@ -151,7 +154,7 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
         bezel = vehicle_part_type_groups[vehicle_model]['bezel']
         bezel_switches = vehicle_part_type_groups[vehicle_model]['bezel_switches']
         if len(bezel) != 1:
-            print('No bezel data for vehicle:', vehicle_model)
+            logger.warn('No bezel data for vehicle: %s', vehicle_model)
             continue
         bezel_part, bezel_part_details = bezel[0]
         switch_positions_top, switch_positions_bottom = bezel_switch_positions[bezel_part['part_number']]
@@ -161,12 +164,12 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
             "n_rows": 2 if len(switch_positions_bottom) > 0 else 1,
         }
         if len(bezel_switches) == 0:
-            print('No switch data for vehicle:', vehicle_model)
+            logger.warn('No switch data for vehicle: %s', vehicle_model)
             data['switches_top'] = [{'id': 'na', 'name': 'N/A', 'position': 1}]
             continue
         _check = len(switch_positions_top) + len(switch_positions_bottom) == len(bezel_switches)
         if not _check:
-            print('Invalid switch data for vehicle:',  vehicle_model, len(switch_positions_top), len(switch_positions_bottom), len(bezel_switches))
+            logger.warn('Invalid switch data for vehicle: %s', (vehicle_model, len(switch_positions_top), len(switch_positions_bottom), len(bezel_switches)))
             data['switches_top'] = [{'id': 'na', 'name': 'N/A', 'position': 1}]
             continue
         switch_pos_lookup = {}
@@ -194,34 +197,34 @@ def _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_po
                 })
 
 def build_vehicle_master():
-    print("Building vehicle master")
+    logger.info("Building vehicle master")
 
     # Part Master CSV
     part_master = pd.read_csv('./config/part_master.csv').fillna('')
     part_master_lookup = part_master.set_index('part_number')
-    print("Parts loaded:", len(part_master))
+    logger.info("Parts loaded: %s", len(part_master))
 
     vehicle_models = get_vehicle_models()
-    print("Vehicle models:", len(vehicle_models))
+    logger.info("Vehicle models: %s", len(vehicle_models))
 
     mapping = get_vehicle_part_mapping(vehicle_models)
-    print("Vehicle part mapping:", len(mapping))
+    logger.info("Vehicle part mapping: %s", len(mapping))
 
     with open('./config/missing_class_names.json', 'r') as f:
         missing_class_name_lookup = json.load(f)
-    print("Missing classes registered:", len(missing_class_name_lookup))
+    logger.info("Missing classes registered: %s", len(missing_class_name_lookup))
 
     with open('./config/bezel_switch_positions.json', 'r') as f:
         bezel_switch_positions = json.load(f)
-    print("Bezels registered for switch position:", len(bezel_switch_positions))
+    logger.info("Bezels registered for switch position: %s", len(bezel_switch_positions))
 
     with open('./config/vehicle_type_upper_panel_map.json', 'r') as f:
         vehicle_type_upper_panel_map = json.load(f)
-    print("Upper panels registered:", len(vehicle_type_upper_panel_map))
+    logger.info("Upper panels registered: %s", len(vehicle_type_upper_panel_map))
 
-    print("Count of parts by vechicle model:")
+    logger.debug("Count of parts by vechicle model:")
     for vehicle_model, vehicle_parts in mapping.items():
-        print(vehicle_model, len(vehicle_parts))
+        logger.debug("%s=%s", vehicle_model, len(vehicle_parts))
 
     vehicle_part_type_groups = {vehicle_model: _group_part_types(
         _add_missing_sensor_parts(vehicle_parts, part_master_lookup, vehicle_type_upper_panel_map),
@@ -236,4 +239,4 @@ def build_vehicle_master():
     yaml_path = './config/vehicle_parts.yaml'
     with open(yaml_path, 'w') as x:
         yaml.safe_dump(dict(vehicle_data), x)
-    print("Vehicle master successfully written:", yaml_path)
+    logger.info("Vehicle master successfully written: %s", yaml_path)

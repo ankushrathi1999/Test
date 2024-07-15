@@ -1,6 +1,5 @@
-import time
 import threading
-import traceback
+import logging
 from werkzeug.serving import make_server
 from flask import Flask, jsonify
 
@@ -9,6 +8,8 @@ from config.plc_db import SIG_SEND_HEART_BIT
 from config.config import config
 from api.state import PLC_STATES
 from utils.db import test_conection
+
+logger  = logging.getLogger(__name__)
 
 process_config = config['process_health_server']
 port = process_config.getint('port')
@@ -26,18 +27,19 @@ def _run_health_server(thread):
             'plc': data.state.plc_state == PLC_STATES.HEALTHY,
             'database': test_conection(),
         }
-        print("Health endpoint:", health)
+        logger.debug("Health endpoint: %s", health)
         return jsonify(health), 200
 
     try:
         global server
+        logger.info("Starting health server at http://localhost:%s", port)
         server = make_server('localhost', port, app)
         server.serve_forever()
     except Exception as ex:
-        print("Health server error:", ex)
+        logger.exception("Health server error.")
     finally:
         thread.is_terminated = True
-    print("End of health server thread")
+    logger.info("End of health server thread.")
 
 class HealthServer:
 

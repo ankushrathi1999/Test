@@ -4,7 +4,7 @@ from datetime import datetime
 import pymysql
 import cv2
 import json
-import traceback
+import logging
 import json
 import yaml
 
@@ -16,7 +16,6 @@ from .bezel_group import BezelGroup
 from .usb_aux_group import UsbAuxGroup
 from .classification_part import ClassificationPart
 from .steering_cover import SteeringCover
-from .lower_panel import LowerPanel
 from .detection_part import DetectionPart
 from .detection import DetectionResult
 from config.models import BezelGroupDetectionModel, PartDetectionModel
@@ -24,6 +23,8 @@ from config.models import (
     PartClassificationModel, ACControlClassificationModel, SensorClassificationModel, LightsClassificationModel,
     WiperClassificationModel, LowerPanelClassificationModel, OrnClassificationModel, GarCTClassificationModel
 )
+
+logger = logging.getLogger(__name__)
 
 api_config = config['api_artifact']
 part_success_threshold = api_config.getint('part_success_threshold')
@@ -82,8 +83,6 @@ class Artifact:
                 self.parts[detection_class] = DetectionPart(vehicle_model, detection_class)
             elif detection_class == PartDetectionModel.CLASS_steering_cover:
                 self.parts[detection_class] = SteeringCover(vehicle_model, detection_class, self)
-            elif detection_class == PartDetectionModel.CLASS_lower_panel:
-                self.parts[detection_class] = LowerPanel(vehicle_model, detection_class, self)
             else:
                 self.parts[detection_class] = ClassificationPart(vehicle_model, detection_class, self)
 
@@ -98,7 +97,7 @@ class Artifact:
         self.part_results = []
         self.overall_result = None
 
-        print("Artifact created:", {
+        logger.info("Artifact created: %s", {
             'start_time': self.start_time,
             'inspection_flag': self.inspection_flag,
             'shift': self.shift,
@@ -114,6 +113,7 @@ class Artifact:
             return
 
         # Bezel update
+        logger.debug("Updating bezel group")
         bezel_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_CONTAINER, [])
         bezel_switch_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_SWITCH, [])
         for cam_type in ('top', 'bottom'):
@@ -122,18 +122,20 @@ class Artifact:
             self.bezel_group.update(bezel_detections_cur, bezel_switch_detections_cur)
 
         # USB Aux Update
+        logger.debug("Updating usb aux")
         usb_aux_container_detections = detection_groups.get(PartDetectionModel.CLASS_usb_aux_container, [])
         usb_aux_detections = detection_groups.get(PartDetectionModel.CLASS_usb_aux, [])
         self.usb_aux_group.update(usb_aux_container_detections, usb_aux_detections) # Only bottom cam
         
         # Parts Update - classification and detection
+        logger.debug("Updating parts")
         for detection_class, part in self.parts.items():
             if detection_class in detection_groups:
                 part.update(detection_groups[detection_class], detection_groups)
 
         cur_time = time.time()
         if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < n_snapshots_max):
-            print("Saving snapshots", self._n_snapshots_saved+1)
+            logger.info("Saving snapshots: %s/%s", self._n_snapshots_saved+1, n_snapshots_max)
             date_folder_name = datetime.now().strftime('%Y%m%d')
             for img, img_type in zip([frame_top, frame_bottom, frame_up], ["top", "bottom", "up"]):
                 snapshots_dir_cur = os.path.join(snapshots_dir, date_folder_name, self.vehicle_model, img_type)
@@ -146,13 +148,13 @@ class Artifact:
                 height, width = img.shape[0], img.shape[1]
                 img = cv2.resize(img, (1000, round(height * (1000 / width))))
                 if cv2.imwrite(img_path, img):
-                    print("Snapshot saved to:", img_path)
+                    logger.info("Snapshot saved to: %s", img_path)
                 else:
-                    print("Failed to save snapshot to:", img_path)
+                    logger.error("Failed to save snapshot to: %s", img_path)
                 detections = [d.to_dict() for dl in detection_groups.values() for d in dl if d.cam_type == img_type]
                 with open(metadata_path, 'w') as f:
                     json.dump(detections, f)
-                print("Metadata saved to:", metadata_path)
+                logger.info("Metadata saved to: %s", metadata_path)
             self._last_snapshot_time = time.time()
             self._n_snapshots_saved += 1
 
@@ -164,13 +166,15 @@ class Artifact:
 
     def end_inspection(self):
         if self.is_ended:
-            print('Inspection is already ended.')
+            logger.wanr('Inspection is already ended.')
             return
         self.is_ended = True
         self.end_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.part_results, self.overall_result = self.get_part_results()
-        print("Inspection ended", self.end_time, self.overall_result)
-        print("Part results:", self.part_results)
+        logger.info("Inspection ended. end_time=%s overall_result=%s", self.end_time, self.overall_result)
+        logger.info("Part results:")
+        for result in self.part_results:
+            logger.info(result)
 
     def get_part_results(self):
         bezel_part_results = self.bezel_group.get_part_results()
@@ -194,6 +198,7 @@ class Artifact:
 
         plc_array_1 = [NA_VAL for i in range(23)] # Hardcoded for 23 parameters
         plc_array_2 = [NA_VAL for i in range(23)]
+        logger.info("PLC Write flags: inspection_flag=%s plc_write_enabled=%s",self.inspection_flag ,plc_write_enabled)
         if self.inspection_flag == 1 and plc_write_enabled:
             part_results_lookup = {p['part_name']: p['result'] for p in parts}
             results = []
@@ -203,9 +208,9 @@ class Artifact:
                 elif part_name in part_results_lookup:
                     results.append(part_results_lookup[part_name])
                 else:
-                    print("RESULT UNAVAILABLE FOR", part_name, self.vehicle_model, self.psn)
+                    logger.warn("RESULT UNAVAILABLE FOR: %s", (part_name, self.vehicle_model, self.psn))
                     results.append(None)
-                print("PART RESULT:", part_name, results[-1])
+                logger.info("PART RESULT: %s=%s", part_name, results[-1])
             for i, part_result in enumerate(results):
                 plc_array = plc_array_1
                 if i >= 22: # Switch to Array 2
@@ -272,35 +277,35 @@ class Artifact:
 
                 insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionFlag'], self.inspection_flag, 1)
                 insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionImage'], self._n_snapshots_saved, 1)
-                print("Inspection Flag", self.inspection_flag)
+                logger.info("Inspection Flag = %s", self.inspection_flag)
+                logger.info("Inspection Image = %s", self._n_snapshots_saved)
                 if self.inspection_flag == 1:
                     insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_resultOKFlag'], result_ok_flag, 1)
-                    print("Result OK Flag", result_ok_flag)
+                    logger.info("Result OK Flag = %s", result_ok_flag)
                 for entity_key, metric_id in data_filters:
                     if entity_key not in self.data.entity_lookup:
-                        print("WARNING: Part not in Database:", entity_key)
+                        logger.warn("Part not in Database: %s", entity_key)
                         continue
                     entity_id = self.data.entity_lookup[entity_key]
                     insert_datafilter(cursor, record_id, entity_id, metric_id)
-                    print("Filter:", record_id, entity_id)
+                    logger.info("Filter: record_id=%s entity_id=%s", record_id, entity_id)
                 for entity_key, value, metric_id in integer_metrics:
                     if entity_key not in self.data.entity_lookup:
-                        print("WARNING: Part not in Database:", entity_key)
+                        logger.warn("Part not in Database: %s", entity_key)
                         continue
                     entity_id = self.data.entity_lookup[entity_key]
                     insert_integer_metric(cursor, record_id, entity_id, value, metric_id)
-                    print("Integer Metric:", record_id, entity_id, value)
+                    logger.info("Integer Metric: record_id=%s entity_id=%s value=%s", record_id, entity_id, value)
                 for entity_key, value, metric_id in string_metrics:
                     if entity_key not in self.data.entity_lookup:
-                        print("WARNING: Part not in Database:", entity_key)
+                        logger.warn("Part not in Database: %s", entity_key)
                         continue
                     entity_id = self.data.entity_lookup[entity_key]
                     insert_string_metric(cursor, record_id, entity_id, value, metric_id)
-                    print("String Metric:", record_id, entity_id, value)
+                    logger.info("String Metric: record_id=%s entity_id=%s value=%s", record_id, entity_id, value)
                 connection.commit()
         except Exception as ex:
-            print("Failed to save artifact.", ex)
-            traceback.print_exc()
+            logger.exception("Failed to save artifact")
         finally:
             if connection is not None:
                 connection.close()

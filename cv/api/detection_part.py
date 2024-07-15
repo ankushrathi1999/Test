@@ -1,9 +1,11 @@
-from collections import defaultdict
 import yaml
+import logging
 
 from .detection import DetectionResult
 from config.colors import color_green
 from config.config import config
+
+logger = logging.getLogger(__name__)
 
 api_config = config['api_common']
 RESULT_COUNT_THRESHOLD = api_config.getint('result_count_threshold')
@@ -36,7 +38,7 @@ class DetectionPart:
         self.part_result = DetectionResult.MISSING
         self.part_pred = None # part number
 
-        print('Init detection:', {
+        logger.info('Init detection: %s', {
             'vehicle_model': vehicle_model,
             'detection_class': self.detection_class,
             'part_id': self.part_id,
@@ -62,13 +64,13 @@ class DetectionPart:
     def update(self, part_detections, detection_groups):
         if not self.inspection_enabled:
             return
-        print("Updating detection:", self.detection_class)
+        logger.debug("Updating detection: %s", self.detection_class)
 
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
         if part_detection is None:
             return
         
-        print("Counts:", self.part_results_count)
+        logger.debug("Result counts: %s", self.part_results_count)
         result = DetectionResult.OK
         self.part_results_count += 1
         part_detection.final_details.color = color_green
@@ -77,6 +79,6 @@ class DetectionPart:
         if self.part_results_count >= RESULT_COUNT_THRESHOLD:
             self.part_pred = self.part_id
             self.part_result = result
-            print("Final result:", self.part_pred, self.part_result)
+            logger.debug("Final result: part_pred=%s part_result=%s", self.part_pred, self.part_result)
         else:
-            print("Result is not available yet.")
+            logger.debug("Result is not available yet.")

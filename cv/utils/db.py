@@ -1,8 +1,11 @@
 import pymysql
 import pymysql.cursors
 from collections import defaultdict
+import logging
 
 from config.db_config import db_params
+
+logger = logging.getLogger(__name__)
 
 def test_conection():
     query = 'select 1 from Entity;'
@@ -15,8 +18,8 @@ def test_conection():
         with connection.cursor() as cursor:
             cursor.execute(query)
             return True
-    except Exception as ex:
-        print("Error connecting to database", ex)
+    except Exception:
+        logger.exception("Error connecting to database")
         return False
     finally:
         if connection is not None:
@@ -41,7 +44,7 @@ def get_entity_lookup():
                 lookup[lookup_key] = row["id"]
         return lookup
     except Exception as ex:
-        print("Error fetching enetity metadata.", ex)
+        logger.exception("Error fetching enetity metadata.")
         raise ex
     finally:
         if connection is not None:
@@ -93,7 +96,7 @@ def get_vehicle_models():
                 rows.append(row['vehicle_model'])
         return rows
     except Exception as ex:
-        print("Error fetching vehicle part mapping.", ex)
+        logger.exception("Error fetching vehicle part mapping.")
         raise ex
     finally:
         if connection is not None:
@@ -122,7 +125,7 @@ def get_vehicle_part_mapping(vehicle_models):
                     mapping[row['vehicle_model']].append(row)
         return mapping
     except Exception as ex:
-        print("Error fetching vehicle part mapping.", ex)
+        logger.exception("Error fetching vehicle part mapping.")
         raise ex
     finally:
         if connection is not None:

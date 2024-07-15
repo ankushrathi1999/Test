@@ -1,20 +1,22 @@
 import time
 import threading
-import traceback
+import logging
 
 from utils.plc import flush_plc_data
 
+logger = logging.getLogger(__name__)
+
 def _flush_plc_data(thread):
+    logger.info("Start of PLCIO thread.")
     while not thread.is_terminated:
         try:
             flush_plc_data()
         except Exception as ex:
-            print("Error in PLCIO thread:", ex)
-            traceback.print_exc()
+            logger.exception("Error in PLCIO thread.")
         finally:
             time.sleep(0.1)
     thread.is_terminated = True
-    print("End of PLCIO thread")
+    logger.info("End of PLCIO thread.")
 
 class PLCIO:
 

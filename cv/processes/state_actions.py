@@ -1,18 +1,20 @@
 import time
 import threading
-import traceback
+import logging
+
+logger = logging.getLogger(__name__)
 
 def _run_state_actions(thread):
+    logger.info("Start of run_state_actions thread.")
     while not thread.is_terminated:
         try:
             thread.data.state.run_actions(thread.data)
         except Exception as ex:
-            print("Error in run_state_actions thread:", ex)
-            traceback.print_exc()
+            logger.exception("Error in run_state_actions thread.")
         finally:
             time.sleep(0.2)
     thread.is_terminated = True
-    print("End of run_state_actions thread")
+    logger.info("End of run_state_actions thread.")
 
 class StateActions:
 
