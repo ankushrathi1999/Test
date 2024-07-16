@@ -2,7 +2,7 @@ import time
 import threading
 import logging
 
-from config.config import config, load_vehicle_parts_lookup
+from config.config import config
 from utils.build_vehicle_master import build_vehicle_master
 
 logger = logging.getLogger(__name__)
@@ -16,7 +16,6 @@ def _rebuild_vehicle_master(thread):
         time.sleep(60)
         try:
             build_vehicle_master()
-            load_vehicle_parts_lookup()
             logger.debug("Reloaded vehicle parts lookup")
         except Exception:
             logger.exception("Faile to regenerate vehicle master")

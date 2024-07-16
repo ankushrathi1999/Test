@@ -7,6 +7,7 @@ import yaml
 import logging
 
 from .db import get_vehicle_models, get_vehicle_part_mapping
+from config.config import save_vehicle_parts_lookup
 
 logger = logging.getLogger(__name__)
 
@@ -128,7 +129,7 @@ def _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class
             logger.warn('No usb aux data for vehicle: %s', vehicle_model)
             continue
         if not (2 <= len(usb_aux_group) <= 3):
-            logger.warn('Invalid usb aux count for vehicle: %s', vehicle_model, len(usb_aux_group))
+            logger.warn('Invalid usb aux count for vehicle: %s:%s', vehicle_model, len(usb_aux_group))
             continue
         _proceed = True
         for part, details in usb_aux_group:
@@ -236,7 +237,5 @@ def build_vehicle_master():
     _process_usb_aux_group(vehicle_data, vehicle_part_type_groups, missing_class_name_lookup)
     _process_bezel_group(vehicle_data, vehicle_part_type_groups, bezel_switch_positions)
 
-    yaml_path = './config/vehicle_parts.yaml'
-    with open(yaml_path, 'w') as x:
-        yaml.safe_dump(dict(vehicle_data), x)
-    logger.debug("Vehicle master successfully written: %s", yaml_path)
+    save_vehicle_parts_lookup(dict(vehicle_data))
+    logger.debug("Vehicle master successfully written")
