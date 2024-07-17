@@ -85,6 +85,9 @@ def delete_old_snapshots():
     logger.info("Initializing snapshots deletion.")
     chassis_keep = get_chassis_list_to_keep()
     logger.info("Num chassis to keep: %s", len(chassis_keep))
+    n_deleted = 0
+    n_kept = 0
+    n_ignored = 0
     for target_dir in [snapshots_dir, metadata_dir]:
         logger.info("Deleting in target dir: %s", target_dir)
         backup_folders = get_folders_to_backup(target_dir)
@@ -93,15 +96,21 @@ def delete_old_snapshots():
             logger.info("Deleting in folder: %s", folder)
             for root, _, files in os.walk(folder):
                 for file in files:
+                    file_path = os.path.join(root, file)
                     try:
                         chassis_no, vehicle_model = file.split('_')[:2]
                     except Exception as ex:
+                        n_ignored += 1
                         logger.warning("Failed to parse file: %s. Err: %s", file, ex)
-                    if chassis_no in chassis_keep:
                         continue
-                    file_path = os.path.join(root, file)
+                    if chassis_no in chassis_keep:
+                        n_kept += 1
+                        logger.debug("Keeping: %s", file_path)
+                        continue
+                    n_deleted += 1
                     logger.info("Deleting: %s", file_path)
                     os.remove(file_path)
+    logger.info("Completed. (Deletions: %s Kept: %s Ignored: %s)", n_deleted, n_kept, n_ignored)
 
 if __name__ == '__main__':
     delete_old_snapshots()
