@@ -2009,6 +2009,107 @@ YHB4ED2AP7400000:
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M72R00
+YHB4FD23P7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37960M66R00
+      name: SWITCH ASSY,FUEL CONTROL
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
 YHB4FD24P7400000:
   ac_control:
     is_group: true
@@ -2109,6 +2210,107 @@ YHB4FD24P7400000:
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M72R10
+YHB4FD2AP7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37960M66R00
+      name: SWITCH ASSY,FUEL CONTROL
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
 YHB5ED22P7400000:
   ac_control:
     is_group: true
@@ -2809,6 +3011,800 @@ YHB5EDXDP7400000:
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M72R10
 YHB5EDXEP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
+YHB5FD22P7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: white_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P00
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP,USB HOLE
+      part_number: 37275M75J00
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
+YHB5FD23P7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
+YHB5FD24P7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R10
+YHB5FD2AP7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
+YHB5FD2EP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
+YHB5FDXCP7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
+YHB5FDXDP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R10
+YHB5FDXEP7400000:
   ac_control:
     is_group: true
     part_group: auto_beige_yhb
@@ -4317,6 +5313,107 @@ YHBCED23P7400000:
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M72R00
+YHBCFD23P7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37960M66R00
+      name: SWITCH ASSY,FUEL CONTROL
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
 YHBDED22P7400000:
   ac_control:
     is_group: true
@@ -5010,6 +6107,699 @@ YHBDEDXEP7400000:
     part_name: SW_WIP
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M68P51
+YHBDFD22P7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: white_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P00
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: CAP,USB HOLE
+      part_number: 37275M75J00
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
+YHBDFD23P7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
+YHBDFD24P7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: blue_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P10
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R10
+YHBDFD2EP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
+YHBDFDXCP7400000:
+  ac_control:
+    is_group: true
+    part_group: manual_beige_no_defogger_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 74400M72R20-V6N
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R00-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R00
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M73R00-R8R
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M73R00-R8R
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR, SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R00-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB & AUX
+      part_number: 39105M56R00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YXA_01_SW_WIP_YHBC_72R00
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R00
+YHBDFDXDP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P20
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R10
+YHBDFDXEP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_beige_yhb
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-AJ4
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-V6N
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M72R00-V6N
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73081M72R10-QWD
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73832M72R10-QWD
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55R10-R8R
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-R8R
+  usb_aux_group:
+    n_parts: 2
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
 YHC23T2DP0600000:
   ac_control:
     is_group: true
@@ -5425,6 +7215,112 @@ YHC23T7EP0600000:
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M68P51
 YHC4ET2DP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37960M66R00
+      name: SWITCH ASSY,FUEL CONTROL
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M51U00-5PK
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P20
+  steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
+      part_name_long: CAP,VENTILATED SEAT SW HOLE
+      part_number: 88411M76T00
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R10
+YHC4FT2DP7400000:
   ac_control:
     is_group: true
     part_group: auto_black_yhbc
@@ -6046,6 +7942,622 @@ YHC5ETXEP7400000:
     part_name_long: SWITCH ASSY,WIPER & WASHER
     part_number: 37310M68P51
 YHC5ETXFP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37700M66R00
+      name: SWITCH ASSY,CAMERA
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M51U00-5PK
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
+      part_name_long: SWITCH ASSY,VENTILATED SEAT
+      part_number: 95525M72S00
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
+YHC5FT2DP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M51U00-5PK
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P20
+  steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
+      part_name_long: CAP,VENTILATED SEAT SW HOLE
+      part_number: 88411M76T00
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R10
+YHC5FT2EP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37700M66R00
+      name: SWITCH ASSY,CAMERA
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M51U00-5PK
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
+      part_name_long: CAP,VENTILATED SEAT SW HOLE
+      part_number: 88411M76T00
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
+YHC5FT2FP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37700M66R00
+      name: SWITCH ASSY,CAMERA
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M51U00-5PK
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
+      part_name_long: SWITCH ASSY,VENTILATED SEAT
+      part_number: 95525M72S00
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
+YHC5FTXDP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37285M66R00
+      name: CAP,OPTION SW HOLE
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lights:
+    part_name: SW_LGT
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37210M72R10
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M51U00-5PK
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    is_miss: true
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR, AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SET,CONTACT COIL
+    part_number: 37410M68P20
+  steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
+      part_name_long: CAP,VENTILATED SEAT SW HOLE
+      part_number: 88411M76T00
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M72R10
+YHC5FTXEP7400000:
+  ac_control:
+    is_group: true
+    part_group: auto_black_yhbc
+    part_name: CONT_HVAC
+    part_name_long: CONTROL UNIT,HVAC
+    part_number: 39510M72R10-BGT
+  ac_ctr:
+    part_name: GAR_DR_IN
+    part_name_long: GARNISH SET IP DRVR INSIDE
+    part_number: 73082M72R00-C48
+  ac_left:
+    part_name: GAR_ASST
+    part_name_long: GARNISH SET IP ASST
+    part_number: 73086M72R00-C48
+  ac_right:
+    part_name: GAR_DR_OUT
+    part_name_long: GARNISH SET IP DRVR OUTSIDE
+    part_number: 73083M72R00-C48
+  bezel:
+    id: 73833M73R10-5PK
+    n_rows: 1
+    name: BEZEL,I/P SWITCH
+    switches_top:
+    - id: 37780M66R00
+      name: SWITCH ASSY,ID STOP OFF
+      position: 4
+    - id: 37700M66R00
+      name: SWITCH ASSY,CAMERA
+      position: 3
+    - id: 37585M66R00
+      name: SWITCH ASSY,ESP OFF
+      position: 2
+    - id: 35180M66R00
+      name: SWITCH ASSY,HEAD LAMP LEVELING
+      position: 1
+  hazard_switches:
+    part_name: SW_HZD
+    part_name_long: SWITCH ASSY,HAZARD & SECURITY
+    part_number: 37430M68P20-5PK
+  lower_panel:
+    part_name: IP_LWR
+    part_name_long: PANEL,INSTRUMENT MAIN LOWER
+    part_number: 73121M51U00-5PK
+  n_screws: 5
+  orn_ctr:
+    part_name: OR_IP_CTR
+    part_name_long: ORNAMENT,I/P CENTER
+    part_number: 73068M72S00-DUF
+  orn_drvr:
+    part_name: OR_IP_DR
+    part_name_long: ORNAMENT,I/P DRVR
+    part_number: 73081M72S00-DUF
+  sensor_left:
+    missing_class_name: no_sensor
+    part_name: SNSR_AUTO
+    part_name_long: SENSOR ASSY,AUTO LIGHT
+    part_number: 38680M56R00
+  sensor_right:
+    missing_class_name: no_sensor
+    part_name: SNSR_SUN
+    part_name_long: SENSOR,SUN LIGHT
+    part_number: 95642-64G20
+  steering_coil:
+    is_group: true
+    part_group: yellow_lock
+    part_name: CT_COIL
+    part_name_long: SWITCH ASSY,LIGHTING & TURN
+    part_number: 37410M68P83
+  steering_cover:
+    is_group: true
+    part_group: clmn_cvr_black_no_key_yhbcx
+    part_name: CLMN_CVR
+    part_name_long: COVER ASSY,STEERING COLUMN
+    part_number: 48400M55T30-5PK
+  upper_panel:
+    part_name: IP_UPR
+    part_name_long: PANEL,INSTRUMENT MAIN UPPER
+    part_number: 73111M72R00-5PK
+  usb_aux_group:
+    n_parts: 3
+    parts:
+    - missing_class_name: acc_usb_ng
+      part_name: ACC_SKT
+      part_name_long: COVER,SOCKET
+      part_number: 39440M56R20-5PK
+    - missing_class_name: acc_usb_ng
+      part_name: SW_ST_VNT
+      part_name_long: CAP,VENTILATED SEAT SW HOLE
+      part_number: 88411M76T00
+    - missing_class_name: acc_usb_ng
+      part_name: USB_SKT
+      part_name_long: SOCKET,USB
+      part_number: 39105M77S00-5PK
+  vehicle_type: RHD
+  wiper:
+    is_group: true
+    part_group: SW_WIP_YHBC_68P51_SW_WIP_YHBC_72R10
+    part_name: SW_WIP
+    part_name_long: SWITCH ASSY,WIPER & WASHER
+    part_number: 37310M68P51
+YHC5FTXFP7400000:
   ac_control:
     is_group: true
     part_group: auto_black_yhbc
