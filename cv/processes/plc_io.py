@@ -14,7 +14,7 @@ def _flush_plc_data(thread):
         except Exception as ex:
             logger.exception("Error in PLCIO thread.")
         finally:
-            time.sleep(0.1)
+            time.sleep(0.8)
     thread.is_terminated = True
     logger.info("End of PLCIO thread.")
 
