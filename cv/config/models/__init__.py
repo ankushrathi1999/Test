@@ -7,8 +7,7 @@ from .usb_aux_classification import UsbAuxClassificationModel
 from .part_classification_v2 import PartClassificationModel
 from .sensor_classification import SensorClassificationModel
 from .ac_control_classification import ACControlClassificationModel
-from .lights_classification import LightsClassificationModel
-from .wiper_classification import WiperClassificationModel
+from .lights_wiper_classification import LightsWiperClassificationModel
 from .lower_panel_classification import LowerPanelClassificationModel
 from .orn_classification import OrnClassificationModel
 from .gar_ct_classification import GarCTClassificationModel
@@ -26,8 +25,7 @@ classification_models = [
     PartClassificationModel,
     SensorClassificationModel,
     ACControlClassificationModel,
-    LightsClassificationModel,
-    WiperClassificationModel,
+    LightsWiperClassificationModel,
     LowerPanelClassificationModel,
     OrnClassificationModel,
     GarCTClassificationModel,

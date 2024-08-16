@@ -181,15 +181,16 @@ class PartDetectionModel:
 
     @staticmethod
     def get_processed_class(class_name, vehicle_category, vehicle_type):
-        if class_name == PartDetectionModel.CLASS_lgt_wip_right:
-            if vehicle_type == 'RHD':
-                return PartDetectionModel.CLASS_lights
-            elif vehicle_type == 'LHD':
-                return PartDetectionModel.CLASS_wiper
-        elif class_name == PartDetectionModel.CLASS_lgt_wip_left:
-            if vehicle_type == 'RHD':
-                return PartDetectionModel.CLASS_wiper
-            elif vehicle_type == 'LHD':
-                return PartDetectionModel.CLASS_lights
-        else:
-            return class_name
+        return class_name
+        # if class_name == PartDetectionModel.CLASS_lgt_wip_right:
+        #     if vehicle_type == 'RHD':
+        #         return PartDetectionModel.CLASS_lights
+        #     elif vehicle_type == 'LHD':
+        #         return PartDetectionModel.CLASS_wiper
+        # elif class_name == PartDetectionModel.CLASS_lgt_wip_left:
+        #     if vehicle_type == 'RHD':
+        #         return PartDetectionModel.CLASS_wiper
+        #     elif vehicle_type == 'LHD':
+        #         return PartDetectionModel.CLASS_lights
+        # else:
+        #     return class_name

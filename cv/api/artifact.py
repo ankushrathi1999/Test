@@ -15,12 +15,13 @@ from .bezel_group import BezelGroup
 from .usb_aux_group import UsbAuxGroup
 from .classification_part import ClassificationPart
 from .steering_cover import SteeringCover
+from .lights_wiper import LightsWiper
 from .detection_part import DetectionPart
 from .detection import DetectionResult
 from config.models import BezelGroupDetectionModel, PartDetectionModel
 from config.models import (
-    PartClassificationModel, ACControlClassificationModel, SensorClassificationModel, LightsClassificationModel,
-    WiperClassificationModel, LowerPanelClassificationModel, OrnClassificationModel, GarCTClassificationModel
+    PartClassificationModel, ACControlClassificationModel, SensorClassificationModel,
+    LowerPanelClassificationModel, OrnClassificationModel, GarCTClassificationModel
 )
 
 logger = logging.getLogger(__name__)
@@ -58,12 +59,11 @@ class Artifact:
         # Parts
         self.bezel_group = BezelGroup(vehicle_model)
         self.usb_aux_group = UsbAuxGroup(vehicle_model)
+        self.lights_wiper = LightsWiper(vehicle_model, self)
         classification_targets = {
              *PartClassificationModel.target_detections,
              *ACControlClassificationModel.target_detections,
              *SensorClassificationModel.target_detections,
-             *LightsClassificationModel.target_detections,
-             *WiperClassificationModel.target_detections,
              *LowerPanelClassificationModel.target_detections,
              *OrnClassificationModel.target_detections,
              *GarCTClassificationModel.target_detections
@@ -122,6 +122,12 @@ class Artifact:
         usb_aux_detections = detection_groups.get(PartDetectionModel.CLASS_usb_aux, [])
         self.usb_aux_group.update(usb_aux_container_detections, usb_aux_detections) # Only bottom cam
         
+        # Lights wiper update
+        logger.debug("Updating lights wiper")
+        lights_wiper_left_detections = detection_groups.get(PartDetectionModel.CLASS_lgt_wip_left, [])
+        lights_wiper_right_detections = detection_groups.get(PartDetectionModel.CLASS_lgt_wip_right, [])
+        self.lights_wiper.update(lights_wiper_left_detections, lights_wiper_right_detections, detection_groups)
+
         # Parts Update - classification and detection
         logger.debug("Updating parts")
         for detection_class, part in self.parts.items():
@@ -174,8 +180,9 @@ class Artifact:
     def get_part_results(self):
         bezel_part_results = self.bezel_group.get_part_results()
         usb_aux_results = self.usb_aux_group.get_part_results()
+        lights_wiper_results = self.lights_wiper.get_part_results()
         part_results = [p for p in [part.get_part_result() for part in self.parts.values()] if p is not None]
-        all_part_results = [*bezel_part_results, *usb_aux_results, *part_results]
+        all_part_results = [*bezel_part_results, *usb_aux_results, *lights_wiper_results, *part_results]
         overall_ok = (
             self.inspection_flag == 1 and
             len(all_part_results) > 0 and
