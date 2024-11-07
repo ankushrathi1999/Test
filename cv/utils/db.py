@@ -102,13 +102,13 @@ def get_vehicle_models():
         if connection is not None:
             connection.close()
 
-def get_vehicle_part_mapping(vehicle_models):
-    query = """
+def get_vehicle_part_mapping(vehicle_models, keep_inactive_parts=False):
+    query = f"""
         select EP.code as vehicle_model, EC.code as part_number, EC.name as part_name, HM.value as part_position
         from EntityHierarchy H join Entity EP on H.parent_id = EP.id
         join Entity EC on H.child_id = EC.id
         left join EntityHierarchyMetricTable HM on HM.entity_hierarchy_id = H.id
-        where EC.activeFlag = 1
+        {"" if keep_inactive_parts else "where EC.activeFlag = 1"}
     """
     connection  = None
     mapping = defaultdict(list)

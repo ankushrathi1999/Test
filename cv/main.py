@@ -26,12 +26,12 @@ if is_port_in_use(health_port):
 
 ### 3/4 Build vehicle master
 
-from utils.build_vehicle_master import build_vehicle_master
+from utils.build_vehicle_master import build_all_vehicle_master
 from config.config import load_vehicle_parts_lookup
 
 logger.info("Building vehcile master")
 try:
-    build_vehicle_master()
+    build_all_vehicle_master()
     load_vehicle_parts_lookup()
 except Exception as ex:
     logger.exception("Failed to build latest vehicle master from database.")

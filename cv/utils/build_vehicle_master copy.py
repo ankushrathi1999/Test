@@ -132,7 +132,7 @@ def process_usb_aux_group(vehicle_data, vehicle_model, usb_aux_group, missing_cl
         raise ValidationError(f'No USB or ACC switches have been added for {vehicle_model}.')
     if not (1 <= len(usb_aux_group) <= 3):
         raise ValidationError(f'Invalid count of USB and ACC switches for {vehicle_model}. Expected: 1 to 3. Got: {len(usb_aux_group)}.')
-    usb_aux_group = sorted(usb_aux_group, key=lambda x: (int(x[0]['part_position'] or 0)))
+    usb_aux_group = sorted(usb_aux_group, key=lambda x: (x[0]['part_position'] or 0))
     missing_class_name = missing_class_name_lookup.get('usb_aux') # todo: hardcoded class name
     vehicle_data['usb_aux_group'] = {
         "n_parts": len(usb_aux_group),
@@ -182,8 +182,6 @@ def process_bezel_group(vehicle_data, vehicle_model, bezel, bezel_switches, beze
     _actual_pos = set()
     for part, details in bezel_switches:
         pos = part['part_position']
-        if pos is None:
-            raise ValidationError(f"Position is not specified for bezel switch {part['part_number']}")
         if pos in _actual_pos:
             raise ValidationError(f"Multple bezel switches have been added at position {pos}.")
         _actual_pos.add(int(pos))

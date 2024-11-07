@@ -2,12 +2,14 @@ import threading
 import logging
 from werkzeug.serving import make_server
 from flask import Flask, jsonify
+from flask_cors import CORS, cross_origin
 
 from utils.plc import send_signal
 from config.plc_db import SIG_SEND_HEART_BIT
 from config.config import config
 from api.state import PLC_STATES
 from utils.db import test_conection
+from utils.build_vehicle_master import validate_vehicle_part_data
 
 logger  = logging.getLogger(__name__)
 
@@ -16,6 +18,8 @@ port = process_config.getint('port')
 
 server = None
 app = Flask(__name__)
+cors = CORS(app) # allow CORS for all domains on all routes.
+app.config['CORS_HEADERS'] = 'Content-Type'
 
 def _run_health_server(thread):
     data = thread.data
@@ -29,6 +33,19 @@ def _run_health_server(thread):
         }
         logger.debug("Health endpoint: %s", health)
         return jsonify(health), 200
+    
+    @app.route('/validate/<vehicle_model>')
+    @cross_origin()
+    def validate(vehicle_model):
+        if not vehicle_model:
+            return jsonify({'error': 'vehicle_model parameter is missing.'}), 400
+        is_valid, errors = validate_vehicle_part_data(vehicle_model)
+        validate_data = {
+            "is_valid": is_valid,
+            "errors": errors,
+        }
+        logger.debug("Validate endpoint: %s", validate_data)
+        return jsonify(validate_data), 200
 
     try:
         global server
