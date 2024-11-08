@@ -11,18 +11,10 @@ from config.db_config import db_params
 from config.config import config, get_vehicle_parts_lookup, part_order_plc
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
 from utils.shift_utils import get_current_shift
-from .bezel_group import BezelGroup
-from .usb_aux_group import UsbAuxGroup
 from .classification_part import ClassificationPart
-from .steering_cover import SteeringCover
-from .lights_wiper import LightsWiper
 from .detection_part import DetectionPart
 from .detection import DetectionResult
-from config.models import BezelGroupDetectionModel, PartDetectionModel
-from config.models import (
-    PartClassificationModel, ACControlClassificationModel, SensorClassificationModel,
-    LowerPanelClassificationModel, OrnClassificationModel, GarCTClassificationModel
-)
+from config.models import PartDetectionOutModel, PartDetectionInTopModel, PartDetectionInBottomModel
 
 logger = logging.getLogger(__name__)
 
@@ -43,11 +35,15 @@ debug_mode and os.makedirs(metadata_dir_debug, exist_ok=True)
 
 class Artifact:
 
-    def __init__(self, psn, chassis, vehicle_model, data):
+    def __init__(self, artifact_config, psn, chassis, vehicle_model, data):
         vehicle_parts_lookup = get_vehicle_parts_lookup()
+        print("D1:", len(vehicle_parts_lookup), vehicle_model, vehicle_model in vehicle_parts_lookup)
         
+        # Artifact code, database, etc..
+        self.artifact_config = artifact_config
+
         self.data = data
-        self.inspection_flag = int(f'vehicle_model_{vehicle_model}' in self.data.entity_lookup)
+        self.inspection_flag = int(f'vehicle_model_{vehicle_model}' in data.entity_lookup[artifact_config['code']])
         self.shift = get_current_shift()
 
         self.psn = psn
@@ -57,27 +53,18 @@ class Artifact:
         self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type', 'RHD')
 
         # Parts
-        self.bezel_group = BezelGroup(vehicle_model)
-        self.usb_aux_group = UsbAuxGroup(vehicle_model)
-        self.lights_wiper = LightsWiper(vehicle_model, self)
-        classification_targets = {
-             *PartClassificationModel.target_detections,
-             *ACControlClassificationModel.target_detections,
-             *SensorClassificationModel.target_detections,
-             *LowerPanelClassificationModel.target_detections,
-             *OrnClassificationModel.target_detections,
-             *GarCTClassificationModel.target_detections
-        }
+        classification_targets = {}
 
         self.parts = {}
-        for detection_class in PartDetectionModel.ordered_class_list:
+        for detection_class in [
+            *PartDetectionInBottomModel.ordered_class_list,
+            *PartDetectionInTopModel.ordered_class_list,
+            *PartDetectionOutModel.ordered_class_list,
+        ]:
             if detection_class is None:
                 continue
-            detection_class = PartDetectionModel.get_processed_class(detection_class, self.vehicle_category, self.vehicle_type)
             if detection_class not in classification_targets:
                 self.parts[detection_class] = DetectionPart(vehicle_model, detection_class)
-            elif detection_class == PartDetectionModel.CLASS_steering_cover:
-                self.parts[detection_class] = SteeringCover(vehicle_model, detection_class, self)
             else:
                 self.parts[detection_class] = ClassificationPart(vehicle_model, detection_class, self)
 
@@ -93,6 +80,7 @@ class Artifact:
         self.overall_result = None
 
         logger.info("Artifact created: %s", {
+            'code': self.artifact_config['code'],
             'start_time': self.start_time,
             'inspection_flag': self.inspection_flag,
             'shift': self.shift,
@@ -103,30 +91,9 @@ class Artifact:
             'vehicle_type': self.vehicle_type,
         })
 
-    def update(self, detection_groups, frame_top, frame_bottom, frame_up):
+    def update(self, detection_groups, frames):
         if self.is_ended:
             return
-
-        # Bezel update
-        logger.debug("Updating bezel group")
-        bezel_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_CONTAINER, [])
-        bezel_switch_detections = detection_groups.get(BezelGroupDetectionModel.CLASS_SWITCH, [])
-        for cam_type in ('top', 'bottom'):
-            bezel_detections_cur = [d for d in bezel_detections if d.cam_type == cam_type]
-            bezel_switch_detections_cur = [d for d in bezel_switch_detections if d.cam_type == cam_type]
-            self.bezel_group.update(bezel_detections_cur, bezel_switch_detections_cur)
-
-        # USB Aux Update
-        logger.debug("Updating usb aux")
-        usb_aux_container_detections = detection_groups.get(PartDetectionModel.CLASS_usb_aux_container, [])
-        usb_aux_detections = detection_groups.get(PartDetectionModel.CLASS_usb_aux, [])
-        self.usb_aux_group.update(usb_aux_container_detections, usb_aux_detections) # Only bottom cam
-        
-        # Lights wiper update
-        logger.debug("Updating lights wiper")
-        lights_wiper_left_detections = detection_groups.get(PartDetectionModel.CLASS_lgt_wip_left, [])
-        lights_wiper_right_detections = detection_groups.get(PartDetectionModel.CLASS_lgt_wip_right, [])
-        self.lights_wiper.update(lights_wiper_left_detections, lights_wiper_right_detections, detection_groups)
 
         # Parts Update - classification and detection
         logger.debug("Updating parts")
@@ -138,7 +105,7 @@ class Artifact:
         if (cur_time - self._last_snapshot_time > snapshot_interval_secs) and (self._n_snapshots_saved < n_snapshots_max):
             logger.info("Saving snapshots: %s/%s", self._n_snapshots_saved+1, n_snapshots_max)
             date_folder_name = datetime.now().strftime('%Y%m%d')
-            for img, img_type in zip([frame_top, frame_bottom, frame_up], ["top", "bottom", "up"]):
+            for img_type, img in frames.items():
                 snapshots_dir_cur = os.path.join(snapshots_dir, date_folder_name, self.vehicle_model, img_type)
                 metadata_dir_cur = os.path.join(metadata_dir, date_folder_name, self.vehicle_model, img_type)
                 os.makedirs(snapshots_dir_cur, exist_ok=True)
@@ -178,11 +145,8 @@ class Artifact:
             logger.info(result)
 
     def get_part_results(self):
-        bezel_part_results = self.bezel_group.get_part_results()
-        usb_aux_results = self.usb_aux_group.get_part_results()
-        lights_wiper_results = self.lights_wiper.get_part_results()
         part_results = [p for p in [part.get_part_result() for part in self.parts.values()] if p is not None]
-        all_part_results = [*bezel_part_results, *usb_aux_results, *lights_wiper_results, *part_results]
+        all_part_results = [*part_results]
         overall_ok = (
             self.inspection_flag == 1 and
             len(all_part_results) > 0 and
@@ -201,33 +165,36 @@ class Artifact:
         plc_array_1 = [NA_VAL for i in range(23)] # Hardcoded for 23 parameters
         plc_array_2 = [NA_VAL for i in range(23)]
         logger.info("PLC Write flags: inspection_flag=%s plc_write_enabled=%s",self.inspection_flag ,plc_write_enabled)
-        if self.inspection_flag == 1 and plc_write_enabled:
-            part_results_lookup = {p['part_name']: p['result'] for p in parts}
-            results = []
-            for part_name in part_order_plc:
-                if part_name.startswith('BZ_'):
-                    results.append(self.bezel_group.get_result_by_part_name(parts, part_name))
-                elif part_name in part_results_lookup:
-                    results.append(part_results_lookup[part_name])
-                else:
-                    logger.warn("RESULT UNAVAILABLE FOR: %s", (part_name, self.vehicle_model, self.psn))
-                    results.append(None)
-                logger.info("PART RESULT: %s=%s", part_name, results[-1])
-            for i, part_result in enumerate(results):
-                plc_array = plc_array_1
-                if i >= 22: # Switch to Array 2
-                    plc_array = plc_array_2
-                    i = i - 22
-                if i >= 9: # Skip position 10, reserved for overall result
-                    i += 1
-                if part_result is not None:
-                    plc_array[i] = OK_VAL if (part_result == DetectionResult.OK) else NG_VAL
-            plc_array_1[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_1) if i != 9]) else OK_VAL
-            plc_array_2[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_2) if i != 9]) else OK_VAL
+        # if self.inspection_flag == 1 and plc_write_enabled:
+        #     part_results_lookup = {p['part_name']: p['result'] for p in parts}
+        #     results = []
+        #     for part_name in part_order_plc:
+        #         if part_name.startswith('BZ_'):
+        #             results.append(self.bezel_group.get_result_by_part_name(parts, part_name))
+        #         elif part_name in part_results_lookup:
+        #             results.append(part_results_lookup[part_name])
+        #         else:
+        #             logger.warn("RESULT UNAVAILABLE FOR: %s", (part_name, self.vehicle_model, self.psn))
+        #             results.append(None)
+        #         logger.info("PART RESULT: %s=%s", part_name, results[-1])
+        #     for i, part_result in enumerate(results):
+        #         plc_array = plc_array_1
+        #         if i >= 22: # Switch to Array 2
+        #             plc_array = plc_array_2
+        #             i = i - 22
+        #         if i >= 9: # Skip position 10, reserved for overall result
+        #             i += 1
+        #         if part_result is not None:
+        #             plc_array[i] = OK_VAL if (part_result == DetectionResult.OK) else NG_VAL
+        #     plc_array_1[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_1) if i != 9]) else OK_VAL
+        #     plc_array_2[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_2) if i != 9]) else OK_VAL
         return [plc_array_1, plc_array_2]
 
     def save(self):
         assert self.is_ended
+
+        entity_lookup = self.data.entity_lookup[self.artifact_config['code']]
+
         parts, overall_ok = self.part_results, self.overall_result
         result_ok_flag = int(overall_ok)
 
@@ -266,7 +233,7 @@ class Artifact:
             connection = pymysql.connect(host=db_params['host'],
                                         user=db_params['user'],
                                         password=db_params['password'],
-                                        database=db_params['database'])
+                                        database=self.artifact_config['database'])
             with connection.cursor() as cursor:
                 insert_record_query = '''
                 insert into Record
@@ -277,32 +244,32 @@ class Artifact:
                 cursor.execute(insert_record_query, (1, self.start_time))
                 record_id = cursor.lastrowid
 
-                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionFlag'], self.inspection_flag, 1)
-                insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_inspectionImage'], self._n_snapshots_saved, 1)
+                insert_integer_metric(cursor, record_id, entity_lookup['result_metadata_inspectionFlag'], self.inspection_flag, 1)
+                insert_integer_metric(cursor, record_id, entity_lookup['result_metadata_inspectionImage'], self._n_snapshots_saved, 1)
                 logger.info("Inspection Flag = %s", self.inspection_flag)
                 logger.info("Inspection Image = %s", self._n_snapshots_saved)
                 if self.inspection_flag == 1:
-                    insert_integer_metric(cursor, record_id, self.data.entity_lookup['result_metadata_resultOKFlag'], result_ok_flag, 1)
+                    insert_integer_metric(cursor, record_id, entity_lookup['result_metadata_resultOKFlag'], result_ok_flag, 1)
                     logger.info("Result OK Flag = %s", result_ok_flag)
                 for entity_key, metric_id in data_filters:
-                    if entity_key not in self.data.entity_lookup:
+                    if entity_key not in entity_lookup:
                         logger.warn("Part not in Database: %s", entity_key)
                         continue
-                    entity_id = self.data.entity_lookup[entity_key]
+                    entity_id = entity_lookup[entity_key]
                     insert_datafilter(cursor, record_id, entity_id, metric_id)
                     logger.info("Filter: record_id=%s entity_id=%s", record_id, entity_id)
                 for entity_key, value, metric_id in integer_metrics:
-                    if entity_key not in self.data.entity_lookup:
+                    if entity_key not in entity_lookup:
                         logger.warn("Part not in Database: %s", entity_key)
                         continue
-                    entity_id = self.data.entity_lookup[entity_key]
+                    entity_id = entity_lookup[entity_key]
                     insert_integer_metric(cursor, record_id, entity_id, value, metric_id)
                     logger.info("Integer Metric: record_id=%s entity_id=%s value=%s", record_id, entity_id, value)
                 for entity_key, value, metric_id in string_metrics:
-                    if entity_key not in self.data.entity_lookup:
+                    if entity_key not in entity_lookup:
                         logger.warn("Part not in Database: %s", entity_key)
                         continue
-                    entity_id = self.data.entity_lookup[entity_key]
+                    entity_id = entity_lookup[entity_key]
                     insert_string_metric(cursor, record_id, entity_id, value, metric_id)
                     logger.info("String Metric: record_id=%s entity_id=%s value=%s", record_id, entity_id, value)
                 connection.commit()

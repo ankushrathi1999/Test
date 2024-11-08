@@ -12,10 +12,9 @@ else:
     skip_frames = 1
 
 def _read_frames(thread):
-    while len(thread.data.video_paths) == 0:
-        continue
-    video_path = thread.data.video_paths[thread.video_index]
-    logger.info("Start of video mamager thread: video_index=%s, video_path=%s", thread.video_index, video_path)
+    video_code = thread.video_config["code"]
+    video_path = thread.video_config["source"]
+    logger.info("Start of video mamager thread: video_code=%s, video_path=%s", video_code, video_path)
     cap = cv2.VideoCapture(video_path)
     count = -1
     while not thread.is_terminated:
@@ -29,19 +28,19 @@ def _read_frames(thread):
                 logger.debug("Error in video capture: %s. Resetting.", video_path)
                 cap = cv2.VideoCapture(video_path)
             else:
-                thread.data.frames[thread.video_index] = frame
+                thread.data.frames[video_code] = frame
                 if video_mode:
                     time.sleep(0.1)
         except Exception as ex:
             logger.exception("Error in video manager thread.")
     thread.is_terminated = True
-    logger.info("End of video_helper thread: video_index=%s, video_path=%s", thread.video_index, video_path)
+    logger.info("End of video_helper thread: video_code=%s, video_path=%s", video_code, video_path)
 
 class VideoManager:
 
-    def __init__(self, data, video_index):
+    def __init__(self, data, video_config):
         self.data = data
-        self.video_index = video_index
+        self.video_config = video_config
         self.runner = None
         self.is_terminated = False
 

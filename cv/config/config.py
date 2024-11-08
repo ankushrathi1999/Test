@@ -35,6 +35,11 @@ def save_vehicle_parts_lookup(vehicle_parts_lookup):
 def get_vehicle_parts_lookup():
     with _vehicle_parts_lookup_lock:
         return _vehicle_parts_lookup
+    
+def get_artificats():
+    with open('./config/artifacts.yaml') as x:
+        artifacts = yaml.safe_load(x)
+        return artifacts
 
 with open('./config/part_order_plc.csv') as f:
     part_order_plc = [x.strip() for x in f]

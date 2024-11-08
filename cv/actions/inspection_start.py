@@ -8,6 +8,7 @@ from config.plc_db import (
 )
 from api.state import SYSTEM_STATES
 from api.artifact import Artifact
+from utils.artifact_utils import artifacts_config
 
 logger = logging.getLogger(__name__)
 
@@ -38,7 +39,10 @@ def inspection_start_actions(data):
     # Initialize engine
     if data.is_active:
         logger.info("Inspection is active. Initializing artifact.")
-        data.artifact = Artifact(psn, chassis, vehicle_model, data)
+        data.artifacts = [
+            Artifact(artifact, psn + artifact.get('psn_offset', 0), chassis, vehicle_model, data)
+            for artifact in artifacts_config['artifacts']
+        ]
     else:
         logger.info("Inspection active flag is off. Skipping current inspection.")
 

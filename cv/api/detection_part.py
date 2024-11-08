@@ -14,11 +14,12 @@ class DetectionPart:
     def __init__(self, vehicle_model, detection_class):
         vehicle_parts_lookup = get_vehicle_parts_lookup()
         
-        self.detection_class = detection_class.replace('part_detection_v2_', '')
+        self.detection_class = detection_class.split('__')[-1]
         self.part_id = None
         self.part_name = None
         self.part_name_long = None
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
+        print("D1:", len(vehicle_parts_lookup), vehicle_model, vehicle_model in vehicle_parts_lookup)
 
         if self.inspection_enabled:
             part_details = vehicle_parts_lookup[vehicle_model].get(self.detection_class)

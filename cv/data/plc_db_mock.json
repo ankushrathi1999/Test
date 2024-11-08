@@ -1,7 +1,7 @@
 {
     "PLCPSNData": 1236,
-    "PLCVehicleModelData": "YHB4ED24P740",
+    "PLCVehicleModelData": "YHB23D2BP6800000",
     "PLCChassisData": "MA12345678915",
-    "PLCStartTrigger": false,
-    "PLCEndTrigger": true
+    "PLCStartTrigger": true,
+    "PLCEndTrigger": false
 }

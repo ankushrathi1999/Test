@@ -31,7 +31,7 @@ class FinalDetails:
 
 class DetectionDetails:
 
-    def __init__(self, class_id, class_name,  model, confidence, color, bbox, cam_type, tracking_id=None):
+    def __init__(self, class_id, class_name,  model, confidence, color, bbox, cam_type, artifact, tracking_id=None):
         self.class_id = class_id
         self.class_name = class_name
         self.model = model
@@ -39,6 +39,7 @@ class DetectionDetails:
         self.color = color
         self.bbox = bbox
         self.cam_type = cam_type
+        self.artifact = artifact
         self.classification_details = None
         self.final_details = None
         self.tracking_id = tracking_id

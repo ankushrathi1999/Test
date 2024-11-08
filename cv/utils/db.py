@@ -25,7 +25,7 @@ def test_conection():
         if connection is not None:
             connection.close()
 
-def get_entity_lookup():
+def get_entity_lookup(db_name=None):
     query = """
         select m.code as type, e.code as code, e.id as id from Entity e join EntityTypeMaster m on e.entity_type_id = m.id;
     """
@@ -35,7 +35,7 @@ def get_entity_lookup():
         connection = pymysql.connect(host=db_params['host'],
                                     user=db_params['user'],
                                     password=db_params['password'],
-                                    database=db_params['database'],
+                                    database=db_name or db_params['database'],
                                     cursorclass=pymysql.cursors.DictCursor)
         with connection.cursor() as cursor:
             cursor.execute(query)
@@ -78,7 +78,7 @@ def insert_integer_metric(cursor, record_id, entity_id, value, metric_id):
     '''
     cursor.execute(insert_data_query, (record_id, entity_id, value, metric_id))
 
-def get_vehicle_models():
+def get_vehicle_models(db_name=None):
     query = """
         select code as vehicle_model from Entity where entity_type_id = 2 and activeFlag = 1
     """
@@ -88,7 +88,7 @@ def get_vehicle_models():
         connection = pymysql.connect(host=db_params['host'],
                                     user=db_params['user'],
                                     password=db_params['password'],
-                                    database=db_params['database'],
+                                    database=db_name or db_params['database'],
                                     cursorclass=pymysql.cursors.DictCursor)
         with connection.cursor() as cursor:
             cursor.execute(query)
@@ -102,7 +102,7 @@ def get_vehicle_models():
         if connection is not None:
             connection.close()
 
-def get_vehicle_part_mapping(vehicle_models, keep_inactive_parts=False):
+def get_vehicle_part_mapping(vehicle_models, db_name=None, keep_inactive_parts=False):
     query = f"""
         select EP.code as vehicle_model, EC.code as part_number, EC.name as part_name, HM.value as part_position
         from EntityHierarchy H join Entity EP on H.parent_id = EP.id
@@ -116,7 +116,7 @@ def get_vehicle_part_mapping(vehicle_models, keep_inactive_parts=False):
         connection = pymysql.connect(host=db_params['host'],
                                     user=db_params['user'],
                                     password=db_params['password'],
-                                    database=db_params['database'],
+                                    database=db_name or db_params['database'],
                                     cursorclass=pymysql.cursors.DictCursor)
         with connection.cursor() as cursor:
             cursor.execute(query)
