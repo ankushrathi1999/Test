@@ -108,6 +108,7 @@ class Artifact:
             for img_type, img in frames.items():
                 snapshots_dir_cur = os.path.join(snapshots_dir, date_folder_name, self.vehicle_model, img_type)
                 metadata_dir_cur = os.path.join(metadata_dir, date_folder_name, self.vehicle_model, img_type)
+                print(snapshots_dir_cur)
                 os.makedirs(snapshots_dir_cur, exist_ok=True)
                 os.makedirs(metadata_dir_cur, exist_ok=True)
                 img_name = f"{self.chassis}_{self.vehicle_model}_{img_type}_{self._n_snapshots_saved+1}.jpg"

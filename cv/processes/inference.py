@@ -153,7 +153,7 @@ def _inference_loop(thread):
             # Plot
             for detection in detections:
                 artifact = [a for a in data.artifacts if a.artifact_config['code'] == detection.artifact][0] if len(data.artifacts) else None
-                print("Artifact:", artifact is None, artifact.inspection_flag, detection.final_details.ignore)
+                # print("Artifact:", artifact is None, artifact.inspection_flag, detection.final_details.ignore)
                 if artifact is None or artifact.inspection_flag != 1 or detection.final_details.ignore:
                     continue
                 class_bbox = detection.bbox

@@ -39,27 +39,27 @@ def flush_plc_data():
     global plc_data
 
     # Create a client object
-    pymc3e = pymcprotocol.Type3E(plctype="iQ-R")
+    pymc3e = pymcprotocol.Type3E(plctype="Q")
     pymc3e.setaccessopt(commtype="binary")
     pymc3e.connect(ip_address, port)
 
     # Get data
-    plc_data = pymc3e.batchread_wordunits(headdevice="D16001", readsize=23) # parameterize
+    plc_data = pymc3e.batchread_wordunits(headdevice="D12101", readsize=23) # parameterize
     logger.debug("PLC data received: %s", plc_data)
 
     # Updates
     if len(plc_data_updates) == 0:
         return
-    while len(plc_data_updates) > 0:
-        signal_name, value = plc_data_updates.pop(0)
-        signal = PLC_SIGNAL_LOOKUP[signal_name]
-        signal_type = signal["type"]
-        headdevice = signal["headdevice"]
-        if signal_type == "array":
-            pymc3e.batchwrite_wordunits(headdevice=headdevice, values=value)
-            logger.debug("PLC data sent: headdevice=%s, values=%s", headdevice, value)
-        else:
-            raise Exception(f"Unsupported data type for write: {signal_type}")
+    # while len(plc_data_updates) > 0:
+    #     signal_name, value = plc_data_updates.pop(0)
+    #     signal = PLC_SIGNAL_LOOKUP[signal_name]
+    #     signal_type = signal["type"]
+    #     headdevice = signal["headdevice"]
+    #     if signal_type == "array":
+    #         pymc3e.batchwrite_wordunits(headdevice=headdevice, values=value)
+    #         logger.debug("PLC data sent: headdevice=%s, values=%s", headdevice, value)
+    #     else:
+    #         raise Exception(f"Unsupported data type for write: {signal_type}")
 
 def send_signal(signal_name, value):
     plc_data_updates.append([signal_name, value])

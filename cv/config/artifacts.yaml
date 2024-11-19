@@ -2,27 +2,28 @@ artifacts:
   - code: DOOR_RH
     name: Door RH
     database: asma_door_rh_v1
-    psn_offset: 8
+    psn_offset: 0
     videos:
       - code: RH_IN_TOP
         name: RH Inside Top
-        source: /home/rbeternal/Desktop/projects/maruti/door_inspection/asma/part-tracker/test_videos/192.168.1.66_01_20241021150942392_1.mp4
+        source: rtsp://admin:Eternal$12@192.168.1.69:554/Streaming/channels/101
       - code: RH_IN_BOTTOM
         name: RH Inside Bottom
-        source: /home/rbeternal/Desktop/projects/maruti/door_inspection/asma/part-tracker/test_videos/192.168.1.65_01_20241021150945193_1.mp4
+        source: rtsp://admin:Eternal$12@192.168.1.68:554/Streaming/channels/101
       - code: RH_OUT
         name: RH Outside
-        source: /home/rbeternal/Desktop/projects/maruti/door_inspection/asma/part-tracker/test_videos/192.168.1.67_01_20241021155628500_1.mp4
+        source: rtsp://admin:Eternal$12@192.168.1.67:554/Streaming/channels/101
   - code: DOOR_LH
     name: Door LH
     database: asma_door_lh_v1
+    psn_offset: -8
     videos:
       - code: LH_IN_TOP
         name: LH Inside Top
-        source: /home/rbeternal/Desktop/projects/maruti/door_inspection/asma/part-tracker/test_videos/192.168.1.66_01_20241021150942392_1.mp4
+        source: rtsp://admin:Eternal$12@192.168.1.66:554/Streaming/channels/101
       - code: LH_IN_BOTTOM
         name: LH Inside Bottom
-        source: /home/rbeternal/Desktop/projects/maruti/door_inspection/asma/part-tracker/test_videos/192.168.1.65_01_20241021150945193_1.mp4
+        source: rtsp://admin:Eternal$12@192.168.1.65:554/Streaming/channels/101
       - code: LH_OUT
         name: LH Outside
-        source: /home/rbeternal/Desktop/projects/maruti/door_inspection/asma/part-tracker/test_videos/192.168.1.67_01_20241021155628500_1.mp4
+        source: rtsp://admin:Eternal$12@192.168.1.70:554/Streaming/channels/101
