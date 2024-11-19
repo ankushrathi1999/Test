@@ -25,6 +25,7 @@ def inspection_start_actions(data):
     psn = get_signal(SIG_RECV_PSN)
     chassis = get_signal(SIG_RECV_CHASSIS)
     vehicle_model = get_signal(SIG_RECV_MODEL)
+    data.vehicle_psn_lookup[psn] = chassis, vehicle_model
     logger.info("Fetched part data: psn=%s, chassis=%s, vehicle_model=%s", psn, chassis, vehicle_model)
 
     # Reset results on PLC
@@ -39,10 +40,16 @@ def inspection_start_actions(data):
     # Initialize engine
     if data.is_active:
         logger.info("Inspection is active. Initializing artifact.")
-        data.artifacts = [
-            Artifact(artifact, psn + artifact.get('psn_offset', 0), chassis, vehicle_model, data)
-            for artifact in artifacts_config['artifacts']
-        ]
+        try:
+            data.artifacts = [
+                Artifact(artifact, psn + artifact.get('psn_offset', 0), 
+                        data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][0],
+                        data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][1],
+                        data)
+                for artifact in artifacts_config['artifacts']
+            ]
+        except:
+            data.artifacts = []
     else:
         logger.info("Inspection active flag is off. Skipping current inspection.")
 

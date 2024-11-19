@@ -36,3 +36,4 @@ class Data:
             self.artifacts = []
         self.frames = {}
         self.video_config = get_artifact_videos()
+        self.vehicle_psn_lookup = {}
