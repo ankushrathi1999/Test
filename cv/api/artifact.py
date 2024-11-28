@@ -35,7 +35,7 @@ debug_mode and os.makedirs(metadata_dir_debug, exist_ok=True)
 
 class Artifact:
 
-    def __init__(self, artifact_config, psn, chassis, vehicle_model, data):
+    def __init__(self, artifact_config, psn, chassis, vehicle_model, color_code, data):
         vehicle_parts_lookup = get_vehicle_parts_lookup()
         print("D1:", len(vehicle_parts_lookup), vehicle_model, vehicle_model in vehicle_parts_lookup)
         
@@ -49,6 +49,7 @@ class Artifact:
         self.psn = psn
         self.chassis = chassis
         self.vehicle_model = vehicle_model
+        self.color_code = color_code
         self.vehicle_category = vehicle_model[:3] if (vehicle_model and len(vehicle_model) >= 3) else None
         self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type', 'RHD')
 
@@ -206,6 +207,7 @@ class Artifact:
         string_metrics = [
             ('vehicle_metadata_psn', self.psn, 1),
             ('vehicle_metadata_chassis', self.chassis, 1),
+            ('vehicle_metadata_color_code', self.color_code, 1),
         ]
 
         if self.inspection_flag == 1:
