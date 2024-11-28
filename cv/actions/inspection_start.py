@@ -25,7 +25,7 @@ def inspection_start_actions(data):
     psn = get_signal(SIG_RECV_PSN)
     chassis = get_signal(SIG_RECV_CHASSIS)
     vehicle_model = get_signal(SIG_RECV_MODEL)
-    data.vehicle_psn_lookup[psn] = chassis, vehicle_model
+    data.vehicle_psn_lookup[psn] = [chassis, vehicle_model, None] # result
     logger.info("Fetched part data: psn=%s, chassis=%s, vehicle_model=%s", psn, chassis, vehicle_model)
 
     # Reset results on PLC
