@@ -7,6 +7,7 @@ SIG_RECV_HEART_BIT = "PLCHeartBit"
 SIG_RECV_PSN = "PLCPSNData"
 SIG_RECV_MODEL = "PLCVehicleModelData"
 SIG_RECV_CHASSIS = "PLCChassisData"
+SIG_RECV_COLOR = "PLCColorData"
 SIG_RECV_START_TRIGGER = "PLCStartTrigger"
 SIG_RECV_END_TRIGGER = "PLCEndTrigger"
 
@@ -42,6 +43,12 @@ PLC_SIGNALS = [
 		"type": "str",
 		"pos": 6,
 		"size": 17,
+	},
+    {
+		"key": SIG_RECV_COLOR,
+		"type": "str",
+		"pos": 46,
+		"size": 3,
 	},
     {
 		"key": SIG_SEND_HEART_BIT,
