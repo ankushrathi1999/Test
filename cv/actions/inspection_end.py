@@ -11,16 +11,19 @@ def inspection_end_actions(data):
     # Send data to PLC and save
     for artifact in data.artifacts:
         artifact.end_inspection()
+        result1 = artifact.get_part_results_plc()
 
         # Cache RH result
         if data.vehicle_psn_lookup[artifact.psn] and data.vehicle_psn_lookup[artifact.psn][3] is None:
             data.vehicle_psn_lookup[artifact.psn][3] = artifact.overall_result
+
+        if result1 is not None:
+            result1 = result1[0]
+            logger.info("PLC data signal: %s=%s", SIG_SEND_RESULT_MID1, result1)
+            # logger.info("PLC data signal: %s=%s", SIG_SEND_RESULT_MID2, result2)
+            send_signal(SIG_SEND_RESULT_MID1, result1)
+            # send_signal(SIG_SEND_RESULT_MID2, result2)
         
-        # result1, result2 = artifact.get_part_results_plc()
-        # logger.info("PLC data signal: %s=%s", SIG_SEND_RESULT_MID1, result1)
-        # logger.info("PLC data signal: %s=%s", SIG_SEND_RESULT_MID2, result2)
-        # send_signal(SIG_SEND_RESULT_MID1, result1)
-        # send_signal(SIG_SEND_RESULT_MID2, result2)
         logger.info("Saving inspection results to database.")
         artifact.save()
     else:
