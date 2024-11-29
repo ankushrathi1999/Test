@@ -13,8 +13,8 @@ def inspection_end_actions(data):
         artifact.end_inspection()
 
         # Cache RH result
-        if data.vehicle_psn_lookup[artifact.psn] and data.vehicle_psn_lookup[artifact.psn][2] is None:
-            data.vehicle_psn_lookup[artifact.psn][2] = artifact.overall_result
+        if data.vehicle_psn_lookup[artifact.psn] and data.vehicle_psn_lookup[artifact.psn][3] is None:
+            data.vehicle_psn_lookup[artifact.psn][3] = artifact.overall_result
         
         # result1, result2 = artifact.get_part_results_plc()
         # logger.info("PLC data signal: %s=%s", SIG_SEND_RESULT_MID1, result1)
