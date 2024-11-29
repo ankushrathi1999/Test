@@ -21,7 +21,7 @@ class Data:
             logger.info("Runnig in DEBUG mode.")
             self.entity_lookup = {}
             self.artifacts = [
-                Artifact(artifact, 1260, 'MA3BNC22S00795581', debug_vehicle_model, self)
+                Artifact(artifact, 1260, 'MA3BNC22S00795581', debug_vehicle_model, 'CLR', self)
                 for artifact in artifacts_config['artifacts']
             ]
         else:

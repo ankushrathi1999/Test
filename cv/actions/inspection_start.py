@@ -3,7 +3,7 @@ import logging
 
 from utils.plc import send_signal,  get_signal
 from config.plc_db import (
-    SIG_RECV_START_TRIGGER, SIG_RECV_PSN, SIG_RECV_MODEL, SIG_RECV_CHASSIS, SIG_SEND_RESULT_MID1, SIG_SEND_RESULT_MID2,
+    SIG_RECV_START_TRIGGER, SIG_RECV_PSN, SIG_RECV_MODEL, SIG_RECV_CHASSIS, SIG_RECV_COLOR, SIG_SEND_RESULT_MID1, SIG_SEND_RESULT_MID2,
     SIG_SEND_START_TRIGGET_ACK, SIG_SEND_END_TRIGGET_ACK
 )
 from api.state import SYSTEM_STATES
@@ -25,8 +25,9 @@ def inspection_start_actions(data):
     psn = get_signal(SIG_RECV_PSN)
     chassis = get_signal(SIG_RECV_CHASSIS)
     vehicle_model = get_signal(SIG_RECV_MODEL)
-    data.vehicle_psn_lookup[psn] = [chassis, vehicle_model, None] # result
-    logger.info("Fetched part data: psn=%s, chassis=%s, vehicle_model=%s", psn, chassis, vehicle_model)
+    color_code = get_singal(SIG_RECV_COLOR)
+    data.vehicle_psn_lookup[psn] = [chassis, vehicle_model, color_code, None] # result 
+    logger.info("Fetched part data: psn=%s, chassis=%s, vehicle_model=%s, color_code=%s", psn, chassis, vehicle_model, color_code)
 
     # Reset results on PLC
     logger.info("Sending start trigger acknowledgement: %s", (SIG_SEND_END_TRIGGET_ACK, [48], SIG_SEND_START_TRIGGET_ACK, [49]))
@@ -45,6 +46,7 @@ def inspection_start_actions(data):
                 Artifact(artifact, psn + artifact.get('psn_offset', 0), 
                         data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][0],
                         data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][1],
+                        data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][2],
                         data)
                 for artifact in artifacts_config['artifacts']
             ]
