@@ -80,3 +80,6 @@ def get_signal(signal_name):
     elif signal_type == "str":
         return get_str(plc_data, pos, size)
     return None
+
+def get_data_block(start_at, size):
+    return plc_data[start_at: start_at+size]
