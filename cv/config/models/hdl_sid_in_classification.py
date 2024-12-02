@@ -2,7 +2,7 @@ from .part_detection_in_top import PartDetectionInTopModel
 from ..colors import color_green, color_red
 
 class HdlSidInClassificationModel:
-    name = 'hdl_sid_in'
+    name = 'hdl_sid_in_classification'
     imgsz = 64
     target_detections = {PartDetectionInTopModel.CLASS_HDL_SID_IN}
 
