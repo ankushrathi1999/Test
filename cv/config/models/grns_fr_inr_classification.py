@@ -2,7 +2,7 @@ from .part_detection_in_top import PartDetectionInTopModel
 from ..colors import color_green, color_red
 
 class GrnsFrInrClassificationModel:
-    name = 'grns_fr_inr'
+    name = 'grns_fr_inr_classification'
     imgsz = 128
     target_detections = {PartDetectionInTopModel.CLASS_GRNS_FR_INR}
 
