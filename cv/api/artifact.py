@@ -16,7 +16,8 @@ from .detection_part import DetectionPart
 from .detection import DetectionResult
 from config.models import (
     PartDetectionOutModel, PartDetectionInTopModel, PartDetectionInBottomModel,
-    CapBzlClassificationModel, GrnsFrInrClassificationModel, HdlSidInClassificationModel, MirrorClassificationModel
+    CapBzlClassificationModel, GrnsFrInrClassificationModel, HdlSidInClassificationModel,
+    MirrorClassificationModel, TrimSetClassificationModel
 )
 
 logger = logging.getLogger(__name__)
@@ -62,6 +63,7 @@ class Artifact:
             *GrnsFrInrClassificationModel.target_detections,
             *HdlSidInClassificationModel.target_detections,
             *MirrorClassificationModel.target_detections,
+            *TrimSetClassificationModel.target_detections,
         }
 
         self.parts = {}
