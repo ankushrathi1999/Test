@@ -25,7 +25,7 @@ def inspection_start_actions(data):
     psn = get_signal(SIG_RECV_PSN)
     chassis = get_signal(SIG_RECV_CHASSIS)
     vehicle_model = get_signal(SIG_RECV_MODEL)
-    color_code = get_singal(SIG_RECV_COLOR)
+    color_code = get_signal(SIG_RECV_COLOR)
     result = None
     psn_chassis_block = get_data_block(0,11)
     data.vehicle_psn_lookup[psn] = [chassis, vehicle_model, color_code, result, psn_chassis_block]
@@ -44,15 +44,13 @@ def inspection_start_actions(data):
     if data.is_active:
         logger.info("Inspection is active. Initializing artifact.")
         try:
-            data.artifacts = [
-                Artifact(artifact, psn + artifact.get('psn_offset', 0), 
-                        data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][0],
-                        data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][1],
-                        data.vehicle_psn_lookup[psn + artifact.get('psn_offset', 0)][2],
-                        data)
-                for artifact in artifacts_config['artifacts']
-            ]
-        except:
+            data.artifacts = []
+            for artifact in artifacts_config['artifacts']:
+                psn_cur = psn + artifact.get('psn_offset', 0)
+                psn_data = data.vehicle_psn_lookup.get(psn_cur, ("TESTVIN", "TESTMODEL", "TESTCOLOR"))
+                data.artifacts.append(Artifact(artifact, psn_cur, psn_data[0], psn_data[1], psn_data[2], data))
+       except Exception as ex:
+            logger.error("Artifacts not intialized due to error: %s", error)
             data.artifacts = []
     else:
         logger.info("Inspection active flag is off. Skipping current inspection.")

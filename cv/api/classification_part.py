@@ -28,7 +28,7 @@ class ClassificationPart:
         vehicle_parts_lookup = get_vehicle_parts_lookup()
         
         self.artifact = artifact
-        self.detection_class = detection_class.replace('part_detection_v2_', '')
+        self.detection_class = detection_class.split('__')[-1]
         self.part_id = None
         self.part_number = None
         self.part_name = None

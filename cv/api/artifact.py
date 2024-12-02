@@ -14,7 +14,11 @@ from utils.shift_utils import get_current_shift
 from .classification_part import ClassificationPart
 from .detection_part import DetectionPart
 from .detection import DetectionResult
-from config.models import PartDetectionOutModel, PartDetectionInTopModel, PartDetectionInBottomModel
+from config.models import (
+    PartDetectionOutModel, PartDetectionInTopModel, PartDetectionInBottomModel,
+    CapBzlClassificationModel, GrnsFrInrClassificationModel, HdlSidInClassificationModel,
+    MirrorClassificationModel, TrimSetClassificationModel
+)
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +58,13 @@ class Artifact:
         self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type', 'RHD')
 
         # Parts
-        classification_targets = {}
+        classification_targets = {
+            *CapBzlClassificationModel.target_detections,
+            *GrnsFrInrClassificationModel.target_detections,
+            *HdlSidInClassificationModel.target_detections,
+            *MirrorClassificationModel.target_detections,
+            *TrimSetClassificationModel.target_detections,
+        }
 
         self.parts = {}
         for detection_class in [
