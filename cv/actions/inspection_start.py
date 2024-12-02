@@ -47,7 +47,8 @@ def inspection_start_actions(data):
                 psn_cur = psn + artifact.get('psn_offset', 0)
                 psn_data = data.vehicle_psn_lookup.get(psn_cur, ("TESTVIN", "TESTMODEL", "TESTCOLOR"))
                 data.artifacts.append(Artifact(artifact, psn_cur, psn_data[0], psn_data[1], psn_data[2], data))
-        except:
+       except Exception as ex:
+            logger.error("Artifacts not intialized due to error: %s", error)
             data.artifacts = []
     else:
         logger.info("Inspection active flag is off. Skipping current inspection.")
