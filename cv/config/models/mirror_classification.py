@@ -4,7 +4,7 @@ from ..colors import color_green, color_red
 class MirrorClassificationModel:
     name = 'mirror_classification'
     imgsz = 64
-    target_detections = {PartDetectionInTopModel.CLASS_MIRROR}
+    target_detections = {PartDetectionOutModel.CLASS_MIRROR}
 
     ordered_class_list = [
         'with_light_YH',
