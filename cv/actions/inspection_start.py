@@ -25,7 +25,7 @@ def inspection_start_actions(data):
     psn = get_signal(SIG_RECV_PSN)
     chassis = get_signal(SIG_RECV_CHASSIS)
     vehicle_model = get_signal(SIG_RECV_MODEL)
-    color_code = get_singal(SIG_RECV_COLOR)
+    color_code = get_signal(SIG_RECV_COLOR)
     data.vehicle_psn_lookup[psn] = chassis, vehicle_model, color_code 
     logger.info("Fetched part data: psn=%s, chassis=%s, vehicle_model=%s", psn, chassis, vehicle_model)
 
