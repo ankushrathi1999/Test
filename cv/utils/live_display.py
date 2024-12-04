@@ -13,9 +13,10 @@ def prepare_dashbord_data(dashboard):
         'psn': str(dashboard.psn) if has_dashboard else '-',
         'chassis': dashboard.chassis if has_dashboard else '-',
         'vehicle_model': dashboard.vehicle_model if has_dashboard else '-',
+        'color_code': dashboard.color_code if has_dashboard else '-',
         'result': ("OK" if overall_ok else "NG") if has_dashboard else None,
         'parts': [{
-            "title": (part.get('part_name').replace('_', ' ') or part['part_name_long'])[:20], # 40 char limit on part names
+            "title": part['part_name_long'][:100], # 100 char limit on part names
             "is_ok": part['result'] == DetectionResult.OK
         } for part in parts[:40]] # max 40 parts can be displayed
     }
@@ -26,9 +27,9 @@ def get_positions(img_h):
         'cam_row1_y': 168,
         'cam_row2_y': 624,
 
-        'cam_padding_x': 24,
+        'cam_padding_x': 4,
         'cam_header_offset_y': 32,
-        'cam_width': 453,
+        'cam_width': 433,
 
         'stats_row1_y': 150,
         'stats_row2_y': 605,
@@ -37,11 +38,12 @@ def get_positions(img_h):
         'metadata_value_offset_y': 60,
         'metadata_col1_offset_x': 0,
         'metadata_col2_offset_x': 60,
-        'metadata_col3_offset_x': 235,
+        'metadata_col3_offset_x': 255,
+        'metadata_col4_offset_x': 255+180,
 
         'parts_offset_y': 96,
-        'parts_padding_x': 18,
-        'parts_cell_width': 210,
+        'parts_padding_x': 10,
+        'parts_cell_width': 280,
         'parts_cell_height': 36,
         'parts_cell_text_offset_x': 8,
         'parts_cell_text_offset_y': 2,
@@ -52,10 +54,10 @@ def get_positions(img_h):
         'result_offset_y': 350,
         'result_box_offset_y': 30,
         'result_box_height': 36,
-        'result_box_width': 439,
+        'result_box_width': 439+132,
         'result_box_text_offset_y': 35,
-        'result_box_text_offset_x_ok': 200,
-        'result_box_text_offset_x_ng': 150,
+        'result_box_text_offset_x_ok': 200+61,
+        'result_box_text_offset_x_ng': 150+61,
     }
     return {k: round(v*img_h/ref_h) for k, v in positions.items()}
 
@@ -99,7 +101,7 @@ def prepare_live_display(frames, data):
         bg_img[frame_y: frame_y + frame_cam.shape[0], frame_x: frame_x + frame_cam.shape[1]] = frame_cam
 
     # Estimate stats x psotion
-    stats_x = (image_width * 3) + (positions['cam_padding_x'] * 4)
+    stats_x = (image_width * 3) + (positions['cam_padding_x'] * 4) + positions['parts_padding_x']
 
     # Part Boxes
     for i in range(2):
@@ -121,7 +123,7 @@ def prepare_live_display(frames, data):
             # Render Text
             text_x = box_x1 + positions['parts_cell_text_offset_x']
             text_y = box_y1 + positions['parts_cell_text_offset_y']
-            draw_text(bg_img, part["title"], (text_x, text_y))
+            draw_text(bg_img, part["title"], (text_x, text_y), font_scale=0.4)
 
             # Render Icon
             icon_radius =  positions['parts_cell_icon_radius']
@@ -153,7 +155,7 @@ def prepare_live_display(frames, data):
             # Render heading
             header_x = stats_x
             header_y = positions['stats_row1_y' if row_num == 1 else 'stats_row2_y'] + positions['result_offset_y']
-            draw_text(bg_img, 'RESULT', (header_x, header_y), font=cv2.FONT_HERSHEY_TRIPLEX)
+            # draw_text(bg_img, 'RESULT', (header_x, header_y), font=cv2.FONT_HERSHEY_TRIPLEX)
 
             # Render Box
             box_x1 = stats_x
@@ -230,6 +232,22 @@ def prepare_live_display(frames, data):
                 'text': data[i]['vehicle_model'],
                 'text_pos': (
                     stats_x + positions['metadata_col3_offset_x'],
+                    positions['stats_row1_y' if row_num == 1 else 'stats_row2_y'] + positions['metadata_value_offset_y']
+                ),
+                'font': cv2.FONT_HERSHEY_TRIPLEX
+            },
+             {
+                'text': 'COLOR CODE',
+                'text_pos': (
+                    stats_x + positions['metadata_col4_offset_x'],
+                    positions['stats_row1_y' if row_num == 1 else 'stats_row2_y'] + positions['metadata_title_offset_y']
+                ),
+                'text_color': (132,119,112)
+            },
+            {
+                'text': data[i]['color_code'],
+                'text_pos': (
+                    stats_x + positions['metadata_col4_offset_x'],
                     positions['stats_row1_y' if row_num == 1 else 'stats_row2_y'] + positions['metadata_value_offset_y']
                 ),
                 'font': cv2.FONT_HERSHEY_TRIPLEX
