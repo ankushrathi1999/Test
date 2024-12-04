@@ -24,10 +24,14 @@ YHB23D2BP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
   MIRROR:
+    is_group: true
+    part_group: without_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R00-5PK
@@ -85,6 +89,8 @@ YHB23D2BP6800000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
@@ -146,6 +152,8 @@ YHB23D2BP7900000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
@@ -207,10 +215,14 @@ YHB23D2CP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -272,6 +284,8 @@ YHB23D2CP6800000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -333,6 +347,8 @@ YHB23D2CP7900000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -394,6 +410,8 @@ YHB23D2DP6800000:
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R53-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -455,6 +473,8 @@ YHB23D2DP7900000:
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R53-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -512,10 +532,14 @@ YHB23D7CP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -638,6 +662,8 @@ YHB23D7CP6800000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -699,6 +725,8 @@ YHB23D7CP7900000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -821,6 +849,8 @@ YHB23D7DP6800000:
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R53-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -882,6 +912,8 @@ YHB23D7DP7900000:
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R53-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -939,6 +971,8 @@ YHB4FD23P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
@@ -947,6 +981,8 @@ YHB4FD23P7400000:
     part_name_long: LABEL,CNG SAFETY
     part_number: 11978M52M01
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -967,6 +1003,8 @@ YHB4FD23P7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -1004,6 +1042,8 @@ YHB4FD24P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
@@ -1012,6 +1052,8 @@ YHB4FD24P7400000:
     part_name_long: LABEL,CNG SAFETY
     part_number: 11978M52M01
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1069,6 +1111,8 @@ YHB4FD2AP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
@@ -1077,6 +1121,8 @@ YHB4FD2AP7400000:
     part_name_long: LABEL,CNG SAFETY
     part_number: 11978M52M01
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1097,6 +1143,8 @@ YHB4FD2AP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -1134,10 +1182,14 @@ YHB5FD22P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-V6N
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
   MIRROR:
+    is_group: true
+    part_group: without_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R00-5PK
@@ -1158,6 +1210,8 @@ YHB5FD22P7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72RA1-HPW
@@ -1195,10 +1249,14 @@ YHB5FD23P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1219,6 +1277,8 @@ YHB5FD23P7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -1256,10 +1316,14 @@ YHB5FD24P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1317,10 +1381,14 @@ YHB5FD2AP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1341,6 +1409,8 @@ YHB5FD2AP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -1378,10 +1448,14 @@ YHB5FD2EP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1439,10 +1513,14 @@ YHB5FDXCP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1463,6 +1541,8 @@ YHB5FDXCP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -1500,10 +1580,14 @@ YHB5FDXDP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1561,10 +1645,14 @@ YHB5FDXEP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1622,10 +1710,14 @@ YHBB3D2BP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
   MIRROR:
+    is_group: true
+    part_group: without_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R00-5PK
@@ -1683,6 +1775,8 @@ YHBB3D2BP6800000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
@@ -1744,6 +1838,8 @@ YHBB3D2BP7900000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
@@ -1805,10 +1901,14 @@ YHBB3D2CP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -1870,6 +1970,8 @@ YHBB3D2CP6800000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -1931,6 +2033,8 @@ YHBB3D2CP7900000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -1988,10 +2092,14 @@ YHBB3D2DP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2049,10 +2157,14 @@ YHBB3D7CP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2114,6 +2226,8 @@ YHBB3D7CP6800000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -2175,6 +2289,8 @@ YHBB3D7CP7900000:
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R30-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -2232,10 +2348,14 @@ YHBB3D7DP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2297,6 +2417,8 @@ YHBB3D7DP6800000:
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R53-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -2358,6 +2480,8 @@ YHBB3D7DP7900000:
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R53-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72RD2-WB3
@@ -2415,6 +2539,8 @@ YHBCFD23P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
@@ -2423,6 +2549,8 @@ YHBCFD23P7400000:
     part_name_long: LABEL,CNG SAFETY
     part_number: 11978M52M01
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2443,6 +2571,8 @@ YHBCFD23P7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -2480,10 +2610,14 @@ YHBDFD22P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-V6N
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R00-5PK
   MIRROR:
+    is_group: true
+    part_group: without_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R00-5PK
@@ -2504,6 +2638,8 @@ YHBDFD22P7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72RA1-HPW
@@ -2541,10 +2677,14 @@ YHBDFD23P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2565,6 +2705,8 @@ YHBDFD23P7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -2602,10 +2744,14 @@ YHBDFD24P7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2663,10 +2809,14 @@ YHBDFD2EP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2724,10 +2874,14 @@ YHBDFDXCP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M72R20-WB3
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2748,6 +2902,8 @@ YHBDFDXCP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M63RB3
   TRIM_SET:
+    is_group: true
+    part_group: YH_brown_0
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M72R82-HPW
@@ -2785,10 +2941,14 @@ YHBDFDXDP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2846,10 +3006,14 @@ YHBDFDXEP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -2907,6 +3071,8 @@ YHC23T2DP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
@@ -2968,10 +3134,14 @@ YHC23T2EP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -3029,6 +3199,8 @@ YHC23T7DP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
@@ -3090,10 +3262,14 @@ YHC23T7EP0600000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -3151,6 +3327,8 @@ YHC4FT2DP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
@@ -3159,6 +3337,8 @@ YHC4FT2DP7400000:
     part_name_long: LABEL,CNG SAFETY
     part_number: 11978M52M01
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -3216,10 +3396,14 @@ YHC5FT2DP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -3277,10 +3461,14 @@ YHC5FT2EP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M51U01-WB3
@@ -3338,10 +3526,14 @@ YHC5FT2FP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M51U01-WB3
@@ -3399,10 +3591,14 @@ YHC5FTXDP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M72R32-WB3
@@ -3460,10 +3656,14 @@ YHC5FTXEP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M51U01-WB3
@@ -3521,10 +3721,14 @@ YHC5FTXFP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE SET,FRONT DOOR OUT,R
     part_number: 82081M72R44-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YH
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M51U01-WB3
@@ -3635,10 +3839,14 @@ YL188C2CP6810309:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -3692,10 +3900,14 @@ YL188C2CP7910309:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -3969,10 +4181,14 @@ YL188C7CP0710108:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -3993,6 +4209,8 @@ YL188C7CP0710108:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4026,10 +4244,14 @@ YL188C7CP0713146:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -4050,6 +4272,8 @@ YL188C7CP0713146:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4083,10 +4307,14 @@ YL188C7CP0713147:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -4107,6 +4335,8 @@ YL188C7CP0713147:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4140,10 +4370,14 @@ YL188C7CP0713149:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -4164,6 +4398,8 @@ YL188C7CP0713149:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4197,10 +4433,14 @@ YL188C7CP6810309:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -4254,10 +4494,14 @@ YL188C7CP7910309:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -4311,10 +4555,14 @@ YL188C7DP0710108:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -4335,6 +4583,8 @@ YL188C7DP0710108:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4368,10 +4618,14 @@ YL188C7DP0713146:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -4392,6 +4646,8 @@ YL188C7DP0713146:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4425,10 +4681,14 @@ YL188C7DP0713147:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -4449,6 +4709,8 @@ YL188C7DP0713147:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4482,10 +4744,14 @@ YL188C7DP0713149:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MH0-WB3
@@ -4506,6 +4772,8 @@ YL188C7DP0713149:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M23-DCP
@@ -4914,10 +5182,14 @@ YL199C2CP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M02-WBE
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79M20-WB3
@@ -4938,6 +5210,8 @@ YL199C2CP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M54-DCP
@@ -4971,10 +5245,14 @@ YL199C2DP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M02-WBE
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79M20-WB3
@@ -4995,6 +5273,8 @@ YL199C2DP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M54-DCP
@@ -5142,10 +5422,14 @@ YL199C7DP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-GMN
   HNDL:
+    is_group: true
+    part_group: with_hole
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M02-WBE
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79M20-WB3
@@ -5166,6 +5450,8 @@ YL199C7DP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81830M75L01
   TRIM_SET:
+    is_group: true
+    part_group: YL1_brown
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83079M79M54-DCP
@@ -5313,10 +5599,14 @@ YL1T8C2CP6800000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -5370,10 +5660,14 @@ YL1T8C2CP7900000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -5590,10 +5884,14 @@ YL1T8C7CP6800000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -5647,10 +5945,14 @@ YL1T8C7CP7900000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   HNDL:
+    is_group: true
+    part_group: with_switch
     part_name: HNDL_FR_OUT_R
     part_name_long: HANDLE COMP,FRONT DOOR OUT,R
     part_number: 82810M79M42-0PG
   MIRROR:
+    is_group: true
+    part_group: with_light_YL1
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M79MF0-WB3
@@ -5920,6 +6222,8 @@ YXA14C2EP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L10-C48
   MIRROR:
+    is_group: true
+    part_group: with_light_YXA
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M66T20-WB3
@@ -5973,6 +6277,8 @@ YXA24C2FP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   MIRROR:
+    is_group: true
+    part_group: with_light_YXA
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M66T20-WAA
@@ -5993,6 +6299,8 @@ YXA24C2FP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81810M80T00
   TRIM_SET:
+    is_group: true
+    part_group: YXA_black
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M66T10-ERS
@@ -6026,6 +6334,8 @@ YXA24C2GP7400000:
     part_name_long: HANDLE COMP,SIDE DOOR INSIDE,R
     part_number: 83110M74L00-5PK
   MIRROR:
+    is_group: true
+    part_group: with_light_YXA
     part_name: MIRR_RR_R
     part_name_long: MIRROR ASSY,OUT REAR VIEW,R
     part_number: 84701M66T10-WAA
@@ -6046,6 +6356,8 @@ YXA24C2GP7400000:
     part_name_long: STOP COMP,FRONT DOOR OPEN
     part_number: 81810M80T00
   TRIM_SET:
+    is_group: true
+    part_group: YXA_black
     part_name: TRIM_SET_FR_R
     part_name_long: TRIM SET,FRONT DOOR,R
     part_number: 83071M66T00-5PK
