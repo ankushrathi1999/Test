@@ -7,6 +7,9 @@ from .grns_fr_inr_classification import GrnsFrInrClassificationModel
 from .hdl_sid_in_classification import HdlSidInClassificationModel
 from .mirror_classification import MirrorClassificationModel
 from .trim_set_classification import TrimSetClassificationModel
+from .clip_tr_classification import ClipTrClassificationModel
+from .hndl_classification import HndlClassificationModel
+from .stop_open_classification import StopOpenClassificationModel
 
 detection_models = [
     PartDetectionInBottomModel,
@@ -20,4 +23,7 @@ classification_models = [
     HdlSidInClassificationModel,
     MirrorClassificationModel,
     TrimSetClassificationModel,
+    ClipTrClassificationModel,
+    HndlClassificationModel,
+    StopOpenClassificationModel,
 ]
