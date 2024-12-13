@@ -35,6 +35,7 @@ class ClassificationPart:
         self.part_name_long = None
         self.is_group = False
         self.missing_class_name = None
+        self.OK_class_name = None
         self.is_miss_inspection = False
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
 
@@ -53,6 +54,7 @@ class ClassificationPart:
                 self.part_name = part_details['part_name']
                 self.part_name_long = part_details['part_name_long']
                 self.missing_class_name = part_details.get('missing_class_name')
+                self.OK_class_name = part_details.get('OK_class_name')
 
         # Predictions
         self.part_results_count = defaultdict(int)
@@ -70,6 +72,7 @@ class ClassificationPart:
             'part_name_long': self.part_name_long,
             'is_group': self.is_group,
             'missing_class_name': self.missing_class_name,
+            'OK_class_name': self.OK_class_name,
             'is_miss_inspection': self.is_miss_inspection,
         })
 
@@ -113,6 +116,8 @@ class ClassificationPart:
             result = DetectionResult.OK if self.is_miss_inspection else DetectionResult.MISSING
         elif (self.missing_class_name and self.is_miss_inspection):
             result = DetectionResult.INCORRECT_PART
+        elif (self.OK_class_name and pred_part == self.OK_class_name):
+            result = DetectionResult.OK
         else:
             result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
         logger.debug("Current result: pred_part=%s result=%s self.part_id=%s missing_class_name=%s is_miss_inspection=%s",

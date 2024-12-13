@@ -10,6 +10,13 @@ from .trim_set_classification import TrimSetClassificationModel
 from .clip_tr_classification import ClipTrClassificationModel
 from .hndl_classification import HndlClassificationModel
 from .stop_open_classification import StopOpenClassificationModel
+from .plg_fr_hole_classification import PlgFrHoleClassificationModel
+from .bolt_open_classification import BoltOpenClassificationModel
+from .cap_fr_out_classification import CapFrOutClassificationModel
+from .wthr_out_classification import WthrOutClassificationModel
+from .wthr_fr_out_classification import WthrFrOutClassificationModel
+from .scrw_classification import ScrwClassificationModel
+
 
 detection_models = [
     PartDetectionInBottomModel,
@@ -26,4 +33,10 @@ classification_models = [
     ClipTrClassificationModel,
     HndlClassificationModel,
     StopOpenClassificationModel,
+    PlgFrHoleClassificationModel,
+    BoltOpenClassificationModel,
+    CapFrOutClassificationModel,
+    WthrOutClassificationModel,
+    WthrFrOutClassificationModel,
+    ScrwClassificationModel,
 ]

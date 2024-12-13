@@ -6,17 +6,20 @@ class PartDetectionOutModel:
     target_cams = {'RH_OUT', 'LH_OUT'}
     tracking = False
 
+    CLASS_CAP_FR_OUT = name + '__CAP_FR_OUT'
     CLASS_HNDL = name + '__HNDL'
     CLASS_MIRROR = name + '__MIRROR'
     CLASS_WTHR_OUT = name + '__WTHR_OUT'
 
     ordered_class_list = [
+        CLASS_CAP_FR_OUT,
         CLASS_HNDL,
         CLASS_MIRROR,
         CLASS_WTHR_OUT,
     ]
 
     class_names = {
+        CLASS_CAP_FR_OUT: 'CAP_FR_OUT',
         CLASS_HNDL: 'HNDL',
         CLASS_MIRROR: 'MIRROR',
         CLASS_WTHR_OUT: 'WTHR_OUT',

@@ -11,6 +11,7 @@ class PartDetectionInBottomModel:
     CLASS_PNT_GRMT = name + '__PNT_GRMT'
     CLASS_SCRW = name + '__SCRW'
     CLASS_TRIM_SET = name + '__TRIM_SET'
+    CLASS_WTHR_FR_OUT = name + '__WTHR_FR_OUT'
 
     ordered_class_list = [
         CLASS_LABEL,
@@ -18,6 +19,7 @@ class PartDetectionInBottomModel:
         CLASS_PNT_GRMT,
         CLASS_SCRW,
         CLASS_TRIM_SET,
+        CLASS_WTHR_FR_OUT,
     ]
 
     class_names = {
@@ -26,6 +28,7 @@ class PartDetectionInBottomModel:
         CLASS_PNT_GRMT: 'PNT_GRMT',
         CLASS_SCRW: 'SCRW',
         CLASS_TRIM_SET: 'TRIM_SET',
+        CLASS_WTHR_FR_OUT: 'WTHR_FR_OUT'
     }
 
     class_confidence = {k: 0.25 for k in class_names.keys()}

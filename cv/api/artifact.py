@@ -18,7 +18,8 @@ from config.models import (
     PartDetectionOutModel, PartDetectionInTopModel, PartDetectionInBottomModel,
     CapBzlClassificationModel, GrnsFrInrClassificationModel, HdlSidInClassificationModel,
     MirrorClassificationModel, TrimSetClassificationModel, ClipTrClassificationModel, HndlClassificationModel,
-    StopOpenClassificationModel
+    StopOpenClassificationModel, PlgFrHoleClassificationModel, BoltOpenClassificationModel, CapFrOutClassificationModel,
+    WthrOutClassificationModel, WthrFrOutClassificationModel, ScrwClassificationModel
 )
 
 logger = logging.getLogger(__name__)
@@ -68,6 +69,12 @@ class Artifact:
             *ClipTrClassificationModel.target_detections,
             *HndlClassificationModel.target_detections,
             *StopOpenClassificationModel.target_detections,
+            *PlgFrHoleClassificationModel.target_detections,
+            *BoltOpenClassificationModel.target_detections,
+            *CapFrOutClassificationModel.target_detections,
+            *WthrOutClassificationModel.target_detections,
+            *WthrFrOutClassificationModel.target_detections,
+            *ScrwClassificationModel.target_detections
         }
 
         self.parts = {}

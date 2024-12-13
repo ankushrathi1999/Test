@@ -1,5 +1,10 @@
 {
-  "sensor_left": "no_sensor",
-  "sensor_right": "no_sensor",
-  "usb_aux": "acc_usb_ng"
+  
+  "CAP_BZL" : "NG_cap_bzl",
+  "CLIP" : "NG_clip_tr",
+  "PLG_FR_HOLE" : "NG_plg_fr_hole",
+  "BOLT_OPEN" : "NG_bolt_open",
+  "CAP_FR_OUT" : "NG_cap_fr_out",
+  "WTHR_OUT" : "NG_wthr_out",
+  "SCRW" : "NG_scrw"
 }

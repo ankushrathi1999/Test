@@ -21,7 +21,7 @@ def group_part_types(vehicle_parts, part_master_lookup):
         'generic_parts': generic_parts
     }
 
-def process_generic_parts(vehicle_data, generic_parts, missing_class_name_lookup):
+def process_generic_parts(vehicle_data, generic_parts, missing_class_name_lookup, OK_class_name_lookup):
     for part, details in generic_parts:
         if details['is_supported'] == 0:
             continue
@@ -39,9 +39,12 @@ def process_generic_parts(vehicle_data, generic_parts, missing_class_name_lookup
         missing_class_name = missing_class_name_lookup.get(part_class)
         if missing_class_name is not None:
             data['missing_class_name'] = missing_class_name
+        OK_class_name = OK_class_name_lookup.get(part_class)
+        if OK_class_name is not None:
+            data['OK_class_name'] = OK_class_name
 
 def prepare_vehicle_master(vehicle_model, metadata):
-    (vehicle_part_type_groups, missing_class_name_lookup) = metadata
+    (vehicle_part_type_groups, missing_class_name_lookup, OK_class_name_lookup) = metadata
     
     errors = []
     vehicle_data = {}
@@ -51,7 +54,7 @@ def prepare_vehicle_master(vehicle_model, metadata):
         return None, errors
     vehicle_part_type_groups = vehicle_part_type_groups[vehicle_model]
     
-    process_generic_parts(vehicle_data, vehicle_part_type_groups['generic_parts'], missing_class_name_lookup)
+    process_generic_parts(vehicle_data, vehicle_part_type_groups['generic_parts'], missing_class_name_lookup, OK_class_name_lookup)
 
     return vehicle_data, errors
 
@@ -69,6 +72,10 @@ def get_metadata(vehicle_models, keep_inactive_parts=False):
         missing_class_name_lookup = json.load(f)
     logger.debug("Missing classes registered: %s", len(missing_class_name_lookup))
 
+    with open('./config/Ok_class_names.json', 'r') as f:
+        OK_class_name_lookup = json.load(f)
+    logger.debug("OK classes registered: %s", len(OK_class_name_lookup))
+
     logger.debug("Count of parts by vechicle model:")
     for vehicle_model, vehicle_parts in mapping.items():
         logger.debug("%s=%s", vehicle_model, len(vehicle_parts))
@@ -76,7 +83,7 @@ def get_metadata(vehicle_models, keep_inactive_parts=False):
     vehicle_part_type_groups = {vehicle_model: group_part_types(vehicle_parts, part_master_lookup)
                                 for vehicle_model, vehicle_parts in mapping.items()}
     
-    return vehicle_part_type_groups, missing_class_name_lookup
+    return vehicle_part_type_groups, missing_class_name_lookup, OK_class_name_lookup
 
 
 def validate_vehicle_part_data(vehicle_model):

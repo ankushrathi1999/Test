@@ -9,11 +9,12 @@ class ClipTrClassificationModel:
     ordered_class_list = [
         '09409M06314-5PK',
         '09409M06314-V6N',
+        'NG_clip_tr',
     ]
 
     class_names = {k: 'CLIP' for k in ordered_class_list}
+    class_names['NG_clip_tr'] = 'NG_CLIP_TR'
     class_colors = {k: color_green for k in ordered_class_list}
+    class_colors['NG_clip_tr'] = color_red
 
 
-# 09409M06314-5PK: 752
-# 09409M06314-V6N: 763
