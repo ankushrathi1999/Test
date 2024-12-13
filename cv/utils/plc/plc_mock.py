@@ -28,6 +28,8 @@ def flush_plc_data():
 def get_signal(signal_name):
     return plc_data.get(signal_name)
 
+def get_data_block(start_at, size):
+    return [1 for _ in range(size)]
 
 def send_signal(signal_name, value):
     plc_data_updates.append([signal_name, value])

@@ -1,7 +1,7 @@
 import time
 import logging
 
-from utils.plc import send_signal,  get_signal
+from utils.plc import send_signal,  get_signal, get_data_block
 from config.plc_db import (
     SIG_RECV_START_TRIGGER, SIG_RECV_PSN, SIG_RECV_MODEL, SIG_RECV_CHASSIS, SIG_RECV_COLOR, SIG_SEND_RESULT_MID1, SIG_SEND_RESULT_MID2,
     SIG_SEND_START_TRIGGET_ACK, SIG_SEND_END_TRIGGET_ACK
@@ -26,8 +26,10 @@ def inspection_start_actions(data):
     chassis = get_signal(SIG_RECV_CHASSIS)
     vehicle_model = get_signal(SIG_RECV_MODEL)
     color_code = get_signal(SIG_RECV_COLOR)
-    data.vehicle_psn_lookup[psn] = chassis, vehicle_model, color_code 
-    logger.info("Fetched part data: psn=%s, chassis=%s, vehicle_model=%s", psn, chassis, vehicle_model)
+    result = None
+    psn_chassis_block = get_data_block(0,11)
+    data.vehicle_psn_lookup[psn] = [chassis, vehicle_model, color_code, result, psn_chassis_block]
+    logger.info("Fetched part data: psn=%s, chassis=%s, vehicle_model=%s, color_code=%s", psn, chassis, vehicle_model, color_code)
 
     # Reset results on PLC
     logger.info("Sending start trigger acknowledgement: %s", (SIG_SEND_END_TRIGGET_ACK, [48], SIG_SEND_START_TRIGGET_ACK, [49]))

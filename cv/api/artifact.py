@@ -185,9 +185,21 @@ class Artifact:
         assert self.is_ended
         parts, overall_ok = self.part_results, self.overall_result
 
-        plc_array_1 = [NA_VAL for i in range(23)] # Hardcoded for 23 parameters
-        plc_array_2 = [NA_VAL for i in range(23)]
+        plc_array_1 = [NA_VAL for i in range(11+23)] # Hardcoded for 11 metadata and 23 parameters
+        #plc_array_2 = [NA_VAL for i in range(23)]
         logger.info("PLC Write flags: inspection_flag=%s plc_write_enabled=%s",self.inspection_flag ,plc_write_enabled)
+        
+        lh_door_result = overall_ok
+        rh_door_result = self.data.vehicle_psn_lookup[self.psn][3]
+        if rh_door_result is None:
+            return None
+        overall_result = lh_door_result and rh_door_result
+        psn_chassis_block = self.data.vehicle_psn_lookup[self.psn][4]
+        plc_array_1[:11] = psn_chassis_block
+        plc_array_1[11 + 0] = OK_VAL if rh_door_result else NG_VAL
+        plc_array_1[11 + 1] = OK_VAL if lh_door_result else NG_VAL
+        plc_array_1[11 + 9] = OK_VAL if overall_result else NG_VAL
+        
         # if self.inspection_flag == 1 and plc_write_enabled:
         #     part_results_lookup = {p['part_name']: p['result'] for p in parts}
         #     results = []
@@ -211,7 +223,7 @@ class Artifact:
         #             plc_array[i] = OK_VAL if (part_result == DetectionResult.OK) else NG_VAL
         #     plc_array_1[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_1) if i != 9]) else OK_VAL
         #     plc_array_2[9] = NG_VAL if any([res == NG_VAL for i, res in enumerate(plc_array_2) if i != 9]) else OK_VAL
-        return [plc_array_1, plc_array_2]
+        return [plc_array_1]
 
     def save(self):
         assert self.is_ended
