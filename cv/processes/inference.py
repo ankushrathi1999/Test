@@ -59,7 +59,7 @@ def _inference_loop(thread):
                 if len(data.artifacts) == 0: # skip detections when vehicle is not available
                     continue
                 for model, model_config in zip(models_detect, detection_models):
-                    if cam_type not in model_config.target_cams:
+                    if cam_type not in model_config.target_cams: 
                         continue
                     if model_config.tracking:
                         results = model.track(frame_cam, conf=0.25, verbose=False, persist=True)
@@ -92,6 +92,16 @@ def _inference_loop(thread):
                         class_name = model_config.class_names[class_id]
                         bbox = [int(x) for x in bbox]
                         class_color = model_config.class_colors[class_id]
+
+                        # Class ROI check
+                        detection_roi = model_config.class_cams_roi.get(class_id, {}).get(cam_type)
+                        if detection_roi is not None:
+                            img_w = frame_cam.shape[1]
+                            print("Debug:", cam_type, class_id, img_w, detection_roi, bbox)
+                            detection_x1, detection_x2 = [x * img_w for x in detection_roi]
+                            if bbox[0] < detection_x1 or bbox[1] > detection_x2:
+                                continue
+
                         # try:
                         #     class_id_new = PartDetectionModel.get_processed_class(class_id, data.artifact.vehicle_category, data.artifact.vehicle_type)
                         #     if class_id_new != class_id:

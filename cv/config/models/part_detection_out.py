@@ -30,3 +30,5 @@ class PartDetectionOutModel:
     class_colors = {k: color_green for k in class_names.keys()}
 
     class_cams = {k:  {'RH_OUT', 'LH_OUT'} for k in class_names.keys()}
+
+    class_cam_rois = {k:  None for k in class_names.keys()}

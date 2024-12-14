@@ -36,3 +36,5 @@ class PartDetectionInBottomModel:
     class_colors = {k: color_green for k in class_names.keys()}
 
     class_cams = {k:  {'RH_IN_BOTTOM', 'LH_IN_BOTTOM'} for k in class_names.keys()}
+
+    class_cam_rois = {k:  None for k in class_names.keys()}
