@@ -35,6 +35,7 @@ def inspection_end_actions(data):
         data.is_active = True
 
     # Reset Cycle
+    data.artifacts_prev = data.artifacts
     data.artifacts = []
     next_state = SYSTEM_STATES.INSPECTION_START_PRE
     logger.info("Inspection cycle reset. Next state: %s", next_state)
