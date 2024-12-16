@@ -33,12 +33,12 @@ def inspection_start_actions(data):
 
     # Reset results on PLC
     logger.info("Sending start trigger acknowledgement: %s", (SIG_SEND_END_TRIGGET_ACK, [48], SIG_SEND_START_TRIGGET_ACK, [49]))
-    send_signal(SIG_SEND_END_TRIGGET_ACK, [48]) # Reset to 0
-    send_signal(SIG_SEND_START_TRIGGET_ACK, [49]) # Set to 1
-    reset_value = [0 for _ in range(23)]
+    #send_signal(SIG_SEND_END_TRIGGET_ACK, [48]) # Reset to 0
+    #send_signal(SIG_SEND_START_TRIGGET_ACK, [49]) # Set to 1
+    reset_value = [0 for _ in range(11+23)]
     logger.info("Resetting PLC results: %s", (SIG_SEND_RESULT_MID1, SIG_SEND_RESULT_MID2, reset_value))
     send_signal(SIG_SEND_RESULT_MID1, reset_value)
-    send_signal(SIG_SEND_RESULT_MID2, reset_value)
+    #send_signal(SIG_SEND_RESULT_MID2, reset_value)
 
     # Initialize engine
     if data.is_active:

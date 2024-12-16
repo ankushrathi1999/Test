@@ -14,7 +14,7 @@ def inspection_end_actions(data):
         result1 = artifact.get_part_results_plc()
 
         # Cache RH result
-        if data.vehicle_psn_lookup[artifact.psn] and data.vehicle_psn_lookup[artifact.psn][3] is None:
+        if data.vehicle_psn_lookup.get(artifact.psn) and data.vehicle_psn_lookup[artifact.psn][3] is None:
             data.vehicle_psn_lookup[artifact.psn][3] = artifact.overall_result
 
         if result1 is not None:

@@ -46,8 +46,13 @@ class PartDetectionInTopModel:
 
     class_cams = {k:  {'RH_IN_TOP', 'LH_IN_TOP'} for k in class_names.keys()}
 
-    class_cam_rois = {k:  None for k in class_names.keys()}
+    class_cam_rois = {k: {} for k in class_names.keys()}
     class_cam_rois[CLASS_BOLT_OPEN] = {
+        'RH_IN_TOP': [0, 0.75],
+        'LH_IN_TOP': [0.25, 1],
+    }
+    
+    class_cam_rois[CLASS_STOP_OPEN] = {
         'RH_IN_TOP': [0, 0.75],
         'LH_IN_TOP': [0.25, 1],
     }

@@ -7,8 +7,8 @@ class WthrFrOutClassificationModel:
     target_detections = {PartDetectionInBottomModel.CLASS_WTHR_FR_OUT}
 
     ordered_class_list = [
-        'OK_wthr_fr_out',
         'NG_wthr_fr_out',
+        'OK_wthr_fr_out',
     ]
 
     class_names = {k: 'WTHR_FR_OUT' for k in ordered_class_list}
