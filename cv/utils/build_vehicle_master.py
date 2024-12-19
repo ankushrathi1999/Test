@@ -5,8 +5,7 @@ import yaml
 import logging
 
 from .db import get_vehicle_models, get_vehicle_part_mapping
-from config.config import save_vehicle_parts_lookup_lh, save_vehicle_parts_lookup_rh
-from .artifact_utils import get_artificats
+from config.config import save_vehicle_parts_lookup_lh, save_vehicle_parts_lookup_rh, get_artificats
 
 logger = logging.getLogger(__name__)
 
@@ -88,7 +87,7 @@ def get_metadata(vehicle_models, db_name=None, keep_inactive_parts=False):
 
 
 def validate_vehicle_part_data(vehicle_model, artifact_code):
-    artifacts = [artifact for artifact in get_artificats() if artifact['code'] == artifact_code]
+    artifacts = [artifact for artifact in get_artificats()['artifacts'] if artifact['code'] == artifact_code]
     if len(artifacts) != 1:
         return False, [f"Invalid artifact code: {artifact_code}"]
     artifact = artifacts[0]
@@ -105,7 +104,7 @@ def validate_vehicle_part_data(vehicle_model, artifact_code):
 
 
 def build_all_vehicle_master():
-    artifacts = get_artificats()
+    artifacts = get_artificats()['artifacts']
 
     for artifact in artifacts:
         logger.debug("Building vehicle master for artifact: %s", artifact['code'])

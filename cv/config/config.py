@@ -47,11 +47,11 @@ def save_vehicle_parts_lookup_rh(vehicle_parts_lookup_rh):
 
 def get_vehicle_parts_lookup_lh():
     with _vehicle_parts_lookup_lock_lh:
-        return _vehicle_parts_lookup_lock_lh
+        return _vehicle_parts_lookup_lh
     
 def get_vehicle_parts_lookup_rh():
     with _vehicle_parts_lookup_lock_rh:
-        return _vehicle_parts_lookup_lock_rh
+        return _vehicle_parts_lookup_rh
     
 def get_artificats():
     with open('./config/artifacts.yaml') as x:
