@@ -61,6 +61,7 @@ class Artifact:
         self.color_code = color_code
         self.vehicle_category = vehicle_model[:3] if (vehicle_model and len(vehicle_model) >= 3) else None
         self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type', 'RHD')
+        self.vehicle_description = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_description', '')
 
         # Parts
         classification_targets = {

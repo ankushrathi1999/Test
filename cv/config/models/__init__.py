@@ -16,6 +16,7 @@ from .cap_fr_out_classification import CapFrOutClassificationModel
 from .wthr_fr_out_classification import WthrOutClassificationModel
 from .wthr_fr_open_classification import WthrFrOutClassificationModel
 from .scrw_classification import ScrwClassificationModel
+from .color_classification import ColorClassificationModel
 
 
 detection_models = [
@@ -39,4 +40,5 @@ classification_models = [
     WthrOutClassificationModel,
     WthrFrOutClassificationModel,
     ScrwClassificationModel,
+    ColorClassificationModel,
 ]

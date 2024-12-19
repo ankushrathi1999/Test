@@ -6,6 +6,7 @@ class DetectionResult:
     INCORRECT_POSITION = 4
     NOT_EVALUATED = 5
     MISSING_SCREWS = 6
+    INCORRECT_COLOR = 7
 
 
 class ClassificationDetails:
@@ -41,6 +42,7 @@ class DetectionDetails:
         self.cam_type = cam_type
         self.artifact = artifact
         self.classification_details = None
+        self.other_classification_details = [] # To support multiple classifications on same detection
         self.final_details = None
         self.tracking_id = tracking_id
         self.extra_params = {}
@@ -48,5 +50,6 @@ class DetectionDetails:
     def to_dict(self):
         dct = {**vars(self)}
         dct['classification_details'] = vars(self.classification_details) if self.classification_details else None
+        dct['other_classification_details'] = [vars(c) for c in self.other_classification_details]
         dct['final_details'] = vars(self.final_details) if self.final_details else None
         return dct
