@@ -5,6 +5,7 @@
   "PLG_FR_HOLE" : "NG_plg_fr_hole",
   "BOLT_OPEN" : "NG_bolt_open",
   "CAP_FR_OUT" : "NG_cap_fr_out",
-  "WTHR_OUT" : "NG_wthr_out",
+  "WTHR_FR_OUT" : "NG_wthr_fr_out",
+  "WTHR_FR_OPEN" : "NG_wthr_fr_open",
   "SCRW" : "NG_scrw"
 }

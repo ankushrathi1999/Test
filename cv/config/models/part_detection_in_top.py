@@ -17,7 +17,8 @@ class PartDetectionInTopModel:
     CLASS_TRIM_SET = name + '__TRIM_SET'
 
     ordered_class_list = [
-        CLASS_BOLT_OPEN,
+        # CLASS_BOLT_OPEN,
+        None,              #shifted in bottom cam
         CLASS_CAP_BZL,
         CLASS_CLIP,
         CLASS_GLASS,

@@ -2,6 +2,7 @@
   
   "BOLT_OPEN" : "OK_bolt_open",
   "CAP_FR_OUT" : "OK_cap_fr_out",
-  "WTHR_OUT" : "OK_wthr_out",
+  "WTHR_FR_OUT" : "OK_wthr_fr_out",
+  "WTHR_FR_OPEN" : "OK_wthr_fr_open",
   "SCRW" : "OK_scrw"
 }

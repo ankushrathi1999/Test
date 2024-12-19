@@ -170,7 +170,7 @@ def prepare_live_display(frames, data):
             box_color = {
                 'OK': (105,149,45),
                 'NG': (52, 64, 235),
-                'PROGRESS': (52, 64, 235), # todo: change color
+                'PROGRESS': (255,201,127),
             }[result]
             box_text = {
                 'OK': 'OK',
