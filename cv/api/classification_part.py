@@ -5,7 +5,7 @@ import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
-from config.config import config, get_vehicle_parts_lookup, part_group_names_lookup
+from config.config import config, get_vehicle_parts_lookup_lh, get_vehicle_parts_lookup_rh, part_group_names_lookup
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +25,10 @@ def aggregate_results(result_counts):
 class ClassificationPart:
 
     def __init__(self, vehicle_model, detection_class, artifact):
-        vehicle_parts_lookup = get_vehicle_parts_lookup()
+        vehicle_parts_lookup = {
+            "DOOR_LH": get_vehicle_parts_lookup_lh,
+            "DOOR_RH": get_vehicle_parts_lookup_rh,
+        }[artifact.artifact_config['code']]()
         
         self.artifact = artifact
         self.detection_class = detection_class.split('__')[-1]

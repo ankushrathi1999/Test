@@ -5,7 +5,8 @@ import yaml
 import logging
 
 from .db import get_vehicle_models, get_vehicle_part_mapping
-from config.config import save_vehicle_parts_lookup
+from config.config import save_vehicle_parts_lookup_lh, save_vehicle_parts_lookup_rh
+from .artifact_utils import get_artificats
 
 logger = logging.getLogger(__name__)
 
@@ -59,13 +60,13 @@ def prepare_vehicle_master(vehicle_model, metadata):
     return vehicle_data, errors
 
     
-def get_metadata(vehicle_models, keep_inactive_parts=False):
+def get_metadata(vehicle_models, db_name=None, keep_inactive_parts=False):
     # Part Master CSV
     part_master = pd.read_csv('./config/part_master.csv').fillna('')
     part_master_lookup = part_master.set_index('part_number')
     logger.debug("Parts loaded: %s", len(part_master))
 
-    mapping = get_vehicle_part_mapping(vehicle_models, keep_inactive_parts=keep_inactive_parts)
+    mapping = get_vehicle_part_mapping(vehicle_models, db_name, keep_inactive_parts=keep_inactive_parts)
     logger.debug("Vehicle part mapping: %s", len(mapping))
 
     with open('./config/missing_class_names.json', 'r') as f:
@@ -86,8 +87,12 @@ def get_metadata(vehicle_models, keep_inactive_parts=False):
     return vehicle_part_type_groups, missing_class_name_lookup, OK_class_name_lookup
 
 
-def validate_vehicle_part_data(vehicle_model):
-    metadata = get_metadata([vehicle_model], keep_inactive_parts=True)
+def validate_vehicle_part_data(vehicle_model, artifact_code):
+    artifacts = [artifact for artifact in get_artificats() if artifact['code'] == artifact_code]
+    if len(artifacts) != 1:
+        return False, [f"Invalid artifact code: {artifact_code}"]
+    artifact = artifacts[0]
+    metadata = get_metadata([vehicle_model], db_name=artifact['database'], keep_inactive_parts=True)
     try:
         data, errors = prepare_vehicle_master(vehicle_model, metadata)
         is_valid = len(errors) == 0
@@ -100,28 +105,36 @@ def validate_vehicle_part_data(vehicle_model):
 
 
 def build_all_vehicle_master():
-    logger.debug("Building vehicle master")
-    
-    vehicle_models = get_vehicle_models()
-    logger.debug("Vehicle models: %s", len(vehicle_models))
+    artifacts = get_artificats()
 
-    metadata = get_metadata(vehicle_models)
-    
-    vehicle_data = defaultdict(dict)
-    for vehicle_model in vehicle_models:
-        try:
-            data, errors = prepare_vehicle_master(vehicle_model, metadata)
-            if len(errors) > 0:
-                logger.error("Validation errors for %s", vehicle_model)
-                for err in errors:
-                    logger.error(str(err))
-            if data is not None:
-                vehicle_data[vehicle_model] = data
-        except Exception as ex:
-            logger.exception("Error processing %s. %s", vehicle_model, ex)
+    for artifact in artifacts:
+        logger.debug("Building vehicle master for artifact: %s", artifact['code'])
+        
+        vehicle_models = get_vehicle_models(db_name=artifact['database'])
+        logger.debug("Vehicle models: %s", len(vehicle_models))
 
-    if len(vehicle_data) > 0:
-        save_vehicle_parts_lookup(dict(vehicle_data))
-        logger.debug("Vehicle master successfully written")
-    else:
-        logger.error("No vehicles were successfully processed.")
+        metadata = get_metadata(vehicle_models, db_name=artifact['database'])
+        
+        vehicle_data = defaultdict(dict)
+        for vehicle_model in vehicle_models:
+            try:
+                data, errors = prepare_vehicle_master(vehicle_model, metadata)
+                if len(errors) > 0:
+                    logger.error("Validation errors for %s", vehicle_model)
+                    for err in errors:
+                        logger.error(str(err))
+                if data is not None:
+                    vehicle_data[vehicle_model] = data
+            except Exception as ex:
+                logger.exception("Error processing %s. %s", vehicle_model, ex)
+
+        if len(vehicle_data) > 0:
+            if artifact['code'] == 'DOOR_LH':
+                save_vehicle_parts_lookup_lh(dict(vehicle_data))
+            elif artifact['code'] == 'DOOR_RH':
+                save_vehicle_parts_lookup_rh(dict(vehicle_data))
+            else:
+                logger.error("Unknown artifact code: %s", artifact['code'])
+            logger.debug("Vehicle master successfully written for artifact: %s", artifact['code'])
+        else:
+            logger.error("No vehicles were successfully processed.")
