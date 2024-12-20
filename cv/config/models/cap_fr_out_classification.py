@@ -7,8 +7,8 @@ class CapFrOutClassificationModel:
     target_detections = {PartDetectionOutModel.CLASS_CAP_FR_OUT}
 
     ordered_class_list = [
-        'OK_cap_fr_out',
         'NG_cap_fr_out',
+        'OK_cap_fr_out',
     ]
 
     class_names = {k: 'CAP_FR_OUT' for k in ordered_class_list}

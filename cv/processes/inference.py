@@ -94,12 +94,13 @@ def _inference_loop(thread):
                         class_color = model_config.class_colors[class_id]
 
                         # Class ROI check
-                        detection_roi = model_config.class_cams_roi.get(class_id, {}).get(cam_type)
+                        detection_roi = model_config.class_cam_rois.get(class_id, {}).get(cam_type)
                         if detection_roi is not None:
                             img_w = frame_cam.shape[1]
                             print("Debug:", cam_type, class_id, img_w, detection_roi, bbox)
                             detection_x1, detection_x2 = [x * img_w for x in detection_roi]
-                            if bbox[0] < detection_x1 or bbox[1] > detection_x2:
+                            # if bbox[0] < detection_x1 or bbox[1] > detection_x2:
+                            if bbox[2] < detection_x1 or bbox[0] > detection_x2:
                                 continue
 
                         # try:

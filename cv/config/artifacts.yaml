@@ -1,29 +1,65 @@
 artifacts:
   - code: DOOR_RH
     name: Door RH
-    database: asma_door_rh_v1
-    psn_offset: 0
+    # database: asma_door_rh_v1
+    database: asmb_shop_fr_v1
+    psn_offset: -9
     videos:
       - code: RH_IN_TOP
         name: RH Inside Top
-        source: rtsp://admin:Eternal$12@192.168.1.69:554/Streaming/channels/101
+        source: rtsp://admin:Eternal$12@192.168.1.66:554/Streaming/channels/101
       - code: RH_IN_BOTTOM
         name: RH Inside Bottom
-        source: rtsp://admin:Eternal$12@192.168.1.68:554/Streaming/channels/101
+        source: rtsp://admin:Eternal$12@192.168.1.65:554/Streaming/channels/101
       - code: RH_OUT
         name: RH Outside
-        source: rtsp://admin:Eternal$12@192.168.1.67:554/Streaming/channels/101
+        source: rtsp://admin:Eternal$12@192.168.1.70:554/Streaming/channels/101
   - code: DOOR_LH
     name: Door LH
-    database: asma_door_lh_v1
-    psn_offset: -8
+    # database: asma_door_lh_v1
+    database: asmb_shop_fl_v1
+    psn_offset: 0
     videos:
       - code: LH_IN_TOP
         name: LH Inside Top
-        source: rtsp://admin:Eternal$12@192.168.1.66:554/Streaming/channels/101
+        source: rtsp://admin:Eternal$12@192.168.1.68:554/Streaming/channels/101
       - code: LH_IN_BOTTOM
         name: LH Inside Bottom
-        source: rtsp://admin:Eternal$12@192.168.1.65:554/Streaming/channels/101
+        source: rtsp://admin:Eternal$12@192.168.1.69:554/Streaming/channels/101
       - code: LH_OUT
         name: LH Outside
-        source: rtsp://admin:Eternal$12@192.168.1.70:554/Streaming/channels/101
+        source: rtsp://admin:Eternal$12@192.168.1.67:554/Streaming/channels/101
+
+
+
+# artifacts:
+#   - code: DOOR_RH
+#     name: Door RH
+#     # database: asma_door_rh_v1
+#     database: asmb_shop_fr_v1
+#     psn_offset: -9
+#     videos:
+#       - code: RH_IN_TOP
+#         name: RH Inside Top
+#         source: rtsp://admin:Eternal$12@192.168.1.69:554/Streaming/channels/101
+#       - code: RH_IN_BOTTOM
+#         name: RH Inside Bottom
+#         source: rtsp://admin:Eternal$12@192.168.1.68:554/Streaming/channels/101
+#       - code: RH_OUT
+#         name: RH Outside
+#         source: rtsp://admin:Eternal$12@192.168.1.67:554/Streaming/channels/101
+#   - code: DOOR_LH
+#     name: Door LH
+#     # database: asma_door_lh_v1
+#     database: asmb_shop_fl_v1
+#     psn_offset: 0
+#     videos:
+#       - code: LH_IN_TOP
+#         name: LH Inside Top
+#         source: rtsp://admin:Eternal$12@192.168.1.66:554/Streaming/channels/101
+#       - code: LH_IN_BOTTOM
+#         name: LH Inside Bottom
+#         source: rtsp://admin:Eternal$12@192.168.1.65:554/Streaming/channels/101
+#       - code: LH_OUT
+#         name: LH Outside
+#         source: rtsp://admin:Eternal$12@192.168.1.70:554/Streaming/channels/101

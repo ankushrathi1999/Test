@@ -7,8 +7,8 @@ class BoltOpenClassificationModel:
     target_detections = {PartDetectionInTopModel.CLASS_BOLT_OPEN}
 
     ordered_class_list = [
-        'OK_bolt_open',
         'NG_bolt_open',
+        'OK_bolt_open',
     ]
 
     class_names = {k: 'BOLT_OPEN' for k in ordered_class_list}

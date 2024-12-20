@@ -18,9 +18,9 @@ def inspection_running_actions(data):
         return
 
     logger.info("End trigger received: %s=%s", SIG_RECV_END_TRIGGER, ack)
-    logger.info("Sending end trigger acknowledgement: %s", (SIG_SEND_START_TRIGGET_ACK, [48], SIG_SEND_END_TRIGGET_ACK, [49]))
-    send_signal(SIG_SEND_START_TRIGGET_ACK, [48]) # Reset to 0
-    send_signal(SIG_SEND_END_TRIGGET_ACK, [49]) # Set to 1
+    #logger.info("Sending end trigger acknowledgement: %s", (SIG_SEND_START_TRIGGET_ACK, [48], SIG_SEND_END_TRIGGET_ACK, [49]))
+    #send_signal(SIG_SEND_START_TRIGGET_ACK, [48]) # Reset to 0
+    #send_signal(SIG_SEND_END_TRIGGET_ACK, [49]) # Set to 1
 
     next_state = SYSTEM_STATES.INSPECTION_END
     logger.info("Next state: %s", next_state)

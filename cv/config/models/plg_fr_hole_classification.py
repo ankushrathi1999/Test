@@ -7,8 +7,8 @@ class PlgFrHoleClassificationModel:
     target_detections = {PartDetectionInBottomModel.CLASS_PLG_FR_HOLE}
 
     ordered_class_list = [
+        'NG_plg_fr_hole',
         '09250M25L01',
-        'NG_plg_fr_hole'
     ]
 
     class_names = {k: 'PLG_FR_HOLE' for k in ordered_class_list}

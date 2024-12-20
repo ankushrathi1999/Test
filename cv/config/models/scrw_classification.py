@@ -7,8 +7,8 @@ class ScrwClassificationModel:
     target_detections = {PartDetectionInBottomModel.CLASS_SCRW}
 
     ordered_class_list = [
-        'OK_scrw',
         'NG_scrw',
+        'OK_scrw',
     ]
 
     class_names = {k: 'SCRW' for k in ordered_class_list}

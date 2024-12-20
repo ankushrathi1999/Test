@@ -58,7 +58,7 @@ PLC_SIGNALS = [
     {
 		"key": SIG_SEND_RESULT_MID1,
 		"type": "array",
-		"headdevice": "D11301",
+		"headdevice": "D16051",
 	},
     {
 		"key": SIG_SEND_RESULT_MID2,

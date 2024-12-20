@@ -61,20 +61,20 @@ class Artifact:
 
         # Parts
         classification_targets = {
-            *CapBzlClassificationModel.target_detections,
-            *GrnsFrInrClassificationModel.target_detections,
-            *HdlSidInClassificationModel.target_detections,
-            *MirrorClassificationModel.target_detections,
-            *TrimSetClassificationModel.target_detections,
-            *ClipTrClassificationModel.target_detections,
-            *HndlClassificationModel.target_detections,
-            *StopOpenClassificationModel.target_detections,
-            *PlgFrHoleClassificationModel.target_detections,
-            *BoltOpenClassificationModel.target_detections,
-            *CapFrOutClassificationModel.target_detections,
-            *WthrOutClassificationModel.target_detections,
-            *WthrFrOutClassificationModel.target_detections,
-            *ScrwClassificationModel.target_detections
+            # *CapBzlClassificationModel.target_detections,
+            # *GrnsFrInrClassificationModel.target_detections,
+            # *HdlSidInClassificationModel.target_detections,
+            # *MirrorClassificationModel.target_detections,
+            # *TrimSetClassificationModel.target_detections,
+            # *ClipTrClassificationModel.target_detections,
+            # *HndlClassificationModel.target_detections,
+            # *StopOpenClassificationModel.target_detections,
+            # *PlgFrHoleClassificationModel.target_detections,
+            # *BoltOpenClassificationModel.target_detections,
+            # *CapFrOutClassificationModel.target_detections,
+            # *WthrOutClassificationModel.target_detections,
+            # *WthrFrOutClassificationModel.target_detections,
+            # *ScrwClassificationModel.target_detections
         }
 
         self.parts = {}
@@ -157,7 +157,7 @@ class Artifact:
 
     def end_inspection(self):
         if self.is_ended:
-            logger.wanr('Inspection is already ended.')
+            logger.warning('Inspection is already ended.')
             return
         self.is_ended = True
         self.end_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -190,7 +190,7 @@ class Artifact:
         logger.info("PLC Write flags: inspection_flag=%s plc_write_enabled=%s",self.inspection_flag ,plc_write_enabled)
         
         lh_door_result = overall_ok
-        rh_door_result = self.data.vehicle_psn_lookup[self.psn][3]
+        rh_door_result = self.data.vehicle_psn_lookup[self.psn][3] if self.psn in self.data.vehicle_psn_lookup else None
         if rh_door_result is None:
             return None
         overall_result = lh_door_result and rh_door_result

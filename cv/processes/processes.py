@@ -18,7 +18,7 @@ def get_processes(data):
         InferenceLoop(data),
         PLCIO(),
         *video_managers,
-        HeartbeatSend(),
+        #HeartbeatSend(),
         HeartbeatGet(),
         HealthServer(data),
         RebuildVehicleMaster(),
