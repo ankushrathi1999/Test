@@ -15,6 +15,7 @@ def prepare_dashbord_data(dashboard):
         'vehicle_model': dashboard.vehicle_model if has_dashboard else '-',
         'color_code': dashboard.color_code if has_dashboard else '-',
         'result': ("OK" if overall_ok else "NG") if has_dashboard else None,
+        'is_ended': dashboard.is_ended if has_dashboard else False,
         'parts': [{
             "title": part['part_name_long'][:100], # 100 char limit on part names
             "is_ok": part['result'] == DetectionResult.OK
@@ -72,7 +73,8 @@ def prepare_live_display(frames, data):
     
     # Data and postions
     positions = get_positions(target_height)
-    data = [prepare_dashbord_data(data.artifacts[i] if len(data.artifacts) > i else None) for i in range(2)]
+    artifacts = data.artifacts if len(data.artifacts) > 0 else data.artifacts_prev
+    data = [prepare_dashbord_data(artifacts[i] if len(artifacts) > i else None) for i in range(2)]
 
     # Resize background
     bg_img = cv2.resize(bg_img, (target_width, target_height))
@@ -100,7 +102,7 @@ def prepare_live_display(frames, data):
         print(cam_type, frame_x, frame_y)
         bg_img[frame_y: frame_y + frame_cam.shape[0], frame_x: frame_x + frame_cam.shape[1]] = frame_cam
 
-    # Estimate stats x psotion
+    # Estimate stats x position
     stats_x = (image_width * 3) + (positions['cam_padding_x'] * 4) + positions['parts_padding_x']
 
     # Part Boxes
@@ -150,8 +152,6 @@ def prepare_live_display(frames, data):
     for i in range(2):
         row_num = i+1
         if data[i]['result']:
-            is_ok = data[i]['result'] == 'OK'
-
             # Render heading
             header_x = stats_x
             header_y = positions['stats_row1_y' if row_num == 1 else 'stats_row2_y'] + positions['result_offset_y']
@@ -162,18 +162,25 @@ def prepare_live_display(frames, data):
             box_x2 = box_x1 + positions['result_box_width']
             box_y1 = positions['stats_row1_y' if row_num == 1 else 'stats_row2_y'] + positions['result_offset_y'] + positions['result_box_offset_y']
             box_y2 = box_y1 + positions['result_box_height']
+            result = data[i]['result']
+            is_small_text = True
+            if result == 'NG' and not data[i]['is_ended']:
+                result = 'PROGRESS'
+                is_small_text = False
             box_color = {
                 'OK': (105,149,45),
                 'NG': (52, 64, 235),
-            }[data[i]['result']]
+                'PROGRESS': (255,201,127),
+            }[result]
             box_text = {
                 'OK': 'OK',
-                'NG': 'INSPECTING'
-            }[data[i]['result']]
+                'NG': 'NG',
+                'PROGRESS': 'INSPECTING'
+            }[result]
             cv2.rectangle(bg_img, (box_x1, box_y1), (box_x2, box_y2), box_color, -1)
 
             # Render Box Text
-            text_x = stats_x + positions['result_box_text_offset_x_ok' if is_ok else 'result_box_text_offset_x_ng']
+            text_x = stats_x + positions['result_box_text_offset_x_ok' if is_small_text else 'result_box_text_offset_x_ng']
             text_y = positions['stats_row1_y' if row_num == 1 else 'stats_row2_y'] + positions['result_offset_y'] + positions['result_box_text_offset_y']
             draw_text(bg_img, box_text, (text_x, text_y), font=cv2.FONT_HERSHEY_TRIPLEX, font_scale=0.7, text_thickness=2, text_color=(255,255,255))
 

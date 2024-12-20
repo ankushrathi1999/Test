@@ -5,7 +5,8 @@ import logging
 
 from .detection import DetectionResult
 from config.colors import color_green, color_red
-from config.config import config, get_vehicle_parts_lookup, part_group_names_lookup
+from config.config import config, get_vehicle_parts_lookup_lh, get_vehicle_parts_lookup_rh, part_group_names_lookup
+from config.models import ColorClassificationModel
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +26,10 @@ def aggregate_results(result_counts):
 class ClassificationPart:
 
     def __init__(self, vehicle_model, detection_class, artifact):
-        vehicle_parts_lookup = get_vehicle_parts_lookup()
+        vehicle_parts_lookup = {
+            "DOOR_LH": get_vehicle_parts_lookup_lh,
+            "DOOR_RH": get_vehicle_parts_lookup_rh,
+        }[artifact.artifact_config['code']]()
         
         self.artifact = artifact
         self.detection_class = detection_class.split('__')[-1]
@@ -37,6 +41,7 @@ class ClassificationPart:
         self.missing_class_name = None
         self.OK_class_name = None
         self.is_miss_inspection = False
+        self.color_classification_enabled = False
         self.inspection_enabled = vehicle_model in vehicle_parts_lookup
 
         if self.inspection_enabled:
@@ -55,6 +60,7 @@ class ClassificationPart:
                 self.part_name_long = part_details['part_name_long']
                 self.missing_class_name = part_details.get('missing_class_name')
                 self.OK_class_name = part_details.get('OK_class_name')
+                self.color_classification_enabled = part_details.get('color_classification_enabled', False)
 
         # Predictions
         self.part_results_count = defaultdict(int)
@@ -110,8 +116,20 @@ class ClassificationPart:
         part_detection = max(part_detections, key=lambda detection: detection.confidence) if len(part_detections) > 0 else None
         if part_detection is None:
             return
+        
+        part_classification = part_detection.classification_details
+        color_classification = None
+        if self.color_classification_enabled:
+            classifications = [part_detection.classification_details, *part_detection.other_classification_details]
+            if len(classifications) != 2:
+                logger.error(f"Expected to classifications for {self.detection_class}. Got {len(classifications)}.")
+                return
+            if classifications[0].model == ColorClassificationModel.name:
+                color_classification, part_classification = classifications
+            else:
+                color_classification, part_classification = classifications[::-1]
                 
-        pred_part = part_detection.classification_details.part_number
+        pred_part = part_classification.part_number
         if (self.missing_class_name and pred_part == self.missing_class_name):
             result = DetectionResult.OK if self.is_miss_inspection else DetectionResult.MISSING
         elif (self.missing_class_name and self.is_miss_inspection):
@@ -122,6 +140,13 @@ class ClassificationPart:
             result = DetectionResult.OK if pred_part == self.part_id else DetectionResult.INCORRECT_PART
         logger.debug("Current result: pred_part=%s result=%s self.part_id=%s missing_class_name=%s is_miss_inspection=%s",
               pred_part, result, self.part_id, self.missing_class_name, self.is_miss_inspection)
+        
+        if color_classification:
+            color_spec, color_pred = color_classification.part_number
+            if color_spec != color_pred:
+                result = DetectionResult.INCORRECT_COLOR
+            logger.debug("Color classification color_pred=%s, color_spec=%s, result=%s", color_pred, color_spec, result)
+
         # Keep in OK state if already passed
         if not ALLOW_OK_TO_NG and self.part_result == DetectionResult.OK:
             result = DetectionResult.OK

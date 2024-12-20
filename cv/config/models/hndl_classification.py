@@ -9,21 +9,10 @@ class HndlClassificationModel:
 
     ordered_class_list = [
         'with_hole',
-        '82081M72R53-0PG',
+        'with_hole_switch',
         'with_switch',
-        '82820M75JB0-WAA',
-
+        'without_hole',
     ]
 
     class_names = {k: 'HNDL' for k in ordered_class_list}
     class_colors = {k: color_green for k in ordered_class_list}
-
-
-# with_hole
-# ['82810M79M02-WBE', '82810M72R20-WB3', '82810M72R00-5PK']
-# with_hole_switch
-# ['82081M72R53-0PG']
-# with_switch
-# ['82820M79M31-WAA', '82810M79M42-0PG', '82081M72R44-0PG']
-# without_hole
-# ['82820M75JB0-WAA']

@@ -8,7 +8,7 @@ import logging
 import json
 
 from config.db_config import db_params
-from config.config import config, get_vehicle_parts_lookup, part_order_plc
+from config.config import config, get_vehicle_parts_lookup_lh, get_vehicle_parts_lookup_rh
 from utils.db import insert_datafilter, insert_integer_metric, insert_string_metric
 from utils.shift_utils import get_current_shift
 from .classification_part import ClassificationPart
@@ -42,7 +42,10 @@ debug_mode and os.makedirs(metadata_dir_debug, exist_ok=True)
 class Artifact:
 
     def __init__(self, artifact_config, psn, chassis, vehicle_model, color_code, data):
-        vehicle_parts_lookup = get_vehicle_parts_lookup()
+        vehicle_parts_lookup = {
+            "DOOR_LH": get_vehicle_parts_lookup_lh,
+            "DOOR_RH": get_vehicle_parts_lookup_rh,
+        }[artifact_config['code']]()
         print("D1:", len(vehicle_parts_lookup), vehicle_model, vehicle_model in vehicle_parts_lookup)
         
         # Artifact code, database, etc..
@@ -58,6 +61,7 @@ class Artifact:
         self.color_code = color_code
         self.vehicle_category = vehicle_model[:3] if (vehicle_model and len(vehicle_model) >= 3) else None
         self.vehicle_type = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_type', 'RHD')
+        self.vehicle_description = vehicle_parts_lookup.get(vehicle_model, {}).get('vehicle_description', '')
 
         # Parts
         classification_targets = {
@@ -86,7 +90,7 @@ class Artifact:
             if detection_class is None:
                 continue
             if detection_class not in classification_targets:
-                self.parts[detection_class] = DetectionPart(vehicle_model, detection_class)
+                self.parts[detection_class] = DetectionPart(vehicle_model, detection_class, self)
             else:
                 self.parts[detection_class] = ClassificationPart(vehicle_model, detection_class, self)
 
