@@ -24,6 +24,9 @@ class Data:
                 Artifact(artifact, 1260, 'MA3BNC22S00795581', debug_vehicle_model, 'CLR', self)
                 for artifact in artifacts_config['artifacts']
             ]
+
+            self.artifacts_prev = []
+
         else:
             logger.info("Loading entities")
             self.entity_lookup = {
@@ -34,6 +37,9 @@ class Data:
                 logger.info("Loaded entities: %s", len(self.entity_lookup[artifact['code']]))
                 logger.debug("Entity Lookup: %s", self.entity_lookup[artifact['code']])
             self.artifacts = []
+
+            self.artifacts_prev = []
+
         self.frames = {}
         self.video_config = get_artifact_videos()
         self.vehicle_psn_lookup = {}

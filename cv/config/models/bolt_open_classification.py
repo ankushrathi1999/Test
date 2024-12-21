@@ -1,10 +1,10 @@
-from .part_detection_in_top import PartDetectionInTopModel
+from .part_detection_in_bottom import PartDetectionInBottomModel
 from ..colors import color_green, color_red
 
 class BoltOpenClassificationModel:
     name = 'bolt_open_classification'
     imgsz = 64
-    target_detections = {PartDetectionInTopModel.CLASS_BOLT_OPEN}
+    target_detections = {PartDetectionInBottomModel.CLASS_BOLT_OPEN}
 
     ordered_class_list = [
         'NG_bolt_open',

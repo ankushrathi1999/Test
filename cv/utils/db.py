@@ -80,7 +80,11 @@ def insert_integer_metric(cursor, record_id, entity_id, value, metric_id):
 
 def get_vehicle_models(db_name=None):
     query = """
+<<<<<<< HEAD
         select code as vehicle_model from Entity where entity_type_id = 2 and activeFlag = 1
+=======
+        select code as vehicle_model, name as vehicle_description from Entity where entity_type_id = 2 and activeFlag = 1
+>>>>>>> asmb-production/asmb-door
     """
     connection  = None
     rows = []
@@ -93,7 +97,11 @@ def get_vehicle_models(db_name=None):
         with connection.cursor() as cursor:
             cursor.execute(query)
             for row in cursor.fetchall():
+<<<<<<< HEAD
                 rows.append(row['vehicle_model'])
+=======
+                rows.append((row['vehicle_model'], row['vehicle_description']))
+>>>>>>> asmb-production/asmb-door
         return rows
     except Exception as ex:
         logger.exception("Error fetching vehicle part mapping.")

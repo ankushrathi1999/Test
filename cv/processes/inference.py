@@ -151,8 +151,17 @@ def _inference_loop(thread):
                         part_number = class_id
 
                         
+<<<<<<< HEAD
                     detection.classification_details = ClassificationDetails(
                         class_id, class_name, part_number, is_flip, model_config.name, confidence, class_color)
+=======
+                    classification_details = ClassificationDetails(
+                        class_id, class_name, part_number, is_flip, model_config.name, confidence, class_color)
+                    if detection.classification_details is None:
+                        detection.classification_details = classification_details
+                    else:
+                        detection.other_classification_details.append(classification_details)
+>>>>>>> asmb-production/asmb-door
                     detection.final_details = FinalDetails(class_name, color_red, DetectionResult.NOT_EVALUATED)
             
             # Update data
