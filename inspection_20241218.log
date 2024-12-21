@@ -1,0 +1,195 @@
+2024-12-18 12:05:45 - __main__ - INFO - Checking port availability: 5005
+2024-12-18 12:05:48 - __main__ - INFO - Building vehcile master
+2024-12-18 12:05:52 - __main__ - INFO - Initializing.
+2024-12-18 12:05:52 - api.data - INFO - Loading entities
+2024-12-18 12:05:52 - api.data - INFO - Loaded entities: 149
+2024-12-18 12:05:52 - api.data - INFO - Loaded entities: 149
+2024-12-18 12:05:52 - __main__ - INFO - Registering state actions
+2024-12-18 12:05:52 - __main__ - INFO - Starting processes
+2024-12-18 12:05:52 - processes.state_actions - INFO - Start of run_state_actions thread.
+2024-12-18 12:05:52 - processes.inference - INFO - Start of inference thread.
+2024-12-18 12:05:52 - processes.plc_io - INFO - Start of PLCIO thread.
+2024-12-18 12:05:52 - processes.video_manager - INFO - Start of video mamager thread: video_code=RH_IN_TOP, video_path=rtsp://admin:Eternal$12@192.168.1.66:554/Streaming/channels/101
+2024-12-18 12:05:52 - processes.video_manager - INFO - Start of video mamager thread: video_code=RH_IN_BOTTOM, video_path=rtsp://admin:Eternal$12@192.168.1.65:554/Streaming/channels/101
+2024-12-18 12:05:52 - processes.video_manager - INFO - Start of video mamager thread: video_code=RH_OUT, video_path=rtsp://admin:Eternal$12@192.168.1.70:554/Streaming/channels/101
+2024-12-18 12:05:52 - processes.video_manager - INFO - Start of video mamager thread: video_code=LH_IN_TOP, video_path=rtsp://admin:Eternal$12@192.168.1.68:554/Streaming/channels/101
+2024-12-18 12:05:52 - processes.video_manager - INFO - Start of video mamager thread: video_code=LH_IN_BOTTOM, video_path=rtsp://admin:Eternal$12@192.168.1.69:554/Streaming/channels/101
+2024-12-18 12:05:52 - processes.video_manager - INFO - Start of video mamager thread: video_code=LH_OUT, video_path=rtsp://admin:Eternal$12@192.168.1.67:554/Streaming/channels/101
+2024-12-18 12:05:52 - processes.heartbeat_get - INFO - Start of heartbeat get thread.
+2024-12-18 12:05:52 - processes.health_server - INFO - Starting health server at http://localhost:5005
+2024-12-18 12:05:52 - processes.rebuild_vehicle_master - INFO - Start of rebuild_vehicle_master thread.
+2024-12-18 12:05:52 - processes.inference - INFO - Detection model: part_detection_in_bottom
+2024-12-18 12:05:52 - processes.inference - INFO - Model loaded labels: {0: 'LABEL', 1: 'PLG_FR_HOLE', 2: 'PNT_GRMT', 3: 'SCRW', 4: 'TRIM_SET', 5: 'WTHR_FR_OUT'}
+2024-12-18 12:05:52 - processes.inference - INFO - Detection model: part_detection_in_top
+2024-12-18 12:05:52 - processes.inference - INFO - Model loaded labels: {0: 'BOLT_OPEN', 1: 'CAP_BZL', 2: 'CLIP', 3: 'GLASS', 4: 'GRNS_FR_INR', 5: 'HDL_SID_IN', 6: 'LABEL', 7: 'STOP_OPEN', 8: 'TRIM_SET'}
+2024-12-18 12:05:52 - processes.inference - INFO - Detection model: part_detection_out
+2024-12-18 12:05:52 - processes.inference - INFO - Model loaded labels: {0: 'CAP', 1: 'HNDL', 2: 'MIRROR', 3: 'WTHR_OUT'}
+2024-12-18 12:05:52 - actions.inspection_start - INFO - Fetched part data: psn=7889, chassis=MA3CZFB3SRM956746, vehicle_model=YSDA6C21P7400000, color_code=ZHJ
+2024-12-18 12:05:52 - actions.inspection_start - INFO - Sending start trigger acknowledgement: ('PCEndTriggerAck', [48], 'PCStartTriggerAck', [49])
+2024-12-18 12:05:52 - actions.inspection_start - INFO - Resetting PLC results: ('PCResultMID1', 'PCResultMID2', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
+2024-12-18 12:05:52 - actions.inspection_start - INFO - Inspection is active. Initializing artifact.
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'LABEL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'PLG_FR_HOLE', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'PNT_GRMT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'SCRW', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'TRIM_SET', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'WTHR_FR_OUT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'BOLT_OPEN', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'CAP_BZL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'CLIP', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'GLASS', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'GRNS_FR_INR', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'HDL_SID_IN', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'LABEL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'STOP_OPEN', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'TRIM_SET', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'CAP_FR_OUT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'HNDL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'MIRROR', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': '-', 'detection_class': 'WTHR_OUT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.artifact - INFO - Artifact created: {'code': 'DOOR_RH', 'start_time': '2024-12-18 12:05:52', 'inspection_flag': 0, 'shift': 'shiftA', 'psn': 7880, 'chassis': '-', 'vehicle_model': '-', 'vehicle_category': None, 'vehicle_type': 'RHD'}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'LABEL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'PLG_FR_HOLE', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'PNT_GRMT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'SCRW', 'part_id': '03241M0612A', 'part_name': 'SCREW_TRM_BRKT', 'part_name_long': 'SCREW_TRM_BRKT'}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'TRIM_SET', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'WTHR_FR_OUT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'BOLT_OPEN', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'CAP_BZL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'CLIP', 'part_id': '09409M06314-V6N', 'part_name': 'CLIP_RR_DR_TRM', 'part_name_long': 'CLIP_RR_DR_TRM'}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'GLASS', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'GRNS_FR_INR', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'HDL_SID_IN', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'LABEL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'STOP_OPEN', 'part_id': '81830M66R00', 'part_name': 'STOP_RR_OPEN', 'part_name_long': 'STOP_RR_OPEN'}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'TRIM_SET', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'CAP_FR_OUT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'HNDL', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'MIRROR', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.detection_part - INFO - Init detection: {'vehicle_model': 'YSDA6C21P7400000', 'detection_class': 'WTHR_OUT', 'part_id': None, 'part_name': None, 'part_name_long': None}
+2024-12-18 12:05:52 - api.artifact - INFO - Artifact created: {'code': 'DOOR_LH', 'start_time': '2024-12-18 12:05:52', 'inspection_flag': 1, 'shift': 'shiftA', 'psn': 7889, 'chassis': 'MA3CZFB3SRM956746', 'vehicle_model': 'YSDA6C21P7400000', 'vehicle_category': 'YSD', 'vehicle_type': 'RHD'}
+2024-12-18 12:05:52 - actions.inspection_start - INFO - Next state: INSPECTION_RUNNING
+2024-12-18 12:05:53 - processes.plc_io - ERROR - Error in PLCIO thread.
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Projects\MSIL-IPCluster\cv\processes\plc_io.py", line 13, in _flush_plc_data
+    flush_plc_data()
+  File "C:\Users\Admin\Documents\Projects\MSIL-IPCluster\cv\utils\plc\plc.py", line 62, in flush_plc_data
+    pymc3e.batchwrite_wordunits(headdevice=headdevice, values=value)
+  File "C:\Users\Admin\Documents\hypervise\Lib\site-packages\pymcprotocol\type3e.py", line 537, in batchwrite_wordunits
+    self._check_cmdanswer(recv_data)
+  File "C:\Users\Admin\Documents\hypervise\Lib\site-packages\pymcprotocol\type3e.py", line 420, in _check_cmdanswer
+    mcprotocolerror.check_mcprotocol_error(answerstatus)
+  File "C:\Users\Admin\Documents\hypervise\Lib\site-packages\pymcprotocol\mcprotocolerror.py", line 41, in check_mcprotocol_error
+    raise MCProtocolError(status)
+pymcprotocol.mcprotocolerror.MCProtocolError: mc protocol error: error code 0x4031
+2024-12-18 12:06:12 - api.artifact - INFO - Saving snapshots: 1/20
+2024-12-18 12:06:12 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_1.jpg
+2024-12-18 12:06:12 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_1.json
+2024-12-18 12:06:12 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_1.jpg
+2024-12-18 12:06:12 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_1.json
+2024-12-18 12:06:12 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_OUT\-_-_RH_OUT_1.jpg
+2024-12-18 12:06:12 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_OUT\-_-_RH_OUT_1.json
+2024-12-18 12:06:12 - api.artifact - INFO - Saving snapshots: 1/20
+2024-12-18 12:06:12 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_1.jpg
+2024-12-18 12:06:12 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_1.json
+2024-12-18 12:06:12 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_1.jpg
+2024-12-18 12:06:12 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_1.json
+2024-12-18 12:06:12 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_1.jpg
+2024-12-18 12:06:12 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_1.json
+2024-12-18 12:06:17 - api.artifact - INFO - Saving snapshots: 2/20
+2024-12-18 12:06:17 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_2.jpg
+2024-12-18 12:06:17 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_2.json
+2024-12-18 12:06:17 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_2.jpg
+2024-12-18 12:06:17 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_2.json
+2024-12-18 12:06:17 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_OUT\-_-_RH_OUT_2.jpg
+2024-12-18 12:06:17 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_OUT\-_-_RH_OUT_2.json
+2024-12-18 12:06:17 - api.artifact - INFO - Saving snapshots: 2/20
+2024-12-18 12:06:17 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_2.jpg
+2024-12-18 12:06:17 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_2.json
+2024-12-18 12:06:17 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_2.jpg
+2024-12-18 12:06:17 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_2.json
+2024-12-18 12:06:17 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_2.jpg
+2024-12-18 12:06:17 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_2.json
+2024-12-18 12:06:22 - api.artifact - INFO - Saving snapshots: 3/20
+2024-12-18 12:06:22 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_3.jpg
+2024-12-18 12:06:22 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_3.json
+2024-12-18 12:06:22 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_3.jpg
+2024-12-18 12:06:22 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_3.json
+2024-12-18 12:06:23 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_OUT\-_-_RH_OUT_3.jpg
+2024-12-18 12:06:23 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_OUT\-_-_RH_OUT_3.json
+2024-12-18 12:06:23 - api.artifact - INFO - Saving snapshots: 3/20
+2024-12-18 12:06:23 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_3.jpg
+2024-12-18 12:06:23 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_3.json
+2024-12-18 12:06:23 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_3.jpg
+2024-12-18 12:06:23 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_3.json
+2024-12-18 12:06:23 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_3.jpg
+2024-12-18 12:06:23 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_3.json
+2024-12-18 12:06:28 - api.artifact - INFO - Saving snapshots: 4/20
+2024-12-18 12:06:28 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_4.jpg
+2024-12-18 12:06:28 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_TOP\-_-_RH_IN_TOP_4.json
+2024-12-18 12:06:28 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_4.jpg
+2024-12-18 12:06:28 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_IN_BOTTOM\-_-_RH_IN_BOTTOM_4.json
+2024-12-18 12:06:28 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\-\RH_OUT\-_-_RH_OUT_4.jpg
+2024-12-18 12:06:28 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\-\RH_OUT\-_-_RH_OUT_4.json
+2024-12-18 12:06:28 - api.artifact - INFO - Saving snapshots: 4/20
+2024-12-18 12:06:28 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_4.jpg
+2024-12-18 12:06:28 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_TOP\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_TOP_4.json
+2024-12-18 12:06:28 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_4.jpg
+2024-12-18 12:06:28 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_IN_BOTTOM\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_IN_BOTTOM_4.json
+2024-12-18 12:06:28 - api.artifact - INFO - Snapshot saved to: D:\ipcluster_images\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_4.jpg
+2024-12-18 12:06:28 - api.artifact - INFO - Metadata saved to: D:\ipcluster_images_metadata\20241218\YSDA6C21P7400000\LH_OUT\MA3CZFB3SRM956746_YSDA6C21P7400000_LH_OUT_4.json
+2024-12-18 12:06:32 - actions.inspection_running - INFO - End trigger received: PLCEndTrigger=True
+2024-12-18 12:06:32 - actions.inspection_running - INFO - Next state: INSPECTION_END
+2024-12-18 12:06:32 - actions.inspection_end - INFO - Starting innspection end actions.
+2024-12-18 12:06:32 - api.artifact - INFO - Inspection ended. end_time=2024-12-18 12:06:32 overall_result=False
+2024-12-18 12:06:32 - api.artifact - INFO - Part results:
+2024-12-18 12:06:32 - api.artifact - INFO - PLC Write flags: inspection_flag=0 plc_write_enabled=False
+2024-12-18 12:06:32 - actions.inspection_end - INFO - Saving inspection results to database.
+2024-12-18 12:06:32 - api.artifact - INFO - Inspection Flag = 0
+2024-12-18 12:06:32 - api.artifact - INFO - Inspection Image = 4
+2024-12-18 12:06:32 - api.artifact - INFO - Filter: record_id=1595 entity_id=5001
+2024-12-18 12:06:32 - api.artifact - INFO - String Metric: record_id=1595 entity_id=4001 value=7880
+2024-12-18 12:06:32 - api.artifact - INFO - String Metric: record_id=1595 entity_id=4002 value=-
+2024-12-18 12:06:32 - api.artifact - WARNING - Part not in Database: vehicle_metadata_color_code
+2024-12-18 12:06:32 - api.artifact - INFO - String Metric: record_id=1595 entity_id=4003 value=-
+2024-12-18 12:06:32 - api.artifact - INFO - Inspection ended. end_time=2024-12-18 12:06:32 overall_result=False
+2024-12-18 12:06:32 - api.artifact - INFO - Part results:
+2024-12-18 12:06:32 - api.artifact - INFO - {'part_id': '03241M0612A', 'part_name': 'SCREW_TRM_BRKT', 'part_name_long': 'SCREW_TRM_BRKT', 'result': 2, 'part_pred': None, 'type': 'SCRW', 'spec': '03241M0612A', 'actual': None, 'key': 'SCREW_TRM_BRKT'}
+2024-12-18 12:06:32 - api.artifact - INFO - {'part_id': '09409M06314-V6N', 'part_name': 'CLIP_RR_DR_TRM', 'part_name_long': 'CLIP_RR_DR_TRM', 'result': 2, 'part_pred': None, 'type': 'CLIP', 'spec': '09409M06314-V6N', 'actual': None, 'key': 'CLIP_RR_DR_TRM'}
+2024-12-18 12:06:32 - api.artifact - INFO - {'part_id': '81830M66R00', 'part_name': 'STOP_RR_OPEN', 'part_name_long': 'STOP_RR_OPEN', 'result': 1, 'part_pred': '81830M66R00', 'type': 'STOP_OPEN', 'spec': '81830M66R00', 'actual': '81830M66R00', 'key': 'STOP_RR_OPEN'}
+2024-12-18 12:06:32 - api.artifact - INFO - PLC Write flags: inspection_flag=1 plc_write_enabled=False
+2024-12-18 12:06:32 - actions.inspection_end - INFO - Saving inspection results to database.
+2024-12-18 12:06:32 - api.artifact - INFO - Inspection Flag = 1
+2024-12-18 12:06:32 - api.artifact - INFO - Inspection Image = 4
+2024-12-18 12:06:32 - api.artifact - INFO - Result OK Flag = 0
+2024-12-18 12:06:32 - api.artifact - INFO - Filter: record_id=1596 entity_id=5001
+2024-12-18 12:06:32 - api.artifact - INFO - Filter: record_id=1596 entity_id=2040
+2024-12-18 12:06:32 - api.artifact - INFO - Integer Metric: record_id=1596 entity_id=3001 value=2
+2024-12-18 12:06:32 - api.artifact - INFO - Integer Metric: record_id=1596 entity_id=3002 value=2
+2024-12-18 12:06:32 - api.artifact - INFO - Integer Metric: record_id=1596 entity_id=3008 value=1
+2024-12-18 12:06:32 - api.artifact - INFO - String Metric: record_id=1596 entity_id=4001 value=7889
+2024-12-18 12:06:32 - api.artifact - INFO - String Metric: record_id=1596 entity_id=4002 value=MA3CZFB3SRM956746
+2024-12-18 12:06:32 - api.artifact - WARNING - Part not in Database: vehicle_metadata_color_code
+2024-12-18 12:06:32 - api.artifact - INFO - String Metric: record_id=1596 entity_id=6004 value=[{"part_id": "03241M0612A", "part_name": "SCREW_TRM_BRKT", "part_name_long": "SCREW_TRM_BRKT", "result": 2, "part_pred": null, "type": "SCRW", "spec": "03241M0612A", "actual": null, "key": "SCREW_TRM_BRKT"}, {"part_id": "09409M06314-V6N", "part_name": "CLIP_RR_DR_TRM", "part_name_long": "CLIP_RR_DR_TRM", "result": 2, "part_pred": null, "type": "CLIP", "spec": "09409M06314-V6N", "actual": null, "key": "CLIP_RR_DR_TRM"}, {"part_id": "81830M66R00", "part_name": "STOP_RR_OPEN", "part_name_long": "STOP_RR_OPEN", "result": 1, "part_pred": "81830M66R00", "type": "STOP_OPEN", "spec": "81830M66R00", "actual": "81830M66R00", "key": "STOP_RR_OPEN"}]
+2024-12-18 12:06:32 - actions.inspection_end - INFO - No Artifact to save
+2024-12-18 12:06:32 - actions.inspection_end - INFO - Inspection cycle reset. Next state: INSPECTION_START_PRE
+2024-12-18 12:06:32 - actions.inspection_start_pre - INFO - Heartbeat checks passed.
+2024-12-18 12:06:32 - actions.inspection_start_pre - INFO - Next state: INSPECTION_START
+2024-12-18 12:06:34 - processes.inference - INFO - Quit selected.
+2024-12-18 12:06:35 - processes.inference - INFO - Handling confirm: quit
+2024-12-18 12:06:35 - processes.inference - INFO - Quit confirmed.
+2024-12-18 12:06:35 - processes.inference - INFO - End of inference loop thread.
+2024-12-18 12:06:36 - __main__ - INFO - Stopping rocesses
+2024-12-18 12:06:36 - processes.video_manager - INFO - End of video_helper thread: video_code=RH_IN_TOP, video_path=rtsp://admin:Eternal$12@192.168.1.66:554/Streaming/channels/101
+2024-12-18 12:06:36 - processes.video_manager - INFO - End of video_helper thread: video_code=LH_IN_BOTTOM, video_path=rtsp://admin:Eternal$12@192.168.1.69:554/Streaming/channels/101
+2024-12-18 12:06:36 - processes.video_manager - INFO - End of video_helper thread: video_code=LH_IN_TOP, video_path=rtsp://admin:Eternal$12@192.168.1.68:554/Streaming/channels/101
+2024-12-18 12:06:36 - processes.video_manager - INFO - End of video_helper thread: video_code=RH_OUT, video_path=rtsp://admin:Eternal$12@192.168.1.70:554/Streaming/channels/101
+2024-12-18 12:06:36 - processes.state_actions - INFO - End of run_state_actions thread.
+2024-12-18 12:06:36 - processes.video_manager - INFO - End of video_helper thread: video_code=LH_OUT, video_path=rtsp://admin:Eternal$12@192.168.1.67:554/Streaming/channels/101
+2024-12-18 12:06:36 - processes.video_manager - INFO - End of video_helper thread: video_code=RH_IN_BOTTOM, video_path=rtsp://admin:Eternal$12@192.168.1.65:554/Streaming/channels/101
+2024-12-18 12:06:36 - processes.heartbeat_get - INFO - End of heartbeat get thread
+2024-12-18 12:06:36 - __main__ - INFO - Waiting for processes to stop
+2024-12-18 12:06:36 - processes.health_server - INFO - End of health server thread.
+2024-12-18 12:06:37 - processes.plc_io - INFO - End of PLCIO thread.
+2024-12-18 12:06:52 - processes.rebuild_vehicle_master - INFO - End of rebuild_vehicle_master thread.
+2024-12-18 12:06:52 - __main__ - INFO - Exiting.

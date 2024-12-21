@@ -1,0 +1,25 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+  simple:
+    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    datefmt: '%Y-%m-%d %H:%M:%S'
+  console:
+    format: '%(message)s'
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: console
+    level: ERROR
+  file:
+    class: logging.handlers.TimedRotatingFileHandler
+    formatter: simple
+    filename: 'logs/inspection.log'
+    when: 'midnight'
+    backupCount: 90
+    level: INFO
+loggers:
+  '':
+    level: DEBUG
+    handlers: [console, file]
+    propagate: False

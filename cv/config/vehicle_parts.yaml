@@ -1,0 +1,2222 @@
+YCA26C2BP7400000:
+  BOLT_OPEN:
+    OK_class_name: OK_bolt_open
+    missing_class_name: NG_bolt_open
+    part_name: BOLT_OPEN
+    part_name_long: BOLT_OPEN
+    part_number: 09103M06248
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M76M11-GJL
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M69RA0-26U
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M69R11-5PK
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M69R00
+  skip:
+    part_name: STOP_RR_OPEN
+    part_name_long: STOP_RR_OPEN
+    part_number: 81830M66R00
+YCA2AC2BP7400000:
+  BOLT_OPEN:
+    OK_class_name: OK_bolt_open
+    missing_class_name: NG_bolt_open
+    part_name: BOLT_OPEN
+    part_name_long: BOLT_OPEN
+    part_number: 09103M06248
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M76M11-GJL
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M69RA0-26U
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M69R11-5PK
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M69R00
+  skip:
+    part_name: STOP_RR_OPEN
+    part_name_long: STOP_RR_OPEN
+    part_number: 81830M66R00
+YEDH1C21P7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R00-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U00-5PK
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U20-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P00-5PK
+YEDH1C2EP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R20-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U00-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDH1C2GP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U10-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9EP6800000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9EP8000000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9GP0600000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R20-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U00-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9GP0700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U60-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9GP4700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U60-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9GP6800000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9GP8000000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9JP0700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U60-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9JP4700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U60-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9JP6800000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDJ1C9JP8000000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK112JP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U70-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U10-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK114JP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U70-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U10-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C21P7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R00-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U00-5PK
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U20-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P00-5PK
+YEDK1C2CP0600000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R20-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U00-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2CP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R00-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U00-5PK
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U20-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P00-5PK
+YEDK1C2EP6800000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2EP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R20-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U00-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2EP8000000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2GP0600000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R20-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U00-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2GP6800000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2GP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U10-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2GP8000000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2JP6800000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C2JP8000000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C4EP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R20-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U00-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDK1C4GP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U40-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U10-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDM1C2EP7700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDM1C2JP7700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDM1C9EP7700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R30-WB3
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U30-FF8
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDM1C9JP0700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U60-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YEDM1C9JP7700000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M55U10-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M55U50-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M55U40-FF7
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55U10
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WB3
+YSD26C2DP7411715:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M56R00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R20-WBE
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M56R83-WBE
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83079M54TF2-CTL
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55R00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P10-WBE
+YSD46C21P7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-V6N
+  CLIP:
+    missing_class_name: NG_clip_tr
+    part_name: CLIP_RR_TR
+    part_name_long: CLIP_RR_TR
+    part_number: 09409M06314-V6N
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M56R00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R00-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-V6N
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M56R00-5PK
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55R00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P00-5PK
+YSDA6C21P7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-V6N
+  CLIP:
+    missing_class_name: NG_clip_tr
+    part_name: CLIP_RR_TR
+    part_name_long: CLIP_RR_TR
+    part_number: 09409M06314-V6N
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M56R00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M72R00-5PK
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-V6N
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M56R00-5PK
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M55R00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M68P00-5PK
+YXA14C2DP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M79M22-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66TA0-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T30-ERT
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T10-WAA
+YXA14C2EP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M79M22-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T20-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T20-ERT
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T10-WAA
+YXA14CXBP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M75JA0-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T20-WAA
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T10-ERS
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T00-WAA
+YXA14CXCP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M79M22-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T20-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T20-ERT
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T10-WAA
+YXA14CXDP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M79M22-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66TA0-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T30-ERT
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T10-WAA
+YXA24C2FP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M75JA0-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T20-WAA
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T10-ERS
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T00-WAA
+YXA24C2GP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M75JA0-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T10-WAA
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T00-5PK
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T00-WAA
+YXA34C2EP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M79M22-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L10-C48
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T20-WB3
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T20-ERT
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T10-WAA
+YXA34C2FP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M75JA0-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T20-WAA
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T10-ERS
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T00-WAA
+YXA34C2GP7400000:
+  CAP_BZL:
+    missing_class_name: NG_cap_bzl
+    part_name: CAP_BZL_R
+    part_name_long: CAP_BZL_R
+    part_number: 83755M74L00-5PK
+  GRNS_FR_INR:
+    part_name: GRNS_FR_INR_R
+    part_name_long: GRNS_FR_INR_R
+    part_number: 84750M66T00-5PK
+  HNDL:
+    part_name: HNDL_FR_OUT_R
+    part_name_long: HNDL_FR_OUT_R
+    part_number: 82810M75JA0-WAA
+  HNDL_SID_IN:
+    part_name: HDL_SID_IN_R
+    part_name_long: HNDL_OUT_R
+    part_number: 83110M74L00-5PK
+  MIRROR:
+    part_name: MIRR_RR_R
+    part_name_long: MIRR_RR_R
+    part_number: 84701M66T10-WAA
+  PLG_FR_HOLE:
+    missing_class_name: NG_plg_fr_hole
+    part_name: PLG_FR_HOLE
+    part_name_long: PLG_FR_HOLE
+    part_number: 09250M25L01
+  PNT_GRMT:
+    part_name: PNT_GRMT_FR
+    part_name_long: PNT_GRMT_FR
+    part_number: PNT_GRMT_FR
+  STOP_OPEN:
+    part_name: STOP_FR_OPEN
+    part_name_long: STOP_FR_OPEN
+    part_number: 81810M80T00
+  TRIM_SET:
+    part_name: TRIM_SET_FR_R
+    part_name_long: TRIM_SET_FR_R
+    part_number: 83071M66T00-5PK
+  WTHR_OUT:
+    OK_class_name: OK_wthr_out
+    missing_class_name: NG_wthr_out
+    part_name: WTHR_FR_OUT_R
+    part_name_long: WTHR_FR_OUT_R
+    part_number: 83811M66T00
+  skip:
+    part_name: HNDL_RR_OUT_R
+    part_name_long: HNDL_RR_OUT_R
+    part_number: 82830M66T00-WAA
